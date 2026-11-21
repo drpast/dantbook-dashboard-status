@@ -144,5 +144,24 @@ class EvidenceStatusTests(unittest.TestCase):
         self.assertIsNone(record["merged_at"])
 
 
+    def test_every_terminal_ci_failure_state_blocks_open_pr(self):
+        for ci_state in ("failure", "cancelled", "timed_out", "action_required", "startup_failure"):
+            with self.subTest(ci_state=ci_state):
+                status, note = derive_task_status(self.step, pull_request={
+                    "number": 12, "merged": False, "state": "open",
+                    "draft": False, "ci": {"status": ci_state}})
+                self.assertEqual(status, "blocked")
+                self.assertIn(ci_state, note)
+
+    def test_every_known_pending_ci_state_keeps_open_pr_in_progress(self):
+        for ci_state in ("queued", "waiting", "pending", "in_progress", "requested"):
+            with self.subTest(ci_state=ci_state):
+                status, note = derive_task_status(self.step, pull_request={
+                    "number": 12, "merged": False, "state": "open",
+                    "draft": False, "ci": {"status": ci_state}})
+                self.assertEqual(status, "in-progress")
+                self.assertIn(ci_state, note)
+
+
 if __name__ == "__main__":
     unittest.main()
