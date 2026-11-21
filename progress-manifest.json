@@ -328,5 +328,55 @@
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; status changes require evidence (merged PRs, successful tests, reviewed acceptance). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
-  "current_task_percent": 88
+  "current_task_percent": 88,
+  "current_task_files": [
+    {
+      "name": ".github/workflows/ci.yml",
+      "percent": 100,
+      "status": "Updated",
+      "note": "PR workflow now validates stacked acceptance branches."
+    },
+    {
+      "name": "CHANGELOG.md",
+      "percent": 100,
+      "status": "Updated",
+      "note": "Records browser and API acceptance evidence."
+    },
+    {
+      "name": "apps/api/scripts/check-patient-api-acceptance.mjs",
+      "percent": 100,
+      "status": "Updated",
+      "note": "API acceptance covers alerts, corrections, permissions and branch isolation."
+    },
+    {
+      "name": "apps/web/app/medical-history/page.tsx",
+      "percent": 100,
+      "status": "Updated",
+      "note": "Save feedback fix and accessible field labels."
+    },
+    {
+      "name": "apps/web/e2e/medical-history.spec.ts",
+      "percent": 100,
+      "status": "Tests passed",
+      "note": "Alert creation and correction browser acceptance verified."
+    },
+    {
+      "name": "docs/PROJECT-STATUS.md",
+      "percent": 100,
+      "status": "Updated",
+      "note": "Implementation and acceptance evidence documented."
+    },
+    {
+      "name": "PR #4 · CI verification",
+      "percent": 100,
+      "status": "Passed",
+      "note": "Run 44933570034 passed all checks."
+    },
+    {
+      "name": "Review and merge PRs #3 and #4",
+      "percent": 0,
+      "status": "Pending review",
+      "note": "Both are draft PRs; review/merge remains the next action."
+    }
+  ]
 }
