@@ -35,7 +35,7 @@
 
 ## 21 November 2026 — Granular live step tracker
 - Added an 8-step implementation tracker to the evidence-reviewed manifest and published it to status.json.
-- Current step 5: Medical History alert/correction browser tests (PR #4, CI in progress); PR #3 is review-ready with successful CI; PR #1 and #2 merged.
+- Current step 5: Medical History alert/correction browser tests (PR #4, CI in progress); PR #3 has successful CI but remains a draft; PR #1 and #2 merged.
 - Desktop Dashboard v1.8.0 now renders task steps separately from module percentages.
 - Sync now records the 5-minute source poll interval; desktop refresh remains every 30 seconds.
 - Overall progress remains 25%; this tracker reports task state without inflating percentages.
