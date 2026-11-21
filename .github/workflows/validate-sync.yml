@@ -6,6 +6,8 @@ on:
       - ".github/workflows/sync-dantbook-progress.yml"
       - ".github/workflows/validate-sync.yml"
       - "scripts/sync_dantbook_github.py"
+      - "scripts/progress_evidence.py"
+      - "tests/**"
 
 permissions:
   contents: read
