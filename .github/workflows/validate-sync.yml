@@ -7,6 +7,7 @@ on:
       - ".github/workflows/validate-sync.yml"
       - "scripts/sync_dantbook_github.py"
       - "scripts/progress_evidence.py"
+      - "DESKTOP_FEED_CONTRACT.md"
       - "tests/**"
 
 permissions:
