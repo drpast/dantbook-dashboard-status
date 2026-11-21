@@ -135,7 +135,7 @@ for step in status["task_steps"]:
 # Pick the live active step automatically: in-progress, then review-ready, then pending.
 active_step = next((x for x in status["task_steps"] if x["status"] == "in-progress"), None)
 if active_step is None:
-    active_step = next((x for x in status["task_steps"] if x["status"] == "review"), None)
+    active_step = next((x for x in status["task_steps"] if x["status"] in ("review", "checks-passed-draft")), None)
 if active_step is None:
     active_step = next((x for x in status["task_steps"] if x["status"] == "pending"), None)
 if active_step:
