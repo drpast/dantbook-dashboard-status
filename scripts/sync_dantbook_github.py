@@ -132,7 +132,24 @@ for step in status["task_steps"]:
     else:
         step["status"] = "pending"
         step["note"] = f"PR #{pr_number} not currently open"
-# Pick the live active step automatically: in-progress, then review-ready, then pending.
+# Once both browser-acceptance PR checks pass, review/merge becomes the active next step.
+acceptance_steps = [x for x in status["task_steps"] if x.get("pr") in (3, 4)]
+merge_step = next((x for x in status["task_steps"] if x["id"] == "pr-review-merge"), None)
+if len(acceptance_steps) == 2 and merge_step:
+    states = [x["status"] for x in acceptance_steps]
+    if all(x == "completed" for x in states):
+        merge_step["status"] = "completed"
+        merge_step["note"] = "PR #3 and #4 merged"
+    elif any(x == "blocked" for x in states):
+        merge_step["status"] = "blocked"
+        merge_step["note"] = "Resolve failing acceptance PR checks before merge"
+    elif all(x in ("checks-passed-draft", "review", "completed") for x in states):
+        merge_step["status"] = "in-progress"
+        merge_step["note"] = "Acceptance PR checks passed; review and merge are next"
+    else:
+        merge_step["status"] = "pending"
+        merge_step["note"] = "Waiting for both acceptance PR checks to pass"
+# Pick the live active step automatically: in-progress, then review-ready, then draft-checks-passed, then pending.
 active_step = next((x for x in status["task_steps"] if x["status"] == "in-progress"), None)
 if active_step is None:
     active_step = next((x for x in status["task_steps"] if x["status"] in ("review", "checks-passed-draft")), None)
@@ -183,7 +200,8 @@ status["source_repository"] = {"repository": OWNER + "/" + REPO,
     "visibility": "private", "default_branch": repo["default_branch"], "verified_at": STAMP}
 if pr_data:
     p = pr_data[0]
-    status["current_focus"] = f"GitHub sync: PR #{p['number']} ({p['title']}) {p['state']}; PR CI {p['ci']['status']}; main CI {main_ci['status']}"
+    step_focus = f"Step {status.get('current_task_step_number', '—')}/{status.get('task_steps_total', len(status['task_steps']))}: {active_step['title']} — {active_step.get('note', '')}" if active_step else "All tracked steps completed"
+    status["current_focus"] = step_focus + f" | Latest GitHub PR #{p['number']} CI {p['ci']['status']}; main CI {main_ci['status']}"
     lines = [f"- Open PR: [#{p['number']} — {p['title']}]({p['url']}) ({p['state']}); branch CI: **{p['ci']['status']}**.",
         f"- Main CI: **{main_ci['status']}**" + (f" ([run]({main_ci['url']}))" if main_ci["url"] else ""),
         f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
