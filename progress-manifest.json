@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "Overall/module percentages remain evidence-reviewed and unchanged. Step tracker added to show granular activity; PR #3 is review-ready, PR #4 is actively in progress.",
+  "note": "Overall/module percentages remain evidence-reviewed and unchanged. Step tracker added to show granular activity; PR #3 checks passed but remains a draft, PR #4 is actively in progress.",
   "task_steps": [
     {
       "id": "foundation",
@@ -98,8 +98,8 @@
     {
       "id": "patient-browser",
       "title": "Patient workflow browser acceptance",
-      "status": "review",
-      "note": "PR #3 open draft; CI passed",
+      "status": "checks-passed-draft",
+      "note": "PR #3 open draft; CI passed (not merged)",
       "pr": 3,
       "ci": "success"
     },
