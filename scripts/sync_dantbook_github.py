@@ -106,7 +106,7 @@ status["task_steps"] = progress.get("task_steps", [])
 status["task_steps_title"] = progress.get("task_steps_title", "Implementation step tracker")
 status["current_task_step_id"] = progress.get("current_task_step_id")
 status["current_task_step_number"] = progress.get("current_task_step_number")
-status["task_steps_total"] = progress.get("task_steps_total", len(progress.get("task_steps", [])))
+status["task_steps_total"] = progress.get("task_steps_total", len(progress.get("task_steps", [])))\nstatus["current_task_files"] = progress.get("current_task_files", [])\nstatus["current_task_percent"] = progress.get("current_task_percent", 0)\nstatus["current_task_files_title"] = progress.get("current_task_files_title", "Current task activity")
 # PR-backed steps are refreshed from live GitHub state on every poll.
 open_pr_by_number = {p["number"]: p for p in pr_data}
 for step in status["task_steps"]:
