@@ -16,7 +16,7 @@
 1. Workspace and engineering scaffold — complete.
 2. CI baseline and migration verification — complete (PR #1 merged).
 3. Authenticated patient workflow API tests — complete (PR #2 merged).
-4. Patient workflow browser acceptance — review-ready (PR #3 open draft; CI passed; not merged).
+4. Patient workflow browser acceptance — CI passed, but PR #3 remains a draft and is unmerged.
 5. Medical History alert and correction browser tests — **in progress** (PR #4 open draft; CI in progress).
 6. Review and merge open acceptance PRs — pending.
 7. Medical History implementation acceptance — pending.
