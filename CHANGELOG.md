@@ -8,3 +8,10 @@
 - Typecheck, production build, and RLS checks were not reached; verification remains blocked.
 - Kept overall progress at 25% and other module estimates unchanged; integration/testing estimate was adjusted from 5% to 10% to reflect CI scaffolding, not passing verification.
 - Next action: repair migration, rerun full CI, then review and reconcile PR branch with main.
+
+
+## 2026-11-21 — GitHub-native sync
+- Verified main commit: 7fd28e3061eba2c370459aea59523dad533c0ab2 (docs: record AI handover pack).
+- Main CI: not-found.
+- Open PRs: #1 ci: establish DantBook baseline verification (open-draft, CI success).
+- Progress estimates were not automatically changed.

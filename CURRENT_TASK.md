@@ -25,3 +25,16 @@ Record source version/commit, completed acceptance criteria, actual test command
 
 ## Permanent exclusions
 Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage, NanoPix integration, and previously excluded periodontal charting components.
+
+<!-- AUTO-SYNC START -->
+## Automatically verified GitHub snapshot
+
+**Checked:** 21 November 2026, 09:45 PM IST
+
+- Open PR: [#1 — ci: establish DantBook baseline verification](https://github.com/drpast/dantbook-master/pull/1) (open-draft); branch CI: **success**.
+- Main CI: **not-found**
+- Main commit: [7fd28e3](https://github.com/drpast/dantbook-master/commit/7fd28e3061eba2c370459aea59523dad533c0ab2) — docs: record AI handover pack
+- PR work is not treated as merged or complete; progress percentages are not changed automatically.
+
+Progress percentages remain manually evidence-verified.
+<!-- AUTO-SYNC END -->
