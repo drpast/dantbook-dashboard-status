@@ -1,5 +1,11 @@
 # DantBook Progress Changelog
 
+## 2026-11-21 — Expanded granular tracker to 39 checkpoints
+- Expanded the task tracker from 8 broad steps to 39 small checkpoints across engineering foundation, Medical History, Finance, Dental Laboratory, Recall & Follow-up, Integration & Testing, and Release & Deployment.
+- Current checkpoint remains 5/39: Medical History alert and correction browser tests (PR #4; CI in progress).
+- Preserved evidence-based statuses and kept overall progress at 25%; tracker detail does not inflate completion percentages.
+
+
 ## 2026-11-21 — Progress synchronization repair
 - Added `progress-manifest.json` as the single source of truth for evidence-reviewed progress values.
 - Updated sync workflow to poll every 30 minutes and still support manual dispatch.
