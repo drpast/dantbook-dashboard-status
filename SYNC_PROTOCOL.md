@@ -32,3 +32,14 @@ This public repository is the canonical shared source for public-safe progress m
 - `progress-manifest.json` is the source of truth for `current_task_files`, `current_task_percent`, and `current_task_files_title`.
 - List the actual files and activity items involved in the current task, with status, percent, and a concise note. File edits/tests may show 100% when finished; CI/review/merge remain separate activity rows.
 - Keep this list tied to the current task and refresh it when the active task changes. Never invent progress; percentages must be supported by evidence.
+
+
+## GitHub issue and pull-request evidence for task steps
+- A task step may include an explicit integer `issue` field and/or an explicit integer `pr` field. These numbers must be verified links to the task; do not infer a link from similar wording.
+- An explicitly linked open issue maps to `in-progress`, unless it carries the `blocked` or `status: blocked` label, which maps to `blocked`.
+- An explicitly linked issue closed with GitHub `state_reason=completed` maps to `completed`. Issues closed as `not_planned`, or without a completion reason, are not counted as completed.
+- An explicitly linked open PR with failed/cancelled checks maps to `blocked`; successful checks map to `review` (or `checks-passed-draft` for a draft); pending checks remain `in-progress`.
+- A merged linked PR maps to `completed`.
+- PR evidence takes precedence over issue evidence when both are linked to the same task.
+- Tasks with no explicit issue/PR link retain their manifest status. Missing links are never guessed.
+- These rules update task status/note only. They never calculate or modify overall, module, milestone, or task percentage values.
