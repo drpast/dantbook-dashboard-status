@@ -106,7 +106,7 @@ new_progress = {
     "current_master": progress["current_master"]
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
-changed_progress = old_progress != new_progress
+changed_progress = (old_progress != new_progress or\n    status.get("progress_tracking", {}).get("last_reviewed") != progress.get("reviewed_on") or\n    status.get("progress_tracking", {}).get("method") != progress.get("method"))
 if not changed_snapshot and not changed_progress:
     print("No meaningful GitHub metadata or progress-manifest changes; no commit created.")
     raise SystemExit(0)
