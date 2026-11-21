@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
-import json, os, urllib.request, urllib.parse
+import json, os, time, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -12,14 +12,41 @@ TODAY = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
 STAMP = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y, %I:%M %p IST")
 API = "https://api.github.com"
 
+MAX_API_RESPONSE_BYTES = 2 * 1024 * 1024
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+MAX_API_ATTEMPTS = 4
+
 def api(path):
+    """Fetch bounded GitHub API JSON with retries for transient failures."""
     req = urllib.request.Request(API + path, headers={
         "Accept": "application/vnd.github+json",
         "Authorization": "Bearer " + TOKEN,
         "X-GitHub-Api-Version": "2022-11-28",
         "User-Agent": "DantBook-Progress-Sync"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode())
+    for attempt in range(MAX_API_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                payload = response.read(MAX_API_RESPONSE_BYTES + 1)
+                if len(payload) > MAX_API_RESPONSE_BYTES:
+                    raise RuntimeError(f"GitHub API response exceeded {MAX_API_RESPONSE_BYTES} bytes: {path}")
+                try:
+                    return json.loads(payload.decode("utf-8"))
+                except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+                    raise RuntimeError(f"GitHub API returned invalid UTF-8 JSON for {path}") from exc
+        except urllib.error.HTTPError as exc:
+            if exc.code not in RETRYABLE_HTTP_CODES or attempt == MAX_API_ATTEMPTS - 1:
+                raise
+            retry_after = exc.headers.get("Retry-After")
+            try:
+                delay = float(retry_after) if retry_after else min(2 ** attempt, 15)
+            except ValueError:
+                delay = min(2 ** attempt, 15)
+            time.sleep(max(0, min(delay, 30)))
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == MAX_API_ATTEMPTS - 1:
+                raise
+            time.sleep(min(2 ** attempt, 15))
+    raise RuntimeError(f"GitHub API request exhausted retries: {path}")
 
 def runs_for(branch):
     data = api(f"/repos/{OWNER}/{REPO}/actions/runs?branch={urllib.parse.quote(branch)}&per_page=10")
