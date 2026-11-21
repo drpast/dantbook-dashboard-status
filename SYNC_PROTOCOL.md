@@ -43,3 +43,10 @@ This public repository is the canonical shared source for public-safe progress m
 - PR evidence takes precedence over issue evidence when both are linked to the same task.
 - Tasks with no explicit issue/PR link retain their manifest status. Missing links are never guessed.
 - These rules update task status/note only. They never calculate or modify overall, module, milestone, or task percentage values.
+
+## Per-task evidence records
+- Each task with a verified linked issue or PR exposes a compact `evidence` object in generated `status.json`.
+- PR evidence includes its number, title, URL, merged/open state, merge timestamp where available, head commit SHA, latest CI status/run link, and observation timestamp.
+- Issue evidence includes its number, title, URL, open/closed state, close reason, labels, last update, and observation timestamp.
+- Evidence records are explanatory source metadata, not progress calculations. They contain no private source contents, patient data, or credentials.
+- A task without a live linked source has no generated evidence object; its manifest status is retained.
