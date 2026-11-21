@@ -52,6 +52,11 @@ def runs_for(branch):
     data = api(f"/repos/{OWNER}/{REPO}/actions/runs?branch={urllib.parse.quote(branch)}&per_page=10")
     return data.get("workflow_runs", [])
 
+def runs_for_commit(commit_sha):
+    """Fetch CI runs for the exact PR head commit, not a possibly reused branch."""
+    data = api(f"/repos/{OWNER}/{REPO}/actions/runs?head_sha={urllib.parse.quote(commit_sha)}&per_page=10")
+    return data.get("workflow_runs", [])
+
 def summarize(runs):
     if not runs:
         return {"status": "not-found", "run_id": None, "url": None}
@@ -82,7 +87,7 @@ merged_pr_numbers = {p["number"] for p in closed_prs if p.get("merged_at")}
 main_ci = summarize(runs_for(repo["default_branch"]))
 pr_data = []
 for p in prs:
-    ci = summarize(runs_for(p["head"]["ref"]))
+    ci = summarize(runs_for_commit(p["head"]["sha"]))
     pr_data.append({"number": p["number"], "title": p["title"],
         "state": "open-draft" if p.get("draft") else "open", "url": p["html_url"],
         "head_branch": p["head"]["ref"], "head_sha": p["head"]["sha"],
@@ -164,7 +169,7 @@ for linked_pr_number in linked_pr_numbers:
                 merged_pr_numbers.add(linked_pr_number)
         elif linked_pr.get("state") == "open":
             # A linked open PR may be outside the first 100 open-PR results.
-            ci = summarize(runs_for(linked_pr["head"]["ref"]))
+            ci = summarize(runs_for_commit(linked_pr["head"]["sha"]))
             open_pr_by_number[linked_pr_number] = {
                 "number": linked_pr_number, "title": linked_pr["title"],
                 "state": "open-draft" if linked_pr.get("draft") else "open",
