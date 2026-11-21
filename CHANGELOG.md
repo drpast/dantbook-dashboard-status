@@ -1,3 +1,9 @@
+
+
+## 22 Nov 2026 — Sync freshness improvement
+- Added UTC `sync_generated_at` and `last_sync_success` heartbeat fields, separate from progress review date.
+- GitHub metadata sync still polls every 5 minutes; heartbeat commits occur at least every 15 minutes when no data changes.
+- Progress percentages/status remain copied from the evidence-reviewed manifest and are not calculated or changed by the heartbeat.
 # DantBook Progress Changelog
 
 ## 2026-11-21 — Expanded granular tracker to 39 checkpoints
