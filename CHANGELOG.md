@@ -16,3 +16,11 @@
 ## 2026-11-21 — Earlier CI failure (historical)
 - Run #44918122856 failed at PostgreSQL migration error 42830.
 - This was superseded by the later successful run #44922607698; the PR remains unmerged pending review.
+
+
+## 21 November 2026 — Dashboard sync repair
+- Corrected stale snapshot: PR #1 and #2 are merged; PR #3 is open-draft with CI success; PR #4 is open-draft with CI in progress.
+- Published current main commit and PR metadata directly to status.json.
+- Changed polling schedule to every 5 minutes and sorted open PRs by updated_at descending.
+- Added workflow push trigger for sync configuration/progress-manifest changes.
+- Progress remains 25%; no completion increase claimed.
