@@ -1,40 +1,37 @@
 # DantBook — Current Shared Task
 
-**Last verified snapshot:** 21 November 2026
-**Recorded master baseline:** `v0.1.2 Medical History UI` (Library/GitHub reconciliation was previously reported exact; ongoing implementation activity is tracked separately on GitHub main)  
-**Latest main commit checked:** `7fd28e3061eba2c370459aea59523dad533c0ab2`  
-**Current workstream:** CI baseline verification, migration repair, and Medical History & Clinical Alerts  
-**Priority:** P0 — resolve the first migration blocker before relying on CI results or increasing progress.
+**Last checked:** 21 November 2026  
+**Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
+**Current source activity:** GitHub main and PR #1 are tracked separately from the archived baseline.
 
-## Verified GitHub snapshot
-- Main commit: [`7fd28e3`](https://github.com/drpast/dantbook-master/commit/7fd28e3061eba2c370459aea59523dad533c0ab2)
-- Draft PR #1: [CI: Establish DantBook baseline verification](https://github.com/drpast/dantbook-master/pull/1) — open, not merged.
-- PR branch reports 22 files changed, +1,159 / −88 lines; includes PostgreSQL 16 CI, patient ID generation `YYMNNNN`, primary mobile validation, organization-wide patient identity, cross-branch patient access, shared demographics/allergy alerts, branch-access UI, RLS tests, and concurrent patient-number allocation testing.
-- CI run [#93](https://github.com/drpast/dantbook-master/actions/runs/44918122856) failed at migration `20261121000300_shared_patient_branch_access`, PostgreSQL error `42830`: no unique constraint matches referenced table columns `patients(organization_id, id)`.
-- Migration 16 failed; later checks (typecheck/build/RLS verification) were not reached. Do not call this branch fully verified.
+## Verified CI
+- PR #1: [CI baseline verification](https://github.com/drpast/dantbook-master/pull/1), still open-draft and **not merged**.
+- Latest reported successful run: [44922607698](https://github.com/drpast/dantbook-master/actions/runs/44922607698).
+- Job step readback confirms success for migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, workspace type-check, and workspace build.
+- Earlier run [44918122856](https://github.com/drpast/dantbook-master/actions/runs/44918122856) failed with migration error 42830. Treat that as historical; the later run passed the listed checks. PR changes are not merged into main.
+- Main CI remains reported as `not-found` in the current snapshot.
 
-## Immediate next steps
-1. Fix the FK target by ensuring the referenced column pair has a matching unique constraint/index (or adjust the FK to the correct existing key), with migration-safe ordering.
-2. Re-run CI and verify migrations, typecheck, build, and RLS tests actually execute and pass.
-3. Review the PR branch changes against the approved scope and preserve existing data.
-4. Merge only when verification is successful and appropriately reviewed.
-5. Continue Medical History & Clinical Alerts completion after the baseline is stable; update progress only with evidence.
+## Next steps
+1. Review the PR diff and scope before merging; the successful CI is verification evidence, not code review.
+2. Merge only after review.
+3. Continue Medical History/Clinical Alerts and update progress only after acceptance evidence.
+4. Keep the progress manifest current at verified milestones.
 
-## Progress evidence rule
-Record source version/commit, completed acceptance criteria, actual test commands/results, build result, and verified backup reference before increasing module percentages. Planned work, mockups, demos and placeholders are not completion evidence.
+## Progress evidence
+Percentages live in `progress-manifest.json`. Review acceptance criteria and tests before changing values; no automatic increases based on activity alone.
 
 ## Permanent exclusions
-Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage, NanoPix integration, and previously excluded periodontal charting components.
+Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage, NanoPix integration, and periodontal charting remain excluded.
 
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 21 November 2026, 09:45 PM IST
+**Checked:** 21 November 2026
 
-- Open PR: [#1 — ci: establish DantBook baseline verification](https://github.com/drpast/dantbook-master/pull/1) (open-draft); branch CI: **success**.
-- Main CI: **not-found**
-- Main commit: [7fd28e3](https://github.com/drpast/dantbook-master/commit/7fd28e3061eba2c370459aea59523dad533c0ab2) — docs: record AI handover pack
-- PR work is not treated as merged or complete; progress percentages are not changed automatically.
+- Open PR #1 — CI baseline verification: open-draft; latest PR CI **success**.
+- Successful run: [44922607698](https://github.com/drpast/dantbook-master/actions/runs/44922607698).
+- Main CI: **not-found** in the latest snapshot.
+- Progress: **25%**, from `progress-manifest.json`; no increase claimed by this sync repair.
 
-Progress percentages remain manually evidence-verified.
+Progress manifest reviewed 21 November 2026.
 <!-- AUTO-SYNC END -->
