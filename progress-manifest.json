@@ -75,31 +75,35 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "Overall/module percentages remain evidence-reviewed and unchanged. Step tracker added to show granular activity; PR #3 checks passed but remains a draft, PR #4 is actively in progress.",
+  "note": "Granular checkpoint tracker expanded to 39 steps across 7 work groups. Overall and module percentages remain evidence-reviewed and unchanged; PR #3 is checks-passed draft and PR #4 is in progress.",
   "task_steps": [
     {
       "id": "foundation",
       "title": "Workspace and engineering scaffold",
       "status": "completed",
+      "group": "Engineering Foundation",
       "note": "Verified baseline package and shared workspace setup"
     },
     {
       "id": "ci-baseline",
-      "title": "CI baseline and migration verification",
+      "title": "CI baseline, migrations and PostgreSQL verification",
       "status": "completed",
-      "note": "PR #1 merged; latest verified CI checks passed"
+      "group": "Engineering Foundation",
+      "note": "PR #1 merged; verification checks passed"
     },
     {
       "id": "patient-api",
       "title": "Authenticated patient workflow API tests",
       "status": "completed",
+      "group": "Engineering Foundation",
       "note": "PR #2 merged"
     },
     {
       "id": "patient-browser",
-      "title": "Patient workflow browser acceptance",
+      "title": "Patient workflow browser acceptance tests",
       "status": "checks-passed-draft",
-      "note": "PR #3 open draft; CI passed (not merged)",
+      "group": "Engineering Foundation",
+      "note": "PR #3 open draft; CI passed, awaiting review/merge",
       "pr": 3,
       "ci": "success"
     },
@@ -107,32 +111,220 @@
       "id": "medical-history-browser",
       "title": "Medical History alert and correction browser tests",
       "status": "in-progress",
+      "group": "Medical History",
       "note": "PR #4 open draft; CI in progress",
       "pr": 4,
       "ci": "in_progress"
     },
     {
       "id": "pr-review-merge",
-      "title": "Review and merge open acceptance PRs",
+      "title": "Review and merge acceptance PRs #3 and #4",
       "status": "pending",
-      "note": "Awaiting review/merge of PR #3 and #4"
+      "group": "Engineering Foundation",
+      "note": "Waiting for checks and review; drafts are not treated as complete"
     },
     {
-      "id": "medical-history-complete",
-      "title": "Medical History implementation acceptance",
+      "id": "medical-history-model",
+      "title": "Medical History data model and migration acceptance",
       "status": "pending",
-      "note": "Continue after current acceptance-test work is reviewed"
+      "group": "Medical History"
     },
     {
-      "id": "mvp-integration",
-      "title": "MVP integration, QA and release acceptance",
+      "id": "medical-history-api",
+      "title": "Medical History API endpoints and validation",
       "status": "pending",
-      "note": "Remaining approved modules and end-to-end verification"
+      "group": "Medical History"
+    },
+    {
+      "id": "medical-history-ui",
+      "title": "Medical History forms and patient-record UI",
+      "status": "pending",
+      "group": "Medical History"
+    },
+    {
+      "id": "medical-history-alerts",
+      "title": "Allergy, medication and condition alerts",
+      "status": "pending",
+      "group": "Medical History"
+    },
+    {
+      "id": "medical-history-corrections",
+      "title": "History corrections, audit trail and safety checks",
+      "status": "pending",
+      "group": "Medical History"
+    },
+    {
+      "id": "medical-history-integration",
+      "title": "Integrate Medical History into patient workflow",
+      "status": "pending",
+      "group": "Medical History"
+    },
+    {
+      "id": "medical-history-acceptance",
+      "title": "Medical History module acceptance and regression tests",
+      "status": "pending",
+      "group": "Medical History"
+    },
+    {
+      "id": "finance-model",
+      "title": "Finance data model and billing rules",
+      "status": "pending",
+      "group": "Finance"
+    },
+    {
+      "id": "finance-billing-ui",
+      "title": "Treatment billing and invoice workflow UI",
+      "status": "pending",
+      "group": "Finance"
+    },
+    {
+      "id": "finance-payments",
+      "title": "Payment recording, balances and adjustments",
+      "status": "pending",
+      "group": "Finance"
+    },
+    {
+      "id": "finance-reports",
+      "title": "Finance summaries and reports",
+      "status": "pending",
+      "group": "Finance"
+    },
+    {
+      "id": "finance-tests",
+      "title": "Finance permissions, calculations and acceptance tests",
+      "status": "pending",
+      "group": "Finance"
+    },
+    {
+      "id": "lab-model",
+      "title": "Dental Lab case data model and setup",
+      "status": "pending",
+      "group": "Dental Laboratory"
+    },
+    {
+      "id": "lab-submission",
+      "title": "Create and submit laboratory cases",
+      "status": "pending",
+      "group": "Dental Laboratory"
+    },
+    {
+      "id": "lab-status",
+      "title": "Case status, expected delivery and tracking",
+      "status": "pending",
+      "group": "Dental Laboratory"
+    },
+    {
+      "id": "lab-expenses",
+      "title": "Laboratory expense recording and linkage",
+      "status": "pending",
+      "group": "Dental Laboratory"
+    },
+    {
+      "id": "lab-tests",
+      "title": "Dental Lab workflow and acceptance tests",
+      "status": "pending",
+      "group": "Dental Laboratory"
+    },
+    {
+      "id": "recall-rules",
+      "title": "Recall and follow-up scheduling rules",
+      "status": "pending",
+      "group": "Recall & Follow-up"
+    },
+    {
+      "id": "recall-queue",
+      "title": "Recall lists, due patients and workflow UI",
+      "status": "pending",
+      "group": "Recall & Follow-up"
+    },
+    {
+      "id": "recall-templates",
+      "title": "Follow-up message templates and delivery options",
+      "status": "pending",
+      "group": "Recall & Follow-up"
+    },
+    {
+      "id": "recall-automation",
+      "title": "Automated reminders, retry and opt-out handling",
+      "status": "pending",
+      "group": "Recall & Follow-up"
+    },
+    {
+      "id": "recall-tests",
+      "title": "Recall/follow-up acceptance and scheduling tests",
+      "status": "pending",
+      "group": "Recall & Follow-up"
+    },
+    {
+      "id": "integration-patient",
+      "title": "Integrated patient registration and appointment workflow",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "integration-roles",
+      "title": "Role permissions and access-boundary verification",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "integration-offline",
+      "title": "Offline mode, sync and conflict scenarios",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "integration-backup",
+      "title": "Backup, restore and security checks",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "integration-regression",
+      "title": "Cross-module end-to-end regression testing",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "integration-performance",
+      "title": "Performance, accessibility and usability checks",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "integration-bugs",
+      "title": "Resolve blockers and verify fixes",
+      "status": "pending",
+      "group": "Integration & Testing"
+    },
+    {
+      "id": "release-config",
+      "title": "Production configuration and deployment preparation",
+      "status": "pending",
+      "group": "Release & Deployment"
+    },
+    {
+      "id": "release-acceptance",
+      "title": "Final MVP acceptance against scope",
+      "status": "pending",
+      "group": "Release & Deployment"
+    },
+    {
+      "id": "release-docs",
+      "title": "User/admin documentation and handover",
+      "status": "pending",
+      "group": "Release & Deployment"
+    },
+    {
+      "id": "release-ready",
+      "title": "Release readiness and launch checklist",
+      "status": "pending",
+      "group": "Release & Deployment"
     }
   ],
-  "task_steps_title": "Implementation step tracker",
+  "task_steps_title": "Detailed implementation checkpoints",
   "current_task_step_id": "medical-history-browser",
   "current_task_step_number": 5,
-  "task_steps_total": 8,
-  "step_tracking_method": "Step states reflect verified PR/CI/review evidence. CI success on an unmerged PR is review-ready, not complete."
+  "task_steps_total": 39,
+  "step_tracking_method": "39 granular checkpoints; status changes require evidence (merged PRs, successful tests, reviewed acceptance). Draft PRs and CI alone do not equal completion."
 }
