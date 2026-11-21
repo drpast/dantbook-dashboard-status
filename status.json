@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "project": "DantBook",
+  "dashboard_updated": "2026-11-21",
+  "overall_progress_percent": 25,
+  "target_mvp_date": "2026-12-20",
+  "target_is_ambitious": true,
+  "current_master": "v0.1.2 Medical History UI (package verification pending)",
+  "current_focus": "Medical History module",
+  "modules": [
+    {
+      "name": "Engineering foundation",
+      "status": "in-progress",
+      "progress_percent": 60
+    },
+    {
+      "name": "Medical History",
+      "status": "in-progress",
+      "progress_percent": 20
+    },
+    {
+      "name": "Finance",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Dental Laboratory",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Recall & Follow-up",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Integration & testing",
+      "status": "not-started",
+      "progress_percent": 5
+    }
+  ],
+  "milestones": [
+    {
+      "name": "Architecture & roadmap",
+      "status": "completed",
+      "progress_percent": 100
+    },
+    {
+      "name": "Implementation foundation",
+      "status": "in-progress",
+      "progress_percent": 60
+    },
+    {
+      "name": "Medical History",
+      "status": "in-progress",
+      "progress_percent": 20
+    },
+    {
+      "name": "Finance",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Dental Laboratory",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Recall & Follow-up",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "MVP integration, QA & release",
+      "status": "not-started",
+      "progress_percent": 5
+    }
+  ],
+  "scope_notes": [
+    "Progress estimates only; not automated code metrics.",
+    "Excluded: enterprise features, X-ray/photo storage and integrations, digital treatment consent forms."
+  ],
+  "dashboard_connection": {
+    "source": "GitHub raw status.json",
+    "refresh_seconds": 30,
+    "public_data_only": true
+  }
+}
