@@ -75,6 +75,14 @@ else:
         "workflow_run_id": main_ci["run_id"], "workflow_run_url": main_ci["url"],
         "pr_url": None, "blocker": None})
 
+# Capture prior progress values before applying the manifest.
+old_progress = {
+    "overall_progress_percent": status.get("overall_progress_percent"),
+    "modules": status.get("modules"),
+    "milestones": status.get("milestones"),
+    "target_mvp_date": status.get("target_mvp_date"),
+    "current_master": status.get("current_master")
+}
 # Apply the single progress source of truth. Progress changes are evidence-reviewed,
 # not inferred from commit/PR/CI activity.
 status["overall_progress_percent"] = progress["overall_progress_percent"]
@@ -90,13 +98,6 @@ status["progress_tracking"] = {
     "sync_poll_minutes": 30
 }
 
-old_progress = {
-    "overall_progress_percent": status.get("overall_progress_percent"),
-    "modules": status.get("modules"),
-    "milestones": status.get("milestones"),
-    "target_mvp_date": status.get("target_mvp_date"),
-    "current_master": status.get("current_master")
-}
 new_progress = {
     "overall_progress_percent": progress["overall_progress_percent"],
     "modules": progress["modules"],
