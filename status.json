@@ -5,8 +5,8 @@
   "overall_progress_percent": 25,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
-  "current_master": "v0.1.2 Medical History UI (package verification pending)",
-  "current_focus": "Medical History module",
+  "current_master": "v0.1.2 Medical History UI (verified baseline; newer implementation activity on GitHub main is being tracked separately)",
+  "current_focus": "CI baseline verification and migration blocker; Medical History implementation remains in progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -35,8 +35,8 @@
     },
     {
       "name": "Integration & testing",
-      "status": "not-started",
-      "progress_percent": 5
+      "status": "in-progress",
+      "progress_percent": 10
     }
   ],
   "milestones": [
@@ -72,14 +72,29 @@
     },
     {
       "name": "MVP integration, QA & release",
-      "status": "not-started",
-      "progress_percent": 5
+      "status": "in-progress",
+      "progress_percent": 10
     }
   ],
   "scope_notes": [
     "Progress estimates only; not automated code metrics.",
-    "Excluded: enterprise features, X-ray/photo storage and integrations, digital treatment consent forms."
+    "Excluded: enterprise features, X-ray/photo storage and integrations, digital treatment consent forms.",
+    "Current verification snapshot: main commit 7fd28e3061eba2c370459aea59523dad533c0ab2; open draft PR #1 has CI blocked by PostgreSQL migration error 42830 (missing unique constraint for referenced patients(organization_id, id)).",
+    "PR branch changes are not merged into main; do not treat them as released or fully verified. CI did not reach typecheck/build/RLS checks."
   ],
+  "latest_verified_snapshot": {
+    "checked_on": "2026-11-21",
+    "main_commit": "7fd28e3061eba2c370459aea59523dad533c0ab2",
+    "open_pull_request": 1,
+    "pull_request_title": "CI: Establish DantBook baseline verification",
+    "pull_request_state": "open-draft",
+    "ci_status": "failed",
+    "workflow_run_id": 44918122856,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44918122856",
+    "blocker": "Migration 20261121000300_shared_patient_branch_access fails with PostgreSQL error 42830: no unique constraint matches referenced patients(organization_id, id).",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/1",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/7fd28e3061eba2c370459aea59523dad533c0ab2"
+  },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
     "refresh_seconds": 30,
