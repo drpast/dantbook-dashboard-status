@@ -149,6 +149,29 @@ from progress_evidence import derive_task_status, build_task_evidence
 
 open_pr_by_number = {p["number"]: p for p in pr_data}
 closed_pr_by_number = {p["number"]: p for p in closed_prs}
+
+# The closed-PR list is capped at 100 items. Resolve every explicitly linked PR
+# missing from those summary pages directly, so older merged PRs are not
+# misclassified as unavailable/closed-unmerged evidence.
+linked_pr_numbers = sorted({step["pr"] for step in status["task_steps"]
+                            if isinstance(step.get("pr"), int) and step["pr"] > 0})
+for linked_pr_number in linked_pr_numbers:
+    if linked_pr_number not in open_pr_by_number and linked_pr_number not in closed_pr_by_number:
+        linked_pr = api(f"/repos/{OWNER}/{REPO}/pulls/{linked_pr_number}")
+        if linked_pr.get("state") == "closed":
+            closed_pr_by_number[linked_pr_number] = linked_pr
+            if linked_pr.get("merged_at"):
+                merged_pr_numbers.add(linked_pr_number)
+        elif linked_pr.get("state") == "open":
+            # A linked open PR may be outside the first 100 open-PR results.
+            ci = summarize(runs_for(linked_pr["head"]["ref"]))
+            open_pr_by_number[linked_pr_number] = {
+                "number": linked_pr_number, "title": linked_pr["title"],
+                "state": "open-draft" if linked_pr.get("draft") else "open",
+                "url": linked_pr["html_url"], "head_sha": linked_pr["head"]["sha"],
+                "ci": ci
+            }
+
 issue_numbers = sorted({step["issue"] for step in status["task_steps"]
                         if isinstance(step.get("issue"), int) and step["issue"] > 0})
 issues_by_number = {}
