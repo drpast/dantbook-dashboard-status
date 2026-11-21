@@ -15,6 +15,12 @@ class EvidenceStatusTests(unittest.TestCase):
         self.assertEqual(status, "completed")
         self.assertIn("merged", note)
 
+    def test_closed_unmerged_pr_is_not_completed(self):
+        status, note = derive_task_status(self.step, pull_request={
+            "number": 12, "merged": False, "state": "closed"})
+        self.assertEqual(status, "pending")
+        self.assertIn("closed without merge", note)
+
     def test_successful_ci_does_not_complete_open_pr(self):
         status, _ = derive_task_status(self.step, pull_request={
             "number": 12, "merged": False, "draft": False, "ci": {"status": "success"}})
