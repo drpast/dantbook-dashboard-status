@@ -19,6 +19,8 @@ def derive_task_status(task_step, issue=None, pull_request=None):
         number = pull_request.get("number", task_step.get("pr"))
         if pull_request.get("merged"):
             return "completed", f"PR #{number} merged"
+        if pull_request.get("state") == "closed":
+            return "pending", f"PR #{number} closed without merge; completion is not verified"
         ci_state = (pull_request.get("ci") or {}).get("status", "unknown")
         if ci_state in CI_FAILURE_STATES:
             return "blocked", f"PR #{number} checks {ci_state}"
@@ -58,7 +60,7 @@ def build_task_evidence(issue=None, pull_request=None, observed_at=None):
             "number": pull_request.get("number"),
             "title": pull_request.get("title"),
             "url": pull_request.get("url"),
-            "state": "merged" if merged else "open",
+            "state": "merged" if merged else pull_request.get("state", "open"),
             "merged_at": pull_request.get("merged_at"),
             "head_sha": pull_request.get("head_sha"),
             "ci": {
