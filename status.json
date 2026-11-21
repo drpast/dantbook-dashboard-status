@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: PR #4 (test: cover medical history alert and correction workflow) open-draft; PR CI in_progress; main CI success",
+  "current_focus": "GitHub sync: PR #4 (test: cover medical history alert and correction workflow) open-draft; PR CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -100,7 +100,7 @@
         "head_sha": "e003b31ff6b7c34029c45603aaa3c013e47bf5bf",
         "updated_at": "2026-11-21T18:01:58Z",
         "ci": {
-          "status": "in_progress",
+          "status": "success",
           "run_id": 44933216374,
           "url": "https://github.com/drpast/dantbook-master/actions/runs/44933216374"
         }
@@ -123,7 +123,7 @@
     "open_pull_request": 4,
     "pull_request_title": "test: cover medical history alert and correction workflow",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
+    "ci_status": "success",
     "workflow_run_id": 44933216374,
     "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44933216374",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/4",
@@ -138,7 +138,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "21 November 2026, 11:33 PM IST"
+    "verified_at": "21 November 2026, 11:34 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -168,7 +168,7 @@
     {
       "id": "patient-browser",
       "title": "Patient workflow browser acceptance",
-      "status": "review",
+      "status": "checks-passed-draft",
       "note": "PR #3 open-draft; CI success",
       "pr": 3,
       "ci": "success"
@@ -176,10 +176,10 @@
     {
       "id": "medical-history-browser",
       "title": "Medical History alert and correction browser tests",
-      "status": "in-progress",
-      "note": "PR #4 open-draft; CI in_progress",
+      "status": "checks-passed-draft",
+      "note": "PR #4 open-draft; CI success",
       "pr": 4,
-      "ci": "in_progress"
+      "ci": "success"
     },
     {
       "id": "pr-review-merge",
@@ -201,11 +201,10 @@
     }
   ],
   "task_steps_title": "Implementation step tracker",
-  "current_task_step_id": "medical-history-browser",
-  "current_task_step_number": 5,
+  "current_task_step_id": "pr-review-merge",
+  "current_task_step_number": 6,
   "task_steps_total": 8,
   "queue": [
-    "Medical History alert and correction browser tests",
     "Review and merge open acceptance PRs",
     "Medical History implementation acceptance",
     "MVP integration, QA and release acceptance"
