@@ -138,7 +138,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "21 November 2026, 11:32 PM IST"
+    "verified_at": "21 November 2026, 11:33 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -169,7 +169,7 @@
       "id": "patient-browser",
       "title": "Patient workflow browser acceptance",
       "status": "review",
-      "note": "PR #3 open draft; CI passed",
+      "note": "PR #3 open-draft; CI success",
       "pr": 3,
       "ci": "success"
     },
@@ -177,7 +177,7 @@
       "id": "medical-history-browser",
       "title": "Medical History alert and correction browser tests",
       "status": "in-progress",
-      "note": "PR #4 open draft; CI in progress",
+      "note": "PR #4 open-draft; CI in_progress",
       "pr": 4,
       "ci": "in_progress"
     },
@@ -203,5 +203,11 @@
   "task_steps_title": "Implementation step tracker",
   "current_task_step_id": "medical-history-browser",
   "current_task_step_number": 5,
-  "task_steps_total": 8
+  "task_steps_total": 8,
+  "queue": [
+    "Medical History alert and correction browser tests",
+    "Review and merge open acceptance PRs",
+    "Medical History implementation acceptance",
+    "MVP integration, QA and release acceptance"
+  ]
 }
