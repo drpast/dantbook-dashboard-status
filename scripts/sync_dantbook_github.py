@@ -5,7 +5,9 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 OWNER, REPO = "drpast", "dantbook-master"
-TOKEN = os.environ["DANTBOOK_REPO_READ_TOKEN"]
+TOKEN = os.environ.get("DANTBOOK_REPO_READ_TOKEN", "").strip()
+if not TOKEN:
+    raise SystemExit("Missing required DANTBOOK_REPO_READ_TOKEN secret.")
 SYNC_NOW = datetime.now(timezone.utc).replace(microsecond=0)
 SYNC_ISO = SYNC_NOW.isoformat().replace("+00:00", "Z")
 TODAY = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
@@ -13,13 +15,39 @@ STAMP = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y, %I:%M %p IST"
 API = "https://api.github.com"
 
 def api(path):
+    """Fetch a bounded GitHub API response with retries for transient failures."""
+    import time
+    from email.utils import parsedate_to_datetime
     req = urllib.request.Request(API + path, headers={
         "Accept": "application/vnd.github+json",
         "Authorization": "Bearer " + TOKEN,
         "X-GitHub-Api-Version": "2022-11-28",
         "User-Agent": "DantBook-Progress-Sync"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode())
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                raw = response.read(2 * 1024 * 1024 + 1)
+                if len(raw) > 2 * 1024 * 1024:
+                    raise RuntimeError("GitHub API response exceeded 2 MiB limit: " + path)
+                return json.loads(raw.decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                raise
+            retry_after = exc.headers.get("Retry-After", "")
+            try:
+                delay = float(retry_after)
+            except (TypeError, ValueError):
+                try:
+                    delay = max(0.0, (parsedate_to_datetime(retry_after) -
+                        datetime.now(timezone.utc)).total_seconds())
+                except (TypeError, ValueError, OverflowError):
+                    delay = 0.5 * (2 ** attempt)
+            time.sleep(min(10.0, max(0.25, delay)))
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == 2:
+                raise
+            time.sleep(min(8.0, 0.5 * (2 ** attempt)))
+    raise RuntimeError("GitHub API request failed after retries: " + path)
 
 def runs_for(branch):
     data = api(f"/repos/{OWNER}/{REPO}/actions/runs?branch={urllib.parse.quote(branch)}&per_page=10")
