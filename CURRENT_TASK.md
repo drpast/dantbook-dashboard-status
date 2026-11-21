@@ -1,26 +1,27 @@
 # DantBook — Current Shared Task
 
-**Last baseline:** 21 November 2026  
-**Current recorded master:** `v0.1.2 Medical History UI` (package verification pending in the existing status record)  
-**Current workstream:** Medical History & Clinical Alerts  
-**Priority:** P0 — inspect and complete the existing implementation before starting another module.
+**Last verified snapshot:** 21 November 2026  
+**Recorded master baseline:** `v0.1.2 Medical History UI` (Library/GitHub reconciliation was previously reported exact; ongoing implementation activity is tracked separately on GitHub main)  
+**Latest main commit checked:** `7fd28e3061eba2c370459aea59523dad533c0ab2`  
+**Current workstream:** CI baseline verification, migration repair, and Medical History & Clinical Alerts  
+**Priority:** P0 — resolve the first migration blocker before relying on CI results or increasing progress.
 
-## Required steps
-1. Obtain and inspect the latest verified DantBook master ZIP/source.
-2. Inspect the existing Prisma schema, migrations, database configuration and seed scripts. Do not reset, drop or rebuild an existing database.
-3. Separate production functionality from demo screens, placeholders and mock data.
-4. Compare existing Medical History & Clinical Alerts implementation with the approved requirements.
-5. Implement only missing functionality, preserving working code and data.
-6. Complete backend, frontend, permissions, audit logging, offline persistence and synchronization as applicable.
-7. Run tests, lint, type checks and production build; record actual results.
-8. Create and verify a versioned backup before promoting a new master.
-9. Update `status.json` and append a dated entry to `CHANGELOG.md`.
+## Verified GitHub snapshot
+- Main commit: [`7fd28e3`](https://github.com/drpast/dantbook-master/commit/7fd28e3061eba2c370459aea59523dad533c0ab2)
+- Draft PR #1: [CI: Establish DantBook baseline verification](https://github.com/drpast/dantbook-master/pull/1) — open, not merged.
+- PR branch reports 22 files changed, +1,159 / −88 lines; includes PostgreSQL 16 CI, patient ID generation `YYMNNNN`, primary mobile validation, organization-wide patient identity, cross-branch patient access, shared demographics/allergy alerts, branch-access UI, RLS tests, and concurrent patient-number allocation testing.
+- CI run [#93](https://github.com/drpast/dantbook-master/actions/runs/44918122856) failed at migration `20261121000300_shared_patient_branch_access`, PostgreSQL error `42830`: no unique constraint matches referenced table columns `patients(organization_id, id)`.
+- Migration 16 failed; later checks (typecheck/build/RLS verification) were not reached. Do not call this branch fully verified.
 
-## Next workstream
-Financial Management begins only after Medical History & Clinical Alerts is verified complete.
+## Immediate next steps
+1. Fix the FK target by ensuring the referenced column pair has a matching unique constraint/index (or adjust the FK to the correct existing key), with migration-safe ordering.
+2. Re-run CI and verify migrations, typecheck, build, and RLS tests actually execute and pass.
+3. Review the PR branch changes against the approved scope and preserve existing data.
+4. Merge only when verification is successful and appropriately reviewed.
+5. Continue Medical History & Clinical Alerts completion after the baseline is stable; update progress only with evidence.
 
-## Evidence required before increasing progress
-Record the source version/commit, completed acceptance criteria, test commands and results, build result, and backup reference. Do not infer progress from planned work or UI appearance alone.
+## Progress evidence rule
+Record source version/commit, completed acceptance criteria, actual test commands/results, build result, and verified backup reference before increasing module percentages. Planned work, mockups, demos and placeholders are not completion evidence.
 
 ## Permanent exclusions
 Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage, NanoPix integration, and previously excluded periodontal charting components.
