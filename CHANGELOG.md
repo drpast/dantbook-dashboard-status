@@ -99,3 +99,10 @@
 - Main CI: success.
 - Open PRs: #8 feat: add patient prescription workflow (open-draft, CI in_progress); #7 feat: add FDI odontogram workflow (open-draft, CI success); #6 feat: add patient treatment plan workflow (open-draft, CI success); #5 feat: add patient clinical record workflow (open-draft, CI success); #4 test: cover medical history alert and correction workflow (open-draft, CI success); #3 test: add patient workflow browser acceptance (open-draft, CI success).
 - Progress manifest reviewed 2026-11-21; overall progress 25%. Progress values changed from manifest.
+
+
+## 2026-11-22 — GitHub/progress sync
+- Verified main commit: e711c78569257c7370a2fa9fa4fd43bcd672daf6 (feat: add branch inventory workspace (#10)).
+- Main CI: success.
+- Open PRs: #12 docs: add Codex development workflow (open-draft, CI success); #11 feat: add branch-scoped dental laboratory case API (open-draft, CI failure).
+- Progress manifest reviewed 2026-11-21; overall progress 25%. Progress values changed from manifest.
