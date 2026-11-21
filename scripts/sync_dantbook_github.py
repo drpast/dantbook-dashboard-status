@@ -91,7 +91,10 @@ old_progress = {
     "task_steps": status.get("task_steps"),
     "current_task_step_id": status.get("current_task_step_id"),
     "current_task_step_number": status.get("current_task_step_number"),
-    "task_steps_total": status.get("task_steps_total")
+    "task_steps_total": status.get("task_steps_total"),
+    "current_task_files": status.get("current_task_files"),
+    "current_task_percent": status.get("current_task_percent"),
+    "current_task_files_title": status.get("current_task_files_title")
 }
 old_progress_tracking = status.get("progress_tracking", {})
 # Apply the single progress source of truth. Progress changes are evidence-reviewed,
@@ -183,7 +186,10 @@ new_progress = {
     "task_steps": progress.get("task_steps", []),
     "current_task_step_id": progress.get("current_task_step_id"),
     "current_task_step_number": progress.get("current_task_step_number"),
-    "task_steps_total": progress.get("task_steps_total", len(progress.get("task_steps", [])))
+    "task_steps_total": progress.get("task_steps_total", len(progress.get("task_steps", []))),
+    "current_task_files": progress.get("current_task_files", []),
+    "current_task_percent": progress.get("current_task_percent", 0),
+    "current_task_files_title": progress.get("current_task_files_title", "Current task activity")
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
 changed_progress = (old_progress != new_progress or
