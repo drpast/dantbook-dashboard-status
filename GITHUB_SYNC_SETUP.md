@@ -11,10 +11,10 @@ This public repository syncs public-safe project metadata from private `drpast/d
 6. Verify it succeeds and status files are updated/readable. The desktop app should refresh within its configured polling interval (30 seconds).
 
 ## Behavior
-- Scheduled every 30 minutes; manual dispatch also supported.
+- Scheduled every 5 minutes; manual dispatch also supported. Meaningful updates are committed immediately; a sync-health heartbeat is committed at least every 15 minutes.
 - Reads private repo default-branch commit, open PRs, and CI statuses.
 - Reads `progress-manifest.json` as the single progress source of truth and applies it to `status.json`.
-- Updates `CURRENT_TASK.md` auto-sync section and appends `CHANGELOG.md` only when meaningful changes are detected.
+- Updates `status.json`, `CURRENT_TASK.md` auto-sync section, and `CHANGELOG.md` on meaningful changes or heartbeat. `sync_generated_at` is separate from the progress review date.
 - Progress percentages are evidence-reviewed manually; CI/commits/PRs never auto-increase them.
 - Does not write to the private product repository.
 - Dashboard repo `GITHUB_TOKEN` has Contents write only. Sync does not trigger a loop.
