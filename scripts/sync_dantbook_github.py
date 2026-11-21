@@ -121,7 +121,7 @@ for step in status["task_steps"]:
         ci_state = pr_item["ci"]["status"]
         step["ci"] = ci_state
         if ci_state == "success":
-            step["status"] = "review"
+            step["status"] = "checks-passed-draft" if pr_item["state"] == "open-draft" else "review"
         elif ci_state == "failure":
             step["status"] = "blocked"
         elif ci_state in ("in_progress", "queued", "waiting", "pending"):
