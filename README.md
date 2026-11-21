@@ -28,3 +28,8 @@ Full source code and detailed private project instructions should live in a sepa
 The dashboard may poll the raw `status.json` endpoint every 30 seconds and retain the last successful response for offline display.
 
 Progress figures are manually verified estimates, not automated code metrics. A feature is not complete just because a screen, mockup, placeholder or demo exists.
+
+
+## GitHub-native synchronization
+
+A daily GitHub Actions workflow reads verified metadata from the private DantBook repository and updates the public-safe progress snapshot. One-time setup is documented in [GITHUB_SYNC_SETUP.md](./GITHUB_SYNC_SETUP.md). The sync does not change DantBook source code or automatically raise progress estimates. It runs daily at 09:00 IST and supports manual dispatch.

@@ -34,3 +34,8 @@ Only after inspecting and verifying actual code:
 
 ## Privacy rules
 This repository is public. Never commit patient data, clinic records, credentials, tokens, API keys, database connection strings, private source code, private backups or confidential documents.
+
+
+## Automated metadata synchronization
+
+The GitHub Actions workflow in this repository may automatically fetch the private product repository's latest main commit, open PR metadata, and CI status. It writes only public-safe metadata to the dashboard repo. It does not write to the private product repo. Percentages and module completion remain evidence-based human estimates; CI/PR metadata alone never raises them. See [GITHUB_SYNC_SETUP.md](./GITHUB_SYNC_SETUP.md) for token setup and operation.
