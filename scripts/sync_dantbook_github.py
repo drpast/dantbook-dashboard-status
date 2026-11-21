@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
 import json, os, urllib.request, urllib.parse
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 OWNER, REPO = "drpast", "dantbook-master"
 TOKEN = os.environ["DANTBOOK_REPO_READ_TOKEN"]
+SYNC_NOW = datetime.now(timezone.utc).replace(microsecond=0)
+SYNC_ISO = SYNC_NOW.isoformat().replace("+00:00", "Z")
 TODAY = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
 STAMP = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y, %I:%M %p IST")
 API = "https://api.github.com"
@@ -195,11 +197,27 @@ changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {
 changed_progress = (old_progress != new_progress or
     old_progress_tracking.get("last_reviewed") != progress.get("reviewed_on") or
     old_progress_tracking.get("method") != progress.get("method"))
-if not changed_snapshot and not changed_progress:
-    print("No meaningful GitHub metadata or progress-manifest changes; no commit created.")
+# Publish a sync-health heartbeat at least every 15 minutes, without changing progress review dates.
+heartbeat_due = True
+last_sync = status.get("sync_generated_at") or status.get("last_sync_success")
+if last_sync:
+    try:
+        parsed_sync = datetime.fromisoformat(last_sync.replace("Z", "+00:00"))
+        if parsed_sync.tzinfo is None:
+            parsed_sync = parsed_sync.replace(tzinfo=timezone.utc)
+        heartbeat_due = (SYNC_NOW - parsed_sync.astimezone(timezone.utc)).total_seconds() >= 900
+    except (ValueError, TypeError):
+        heartbeat_due = True
+
+if not changed_snapshot and not changed_progress and not heartbeat_due:
+    print("No meaningful data changes; heartbeat not due.")
     raise SystemExit(0)
 
 status["dashboard_updated"] = TODAY
+status["sync_generated_at"] = SYNC_ISO
+status["last_sync_success"] = SYNC_ISO
+status["sync_status"] = "healthy"
+status["sync_poll_minutes"] = 5
 snapshot["checked_on"] = TODAY
 status["latest_verified_snapshot"] = snapshot
 status["source_repository"] = {"repository": OWNER + "/" + REPO,
