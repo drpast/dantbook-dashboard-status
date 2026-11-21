@@ -61,6 +61,19 @@ snapshot = {"checked_on": TODAY, "main_commit": commit["sha"],
     "main_commit_message": commit["commit"]["message"].splitlines()[0],
     "main_ci_status": main_ci["status"], "main_workflow_run_id": main_ci["run_id"],
     "main_workflow_run_url": main_ci["url"], "open_pull_requests": pr_data}
+# Preserve legacy fields used by older dashboard builds.
+if pr_data:
+    first_pr = pr_data[0]
+    snapshot.update({"open_pull_request": first_pr["number"],
+        "pull_request_title": first_pr["title"], "pull_request_state": first_pr["state"],
+        "ci_status": first_pr["ci"]["status"], "workflow_run_id": first_pr["ci"]["run_id"],
+        "workflow_run_url": first_pr["ci"]["url"], "pr_url": first_pr["url"],
+        "blocker": ("CI is failing; inspect linked workflow run for details." if first_pr["ci"]["status"] == "failure" else None)})
+else:
+    snapshot.update({"open_pull_request": None, "pull_request_title": None,
+        "pull_request_state": None, "ci_status": main_ci["status"],
+        "workflow_run_id": main_ci["run_id"], "workflow_run_url": main_ci["url"],
+        "pr_url": None, "blocker": None})
 changed = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old.items() if k != "checked_on"}
 if not changed:
     print("No meaningful repository changes detected; leaving dashboard files untouched.")
