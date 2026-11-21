@@ -12,17 +12,19 @@
 - Earlier migration failure [44918122856](https://github.com/drpast/dantbook-master/actions/runs/44918122856) is historical; subsequent CI passed the listed checks.
 - Main CI is currently reported as **success**.
 
-## Step-by-step task tracker
-1. Workspace and engineering scaffold — complete.
-2. CI baseline and migration verification — complete (PR #1 merged).
-3. Authenticated patient workflow API tests — complete (PR #2 merged).
-4. Patient workflow browser acceptance — CI passed, but PR #3 remains a draft and is unmerged.
-5. Medical History alert and correction browser tests — **in progress** (PR #4 open draft; CI in progress).
-6. Review and merge open acceptance PRs — pending.
-7. Medical History implementation acceptance — pending.
-8. MVP integration, QA and release acceptance — pending.
+## Granular task tracker
 
-Current active step: **5 of 8**. Step state is separate from overall/module percentages.
+The tracker now contains **39 checkpoints** across seven work groups:
+
+- Engineering foundation: 6 checkpoints
+- Medical History: 7 checkpoints
+- Finance: 5 checkpoints
+- Dental Laboratory: 5 checkpoints
+- Recall & Follow-up: 5 checkpoints
+- Integration & testing: 7 checkpoints
+- Release & deployment: 4 checkpoints
+
+Current checkpoint: **5/39 — Medical History alert and correction browser tests** (PR #4 open draft; CI in progress). PR #3 has passed CI but remains an unmerged draft. Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 Percentages live in `progress-manifest.json`. Review acceptance criteria and tests before changing values; no automatic increases based on activity alone.
