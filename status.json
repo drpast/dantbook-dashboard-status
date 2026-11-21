@@ -160,6 +160,64 @@
     "source": "progress-manifest.json",
     "last_reviewed": "2026-11-21",
     "method": "Evidence-based manual progress; do not infer completion from commits, PRs, CI alone.",
-    "sync_poll_minutes": 30
-  }
+    "sync_poll_minutes": 5
+  },
+  "task_steps": [
+    {
+      "id": "foundation",
+      "title": "Workspace and engineering scaffold",
+      "status": "completed",
+      "note": "Verified baseline package and shared workspace setup"
+    },
+    {
+      "id": "ci-baseline",
+      "title": "CI baseline and migration verification",
+      "status": "completed",
+      "note": "PR #1 merged; latest verified CI checks passed"
+    },
+    {
+      "id": "patient-api",
+      "title": "Authenticated patient workflow API tests",
+      "status": "completed",
+      "note": "PR #2 merged"
+    },
+    {
+      "id": "patient-browser",
+      "title": "Patient workflow browser acceptance",
+      "status": "review",
+      "note": "PR #3 open draft; CI passed",
+      "pr": 3,
+      "ci": "success"
+    },
+    {
+      "id": "medical-history-browser",
+      "title": "Medical History alert and correction browser tests",
+      "status": "in-progress",
+      "note": "PR #4 open draft; CI in progress",
+      "pr": 4,
+      "ci": "in_progress"
+    },
+    {
+      "id": "pr-review-merge",
+      "title": "Review and merge open acceptance PRs",
+      "status": "pending",
+      "note": "Awaiting review/merge of PR #3 and #4"
+    },
+    {
+      "id": "medical-history-complete",
+      "title": "Medical History implementation acceptance",
+      "status": "pending",
+      "note": "Continue after current acceptance-test work is reviewed"
+    },
+    {
+      "id": "mvp-integration",
+      "title": "MVP integration, QA and release acceptance",
+      "status": "pending",
+      "note": "Remaining approved modules and end-to-end verification"
+    }
+  ],
+  "task_steps_title": "Implementation step tracker",
+  "current_task_step_id": "medical-history-browser",
+  "current_task_step_number": 5,
+  "task_steps_total": 8
 }
