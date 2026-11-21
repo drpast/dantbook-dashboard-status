@@ -26,12 +26,13 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 21 November 2026
+**Checked:** 21 November 2026, 10:20 PM IST
 
-- Open PR #1 — CI baseline verification: open-draft; latest PR CI **success**.
-- Successful run: [44922607698](https://github.com/drpast/dantbook-master/actions/runs/44922607698).
-- Main CI: **not-found** in the latest snapshot.
-- Progress: **25%**, from `progress-manifest.json`; no increase claimed by this sync repair.
+- PR #4 — [medical history alert/correction browser acceptance](https://github.com/drpast/dantbook-master/pull/4): open-draft; CI **in progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/44931398838)).
+- PR #3 — [patient workflow browser acceptance](https://github.com/drpast/dantbook-master/pull/3): open-draft; CI **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44930764902)).
+- PR #2 and PR #1: **merged**.
+- Main commit: [efa75f6](https://github.com/drpast/dantbook-master/commit/efa75f6ce3eaff024f41c3b8aabd59dcb404d60c); main CI **not-found** in this snapshot.
+- Overall progress: **25%** from the evidence-reviewed manifest; no percentage change.
 
 Progress manifest reviewed 21 November 2026.
 <!-- AUTO-SYNC END -->
