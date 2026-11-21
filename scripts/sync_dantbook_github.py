@@ -61,8 +61,12 @@ snapshot = {"checked_on": TODAY, "main_commit": commit["sha"],
     "main_commit_message": commit["commit"]["message"].splitlines()[0],
     "main_ci_status": main_ci["status"], "main_workflow_run_id": main_ci["run_id"],
     "main_workflow_run_url": main_ci["url"], "open_pull_requests": pr_data}
-changed = snapshot != old
+changed = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old.items() if k != "checked_on"}
+if not changed:
+    print("No meaningful repository changes detected; leaving dashboard files untouched.")
+    raise SystemExit(0)
 status["dashboard_updated"] = TODAY
+snapshot["checked_on"] = TODAY
 status["latest_verified_snapshot"] = snapshot
 status["source_repository"] = {"repository": OWNER + "/" + REPO,
     "visibility": "private", "default_branch": repo["default_branch"], "verified_at": STAMP}
