@@ -80,3 +80,9 @@
 - Main CI: success.
 - Open PRs: #4 test: cover medical history alert and correction workflow (open-draft, CI in_progress); #3 test: add patient workflow browser acceptance (open-draft, CI success).
 - Progress manifest reviewed 2026-11-21; overall progress 25%. Progress values changed from manifest.
+
+
+## 21 Nov 2026 — Installer-style current task progress
+- Replaced checkpoint-list display in desktop app with a scrollable current-task activity list; every file/activity row has its own progress bar, status, and note.
+- Task progress bar summarizes current task; completed files are shown individually, with CI and review/merge tracked separately.
+- PR #4 CI run 44933570034 verified completed successfully; review/merge of PR #3 and #4 is now the active task. Overall progress remains 25%.
