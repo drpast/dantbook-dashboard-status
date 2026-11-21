@@ -201,10 +201,12 @@
     }
   ],
   "task_steps_title": "Implementation step tracker",
-  "current_task_step_id": "pr-review-merge",
-  "current_task_step_number": 6,
+  "current_task_step_id": "patient-browser",
+  "current_task_step_number": 4,
   "task_steps_total": 8,
   "queue": [
+    "Patient workflow browser acceptance",
+    "Medical History alert and correction browser tests",
     "Review and merge open acceptance PRs",
     "Medical History implementation acceptance",
     "MVP integration, QA and release acceptance"
