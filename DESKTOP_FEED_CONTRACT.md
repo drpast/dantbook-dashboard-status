@@ -12,6 +12,7 @@ This document defines the public JSON contract between the GitHub Actions status
 - New task fields are additive and optional. Older desktop builds must continue to parse and render the fields they already understand, ignoring unknown properties.
 - The desktop must not calculate completion percentages from evidence records, PR counts, commits, or CI.
 - A missing evidence record means evidence is unavailable or the task has no verified GitHub link; it does not mean completed.
+- A closed pull request that was not merged is published with state `closed` and never counts as completion.
 - The desktop must continue to use its last-known-good cache only when the GitHub feed cannot be reached. An online GitHub response is authoritative over packaged/local snapshots.
 
 ## Existing progress authority
