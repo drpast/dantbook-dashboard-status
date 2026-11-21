@@ -35,9 +35,9 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 21 November 2026, 11:35 PM IST
+**Checked:** 22 November 2026, 12:48 AM IST
 
-- Open PR: [#4 — test: cover medical history alert and correction workflow](https://github.com/drpast/dantbook-master/pull/4) (open-draft); branch CI: **in_progress**.
+- Open PR: [#8 — feat: add patient prescription workflow](https://github.com/drpast/dantbook-master/pull/8) (open-draft); branch CI: **in_progress**.
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44927274198))
 - Main commit: [efa75f6](https://github.com/drpast/dantbook-master/commit/efa75f6ce3eaff024f41c3b8aabd59dcb404d60c) — test: verify authenticated patient workflows
 - Progress manifest reviewed: **2026-11-21**; overall **25%**.
