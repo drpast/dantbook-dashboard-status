@@ -56,6 +56,10 @@ for p in prs:
         "head_branch": p["head"]["ref"], "head_sha": p["head"]["sha"],
         "updated_at": p["updated_at"], "ci": ci})
 
+# The API defaults to creation order; explicitly sort by activity so the most recently
+# updated open PR is always the dashboard's current focus.
+pr_data.sort(key=lambda p: p.get("updated_at", ""), reverse=True)
+
 old_snapshot = status.get("latest_verified_snapshot", {})
 snapshot = {"checked_on": TODAY, "main_commit": commit["sha"],
     "main_commit_url": commit["html_url"],
