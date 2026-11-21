@@ -26,7 +26,7 @@ This repository is public. Store only non-sensitive project-progress metadata an
 ## Dashboard behavior
 The desktop dashboard should poll the raw `status.json` endpoint every 30 seconds and retain last-known-good data for offline display. A successful refresh should replace the displayed snapshot; stale-cache state should be visible.
 
-Progress estimates are manually evidence-reviewed, not code metrics. Commits, PR activity, CI success, mockups, placeholders, or demos alone must not automatically raise completion.
+Granular task steps show completed, in-progress, review, and pending work. Progress estimates are manually evidence-reviewed, not code metrics. Commits, PR activity, CI success, mockups, placeholders, or demos alone must not automatically raise completion.
 
 ## GitHub-native synchronization
-The workflow polls the private DantBook repo every 30 minutes and supports manual dispatch. It reads the latest main commit, open PR metadata, and CI status, plus the public progress manifest. It only commits when meaningful status/progress data changes, so the schedule should not create empty/no-op commits. Setup: [GITHUB_SYNC_SETUP.md](./GITHUB_SYNC_SETUP.md).
+The workflow polls the private DantBook repo every 5 minutes and supports manual dispatch. It reads the latest main commit, open PR metadata, and CI status, plus the public progress manifest and step tracker. It only commits when meaningful status/progress data changes, so the schedule should not create empty/no-op commits. Setup: [GITHUB_SYNC_SETUP.md](./GITHUB_SYNC_SETUP.md).
