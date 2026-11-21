@@ -83,7 +83,6 @@ class EvidenceStatusTests(unittest.TestCase):
         self.assertEqual(status, "pending")
         self.assertEqual(note, "Manifest baseline")
 
-
     def test_pr_evidence_record_has_stable_desktop_contract(self):
         record = build_task_evidence(pull_request={
             "number": 21, "merged": False, "title": "Example PR",
@@ -118,6 +117,32 @@ class EvidenceStatusTests(unittest.TestCase):
 
     def test_unlinked_task_has_no_evidence_record(self):
         self.assertIsNone(build_task_evidence())
+
+    def test_pull_request_evidence_takes_precedence_over_issue(self):
+        status, note = derive_task_status(
+            self.step,
+            issue={"number": 34, "state": "closed", "state_reason": "completed"},
+            pull_request={"number": 12, "merged": False, "state": "open",
+                          "draft": False, "ci": {"status": "failure"}})
+        self.assertEqual(status, "blocked")
+        self.assertIn("PR #12", note)
+
+    def test_merged_pr_takes_precedence_over_failed_ci(self):
+        status, _ = derive_task_status(self.step, pull_request={
+            "number": 12, "merged": True, "state": "closed",
+            "ci": {"status": "failure"}})
+        self.assertEqual(status, "completed")
+
+    def test_closed_unmerged_pr_evidence_preserves_closed_state(self):
+        record = build_task_evidence(pull_request={
+            "number": 12, "merged": False, "state": "closed",
+            "title": "Closed without merge",
+            "url": "https://github.com/example/repo/pull/12",
+            "head_sha": "abc123", "merged_at": None
+        }, observed_at="2026-11-22T03:00:00Z")
+        self.assertEqual(record["state"], "closed")
+        self.assertIsNone(record["merged_at"])
+
 
 if __name__ == "__main__":
     unittest.main()
