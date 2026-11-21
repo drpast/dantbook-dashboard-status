@@ -199,7 +199,9 @@
       "id": "lab-model",
       "title": "Dental Lab case data model and setup",
       "status": "pending",
-      "group": "Dental Laboratory"
+      "group": "Dental Laboratory",
+      "pr": 11,
+      "note": "PR #11 covers the dental laboratory case data model and API foundation; live status is derived from GitHub."
     },
     {
       "id": "lab-submission",
