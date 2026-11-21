@@ -53,6 +53,7 @@ When the desktop UI is updated to support this extension:
 - Show the evidence kind and number as a link to the GitHub issue/PR.
 - Show the current GitHub state and CI result when supplied.
 - Show the observation timestamp so users can judge freshness.
+- Associate a PR's CI result with its exact `head_sha`; do not treat a run from a different commit on a reused branch as evidence for that PR.
 - Keep evidence details separate from percentage/progress bars.
 - If evidence is absent, show an unassessed/not-linked indication rather than inventing a source.
 - Do not display private source code, patient/clinic data, tokens, or secrets.
