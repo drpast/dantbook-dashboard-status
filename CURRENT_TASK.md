@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last verified snapshot:** 21 November 2026  
+**Last verified snapshot:** 21 November 2026
 **Recorded master baseline:** `v0.1.2 Medical History UI` (Library/GitHub reconciliation was previously reported exact; ongoing implementation activity is tracked separately on GitHub main)  
 **Latest main commit checked:** `7fd28e3061eba2c370459aea59523dad533c0ab2`  
 **Current workstream:** CI baseline verification, migration repair, and Medical History & Clinical Alerts  
