@@ -5,8 +5,8 @@
   "overall_progress_percent": 25,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
-  "current_master": "v0.1.2 Medical History UI (verified baseline; newer implementation activity on GitHub main is being tracked separately)",
-  "current_focus": "GitHub sync verified: PR #4 (test: cover medical history alert and correction workflow) open-draft; CI in progress. PR #3 open-draft CI success. PR #1 and #2 merged.",
+  "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
+  "current_focus": "GitHub sync: PR #4 (test: cover medical history alert and correction workflow) open-draft; PR CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -87,9 +87,9 @@
     "main_commit": "efa75f6ce3eaff024f41c3b8aabd59dcb404d60c",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/efa75f6ce3eaff024f41c3b8aabd59dcb404d60c",
     "main_commit_message": "test: verify authenticated patient workflows",
-    "main_ci_status": "not-found",
-    "main_workflow_run_id": null,
-    "main_workflow_run_url": null,
+    "main_ci_status": "success",
+    "main_workflow_run_id": 44927274198,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44927274198",
     "open_pull_requests": [
       {
         "number": 4,
@@ -97,12 +97,12 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/4",
         "head_branch": "test/medical-history-browser-acceptance",
-        "head_sha": "0ce1430b0ada9f0fc49d70652ca423e08cab9326",
-        "updated_at": "2026-11-21T17:41:08Z",
+        "head_sha": "e003b31ff6b7c34029c45603aaa3c013e47bf5bf",
+        "updated_at": "2026-11-21T18:01:58Z",
         "ci": {
           "status": "in_progress",
-          "run_id": 44931398838,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/44931398838"
+          "run_id": 44933216374,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/44933216374"
         }
       },
       {
@@ -120,28 +120,12 @@
         }
       }
     ],
-    "recent_closed_pull_requests": [
-      {
-        "number": 2,
-        "title": "test(api): verify authenticated patient workflows",
-        "state": "merged",
-        "merged_at": "2026-11-21T16:56:15Z",
-        "url": "https://github.com/drpast/dantbook-master/pull/2"
-      },
-      {
-        "number": 1,
-        "title": "ci: establish DantBook baseline verification",
-        "state": "merged",
-        "merged_at": "2026-11-21T16:34:18Z",
-        "url": "https://github.com/drpast/dantbook-master/pull/1"
-      }
-    ],
     "open_pull_request": 4,
     "pull_request_title": "test: cover medical history alert and correction workflow",
     "pull_request_state": "open-draft",
     "ci_status": "in_progress",
-    "workflow_run_id": 44931398838,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44931398838",
+    "workflow_run_id": 44933216374,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44933216374",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/4",
     "blocker": null
   },
@@ -154,12 +138,12 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "21 November 2026, 10:20 PM IST"
+    "verified_at": "21 November 2026, 11:32 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
     "last_reviewed": "2026-11-21",
-    "method": "Evidence-based manual progress; do not infer completion from commits, PRs, CI alone.",
+    "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
     "sync_poll_minutes": 5
   },
   "task_steps": [

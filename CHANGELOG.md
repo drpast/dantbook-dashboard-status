@@ -24,3 +24,10 @@
 - Changed polling schedule to every 5 minutes and sorted open PRs by updated_at descending.
 - Added workflow push trigger for sync configuration/progress-manifest changes.
 - Progress remains 25%; no completion increase claimed.
+
+
+## 2026-11-21 — GitHub/progress sync
+- Verified main commit: efa75f6ce3eaff024f41c3b8aabd59dcb404d60c (test: verify authenticated patient workflows).
+- Main CI: success.
+- Open PRs: #4 test: cover medical history alert and correction workflow (open-draft, CI in_progress); #3 test: add patient workflow browser acceptance (open-draft, CI success).
+- Progress manifest reviewed 2026-11-21; overall progress 25%. Progress values changed from manifest.

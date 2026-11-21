@@ -26,13 +26,13 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 21 November 2026, 10:20 PM IST
+**Checked:** 21 November 2026, 11:32 PM IST
 
-- PR #4 — [medical history alert/correction browser acceptance](https://github.com/drpast/dantbook-master/pull/4): open-draft; CI **in progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/44931398838)).
-- PR #3 — [patient workflow browser acceptance](https://github.com/drpast/dantbook-master/pull/3): open-draft; CI **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44930764902)).
-- PR #2 and PR #1: **merged**.
-- Main commit: [efa75f6](https://github.com/drpast/dantbook-master/commit/efa75f6ce3eaff024f41c3b8aabd59dcb404d60c); main CI **not-found** in this snapshot.
-- Overall progress: **25%** from the evidence-reviewed manifest; no percentage change.
+- Open PR: [#4 — test: cover medical history alert and correction workflow](https://github.com/drpast/dantbook-master/pull/4) (open-draft); branch CI: **in_progress**.
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44927274198))
+- Main commit: [efa75f6](https://github.com/drpast/dantbook-master/commit/efa75f6ce3eaff024f41c3b8aabd59dcb404d60c) — test: verify authenticated patient workflows
+- Progress manifest reviewed: **2026-11-21**; overall **25%**.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
-Progress manifest reviewed 21 November 2026.
+Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
