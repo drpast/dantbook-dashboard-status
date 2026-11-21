@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch verified GitHub metadata from the private DantBook repo and update public-safe progress status."""
+"""Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
 import json, os, urllib.request, urllib.parse
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -40,6 +40,7 @@ def auto_block(text, block):
     return text.rstrip() + "\n\n" + section + "\n"
 
 with open("status.json", encoding="utf-8") as f: status = json.load(f)
+with open("progress-manifest.json", encoding="utf-8") as f: progress = json.load(f)
 with open("CURRENT_TASK.md", encoding="utf-8") as f: task = f.read()
 with open("CHANGELOG.md", encoding="utf-8") as f: log = f.read()
 
@@ -55,13 +56,12 @@ for p in prs:
         "head_branch": p["head"]["ref"], "head_sha": p["head"]["sha"],
         "updated_at": p["updated_at"], "ci": ci})
 
-old = status.get("latest_verified_snapshot", {})
+old_snapshot = status.get("latest_verified_snapshot", {})
 snapshot = {"checked_on": TODAY, "main_commit": commit["sha"],
     "main_commit_url": commit["html_url"],
     "main_commit_message": commit["commit"]["message"].splitlines()[0],
     "main_ci_status": main_ci["status"], "main_workflow_run_id": main_ci["run_id"],
     "main_workflow_run_url": main_ci["url"], "open_pull_requests": pr_data}
-# Preserve legacy fields used by older dashboard builds.
 if pr_data:
     first_pr = pr_data[0]
     snapshot.update({"open_pull_request": first_pr["number"],
@@ -74,10 +74,46 @@ else:
         "pull_request_state": None, "ci_status": main_ci["status"],
         "workflow_run_id": main_ci["run_id"], "workflow_run_url": main_ci["url"],
         "pr_url": None, "blocker": None})
-changed = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old.items() if k != "checked_on"}
-if not changed:
-    print("No meaningful repository changes detected; leaving dashboard files untouched.")
+
+# Capture prior progress values before applying the manifest.
+old_progress = {
+    "overall_progress_percent": status.get("overall_progress_percent"),
+    "modules": status.get("modules"),
+    "milestones": status.get("milestones"),
+    "target_mvp_date": status.get("target_mvp_date"),
+    "current_master": status.get("current_master")
+}
+old_progress_tracking = status.get("progress_tracking", {})
+# Apply the single progress source of truth. Progress changes are evidence-reviewed,
+# not inferred from commit/PR/CI activity.
+status["overall_progress_percent"] = progress["overall_progress_percent"]
+status["target_mvp_date"] = progress["target_mvp_date"]
+status["target_is_ambitious"] = progress["target_is_ambitious"]
+status["current_master"] = progress["current_master"]
+status["modules"] = progress["modules"]
+status["milestones"] = progress["milestones"]
+status["progress_tracking"] = {
+    "source": "progress-manifest.json",
+    "last_reviewed": progress["reviewed_on"],
+    "method": progress["method"],
+    "sync_poll_minutes": 30
+}
+
+new_progress = {
+    "overall_progress_percent": progress["overall_progress_percent"],
+    "modules": progress["modules"],
+    "milestones": progress["milestones"],
+    "target_mvp_date": progress["target_mvp_date"],
+    "current_master": progress["current_master"]
+}
+changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
+changed_progress = (old_progress != new_progress or
+    old_progress_tracking.get("last_reviewed") != progress.get("reviewed_on") or
+    old_progress_tracking.get("method") != progress.get("method"))
+if not changed_snapshot and not changed_progress:
+    print("No meaningful GitHub metadata or progress-manifest changes; no commit created.")
     raise SystemExit(0)
+
 status["dashboard_updated"] = TODAY
 snapshot["checked_on"] = TODAY
 status["latest_verified_snapshot"] = snapshot
@@ -89,20 +125,22 @@ if pr_data:
     lines = [f"- Open PR: [#{p['number']} — {p['title']}]({p['url']}) ({p['state']}); branch CI: **{p['ci']['status']}**.",
         f"- Main CI: **{main_ci['status']}**" + (f" ([run]({main_ci['url']}))" if main_ci["url"] else ""),
         f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
-        "- PR work is not treated as merged or complete; progress percentages are not changed automatically."]
+        f"- Progress manifest reviewed: **{progress['reviewed_on']}**; overall **{progress['overall_progress_percent']}%**.",
+        "- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest."]
 else:
     status["current_focus"] = f"GitHub sync: no open PRs; main CI {main_ci['status']}"
     lines = ["- No open pull requests returned by GitHub.",
         f"- Main CI: **{main_ci['status']}**" + (f" ([run]({main_ci['url']}))" if main_ci["url"] else ""),
-        f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}"]
-block = "## Automatically verified GitHub snapshot\n\n**Checked:** " + STAMP + "\n\n" + "\n".join(lines) + "\n\nProgress percentages remain manually evidence-verified."
+        f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
+        f"- Progress manifest reviewed: **{progress['reviewed_on']}**; overall **{progress['overall_progress_percent']}%**."]
+
+block = "## Automatically verified GitHub snapshot\n\n**Checked:** " + STAMP + "\n\n" + "\n".join(lines) + "\n\nProgress is read from progress-manifest.json and is updated only after evidence review."
 task = auto_block(task, block)
-if changed:
-    log += "\n\n## " + TODAY + " — GitHub-native sync\n- Verified main commit: " + commit["sha"] + " (" + snapshot["main_commit_message"] + ").\n- Main CI: " + main_ci["status"] + ".\n"
-    if pr_data: log += "- Open PRs: " + "; ".join("#" + str(p["number"]) + " " + p["title"] + " (" + p["state"] + ", CI " + p["ci"]["status"] + ")" for p in pr_data) + ".\n"
-    else: log += "- No open PRs.\n"
-    log += "- Progress estimates were not automatically changed.\n"
+log += "\n\n## " + TODAY + " — GitHub/progress sync\n- Verified main commit: " + commit["sha"] + " (" + snapshot["main_commit_message"] + ").\n- Main CI: " + main_ci["status"] + ".\n"
+if pr_data: log += "- Open PRs: " + "; ".join("#" + str(p["number"]) + " " + p["title"] + " (" + p["state"] + ", CI " + p["ci"]["status"] + ")" for p in pr_data) + ".\n"
+log += "- Progress manifest reviewed " + progress["reviewed_on"] + "; overall progress " + str(progress["overall_progress_percent"]) + "%." + (" Progress values changed from manifest." if changed_progress else " Progress values unchanged.") + "\n"
+
 with open("status.json", "w", encoding="utf-8") as f: json.dump(status, f, ensure_ascii=False, indent=2); f.write("\n")
 with open("CURRENT_TASK.md", "w", encoding="utf-8") as f: f.write(task)
 with open("CHANGELOG.md", "w", encoding="utf-8") as f: f.write(log)
-print(f"Snapshot updated for {commit['sha']}; changed={changed}; PR count={len(pr_data)}; main CI={main_ci['status']}")
+print(f"Synced source {commit['sha']}; metadata_changed={changed_snapshot}; progress_changed={changed_progress}; PRs={len(pr_data)}; main CI={main_ci['status']}")

@@ -1,26 +1,24 @@
 # GitHub-native Progress Dashboard synchronization
 
-This repository can automatically synchronize public-safe project metadata from the private drpast/dantbook-master repository. It does not copy source code or modify the DantBook product repository.
+This public repository syncs public-safe project metadata from private `drpast/dantbook-master`. It does not copy source code or modify the DantBook product repository.
 
 ## One-time setup
-
-1. Create a fine-grained personal access token (or GitHub App token) limited to the private drpast/dantbook-master repository.
-2. Grant read-only permissions: **Metadata (read), Contents (read), Actions (read), and Pull requests (read)**. Contents read is required to query the latest commit.
-3. In this repository, go to Settings → Secrets and variables → Actions → New repository secret.
-4. Name it DANTBOOK_REPO_READ_TOKEN and paste the token.
-5. After merging this workflow, run it once from Actions → Sync DantBook progress from GitHub → Run workflow.
-6. Verify the run succeeded and the three status files updated. The desktop dashboard will pick up status.json on its next polling interval.
+1. Create a fine-grained PAT (or GitHub App token) restricted to the private `drpast/dantbook-master` repository.
+2. Grant read-only permissions: Metadata, Contents, Actions, and Pull requests.
+3. In this repository, open Settings → Secrets and variables → Actions → New repository secret.
+4. Name it `DANTBOOK_REPO_READ_TOKEN` and paste the token.
+5. After merging, run the workflow once from Actions → **Sync DantBook progress from GitHub** → Run workflow.
+6. Verify it succeeds and status files are updated/readable. The desktop app should refresh within its configured polling interval (30 seconds).
 
 ## Behavior
-
-- Runs daily at 09:00 IST; can also be started manually.
-- Reads default-branch commit, open PRs, and GitHub Actions status.
-- Updates status.json, CURRENT_TASK.md, and CHANGELOG.md.
-- Does not automatically increase progress percentages.
+- Scheduled every 30 minutes; manual dispatch also supported.
+- Reads private repo default-branch commit, open PRs, and CI statuses.
+- Reads `progress-manifest.json` as the single progress source of truth and applies it to `status.json`.
+- Updates `CURRENT_TASK.md` auto-sync section and appends `CHANGELOG.md` only when meaningful changes are detected.
+- Progress percentages are evidence-reviewed manually; CI/commits/PRs never auto-increase them.
 - Does not write to the private product repository.
-- Dashboard repo GITHUB_TOKEN is scoped to Contents write; no sync loop.
-- Public output contains only safe metadata (commit message/SHA, PR title/URL/branch, and CI state).
+- Dashboard repo `GITHUB_TOKEN` has Contents write only. Sync does not trigger a loop.
+- Public output contains safe metadata only (commit SHA/message/URL, PR title/URL/branch, CI state, and approved progress estimates).
 
 ## Privacy
-
-Never publish patient data, clinic records, source code, credentials, API keys, database URLs, private backups, or confidential documents in this repository.
+Never publish patient data, clinic records, source code, credentials, tokens, API keys, database URLs, private backups, or confidential documents.

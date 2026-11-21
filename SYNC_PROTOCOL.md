@@ -1,41 +1,28 @@
-# DantBook — Two-Account Progress Synchronization Protocol
+# DantBook — Progress Synchronization Protocol
 
 ## Repository role
-This public repository is the canonical shared source for progress metadata only. It is not the source-code repository.
+This public repository is the canonical shared source for public-safe progress metadata, not product source code.
 
-## Start-of-session checklist
-- Read the latest `status.json`.
-- Read `CURRENT_TASK.md`.
-- Read the latest `CHANGELOG.md` entries.
-- Confirm the latest source ZIP/commit separately.
-- Check whether another account has updated the repository since the previous session.
+## Start of session
+- Read `status.json`, `progress-manifest.json`, `CURRENT_TASK.md`, and the latest changelog entries.
+- Confirm source ZIP/version/commit separately.
+- Reconcile concurrent changes before writing.
 
-## End-of-session checklist
-Only after inspecting and verifying actual code:
-- Update module percentages/status in `status.json`.
-- Update current task and next action in `CURRENT_TASK.md`.
-- Append a dated entry to `CHANGELOG.md`.
-- Record source version/commit, tests, build and backup evidence.
-- Commit changes with a descriptive message.
-- Report the GitHub commit URL and remaining work to the user.
+## Updating progress
+- Edit **`progress-manifest.json` only** for progress percentages, module statuses, milestones, target date, or current master.
+- Update `reviewed_on` when the progress values have been evidence-reviewed.
+- Do not infer progress from commit counts, PRs, CI, generated UI, mockups, demos, or placeholders.
+- Require acceptance criteria, code review, and appropriate tests/build evidence for increases.
+- The sync workflow applies this manifest to `status.json`; do not manually edit both files for progress values.
 
-## Concurrency rules
-- Pull/read the latest main branch before writing.
-- Never blindly replace newer content.
-- If another account has committed since your read, reconcile both updates.
-- Prefer small, descriptive commits.
-- Do not claim a GitHub update succeeded until GitHub confirms it.
+## End of session
+- Update `CURRENT_TASK.md` and append a dated `CHANGELOG.md` entry with source version/commit, verified work, tests/build evidence, and next action.
+- Confirm GitHub accepted the commit before reporting success.
+- Never overwrite concurrent updates blindly.
 
-## Progress rules
-- Percentages are estimates, not code metrics.
-- Do not count planned work, mockups, demos or placeholders as completed production work.
-- Mark a module complete only after its acceptance criteria and tests pass.
-- Preserve historical progress and explain corrections.
-
-## Privacy rules
-This repository is public. Never commit patient data, clinic records, credentials, tokens, API keys, database connection strings, private source code, private backups or confidential documents.
-
-
-## Automated metadata synchronization
-
-The GitHub Actions workflow in this repository may automatically fetch the private product repository's latest main commit, open PR metadata, and CI status. It writes only public-safe metadata to the dashboard repo. It does not write to the private product repo. Percentages and module completion remain evidence-based human estimates; CI/PR metadata alone never raises them. See [GITHUB_SYNC_SETUP.md](./GITHUB_SYNC_SETUP.md) for token setup and operation.
+## Automated sync
+- Polls private `drpast/dantbook-master` every 30 minutes; manual dispatch is available.
+- Reads main commit, open PRs, and branch/main CI metadata.
+- Applies the public progress manifest and updates status/task/changelog only when meaningful data changes.
+- Does not write to the private product repository.
+- Public output is restricted to safe metadata. Never expose patient/clinic data, secrets, private source, backups, credentials, or connection strings.

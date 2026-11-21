@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-21",
+  "overall_progress_percent": 25,
+  "target_mvp_date": "2026-12-20",
+  "target_is_ambitious": true,
+  "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
+  "modules": [
+    {
+      "name": "Engineering foundation",
+      "status": "in-progress",
+      "progress_percent": 60
+    },
+    {
+      "name": "Medical History",
+      "status": "in-progress",
+      "progress_percent": 20
+    },
+    {
+      "name": "Finance",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Dental Laboratory",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Recall & Follow-up",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Integration & testing",
+      "status": "in-progress",
+      "progress_percent": 10
+    }
+  ],
+  "milestones": [
+    {
+      "name": "Architecture & roadmap",
+      "status": "completed",
+      "progress_percent": 100
+    },
+    {
+      "name": "Implementation foundation",
+      "status": "in-progress",
+      "progress_percent": 60
+    },
+    {
+      "name": "Medical History",
+      "status": "in-progress",
+      "progress_percent": 20
+    },
+    {
+      "name": "Finance",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Dental Laboratory",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "Recall & Follow-up",
+      "status": "not-started",
+      "progress_percent": 0
+    },
+    {
+      "name": "MVP integration, QA & release",
+      "status": "in-progress",
+      "progress_percent": 10
+    }
+  ],
+  "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
+  "note": "Values carried forward from the existing shared status snapshot. No percentage changes are claimed in this repair."
+}

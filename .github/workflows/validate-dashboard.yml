@@ -1,0 +1,41 @@
+name: Validate dashboard sync
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax-check sync script
+        run: python -m py_compile scripts/sync_dantbook_github.py
+      - name: Validate JSON and manifest consistency
+        run: |
+          python - <<'PY'
+          import json
+          with open("status.json", encoding="utf-8") as f:
+              status = json.load(f)
+          with open("progress-manifest.json", encoding="utf-8") as f:
+              progress = json.load(f)
+          for key in ("overall_progress_percent",):
+              value = progress[key]
+              assert isinstance(value, int) and 0 <= value <= 100, f"invalid {key}: {value}"
+          for collection in ("modules", "milestones"):
+              for item in progress[collection]:
+                  value = item["progress_percent"]
+                  assert isinstance(value, int) and 0 <= value <= 100, f"invalid {collection} value: {item}"
+          assert status["overall_progress_percent"] == progress["overall_progress_percent"]
+          assert status["modules"] == progress["modules"]
+          assert status["milestones"] == progress["milestones"]
+          print("JSON valid; progress manifest and status values match.")
+          PY

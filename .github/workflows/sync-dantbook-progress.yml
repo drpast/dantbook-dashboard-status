@@ -2,7 +2,7 @@ name: Sync DantBook progress from GitHub
 
 on:
   schedule:
-    - cron: "30 3 * * *" # Daily at 09:00 IST
+    - cron: "0,30 * * * *" # Every 30 minutes (UTC)
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch private GitHub metadata and update public status
+      - name: Fetch private GitHub metadata and evidence-reviewed progress
         env:
           DANTBOOK_REPO_READ_TOKEN: ${{ secrets.DANTBOOK_REPO_READ_TOKEN }}
         run: python scripts/sync_dantbook_github.py

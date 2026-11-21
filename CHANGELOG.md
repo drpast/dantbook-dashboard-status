@@ -1,17 +1,18 @@
 # DantBook Progress Changelog
 
-## 2026-11-21 — GitHub monitoring snapshot synchronized
-- Updated shared status metadata with the latest verified main commit `7fd28e3061eba2c370459aea59523dad533c0ab2`.
-- Recorded draft PR #1 (CI baseline verification) as open and not merged.
-- Captured the PR-branch implementation areas without marking them complete.
-- Recorded CI run #93 as failed at migration `20261121000300_shared_patient_branch_access` with PostgreSQL error 42830 (missing unique constraint matching referenced `patients(organization_id, id)`).
-- Typecheck, production build, and RLS checks were not reached; verification remains blocked.
-- Kept overall progress at 25% and other module estimates unchanged; integration/testing estimate was adjusted from 5% to 10% to reflect CI scaffolding, not passing verification.
-- Next action: repair migration, rerun full CI, then review and reconcile PR branch with main.
+## 2026-11-21 — Progress synchronization repair
+- Added `progress-manifest.json` as the single source of truth for evidence-reviewed progress values.
+- Updated sync workflow to poll every 30 minutes and still support manual dispatch.
+- Sync script applies manifest percentages/modules/milestones to `status.json`, and only commits when meaningful data changes.
+- Corrected stale task documentation: earlier PR CI failure is historical; latest PR run #44922607698 completed successfully, including migrations, RLS/shared-access/concurrency tests, type-check, and build (job steps verified).
+- PR #1 remains open-draft and unmerged; no completion percentages were increased.
+- Sync repair is submitted as a pull request; not yet active on main until merged.
 
-
-## 2026-11-21 — GitHub-native sync
-- Verified main commit: 7fd28e3061eba2c370459aea59523dad533c0ab2 (docs: record AI handover pack).
-- Main CI: not-found.
-- Open PRs: #1 ci: establish DantBook baseline verification (open-draft, CI success).
+## 2026-11-21 — GitHub-native sync (historical)
+- Main commit snapshot: `7fd28e3061eba2c370459aea59523dad533c0ab2`.
+- PR #1 open; CI status captured as success.
 - Progress estimates were not automatically changed.
+
+## 2026-11-21 — Earlier CI failure (historical)
+- Run #44918122856 failed at PostgreSQL migration error 42830.
+- This was superseded by the later successful run #44922607698; the PR remains unmerged pending review.
