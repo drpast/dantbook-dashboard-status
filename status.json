@@ -80,7 +80,7 @@
     "Progress percentages are evidence-reviewed estimates, not automated code metrics; canonical values live in progress-manifest.json.",
     "Excluded: enterprise features, initial X-ray/photo storage and integrations, digital treatment consent forms.",
     "Earlier PR CI run 44918122856 failed with PostgreSQL migration error 42830; the later PR run 44922607698 succeeded. Its job steps confirmed migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, type-check, and build.",
-    "PR #1 remains open-draft and unmerged. Successful CI is not code review or release acceptance."
+    "PR #1 and #2 are merged. PR #3 is open-draft with successful CI; PR #4 is open-draft with CI in progress. Open PRs are not considered complete until review/merge."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-21",
@@ -209,5 +209,6 @@
     "Review and merge open acceptance PRs",
     "Medical History implementation acceptance",
     "MVP integration, QA and release acceptance"
-  ]
+  ],
+  "current_task": "Step 5/8: Medical History alert and correction browser tests (PR #4; CI in progress)"
 }
