@@ -45,3 +45,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
+
+
+## Current desktop view
+The desktop app now displays an installer-style live task: task-level progress plus one row per involved file/activity, each with its own bar, status, and explanatory note. It no longer renders the long checkpoint list as the main task view.
