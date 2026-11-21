@@ -83,6 +83,7 @@ old_progress = {
     "target_mvp_date": status.get("target_mvp_date"),
     "current_master": status.get("current_master")
 }
+old_progress_tracking = status.get("progress_tracking", {})
 # Apply the single progress source of truth. Progress changes are evidence-reviewed,
 # not inferred from commit/PR/CI activity.
 status["overall_progress_percent"] = progress["overall_progress_percent"]
@@ -106,7 +107,9 @@ new_progress = {
     "current_master": progress["current_master"]
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
-changed_progress = (old_progress != new_progress or\n    status.get("progress_tracking", {}).get("last_reviewed") != progress.get("reviewed_on") or\n    status.get("progress_tracking", {}).get("method") != progress.get("method"))
+changed_progress = (old_progress != new_progress or
+    old_progress_tracking.get("last_reviewed") != progress.get("reviewed_on") or
+    old_progress_tracking.get("method") != progress.get("method"))
 if not changed_snapshot and not changed_progress:
     print("No meaningful GitHub metadata or progress-manifest changes; no commit created.")
     raise SystemExit(0)
