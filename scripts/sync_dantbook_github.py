@@ -142,31 +142,37 @@ status["task_steps_total"] = progress.get("task_steps_total", len(progress.get("
 status["current_task_files"] = progress.get("current_task_files", [])
 status["current_task_percent"] = progress.get("current_task_percent", 0)
 status["current_task_files_title"] = progress.get("current_task_files_title", "Current task activity")
-# PR-backed steps are refreshed from live GitHub state on every poll.
+# Explicit issue/PR links in the manifest are the only task-to-GitHub mapping.
+# Unlinked tasks retain their evidence-reviewed manifest status.
+from progress_evidence import derive_task_status
+
 open_pr_by_number = {p["number"]: p for p in pr_data}
+issue_numbers = sorted({step["issue"] for step in status["task_steps"]
+                        if isinstance(step.get("issue"), int) and step["issue"] > 0})
+issues_by_number = {}
+for issue_number in issue_numbers:
+    issue_data = api(f"/repos/{OWNER}/{REPO}/issues/{issue_number}")
+    # A pull request URL in the issues API means this number is not a task issue.
+    if "pull_request" not in issue_data:
+        issues_by_number[issue_number] = issue_data
+
 for step in status["task_steps"]:
     pr_number = step.get("pr")
-    if not pr_number:
-        continue
-    if pr_number in merged_pr_numbers:
-        step["status"] = "completed"
-        step["note"] = f"PR #{pr_number} merged"
-    elif pr_number in open_pr_by_number:
-        pr_item = open_pr_by_number[pr_number]
-        ci_state = pr_item["ci"]["status"]
-        step["ci"] = ci_state
-        if ci_state == "success":
-            step["status"] = "checks-passed-draft" if pr_item["state"] == "open-draft" else "review"
-        elif ci_state == "failure":
-            step["status"] = "blocked"
-        elif ci_state in ("in_progress", "queued", "waiting", "pending"):
-            step["status"] = "in-progress"
-        else:
-            step["status"] = "in-progress"
-        step["note"] = f"PR #{pr_number} {pr_item['state']}; CI {ci_state}"
-    else:
-        step["status"] = "pending"
-        step["note"] = f"PR #{pr_number} not currently open"
+    pr_item = open_pr_by_number.get(pr_number) if pr_number else None
+    pr_evidence = None
+    if pr_number:
+        if pr_number in merged_pr_numbers:
+            pr_evidence = {"number": pr_number, "merged": True}
+        elif pr_item:
+            pr_evidence = {"number": pr_number, "merged": False,
+                "draft": pr_item["state"] == "open-draft", "ci": pr_item["ci"]}
+    issue_evidence = issues_by_number.get(step.get("issue"))
+    step["status"], step["note"] = derive_task_status(step, issue_evidence, pr_evidence)
+    if pr_evidence and pr_evidence.get("ci"):
+        step["ci"] = pr_evidence["ci"]["status"]
+    elif issue_evidence:
+        step["issue_state"] = issue_evidence.get("state")
+
 # Once both browser-acceptance PR checks pass, review/merge becomes the active next step.
 acceptance_steps = [x for x in status["task_steps"] if x.get("pr") in (3, 4)]
 merge_step = next((x for x in status["task_steps"] if x["id"] == "pr-review-merge"), None)
