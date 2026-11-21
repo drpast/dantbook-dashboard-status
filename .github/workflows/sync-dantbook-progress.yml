@@ -2,7 +2,13 @@ name: Sync DantBook progress from GitHub
 
 on:
   schedule:
-    - cron: "0,30 * * * *" # Every 30 minutes (UTC)
+    - cron: "*/5 * * * *" # Every 5 minutes (UTC)
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sync_dantbook_github.py"
+      - ".github/workflows/sync-dantbook-progress.yml"
+      - "progress-manifest.json"
   workflow_dispatch:
 
 permissions:
