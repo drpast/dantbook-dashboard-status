@@ -7,10 +7,10 @@
 ## Verified CI
 - PR #1 baseline verification: **merged**.
 - PR #2 authenticated patient workflow API tests: **merged**.
-- Latest reported successful run: [44922607698](https://github.com/drpast/dantbook-master/actions/runs/44922607698).
+- Latest reported successful main CI: [44927274198](https://github.com/drpast/dantbook-master/actions/runs/44927274198).
 - Job step readback confirms success for migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, workspace type-check, and workspace build.
-- Earlier run [44918122856](https://github.com/drpast/dantbook-master/actions/runs/44918122856) failed with migration error 42830. Treat that as historical; the later run passed the listed checks. PR changes are not merged into main.
-- Main CI remains reported as `not-found` in the current snapshot.
+- Earlier migration failure [44918122856](https://github.com/drpast/dantbook-master/actions/runs/44918122856) is historical; subsequent CI passed the listed checks.
+- Main CI is currently reported as **success**.
 
 ## Step-by-step task tracker
 1. Workspace and engineering scaffold — complete.
