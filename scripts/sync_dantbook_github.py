@@ -85,7 +85,11 @@ old_progress = {
     "modules": status.get("modules"),
     "milestones": status.get("milestones"),
     "target_mvp_date": status.get("target_mvp_date"),
-    "current_master": status.get("current_master")
+    "current_master": status.get("current_master"),
+    "task_steps": status.get("task_steps"),
+    "current_task_step_id": status.get("current_task_step_id"),
+    "current_task_step_number": status.get("current_task_step_number"),
+    "task_steps_total": status.get("task_steps_total")
 }
 old_progress_tracking = status.get("progress_tracking", {})
 # Apply the single progress source of truth. Progress changes are evidence-reviewed,
@@ -96,11 +100,16 @@ status["target_is_ambitious"] = progress["target_is_ambitious"]
 status["current_master"] = progress["current_master"]
 status["modules"] = progress["modules"]
 status["milestones"] = progress["milestones"]
+status["task_steps"] = progress.get("task_steps", [])
+status["task_steps_title"] = progress.get("task_steps_title", "Implementation step tracker")
+status["current_task_step_id"] = progress.get("current_task_step_id")
+status["current_task_step_number"] = progress.get("current_task_step_number")
+status["task_steps_total"] = progress.get("task_steps_total", len(progress.get("task_steps", [])))
 status["progress_tracking"] = {
     "source": "progress-manifest.json",
     "last_reviewed": progress["reviewed_on"],
     "method": progress["method"],
-    "sync_poll_minutes": 30
+    "sync_poll_minutes": 5
 }
 
 new_progress = {
@@ -108,7 +117,11 @@ new_progress = {
     "modules": progress["modules"],
     "milestones": progress["milestones"],
     "target_mvp_date": progress["target_mvp_date"],
-    "current_master": progress["current_master"]
+    "current_master": progress["current_master"],
+    "task_steps": progress.get("task_steps", []),
+    "current_task_step_id": progress.get("current_task_step_id"),
+    "current_task_step_number": progress.get("current_task_step_number"),
+    "task_steps_total": progress.get("task_steps_total", len(progress.get("task_steps", [])))
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
 changed_progress = (old_progress != new_progress or
