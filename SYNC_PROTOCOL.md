@@ -21,7 +21,7 @@ This public repository is the canonical shared source for public-safe progress m
 - Never overwrite concurrent updates blindly.
 
 ## Automated sync
-- Polls private `drpast/dantbook-master` every 30 minutes; manual dispatch is available.
+- Polls private `drpast/dantbook-master` every 5 minutes; manual dispatch is available.
 - Reads main commit, open PRs, and branch/main CI metadata.
 - Applies the public progress manifest and updates status/task/changelog only when meaningful data changes.
 - Does not write to the private product repository.
