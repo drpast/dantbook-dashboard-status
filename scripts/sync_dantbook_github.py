@@ -170,10 +170,17 @@ for step in status["task_steps"]:
                 "head_sha": (merged_pr.get("head") or {}).get("sha"),
                 "merged_at": merged_pr.get("merged_at")}
         elif pr_item:
-            pr_evidence = {"number": pr_number, "merged": False,
+            pr_evidence = {"number": pr_number, "merged": False, "state": "open",
                 "draft": pr_item["state"] == "open-draft", "ci": pr_item["ci"],
                 "title": pr_item["title"], "url": pr_item["url"],
                 "head_sha": pr_item["head_sha"]}
+        elif pr_number in closed_pr_by_number:
+            closed_pr = closed_pr_by_number[pr_number]
+            pr_evidence = {"number": pr_number, "merged": False, "state": "closed",
+                "draft": False, "title": closed_pr.get("title"),
+                "url": closed_pr.get("html_url"),
+                "head_sha": (closed_pr.get("head") or {}).get("sha"),
+                "merged_at": None}
     issue_evidence = issues_by_number.get(step.get("issue"))
     step["status"], step["note"] = derive_task_status(step, issue_evidence, pr_evidence)
     evidence_record = build_task_evidence(
