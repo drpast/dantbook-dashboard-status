@@ -26,3 +26,9 @@ This public repository is the canonical shared source for public-safe progress m
 - Applies the public progress manifest and updates status/task/changelog only when meaningful data changes.
 - Does not write to the private product repository.
 - Public output is restricted to safe metadata. Never expose patient/clinic data, secrets, private source, backups, credentials, or connection strings.
+
+
+## Installer-style current-task display
+- `progress-manifest.json` is the source of truth for `current_task_files`, `current_task_percent`, and `current_task_files_title`.
+- List the actual files and activity items involved in the current task, with status, percent, and a concise note. File edits/tests may show 100% when finished; CI/review/merge remain separate activity rows.
+- Keep this list tied to the current task and refresh it when the active task changes. Never invent progress; percentages must be supported by evidence.
