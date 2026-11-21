@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "Granular checkpoint tracker expanded to 39 steps across 7 work groups. Overall and module percentages remain evidence-reviewed and unchanged; PR #3 is checks-passed draft and PR #4 is in progress.",
+  "note": "Granular 39-step roadmap retained as background; desktop Progress Dashboard now displays installer-style current task items with individual progress bars. PR #4 CI passed; review/merge is active.",
   "task_steps": [
     {
       "id": "foundation",
@@ -110,18 +110,18 @@
     {
       "id": "medical-history-browser",
       "title": "Medical History alert and correction browser tests",
-      "status": "in-progress",
+      "status": "checks-passed-draft",
       "group": "Medical History",
-      "note": "PR #4 open draft; CI in progress",
+      "note": "PR #4 open draft; CI passed, awaiting review/merge",
       "pr": 4,
-      "ci": "in_progress"
+      "ci": "success"
     },
     {
       "id": "pr-review-merge",
       "title": "Review and merge acceptance PRs #3 and #4",
-      "status": "pending",
+      "status": "in-progress",
       "group": "Engineering Foundation",
-      "note": "Waiting for checks and review; drafts are not treated as complete"
+      "note": "PR #3 and #4 acceptance checks passed; review and merge are next"
     },
     {
       "id": "medical-history-model",
@@ -323,8 +323,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-browser",
-  "current_task_step_number": 5,
+  "current_task_step_id": "pr-review-merge",
+  "current_task_step_number": 6,
   "task_steps_total": 39,
-  "step_tracking_method": "39 granular checkpoints; status changes require evidence (merged PRs, successful tests, reviewed acceptance). Draft PRs and CI alone do not equal completion."
+  "step_tracking_method": "39 granular checkpoints; status changes require evidence (merged PRs, successful tests, reviewed acceptance). Draft PRs and CI alone do not equal completion.",
+  "current_task_files_title": "Current task activity",
+  "current_task_percent": 88
 }
