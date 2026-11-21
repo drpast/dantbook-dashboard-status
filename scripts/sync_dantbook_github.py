@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
-import json, os, time, urllib.request, urllib.parse, urllib.error
+import hashlib, json, os, time, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -69,6 +69,7 @@ def auto_block(text, block):
     return text.rstrip() + "\n\n" + section + "\n"
 
 with open("status.json", encoding="utf-8") as f: status = json.load(f)
+with open("progress-manifest.json", "rb") as f: progress_manifest_sha256 = hashlib.sha256(f.read()).hexdigest()
 with open("progress-manifest.json", encoding="utf-8") as f: progress = json.load(f)
 with open("CURRENT_TASK.md", encoding="utf-8") as f: task = f.read()
 with open("CHANGELOG.md", encoding="utf-8") as f: log = f.read()
@@ -225,6 +226,7 @@ status["progress_tracking"] = {
     "source": "progress-manifest.json",
     "last_reviewed": progress["reviewed_on"],
     "method": progress["method"],
+    "manifest_sha256": progress_manifest_sha256,
     "sync_poll_minutes": 5
 }
 
@@ -243,9 +245,7 @@ new_progress = {
     "current_task_files_title": progress.get("current_task_files_title", "Current task activity")
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
-changed_progress = (old_progress != new_progress or
-    old_progress_tracking.get("last_reviewed") != progress.get("reviewed_on") or
-    old_progress_tracking.get("method") != progress.get("method"))
+changed_progress = old_progress_tracking.get("manifest_sha256") != progress_manifest_sha256
 # Publish a sync-health heartbeat at least every 15 minutes, without changing progress review dates.
 heartbeat_due = True
 last_sync = status.get("sync_generated_at") or status.get("last_sync_success")
