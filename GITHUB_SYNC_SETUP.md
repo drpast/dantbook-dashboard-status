@@ -5,7 +5,7 @@ This repository can automatically synchronize public-safe project metadata from 
 ## One-time setup
 
 1. Create a fine-grained personal access token (or GitHub App token) limited to the private drpast/dantbook-master repository.
-2. Grant read-only permissions: Metadata, Actions, and Pull requests. Contents read is optional for this workflow.
+2. Grant read-only permissions: **Metadata (read), Contents (read), Actions (read), and Pull requests (read)**. Contents read is required to query the latest commit.
 3. In this repository, go to Settings → Secrets and variables → Actions → New repository secret.
 4. Name it DANTBOOK_REPO_READ_TOKEN and paste the token.
 5. After merging this workflow, run it once from Actions → Sync DantBook progress from GitHub → Run workflow.
