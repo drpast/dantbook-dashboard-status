@@ -77,10 +77,10 @@
     }
   ],
   "scope_notes": [
-    "Progress estimates only; not automated code metrics.",
-    "Excluded: enterprise features, X-ray/photo storage and integrations, digital treatment consent forms.",
-    "Current verification snapshot: main commit 7fd28e3061eba2c370459aea59523dad533c0ab2; open draft PR #1 has CI blocked by PostgreSQL migration error 42830 (missing unique constraint for referenced patients(organization_id, id)).",
-    "PR branch changes are not merged into main; do not treat them as released or fully verified. CI did not reach typecheck/build/RLS checks."
+    "Progress percentages are evidence-reviewed estimates, not automated code metrics; canonical values live in progress-manifest.json.",
+    "Excluded: enterprise features, initial X-ray/photo storage and integrations, digital treatment consent forms.",
+    "Earlier PR CI run 44918122856 failed with PostgreSQL migration error 42830; the later PR run 44922607698 succeeded. Its job steps confirmed migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, type-check, and build.",
+    "PR #1 remains open-draft and unmerged. Successful CI is not code review or release acceptance."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-21",
@@ -124,6 +124,12 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "21 November 2026, 09:45 PM IST"
+    "verified_at": "21 November 2026, latest CI verification"
+  },
+  "progress_tracking": {
+    "source": "progress-manifest.json",
+    "last_reviewed": "2026-11-21",
+    "method": "Evidence-based manual progress; do not infer completion from commits, PRs, CI alone.",
+    "sync_poll_minutes": 30
   }
 }
