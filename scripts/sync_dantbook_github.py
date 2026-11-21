@@ -144,9 +144,10 @@ status["current_task_percent"] = progress.get("current_task_percent", 0)
 status["current_task_files_title"] = progress.get("current_task_files_title", "Current task activity")
 # Explicit issue/PR links in the manifest are the only task-to-GitHub mapping.
 # Unlinked tasks retain their evidence-reviewed manifest status.
-from progress_evidence import derive_task_status
+from progress_evidence import derive_task_status, build_task_evidence
 
 open_pr_by_number = {p["number"]: p for p in pr_data}
+closed_pr_by_number = {p["number"]: p for p in closed_prs}
 issue_numbers = sorted({step["issue"] for step in status["task_steps"]
                         if isinstance(step.get("issue"), int) and step["issue"] > 0})
 issues_by_number = {}
@@ -162,12 +163,24 @@ for step in status["task_steps"]:
     pr_evidence = None
     if pr_number:
         if pr_number in merged_pr_numbers:
-            pr_evidence = {"number": pr_number, "merged": True}
+            merged_pr = closed_pr_by_number.get(pr_number, {})
+            pr_evidence = {"number": pr_number, "merged": True,
+                "title": merged_pr.get("title"), "url": merged_pr.get("html_url"),
+                "head_sha": (merged_pr.get("head") or {}).get("sha"),
+                "merged_at": merged_pr.get("merged_at")}
         elif pr_item:
             pr_evidence = {"number": pr_number, "merged": False,
-                "draft": pr_item["state"] == "open-draft", "ci": pr_item["ci"]}
+                "draft": pr_item["state"] == "open-draft", "ci": pr_item["ci"],
+                "title": pr_item["title"], "url": pr_item["url"],
+                "head_sha": pr_item["head_sha"]}
     issue_evidence = issues_by_number.get(step.get("issue"))
     step["status"], step["note"] = derive_task_status(step, issue_evidence, pr_evidence)
+    evidence_record = build_task_evidence(
+        issue=issue_evidence, pull_request=pr_evidence, observed_at=SYNC_ISO)
+    if evidence_record:
+        step["evidence"] = evidence_record
+    else:
+        step.pop("evidence", None)
     if pr_evidence and pr_evidence.get("ci"):
         step["ci"] = pr_evidence["ci"]["status"]
     elif issue_evidence:
