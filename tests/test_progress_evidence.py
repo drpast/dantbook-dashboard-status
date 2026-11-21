@@ -78,5 +78,40 @@ class EvidenceStatusTests(unittest.TestCase):
         self.assertEqual(note, "Manifest baseline")
 
 
+    def test_pr_evidence_record_has_stable_desktop_contract(self):
+        record = build_task_evidence(pull_request={
+            "number": 21, "merged": False, "title": "Example PR",
+            "url": "https://github.com/example/repo/pull/21",
+            "head_sha": "def456", "merged_at": None,
+            "ci": {"status": "success", "run_id": 987, "url": "https://github.com/example/repo/actions/runs/987"}
+        }, observed_at="2026-11-22T02:00:00Z")
+        self.assertEqual(set(record), {
+            "source", "kind", "number", "title", "url", "state",
+            "merged_at", "head_sha", "ci", "observed_at"
+        })
+        self.assertEqual(record["source"], "github")
+        self.assertEqual(record["kind"], "pull_request")
+        self.assertEqual(record["state"], "open")
+        self.assertEqual(record["ci"]["status"], "success")
+        self.assertEqual(record["ci"]["run_id"], 987)
+
+    def test_issue_evidence_record_has_stable_desktop_contract(self):
+        record = build_task_evidence(issue={
+            "number": 35, "title": "Example issue",
+            "html_url": "https://github.com/example/repo/issues/35",
+            "state": "closed", "state_reason": "not_planned",
+            "labels": [{"name": "triage"}],
+            "updated_at": "2026-11-22T01:30:00Z"
+        }, observed_at="2026-11-22T02:00:00Z")
+        self.assertEqual(set(record), {
+            "source", "kind", "number", "title", "url", "state",
+            "state_reason", "labels", "updated_at", "observed_at"
+        })
+        self.assertEqual(record["state_reason"], "not_planned")
+        self.assertEqual(record["labels"], ["triage"])
+
+    def test_unlinked_task_has_no_evidence_record(self):
+        self.assertIsNone(build_task_evidence())
+
 if __name__ == "__main__":
     unittest.main()
