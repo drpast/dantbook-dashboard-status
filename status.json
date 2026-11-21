@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 5/39: Medical History alert and correction browser tests (PR #4; CI in progress)",
+  "current_focus": "Step 6/39: Review and merge acceptance PRs #3 and #4 — both acceptance CI checks passed; awaiting review/merge",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -100,7 +100,7 @@
         "head_sha": "ee97c30ae73867f08dc3ea03ab24c4c62596a83b",
         "updated_at": "2026-11-21T18:05:12Z",
         "ci": {
-          "status": "in_progress",
+          "status": "success",
           "run_id": 44933570034,
           "url": "https://github.com/drpast/dantbook-master/actions/runs/44933570034"
         }
@@ -123,7 +123,7 @@
     "open_pull_request": 4,
     "pull_request_title": "test: cover medical history alert and correction workflow",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
+    "ci_status": "success",
     "workflow_run_id": 44933570034,
     "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44933570034",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/4",
@@ -180,18 +180,18 @@
     {
       "id": "medical-history-browser",
       "title": "Medical History alert and correction browser tests",
-      "status": "in-progress",
+      "status": "checks-passed-draft",
       "group": "Medical History",
-      "note": "PR #4 open draft; CI in progress",
+      "note": "PR #4 open draft; CI passed, awaiting review/merge",
       "pr": 4,
-      "ci": "in_progress"
+      "ci": "success"
     },
     {
       "id": "pr-review-merge",
       "title": "Review and merge acceptance PRs #3 and #4",
-      "status": "pending",
+      "status": "in-progress",
       "group": "Engineering Foundation",
-      "note": "Waiting for checks and review; drafts are not treated as complete"
+      "note": "PR #3 and #4 acceptance checks passed; review and merge are next"
     },
     {
       "id": "medical-history-model",
@@ -393,11 +393,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-browser",
-  "current_task_step_number": 5,
+  "current_task_step_id": "pr-review-merge",
+  "current_task_step_number": 6,
   "task_steps_total": 39,
   "queue": [
-    "Medical History alert and correction browser tests",
     "Review and merge acceptance PRs #3 and #4",
     "Medical History data model and migration acceptance",
     "Medical History API endpoints and validation",
@@ -433,5 +432,7 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 5/39: Medical History alert and correction browser tests (PR #4; CI in progress)"
+  "current_task": "Step 6/39: Review and merge acceptance PRs #3 and #4",
+  "current_task_percent": 88,
+  "current_task_files_title": "Current task activity"
 }
