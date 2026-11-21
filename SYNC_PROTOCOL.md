@@ -21,9 +21,9 @@ This public repository is the canonical shared source for public-safe progress m
 - Never overwrite concurrent updates blindly.
 
 ## Automated sync
-- Polls private `drpast/dantbook-master` every 5 minutes; manual dispatch is available.
+- Polls private `drpast/dantbook-master` every 5 minutes; manual dispatch is available. Feed heartbeat is committed every 15 minutes when otherwise unchanged.
 - Reads main commit, open PRs, and branch/main CI metadata.
-- Applies the public progress manifest and updates status/task/changelog only when meaningful data changes.
+- Applies the public progress manifest; meaningful changes are committed immediately, with a sync-health heartbeat at least every 15 minutes.\n- `sync_generated_at` / `last_sync_success` records successful feed sync time only. It must never refresh `progress_tracking.last_reviewed` or imply progress review.
 - Does not write to the private product repository.
 - Public output is restricted to safe metadata. Never expose patient/clinic data, secrets, private source, backups, credentials, or connection strings.
 
