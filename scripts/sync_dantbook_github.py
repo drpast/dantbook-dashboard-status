@@ -47,6 +47,8 @@ with open("CHANGELOG.md", encoding="utf-8") as f: log = f.read()
 repo = api(f"/repos/{OWNER}/{REPO}")
 commit = api(f"/repos/{OWNER}/{REPO}/commits/{repo['default_branch']}")
 prs = api(f"/repos/{OWNER}/{REPO}/pulls?state=open&per_page=100")
+closed_prs = api(f"/repos/{OWNER}/{REPO}/pulls?state=closed&per_page=100")
+merged_pr_numbers = {p["number"] for p in closed_prs if p.get("merged_at")}
 main_ci = summarize(runs_for(repo["default_branch"]))
 pr_data = []
 for p in prs:
@@ -105,6 +107,49 @@ status["task_steps_title"] = progress.get("task_steps_title", "Implementation st
 status["current_task_step_id"] = progress.get("current_task_step_id")
 status["current_task_step_number"] = progress.get("current_task_step_number")
 status["task_steps_total"] = progress.get("task_steps_total", len(progress.get("task_steps", [])))
+# PR-backed steps are refreshed from live GitHub state on every poll.
+open_pr_by_number = {p["number"]: p for p in pr_data}
+for step in status["task_steps"]:
+    pr_number = step.get("pr")
+    if not pr_number:
+        continue
+    if pr_number in merged_pr_numbers:
+        step["status"] = "completed"
+        step["note"] = f"PR #{pr_number} merged"
+    elif pr_number in open_pr_by_number:
+        pr_item = open_pr_by_number[pr_number]
+        ci_state = pr_item["ci"]["status"]
+        step["ci"] = ci_state
+        if ci_state == "success":
+            step["status"] = "review"
+        elif ci_state == "failure":
+            step["status"] = "blocked"
+        elif ci_state in ("in_progress", "queued", "waiting", "pending"):
+            step["status"] = "in-progress"
+        else:
+            step["status"] = "in-progress"
+        step["note"] = f"PR #{pr_number} {pr_item['state']}; CI {ci_state}"
+    else:
+        step["status"] = "pending"
+        step["note"] = f"PR #{pr_number} not currently open"
+# Pick the live active step automatically: in-progress, then review-ready, then pending.
+active_step = next((x for x in status["task_steps"] if x["status"] == "in-progress"), None)
+if active_step is None:
+    active_step = next((x for x in status["task_steps"] if x["status"] == "review"), None)
+if active_step is None:
+    active_step = next((x for x in status["task_steps"] if x["status"] == "pending"), None)
+if active_step:
+    active_index = status["task_steps"].index(active_step) + 1
+    status["current_task_step_id"] = active_step["id"]
+    status["current_task_step_number"] = active_index
+    status["task_steps_total"] = len(status["task_steps"])
+    status["current_focus"] = f"Step {active_index}/{len(status['task_steps'])}: {active_step['title']} — {active_step.get('note', '')}"
+    status["queue"] = [x["title"] for x in status["task_steps"][active_index-1:]]
+else:
+    status["current_task_step_id"] = None
+    status["current_task_step_number"] = None
+    status["current_focus"] = "All tracked implementation steps completed."
+    status["queue"] = []
 status["progress_tracking"] = {
     "source": "progress-manifest.json",
     "last_reviewed": progress["reviewed_on"],
