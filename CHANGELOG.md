@@ -214,3 +214,10 @@
 - Main CI: success.
 - Open PRs: #12 docs: add Codex development workflow (open-draft, CI success); #11 feat: add branch-scoped dental laboratory case API (open-draft, CI success).
 - Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: f1bb3993f224ccf1960565e47e370c7883cf6bdc (docs: add Codex development workflow (#12)).
+- Main CI: in_progress.
+- Open PRs: #11 feat: add branch-scoped dental laboratory case API (open-draft, CI success).
+- Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
