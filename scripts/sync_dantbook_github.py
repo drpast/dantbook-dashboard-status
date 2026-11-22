@@ -322,6 +322,16 @@ else:
         f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
         f"- Progress manifest reviewed: **{progress['reviewed_on']}**; overall **{progress['overall_progress_percent']}%**."]
 
+# Refresh the static summary as well as the auto-sync section, so old checkpoint
+# descriptions cannot remain stale when the active step advances.
+task = re.sub(r"^\*\*Last checked:\*\*.*$", "**Last checked:** " + STAMP + "  ", task, flags=re.MULTILINE)
+activity = "Open PRs: " + "; ".join("#" + str(p["number"]) + " " + p["title"] + " (CI " + p["ci"]["status"] + ")" for p in pr_data)
+task = re.sub(r"^\*\*Current source activity:\*\*.*$", "**Current source activity:** Main CI " + main_ci["status"] + "; " + activity + ".", task, flags=re.MULTILINE)
+if active_step:
+    checkpoint_line = f"Current checkpoint: **{active_index}/{len(status['task_steps'])} — {active_step['title']}** ({active_step['status']}; {active_step.get('note') or 'awaiting verified work'}). Checkpoint statuses are tracked separately from overall/module progress."
+else:
+    checkpoint_line = "Current checkpoint: all tracked steps completed."
+task = re.sub(r"^Current checkpoint:.*$", checkpoint_line, task, flags=re.MULTILINE)
 block = "## Automatically verified GitHub snapshot\n\n**Checked:** " + STAMP + "\n\n" + "\n".join(lines) + "\n\nProgress is read from progress-manifest.json and is updated only after evidence review."
 task = auto_block(task, block)
 log += "\n\n## " + TODAY + " — GitHub/progress sync\n- Verified main commit: " + commit["sha"] + " (" + snapshot["main_commit_message"] + ").\n- Main CI: " + main_ci["status"] + ".\n"
