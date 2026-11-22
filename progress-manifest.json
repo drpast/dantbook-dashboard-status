@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_on": "2026-11-21",
+  "reviewed_on": "2026-11-22",
   "overall_progress_percent": 25,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "Granular 39-step roadmap retained as background; desktop Progress Dashboard now displays installer-style current task items with individual progress bars. PR #4 CI passed; review/merge is active.",
+  "note": "39-step roadmap retained. PR #3 and #4 are merged with passing acceptance CI; next checkpoint is #7, Medical History data model and migration acceptance. Merged PRs #5–#10 also delivered clinical-record, treatment-plan, odontogram, prescription, billing, and inventory workflows. Overall/module percentages remain conservative pending a separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -101,33 +101,34 @@
     {
       "id": "patient-browser",
       "title": "Patient workflow browser acceptance tests",
-      "status": "checks-passed-draft",
+      "status": "completed",
       "group": "Engineering Foundation",
-      "note": "PR #3 open draft; CI passed, awaiting review/merge",
+      "note": "PR #3 merged; latest PR-head CI passed (run 44929846484).",
       "pr": 3,
       "ci": "success"
     },
     {
       "id": "medical-history-browser",
       "title": "Medical History alert and correction browser tests",
-      "status": "checks-passed-draft",
+      "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 open draft; CI passed, awaiting review/merge",
+      "note": "PR #4 merged; CI passed (run 44932842340).",
       "pr": 4,
       "ci": "success"
     },
     {
       "id": "pr-review-merge",
       "title": "Review and merge acceptance PRs #3 and #4",
-      "status": "in-progress",
+      "status": "completed",
       "group": "Engineering Foundation",
-      "note": "PR #3 and #4 acceptance checks passed; review and merge are next"
+      "note": "PR #3 and #4 merged on 21 Nov 2026; both acceptance CI runs passed."
     },
     {
       "id": "medical-history-model",
       "title": "Medical History data model and migration acceptance",
       "status": "pending",
-      "group": "Medical History"
+      "group": "Medical History",
+      "note": "Next checkpoint; no acceptance evidence recorded yet."
     },
     {
       "id": "medical-history-api",
@@ -323,60 +324,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "pr-review-merge",
-  "current_task_step_number": 6,
+  "current_task_step_id": "medical-history-model",
+  "current_task_step_number": 7,
   "task_steps_total": 39,
-  "step_tracking_method": "39 granular checkpoints; status changes require evidence (merged PRs, successful tests, reviewed acceptance). Draft PRs and CI alone do not equal completion.",
+  "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
-  "current_task_percent": 88,
+  "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": ".github/workflows/ci.yml",
-      "percent": 100,
-      "status": "Updated",
-      "note": "PR workflow now validates stacked acceptance branches."
-    },
-    {
-      "name": "CHANGELOG.md",
-      "percent": 100,
-      "status": "Updated",
-      "note": "Records browser and API acceptance evidence."
-    },
-    {
-      "name": "apps/api/scripts/check-patient-api-acceptance.mjs",
-      "percent": 100,
-      "status": "Updated",
-      "note": "API acceptance covers alerts, corrections, permissions and branch isolation."
-    },
-    {
-      "name": "apps/web/app/medical-history/page.tsx",
-      "percent": 100,
-      "status": "Updated",
-      "note": "Save feedback fix and accessible field labels."
-    },
-    {
-      "name": "apps/web/e2e/medical-history.spec.ts",
-      "percent": 100,
-      "status": "Tests passed",
-      "note": "Alert creation and correction browser acceptance verified."
-    },
-    {
-      "name": "docs/PROJECT-STATUS.md",
-      "percent": 100,
-      "status": "Updated",
-      "note": "Implementation and acceptance evidence documented."
-    },
-    {
-      "name": "PR #4 · CI verification",
-      "percent": 100,
-      "status": "Passed",
-      "note": "Run 44933570034 passed all checks."
-    },
-    {
-      "name": "Review and merge PRs #3 and #4",
+      "name": "Medical History data model and migration acceptance",
       "percent": 0,
-      "status": "Pending review",
-      "note": "Both are draft PRs; review/merge remains the next action."
+      "status": "Pending",
+      "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ]
 }
