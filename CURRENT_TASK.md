@@ -35,12 +35,12 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 22 November 2026, 08:05 AM IST
+**Checked:** 22 November 2026, 09:52 AM IST
 
 - Open PR: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft); branch CI: **success**.
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44948187965))
 - Main commit: [e711c78](https://github.com/drpast/dantbook-master/commit/e711c78569257c7370a2fa9fa4fd43bcd672daf6) — feat: add branch inventory workspace (#10)
-- Progress manifest reviewed: **2026-11-21**; overall **25%**.
+- Progress manifest reviewed: **2026-11-22**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
