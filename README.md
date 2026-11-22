@@ -30,3 +30,11 @@ Granular task steps show completed, in-progress, review, and pending work. Progr
 
 ## GitHub-native synchronization
 The workflow polls the private DantBook repo every 5 minutes and supports manual dispatch. It reads the latest main commit, open PR metadata, and CI status, plus the public progress manifest and step tracker. It commits meaningful status/progress changes immediately and publishes a sync-health heartbeat at least every 15 minutes. `sync_generated_at` tracks feed sync; `progress_tracking.last_reviewed` remains the evidence-review date. Setup: [GITHUB_SYNC_SETUP.md](./GITHUB_SYNC_SETUP.md).
+
+
+## Evidence-based task status
+Task steps can optionally declare explicit GitHub issue numbers with an `issue` field and pull-request numbers with a `pr` field. The sync workflow uses linked issue state, PR merge state, and PR CI results to refresh task status. CI success alone never marks a task complete; a linked PR must be merged or a linked issue explicitly closed as completed. Unlinked task statuses remain as recorded in the evidence-reviewed manifest. No progress percentages are calculated from GitHub activity. See [SYNC_PROTOCOL.md](./SYNC_PROTOCOL.md) for the exact mapping rules.
+
+## Desktop feed contract
+
+The backward-compatible JSON interface for the Windows Progress Dashboard is documented in [`DESKTOP_FEED_CONTRACT.md`](DESKTOP_FEED_CONTRACT.md). New task evidence fields are optional and additive; progress percentages remain manifest-controlled.

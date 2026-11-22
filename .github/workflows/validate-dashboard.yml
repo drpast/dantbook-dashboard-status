@@ -17,19 +17,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Syntax-check sync script
-        run: python -m py_compile scripts/sync_dantbook_github.py
-      - name: Validate JSON and manifest consistency
+      - name: Compile sync and evidence modules
+        run: python -m py_compile scripts/sync_dantbook_github.py scripts/progress_evidence.py
+      - name: Run evidence mapping unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate JSON, manifest consistency, and optional evidence contract
         run: |
           python - <<'PY'
           import json
+          from urllib.parse import urlparse
+
           with open("status.json", encoding="utf-8") as f:
               status = json.load(f)
           with open("progress-manifest.json", encoding="utf-8") as f:
               progress = json.load(f)
-          for key in ("overall_progress_percent",):
-              value = progress[key]
-              assert isinstance(value, int) and 0 <= value <= 100, f"invalid {key}: {value}"
+
+          value = progress["overall_progress_percent"]
+          assert isinstance(value, int) and 0 <= value <= 100, f"invalid overall progress: {value}"
           for collection in ("modules", "milestones"):
               for item in progress[collection]:
                   value = item["progress_percent"]
@@ -37,5 +41,30 @@ jobs:
           assert status["overall_progress_percent"] == progress["overall_progress_percent"]
           assert status["modules"] == progress["modules"]
           assert status["milestones"] == progress["milestones"]
-          print("JSON valid; progress manifest and status values match.")
+
+          # Evidence is additive and optional for older feed snapshots.
+          for task in status.get("task_steps", []):
+              evidence = task.get("evidence")
+              if evidence is None:
+                  continue
+              assert evidence.get("source") == "github", task
+              kind = evidence.get("kind")
+              assert kind in ("issue", "pull_request"), task
+              assert isinstance(evidence.get("number"), int) and evidence["number"] > 0, task
+              assert isinstance(evidence.get("title"), str) and evidence["title"].strip(), task
+              parsed = urlparse(evidence.get("url") or "")
+              assert parsed.scheme == "https" and parsed.netloc == "github.com", task
+              assert evidence.get("state") in (("open", "closed", "merged") if kind == "pull_request" else ("open", "closed")), task
+              if kind == "pull_request":
+                  ci = evidence.get("ci")
+                  if ci is not None:
+                      assert ci.get("status") is None or isinstance(ci.get("status"), str), task
+                      assert ci.get("run_id") is None or isinstance(ci.get("run_id"), int), task
+                      if ci.get("url") is not None:
+                          ci_url = urlparse(ci["url"])
+                          assert ci_url.scheme == "https" and ci_url.netloc == "github.com", task
+              else:
+                  assert isinstance(evidence.get("labels", []), list), task
+
+          print("JSON valid; manifest values match; optional GitHub evidence records satisfy the desktop contract.")
           PY

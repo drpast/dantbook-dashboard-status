@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
-import json, os, re, urllib.request, urllib.parse
+import hashlib, json, os, re, time, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -12,17 +12,49 @@ TODAY = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
 STAMP = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y, %I:%M %p IST")
 API = "https://api.github.com"
 
+MAX_API_RESPONSE_BYTES = 2 * 1024 * 1024
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+MAX_API_ATTEMPTS = 4
+
 def api(path):
+    """Fetch bounded GitHub API JSON with retries for transient failures."""
     req = urllib.request.Request(API + path, headers={
         "Accept": "application/vnd.github+json",
         "Authorization": "Bearer " + TOKEN,
         "X-GitHub-Api-Version": "2022-11-28",
         "User-Agent": "DantBook-Progress-Sync"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode())
+    for attempt in range(MAX_API_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                payload = response.read(MAX_API_RESPONSE_BYTES + 1)
+                if len(payload) > MAX_API_RESPONSE_BYTES:
+                    raise RuntimeError(f"GitHub API response exceeded {MAX_API_RESPONSE_BYTES} bytes: {path}")
+                try:
+                    return json.loads(payload.decode("utf-8"))
+                except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+                    raise RuntimeError(f"GitHub API returned invalid UTF-8 JSON for {path}") from exc
+        except urllib.error.HTTPError as exc:
+            if exc.code not in RETRYABLE_HTTP_CODES or attempt == MAX_API_ATTEMPTS - 1:
+                raise
+            retry_after = exc.headers.get("Retry-After")
+            try:
+                delay = float(retry_after) if retry_after else min(2 ** attempt, 15)
+            except ValueError:
+                delay = min(2 ** attempt, 15)
+            time.sleep(max(0, min(delay, 30)))
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt == MAX_API_ATTEMPTS - 1:
+                raise
+            time.sleep(min(2 ** attempt, 15))
+    raise RuntimeError(f"GitHub API request exhausted retries: {path}")
 
 def runs_for(branch):
     data = api(f"/repos/{OWNER}/{REPO}/actions/runs?branch={urllib.parse.quote(branch)}&per_page=10")
+    return data.get("workflow_runs", [])
+
+def runs_for_commit(commit_sha):
+    """Fetch CI runs for the exact PR head commit, not a possibly reused branch."""
+    data = api(f"/repos/{OWNER}/{REPO}/actions/runs?head_sha={urllib.parse.quote(commit_sha)}&per_page=10")
     return data.get("workflow_runs", [])
 
 def summarize(runs):
@@ -42,6 +74,7 @@ def auto_block(text, block):
     return text.rstrip() + "\n\n" + section + "\n"
 
 with open("status.json", encoding="utf-8") as f: status = json.load(f)
+with open("progress-manifest.json", "rb") as f: progress_manifest_sha256 = hashlib.sha256(f.read()).hexdigest()
 with open("progress-manifest.json", encoding="utf-8") as f: progress = json.load(f)
 with open("CURRENT_TASK.md", encoding="utf-8") as f: task = f.read()
 with open("CHANGELOG.md", encoding="utf-8") as f: log = f.read()
@@ -54,7 +87,7 @@ merged_pr_numbers = {p["number"] for p in closed_prs if p.get("merged_at")}
 main_ci = summarize(runs_for(repo["default_branch"]))
 pr_data = []
 for p in prs:
-    ci = summarize(runs_for(p["head"]["ref"]))
+    ci = summarize(runs_for_commit(p["head"]["sha"]))
     pr_data.append({"number": p["number"], "title": p["title"],
         "state": "open-draft" if p.get("draft") else "open", "url": p["html_url"],
         "head_branch": p["head"]["ref"], "head_sha": p["head"]["sha"],
@@ -76,7 +109,7 @@ if pr_data:
         "pull_request_title": first_pr["title"], "pull_request_state": first_pr["state"],
         "ci_status": first_pr["ci"]["status"], "workflow_run_id": first_pr["ci"]["run_id"],
         "workflow_run_url": first_pr["ci"]["url"], "pr_url": first_pr["url"],
-        "blocker": ("CI failing for " + ", ".join(f"PR #{p['number']}" for p in pr_data if p["ci"]["status"] == "failure") + "; inspect linked run(s)." if any(p["ci"]["status"] == "failure" for p in pr_data) else None)})
+        "blocker": ("CI is failing; inspect linked workflow run for details." if first_pr["ci"]["status"] == "failure" else None)})
 else:
     snapshot.update({"open_pull_request": None, "pull_request_title": None,
         "pull_request_state": None, "ci_status": main_ci["status"],
@@ -115,31 +148,80 @@ status["task_steps_total"] = progress.get("task_steps_total", len(progress.get("
 status["current_task_files"] = progress.get("current_task_files", [])
 status["current_task_percent"] = progress.get("current_task_percent", 0)
 status["current_task_files_title"] = progress.get("current_task_files_title", "Current task activity")
-# PR-backed steps are refreshed from live GitHub state on every poll.
+# Explicit issue/PR links in the manifest are the only task-to-GitHub mapping.
+# Unlinked tasks retain their evidence-reviewed manifest status.
+from progress_evidence import derive_task_status, build_task_evidence
+
 open_pr_by_number = {p["number"]: p for p in pr_data}
+closed_pr_by_number = {p["number"]: p for p in closed_prs}
+
+# The closed-PR list is capped at 100 items. Resolve every explicitly linked PR
+# missing from those summary pages directly, so older merged PRs are not
+# misclassified as unavailable/closed-unmerged evidence.
+linked_pr_numbers = sorted({step["pr"] for step in status["task_steps"]
+                            if isinstance(step.get("pr"), int) and step["pr"] > 0})
+for linked_pr_number in linked_pr_numbers:
+    if linked_pr_number not in open_pr_by_number and linked_pr_number not in closed_pr_by_number:
+        linked_pr = api(f"/repos/{OWNER}/{REPO}/pulls/{linked_pr_number}")
+        if linked_pr.get("state") == "closed":
+            closed_pr_by_number[linked_pr_number] = linked_pr
+            if linked_pr.get("merged_at"):
+                merged_pr_numbers.add(linked_pr_number)
+        elif linked_pr.get("state") == "open":
+            # A linked open PR may be outside the first 100 open-PR results.
+            ci = summarize(runs_for_commit(linked_pr["head"]["sha"]))
+            open_pr_by_number[linked_pr_number] = {
+                "number": linked_pr_number, "title": linked_pr["title"],
+                "state": "open-draft" if linked_pr.get("draft") else "open",
+                "url": linked_pr["html_url"], "head_sha": linked_pr["head"]["sha"],
+                "ci": ci
+            }
+
+issue_numbers = sorted({step["issue"] for step in status["task_steps"]
+                        if isinstance(step.get("issue"), int) and step["issue"] > 0})
+issues_by_number = {}
+for issue_number in issue_numbers:
+    issue_data = api(f"/repos/{OWNER}/{REPO}/issues/{issue_number}")
+    # A pull request URL in the issues API means this number is not a task issue.
+    if "pull_request" not in issue_data:
+        issues_by_number[issue_number] = issue_data
+
 for step in status["task_steps"]:
     pr_number = step.get("pr")
-    if not pr_number:
-        continue
-    if pr_number in merged_pr_numbers:
-        step["status"] = "completed"
-        step["note"] = f"PR #{pr_number} merged"
-    elif pr_number in open_pr_by_number:
-        pr_item = open_pr_by_number[pr_number]
-        ci_state = pr_item["ci"]["status"]
-        step["ci"] = ci_state
-        if ci_state == "success":
-            step["status"] = "checks-passed-draft" if pr_item["state"] == "open-draft" else "review"
-        elif ci_state == "failure":
-            step["status"] = "blocked"
-        elif ci_state in ("in_progress", "queued", "waiting", "pending"):
-            step["status"] = "in-progress"
-        else:
-            step["status"] = "in-progress"
-        step["note"] = f"PR #{pr_number} {pr_item['state']}; CI {ci_state}"
+    pr_item = open_pr_by_number.get(pr_number) if pr_number else None
+    pr_evidence = None
+    if pr_number:
+        if pr_number in merged_pr_numbers:
+            merged_pr = closed_pr_by_number.get(pr_number, {})
+            pr_evidence = {"number": pr_number, "merged": True,
+                "title": merged_pr.get("title"), "url": merged_pr.get("html_url"),
+                "head_sha": (merged_pr.get("head") or {}).get("sha"),
+                "merged_at": merged_pr.get("merged_at")}
+        elif pr_item:
+            pr_evidence = {"number": pr_number, "merged": False, "state": "open",
+                "draft": pr_item["state"] == "open-draft", "ci": pr_item["ci"],
+                "title": pr_item["title"], "url": pr_item["url"],
+                "head_sha": pr_item["head_sha"]}
+        elif pr_number in closed_pr_by_number:
+            closed_pr = closed_pr_by_number[pr_number]
+            pr_evidence = {"number": pr_number, "merged": False, "state": "closed",
+                "draft": False, "title": closed_pr.get("title"),
+                "url": closed_pr.get("html_url"),
+                "head_sha": (closed_pr.get("head") or {}).get("sha"),
+                "merged_at": None}
+    issue_evidence = issues_by_number.get(step.get("issue"))
+    step["status"], step["note"] = derive_task_status(step, issue_evidence, pr_evidence)
+    evidence_record = build_task_evidence(
+        issue=issue_evidence, pull_request=pr_evidence, observed_at=SYNC_ISO)
+    if evidence_record:
+        step["evidence"] = evidence_record
     else:
-        step["status"] = "pending"
-        step["note"] = f"PR #{pr_number} not currently open"
+        step.pop("evidence", None)
+    if pr_evidence and pr_evidence.get("ci"):
+        step["ci"] = pr_evidence["ci"]["status"]
+    elif issue_evidence:
+        step["issue_state"] = issue_evidence.get("state")
+
 # Once both browser-acceptance PR checks pass, review/merge becomes the active next step.
 acceptance_steps = [x for x in status["task_steps"] if x.get("pr") in (3, 4)]
 merge_step = next((x for x in status["task_steps"] if x["id"] == "pr-review-merge"), None)
@@ -169,18 +251,17 @@ if active_step:
     status["current_task_step_number"] = active_index
     status["task_steps_total"] = len(status["task_steps"])
     status["current_focus"] = f"Step {active_index}/{len(status['task_steps'])}: {active_step['title']} — {active_step.get('note', '')}"
-    status["current_task"] = f"Step {active_index}/{len(status['task_steps'])}: {active_step['title']}"
     status["queue"] = [x["title"] for x in status["task_steps"][active_index-1:]]
 else:
     status["current_task_step_id"] = None
     status["current_task_step_number"] = None
     status["current_focus"] = "All tracked implementation steps completed."
-    status["current_task"] = "All tracked implementation steps completed."
     status["queue"] = []
 status["progress_tracking"] = {
     "source": "progress-manifest.json",
     "last_reviewed": progress["reviewed_on"],
     "method": progress["method"],
+    "manifest_sha256": progress_manifest_sha256,
     "sync_poll_minutes": 5
 }
 
@@ -199,12 +280,8 @@ new_progress = {
     "current_task_files_title": progress.get("current_task_files_title", "Current task activity")
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
-changed_progress = (old_progress != new_progress or
-    old_progress_tracking.get("last_reviewed") != progress.get("reviewed_on") or
-    old_progress_tracking.get("method") != progress.get("method"))
-percentages_changed = (old_progress.get("overall_progress_percent") != new_progress.get("overall_progress_percent") or
-    old_progress.get("modules") != new_progress.get("modules") or
-    old_progress.get("milestones") != new_progress.get("milestones"))
+changed_progress = old_progress_tracking.get("manifest_sha256") != progress_manifest_sha256
+percentages_changed = (old_progress.get("overall_progress_percent") != progress["overall_progress_percent"] or old_progress.get("modules") != progress["modules"] or old_progress.get("milestones") != progress["milestones"])
 # Publish a sync-health heartbeat at least every 15 minutes, without changing progress review dates.
 heartbeat_due = True
 last_sync = status.get("sync_generated_at") or status.get("last_sync_success")
@@ -233,9 +310,8 @@ status["source_repository"] = {"repository": OWNER + "/" + REPO,
 if pr_data:
     p = pr_data[0]
     step_focus = f"Step {status.get('current_task_step_number', '—')}/{status.get('task_steps_total', len(status['task_steps']))}: {active_step['title']} — {active_step.get('note', '')}" if active_step else "All tracked steps completed"
-    pr_summary = "; ".join(f"#{p['number']} CI {p['ci']['status']}" for p in pr_data)
-    status["current_focus"] = step_focus + f" | Open PRs: {pr_summary}; main CI {main_ci['status']}"
-    lines = ["- Open PRs: " + "; ".join(f"[#{p['number']} — {p['title']}]({p['url']}) ({p['state']}; CI **{p['ci']['status']}**)" for p in pr_data),
+    status["current_focus"] = step_focus + f" | Latest GitHub PR #{p['number']} CI {p['ci']['status']}; main CI {main_ci['status']}"
+    lines = [f"- Open PR: [#{p['number']} — {p['title']}]({p['url']}) ({p['state']}); branch CI: **{p['ci']['status']}**.",
         f"- Main CI: **{main_ci['status']}**" + (f" ([run]({main_ci['url']}))" if main_ci["url"] else ""),
         f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
         f"- Progress manifest reviewed: **{progress['reviewed_on']}**; overall **{progress['overall_progress_percent']}%**.",
@@ -261,7 +337,7 @@ block = "## Automatically verified GitHub snapshot\n\n**Checked:** " + STAMP + "
 task = auto_block(task, block)
 log += "\n\n## " + TODAY + " — GitHub/progress sync\n- Verified main commit: " + commit["sha"] + " (" + snapshot["main_commit_message"] + ").\n- Main CI: " + main_ci["status"] + ".\n"
 if pr_data: log += "- Open PRs: " + "; ".join("#" + str(p["number"]) + " " + p["title"] + " (" + p["state"] + ", CI " + p["ci"]["status"] + ")" for p in pr_data) + ".\n"
-log += "- Progress manifest reviewed " + progress["reviewed_on"] + "; overall progress " + str(progress["overall_progress_percent"]) + "%." + (" Progress percentages updated from manifest." if percentages_changed else " Progress percentages unchanged; checkpoint/task state may have changed.") + "\n"
+log += "- Progress manifest reviewed " + progress["reviewed_on"] + "; overall progress " + str(progress["overall_progress_percent"]) + "%." + (" Progress values changed from manifest." if changed_progress else " Progress values unchanged.") + "\n"
 
 with open("status.json", "w", encoding="utf-8") as f: json.dump(status, f, ensure_ascii=False, indent=2); f.write("\n")
 with open("CURRENT_TASK.md", "w", encoding="utf-8") as f: f.write(task)
