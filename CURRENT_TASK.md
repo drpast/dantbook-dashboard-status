@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 22 November 2026, 09:52 AM IST  
+**Last checked:** 22 November 2026, 03:46 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main is at `e711c78` (PR #10 inventory merged). Open PR #12 is documentation-only with CI passing; PR #11 Dental Lab API is open-draft with CI failing. Main CI passes.
+**Current source activity:** Main CI success; Open PRs: #12 docs: add Codex development workflow (CI success); #11 feat: add branch-scoped dental laboratory case API (CI failure).
 
 ## Verified CI
 
@@ -29,7 +29,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **7/39 — Medical History data model and migration acceptance** (pending; no acceptance evidence recorded yet). The earlier PR #3/#4 review-and-merge checkpoint is complete. Checkpoint statuses are separate from overall/module progress.
+Current checkpoint: **7/39 — Medical History data model and migration acceptance** (pending; Next checkpoint; no acceptance evidence recorded yet.). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 
@@ -42,13 +42,13 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 22 November 2026, 09:52 AM IST
+**Checked:** 22 November 2026, 03:46 PM IST
 
-- Main CI: **success** ([run 44948187965](https://github.com/drpast/dantbook-master/actions/runs/44948187965)).
-- Main commit: [e711c78](https://github.com/drpast/dantbook-master/commit/e711c78569257c7370a2fa9fa4fd43bcd672daf6) — feat: add branch inventory workspace (#10).
-- Open PRs: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft; CI **success**); [#11 — feat: add branch-scoped dental laboratory case API](https://github.com/drpast/dantbook-master/pull/11) (open-draft; CI **failure**).
+- Open PRs: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft; CI **success**); [#11 — feat: add branch-scoped dental laboratory case API](https://github.com/drpast/dantbook-master/pull/11) (open-draft; CI **failure**)
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44948187965))
+- Main commit: [e711c78](https://github.com/drpast/dantbook-master/commit/e711c78569257c7370a2fa9fa4fd43bcd672daf6) — feat: add branch inventory workspace (#10)
 - Progress manifest reviewed: **2026-11-22**; overall **25%**.
-- PR work is not treated as merged or complete unless verified merged. Percentages remain evidence-reviewed only.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->

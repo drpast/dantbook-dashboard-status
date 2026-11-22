@@ -137,3 +137,10 @@
 - PR #11 blocker is confirmed in its job log: Prisma Client generation failed with P1012 because five bare `labOrders` relation declarations are invalid (Organization, Branch, Patient, PatientBranchAccess, ClinicalRecord); later CI stages skipped. Main remains unaffected.
 - Progress manifest checkpoint/PR state reviewed 22 Nov. Overall remains 25%; module percentages were deliberately not changed pending a full evidence review.
 - The GitHub Actions sync ran successfully (bot commit `bc5ec0d`); manually corrected the tracker and read back `status.json`, `CURRENT_TASK.md`, `CHANGELOG.md`, and `progress-manifest.json` to verify exact contents.
+
+
+## 2026-11-22 — GitHub/progress sync
+- Verified main commit: e711c78569257c7370a2fa9fa4fd43bcd672daf6 (feat: add branch inventory workspace (#10)).
+- Main CI: success.
+- Open PRs: #12 docs: add Codex development workflow (open-draft, CI success); #11 feat: add branch-scoped dental laboratory case API (open-draft, CI failure).
+- Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
