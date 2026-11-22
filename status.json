@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI success; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -97,21 +97,21 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/15",
         "head_branch": "feat/medical-history-model-acceptance",
-        "head_sha": "264442ebed8a8e1b8fb1beca02db8017097e627f",
-        "updated_at": "2026-11-22T20:06:15Z",
+        "head_sha": "93693c3731719648a6614bbbf431379cd4ddb2e2",
+        "updated_at": "2026-11-22T20:10:19Z",
         "ci": {
-          "status": "success",
-          "run_id": 45064508419,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45064508419"
+          "status": "in_progress",
+          "run_id": 45064904288,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45064904288"
         }
       }
     ],
     "open_pull_request": 15,
     "pull_request_title": "test: medical history data model and migration acceptance",
     "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45064508419,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45064508419",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45064904288,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45064904288",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/15",
     "blocker": null
   },
@@ -429,8 +429,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T20:10:01Z",
-  "last_sync_success": "2026-11-22T20:10:01Z",
+  "sync_generated_at": "2026-11-22T20:10:33Z",
+  "last_sync_success": "2026-11-22T20:10:33Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
