@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 03:08 AM IST  
+**Last checked:** 23 November 2026, 03:09 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #15 test: medical history data model and migration acceptance (CI in_progress).
+**Current source activity:** Main CI success; Open PRs: #15 test: medical history data model and migration acceptance (CI success).
 
 ## Verified CI
 
@@ -42,10 +42,10 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 03:08 AM IST
+**Checked:** 23 November 2026, 03:09 AM IST
 
-- Open PRs: [#15 — test: medical history data model and migration acceptance](https://github.com/drpast/dantbook-master/pull/15) (open-draft; CI **in_progress**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45073155086))
+- Open PRs: [#15 — test: medical history data model and migration acceptance](https://github.com/drpast/dantbook-master/pull/15) (open-draft; CI **success**)
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45073332941))
 - Main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884) — feat: add branch-scoped dental laboratory case API (#11)
 - Progress manifest reviewed: **2026-11-22**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
