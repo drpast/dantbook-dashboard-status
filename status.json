@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Latest GitHub PR #12 CI success; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — pending | Open PRs: #12 CI success; #11 CI failure; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -127,7 +127,7 @@
     "workflow_run_id": 44950575811,
     "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44950575811",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/12",
-    "blocker": null
+    "blocker": "PR #11 CI failed at Prisma Client generation (P1012): five invalid bare labOrders relation declarations in Organization, Branch, Patient, PatientBranchAccess, and ClinicalRecord. Main is unaffected; PR #12 CI passed."
   },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
@@ -138,7 +138,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "22 November 2026, 09:52 AM IST"
+    "verified_at": "22 November 2026, 09:50 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -173,7 +173,7 @@
       "title": "Patient workflow browser acceptance tests",
       "status": "completed",
       "group": "Engineering Foundation",
-      "note": "PR #3 merged",
+      "note": "PR #3 merged; latest PR-head CI passed (run 44929846484).",
       "pr": 3,
       "ci": "success"
     },
@@ -182,7 +182,7 @@
       "title": "Medical History alert and correction browser tests",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged",
+      "note": "PR #4 merged; CI passed (run 44932842340).",
       "pr": 4,
       "ci": "success"
     },
@@ -191,7 +191,7 @@
       "title": "Review and merge acceptance PRs #3 and #4",
       "status": "completed",
       "group": "Engineering Foundation",
-      "note": "PR #3 and #4 merged"
+      "note": "PR #3 and #4 merged on 21 Nov 2026; both acceptance CI runs passed."
     },
     {
       "id": "medical-history-model",
@@ -432,7 +432,7 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 6/39: Review and merge acceptance PRs #3 and #4",
+  "current_task": "Step 7/39: Medical History data model and migration acceptance",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
@@ -443,8 +443,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T04:22:23Z",
-  "last_sync_success": "2026-11-22T04:22:23Z",
+  "sync_generated_at": "2026-11-22T04:20:09Z",
+  "last_sync_success": "2026-11-22T04:20:09Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
