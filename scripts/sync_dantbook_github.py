@@ -202,6 +202,9 @@ changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {
 changed_progress = (old_progress != new_progress or
     old_progress_tracking.get("last_reviewed") != progress.get("reviewed_on") or
     old_progress_tracking.get("method") != progress.get("method"))
+percentages_changed = (old_progress.get("overall_progress_percent") != new_progress.get("overall_progress_percent") or
+    old_progress.get("modules") != new_progress.get("modules") or
+    old_progress.get("milestones") != new_progress.get("milestones"))
 # Publish a sync-health heartbeat at least every 15 minutes, without changing progress review dates.
 heartbeat_due = True
 last_sync = status.get("sync_generated_at") or status.get("last_sync_success")
@@ -258,7 +261,7 @@ block = "## Automatically verified GitHub snapshot\n\n**Checked:** " + STAMP + "
 task = auto_block(task, block)
 log += "\n\n## " + TODAY + " — GitHub/progress sync\n- Verified main commit: " + commit["sha"] + " (" + snapshot["main_commit_message"] + ").\n- Main CI: " + main_ci["status"] + ".\n"
 if pr_data: log += "- Open PRs: " + "; ".join("#" + str(p["number"]) + " " + p["title"] + " (" + p["state"] + ", CI " + p["ci"]["status"] + ")" for p in pr_data) + ".\n"
-log += "- Progress manifest reviewed " + progress["reviewed_on"] + "; overall progress " + str(progress["overall_progress_percent"]) + "%." + (" Progress values changed from manifest." if changed_progress else " Progress values unchanged.") + "\n"
+log += "- Progress manifest reviewed " + progress["reviewed_on"] + "; overall progress " + str(progress["overall_progress_percent"]) + "%." + (" Progress percentages updated from manifest." if percentages_changed else " Progress percentages unchanged; checkpoint/task state may have changed.") + "\n"
 
 with open("status.json", "w", encoding="utf-8") as f: json.dump(status, f, ensure_ascii=False, indent=2); f.write("\n")
 with open("CURRENT_TASK.md", "w", encoding="utf-8") as f: f.write(task)
