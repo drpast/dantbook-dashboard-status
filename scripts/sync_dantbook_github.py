@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
-import hashlib, json, os, time, urllib.request, urllib.parse, urllib.error
+import hashlib, json, os, re, time, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -281,6 +281,7 @@ new_progress = {
 }
 changed_snapshot = {k: v for k, v in snapshot.items() if k != "checked_on"} != {k: v for k, v in old_snapshot.items() if k != "checked_on"}
 changed_progress = old_progress_tracking.get("manifest_sha256") != progress_manifest_sha256
+percentages_changed = (old_progress.get("overall_progress_percent") != progress["overall_progress_percent"] or old_progress.get("modules") != progress["modules"] or old_progress.get("milestones") != progress["milestones"])
 # Publish a sync-health heartbeat at least every 15 minutes, without changing progress review dates.
 heartbeat_due = True
 last_sync = status.get("sync_generated_at") or status.get("last_sync_success")
