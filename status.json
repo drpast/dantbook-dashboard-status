@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI queued; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -88,8 +88,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884",
     "main_commit_message": "feat: add branch-scoped dental laboratory case API (#11)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45066782819,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45066782819",
+    "main_workflow_run_id": 45066993143,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45066993143",
     "open_pull_requests": [
       {
         "number": 15,
@@ -100,18 +100,18 @@
         "head_sha": "67bd9672d9ec22c1e6ea46f4c4b880853753ee53",
         "updated_at": "2026-11-22T20:31:54Z",
         "ci": {
-          "status": "queued",
-          "run_id": 45066956350,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45066956350"
+          "status": "success",
+          "run_id": 45066956329,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45066956329"
         }
       }
     ],
     "open_pull_request": 15,
     "pull_request_title": "test: medical history data model and migration acceptance",
     "pull_request_state": "open-draft",
-    "ci_status": "queued",
-    "workflow_run_id": 45066956350,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45066956350",
+    "ci_status": "success",
+    "workflow_run_id": 45066956329,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45066956329",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/15",
     "blocker": null
   },
@@ -429,8 +429,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T20:32:15Z",
-  "last_sync_success": "2026-11-22T20:32:15Z",
+  "sync_generated_at": "2026-11-22T20:32:36Z",
+  "last_sync_success": "2026-11-22T20:32:36Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
