@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #11 CI success; main CI in_progress",
+  "current_focus": "GitHub sync: no open PRs; main CI queued",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -84,35 +84,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-23",
-    "main_commit": "f1bb3993f224ccf1960565e47e370c7883cf6bdc",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/f1bb3993f224ccf1960565e47e370c7883cf6bdc",
-    "main_commit_message": "docs: add Codex development workflow (#12)",
-    "main_ci_status": "in_progress",
-    "main_workflow_run_id": 45059020974,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45059020974",
-    "open_pull_requests": [
-      {
-        "number": 11,
-        "title": "feat: add branch-scoped dental laboratory case API",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/11",
-        "head_branch": "feat/dental-laboratory-cases",
-        "head_sha": "519494a58f177f121a1ec28833ca2f7c4545e25f",
-        "updated_at": "2026-11-22T16:12:35Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45041948662,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45041948662"
-        }
-      }
-    ],
-    "open_pull_request": 11,
-    "pull_request_title": "feat: add branch-scoped dental laboratory case API",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45041948662,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45041948662",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/11",
+    "main_commit": "11cb60e7ee89997e78f1923500ae6724778a6884",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884",
+    "main_commit_message": "feat: add branch-scoped dental laboratory case API (#11)",
+    "main_ci_status": "queued",
+    "main_workflow_run_id": 45059095054,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45059095054",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "queued",
+    "workflow_run_id": 45059095054,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45059095054",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -124,7 +109,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 12:38 AM IST"
+    "verified_at": "23 November 2026, 12:39 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -429,8 +414,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T19:08:32Z",
-  "last_sync_success": "2026-11-22T19:08:32Z",
+  "sync_generated_at": "2026-11-22T19:09:09Z",
+  "last_sync_success": "2026-11-22T19:09:09Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
