@@ -10,6 +10,8 @@ on:
       - ".github/workflows/sync-dantbook-progress.yml"
       - "progress-manifest.json"
   workflow_dispatch:
+  repository_dispatch:
+    types: [dantbook-change]
 
 permissions:
   contents: write
