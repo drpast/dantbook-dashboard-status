@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #12 CI success; #11 CI failure; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #12 CI success; #11 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -97,12 +97,12 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/12",
         "head_branch": "chore/codex-agent-workflow",
-        "head_sha": "8f3c4f1ad444eea0cba2fecd82b662931304e1c0",
-        "updated_at": "2026-11-21T21:15:20Z",
+        "head_sha": "8ed2ab8c1118ff27a4bc193641df0ebeee134892",
+        "updated_at": "2026-11-22T16:14:30Z",
         "ci": {
           "status": "success",
-          "run_id": 44950575811,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/44950575811"
+          "run_id": 45042687063,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45042687063"
         }
       },
       {
@@ -111,12 +111,12 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/11",
         "head_branch": "feat/dental-laboratory-cases",
-        "head_sha": "867164f8fc0bb84661e842d7d21420c2b6672803",
-        "updated_at": "2026-11-21T21:06:22Z",
+        "head_sha": "519494a58f177f121a1ec28833ca2f7c4545e25f",
+        "updated_at": "2026-11-22T16:12:35Z",
         "ci": {
-          "status": "failure",
-          "run_id": 44949784904,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/44949784904"
+          "status": "success",
+          "run_id": 45041948662,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45041948662"
         }
       }
     ],
@@ -124,10 +124,10 @@
     "pull_request_title": "docs: add Codex development workflow",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 44950575811,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/44950575811",
+    "workflow_run_id": 45042687063,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45042687063",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/12",
-    "blocker": "CI failing for PR #11; inspect linked run(s)."
+    "blocker": null
   },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
@@ -138,7 +138,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "22 November 2026, 03:46 PM IST"
+    "verified_at": "22 November 2026, 10:13 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -443,8 +443,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T10:16:24Z",
-  "last_sync_success": "2026-11-22T10:16:24Z",
+  "sync_generated_at": "2026-11-22T16:43:14Z",
+  "last_sync_success": "2026-11-22T16:43:14Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
