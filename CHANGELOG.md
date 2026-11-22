@@ -126,7 +126,7 @@
 - Verified main commit: e711c78569257c7370a2fa9fa4fd43bcd672daf6 (feat: add branch inventory workspace (#10)).
 - Main CI: success.
 - Open PRs: #12 docs: add Codex development workflow (open-draft, CI success); #11 feat: add branch-scoped dental laboratory case API (open-draft, CI failure).
-- Progress manifest reviewed 2026-11-22; overall progress 25%. Progress values changed from manifest.
+- Progress manifest reviewed 2026-11-22; overall progress 25%. Checkpoint/PR state updated from reviewed manifest; percentages unchanged.
 
 
 ## 2026-11-22 — Verified dashboard synchronization correction
@@ -136,4 +136,4 @@
 - Current open drafts: PR #12 Codex development workflow docs — CI success [44950575811](https://github.com/drpast/dantbook-master/actions/runs/44950575811); PR #11 Dental Laboratory case API — CI failure [44949784904].
 - PR #11 blocker is confirmed in its job log: Prisma Client generation failed with P1012 because five bare `labOrders` relation declarations are invalid (Organization, Branch, Patient, PatientBranchAccess, ClinicalRecord); later CI stages skipped. Main remains unaffected.
 - Progress manifest checkpoint/PR state reviewed 22 Nov. Overall remains 25%; module percentages were deliberately not changed pending a full evidence review.
-- Updated `status.json`, `CURRENT_TASK.md`, and this changelog; readback verification follows.
+- The GitHub Actions sync ran successfully (bot commit `bc5ec0d`); manually corrected the tracker and read back `status.json`, `CURRENT_TASK.md`, `CHANGELOG.md`, and `progress-manifest.json` to verify exact contents.
