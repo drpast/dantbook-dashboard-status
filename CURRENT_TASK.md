@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 21 November 2026  
+**Last checked:** 22 November 2026, 09:52 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** PR #4 is the active task; PR #3 is review-ready. The archived baseline is tracked separately from GitHub implementation activity.
+**Current source activity:** Main CI success; Open PRs: #12 docs: add Codex development workflow (CI success); #11 feat: add branch-scoped dental laboratory case API (CI failure).
 
 ## Verified CI
 - PR #1 baseline verification: **merged**.
@@ -24,7 +24,7 @@ The tracker now contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **5/39 — Medical History alert and correction browser tests** (PR #4 open draft; CI in progress). PR #3 has passed CI but remains an unmerged draft. Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **7/39 — Medical History data model and migration acceptance** (pending; Next checkpoint; no acceptance evidence recorded yet.). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 Percentages live in `progress-manifest.json`. Review acceptance criteria and tests before changing values; no automatic increases based on activity alone.
@@ -37,7 +37,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 
 **Checked:** 22 November 2026, 09:52 AM IST
 
-- Open PR: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft); branch CI: **success**.
+- Open PRs: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft; CI **success**); [#11 — feat: add branch-scoped dental laboratory case API](https://github.com/drpast/dantbook-master/pull/11) (open-draft; CI **failure**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44948187965))
 - Main commit: [e711c78](https://github.com/drpast/dantbook-master/commit/e711c78569257c7370a2fa9fa4fd43bcd672daf6) — feat: add branch inventory workspace (#10)
 - Progress manifest reviewed: **2026-11-22**; overall **25%**.
