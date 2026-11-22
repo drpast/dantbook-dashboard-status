@@ -2,7 +2,7 @@
 
 **Last checked:** 23 November 2026, 12:39 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI queued; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: .
 
 ## Verified CI
 
@@ -45,7 +45,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 **Checked:** 23 November 2026, 12:39 AM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **queued** ([run](https://github.com/drpast/dantbook-master/actions/runs/45059095054))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45059095054))
 - Main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884) — feat: add branch-scoped dental laboratory case API (#11)
 - Progress manifest reviewed: **2026-11-22**; overall **25%**.
 
