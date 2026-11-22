@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
-import json, os, urllib.request, urllib.parse
+import json, os, re, urllib.request, urllib.parse
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -76,7 +76,7 @@ if pr_data:
         "pull_request_title": first_pr["title"], "pull_request_state": first_pr["state"],
         "ci_status": first_pr["ci"]["status"], "workflow_run_id": first_pr["ci"]["run_id"],
         "workflow_run_url": first_pr["ci"]["url"], "pr_url": first_pr["url"],
-        "blocker": ("CI is failing; inspect linked workflow run for details." if first_pr["ci"]["status"] == "failure" else None)})
+        "blocker": ("CI failing for " + ", ".join(f"PR #{p['number']}" for p in pr_data if p["ci"]["status"] == "failure") + "; inspect linked run(s)." if any(p["ci"]["status"] == "failure" for p in pr_data) else None)})
 else:
     snapshot.update({"open_pull_request": None, "pull_request_title": None,
         "pull_request_state": None, "ci_status": main_ci["status"],
@@ -169,11 +169,13 @@ if active_step:
     status["current_task_step_number"] = active_index
     status["task_steps_total"] = len(status["task_steps"])
     status["current_focus"] = f"Step {active_index}/{len(status['task_steps'])}: {active_step['title']} — {active_step.get('note', '')}"
+    status["current_task"] = f"Step {active_index}/{len(status['task_steps'])}: {active_step['title']}"
     status["queue"] = [x["title"] for x in status["task_steps"][active_index-1:]]
 else:
     status["current_task_step_id"] = None
     status["current_task_step_number"] = None
     status["current_focus"] = "All tracked implementation steps completed."
+    status["current_task"] = "All tracked implementation steps completed."
     status["queue"] = []
 status["progress_tracking"] = {
     "source": "progress-manifest.json",
@@ -228,8 +230,9 @@ status["source_repository"] = {"repository": OWNER + "/" + REPO,
 if pr_data:
     p = pr_data[0]
     step_focus = f"Step {status.get('current_task_step_number', '—')}/{status.get('task_steps_total', len(status['task_steps']))}: {active_step['title']} — {active_step.get('note', '')}" if active_step else "All tracked steps completed"
-    status["current_focus"] = step_focus + f" | Latest GitHub PR #{p['number']} CI {p['ci']['status']}; main CI {main_ci['status']}"
-    lines = [f"- Open PR: [#{p['number']} — {p['title']}]({p['url']}) ({p['state']}); branch CI: **{p['ci']['status']}**.",
+    pr_summary = "; ".join(f"#{p['number']} CI {p['ci']['status']}" for p in pr_data)
+    status["current_focus"] = step_focus + f" | Open PRs: {pr_summary}; main CI {main_ci['status']}"
+    lines = ["- Open PRs: " + "; ".join(f"[#{p['number']} — {p['title']}]({p['url']}) ({p['state']}; CI **{p['ci']['status']}**)" for p in pr_data),
         f"- Main CI: **{main_ci['status']}**" + (f" ([run]({main_ci['url']}))" if main_ci["url"] else ""),
         f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
         f"- Progress manifest reviewed: **{progress['reviewed_on']}**; overall **{progress['overall_progress_percent']}%**.",
@@ -241,6 +244,16 @@ else:
         f"- Main commit: [{commit['sha'][:7]}]({commit['html_url']}) — {snapshot['main_commit_message']}",
         f"- Progress manifest reviewed: **{progress['reviewed_on']}**; overall **{progress['overall_progress_percent']}%**."]
 
+# Refresh the static summary as well as the auto-sync section, so old checkpoint
+# descriptions cannot remain stale when the active step advances.
+task = re.sub(r"^\*\*Last checked:\*\*.*$", "**Last checked:** " + STAMP + "  ", task, flags=re.MULTILINE)
+activity = "Open PRs: " + "; ".join("#" + str(p["number"]) + " " + p["title"] + " (CI " + p["ci"]["status"] + ")" for p in pr_data)
+task = re.sub(r"^\*\*Current source activity:\*\*.*$", "**Current source activity:** Main CI " + main_ci["status"] + "; " + activity + ".", task, flags=re.MULTILINE)
+if active_step:
+    checkpoint_line = f"Current checkpoint: **{active_index}/{len(status['task_steps'])} — {active_step['title']}** ({active_step['status']}; {active_step.get('note') or 'awaiting verified work'}). Checkpoint statuses are tracked separately from overall/module progress."
+else:
+    checkpoint_line = "Current checkpoint: all tracked steps completed."
+task = re.sub(r"^Current checkpoint:.*$", checkpoint_line, task, flags=re.MULTILINE)
 block = "## Automatically verified GitHub snapshot\n\n**Checked:** " + STAMP + "\n\n" + "\n".join(lines) + "\n\nProgress is read from progress-manifest.json and is updated only after evidence review."
 task = auto_block(task, block)
 log += "\n\n## " + TODAY + " — GitHub/progress sync\n- Verified main commit: " + commit["sha"] + " (" + snapshot["main_commit_message"] + ").\n- Main CI: " + main_ci["status"] + ".\n"
