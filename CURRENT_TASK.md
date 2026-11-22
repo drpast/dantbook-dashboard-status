@@ -35,7 +35,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 22 November 2026, 03:58 AM IST
+**Checked:** 22 November 2026, 08:05 AM IST
 
 - Open PR: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft); branch CI: **success**.
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44948187965))
