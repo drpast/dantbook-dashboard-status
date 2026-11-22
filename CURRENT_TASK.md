@@ -1,20 +1,25 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 21 November 2026  
+**Last checked:** 22 November 2026, 03:46 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** PR #4 is the active task; PR #3 is review-ready. The archived baseline is tracked separately from GitHub implementation activity.
+**Current source activity:** Main CI success; Open PRs: #12 docs: add Codex development workflow (CI success); #11 feat: add branch-scoped dental laboratory case API (CI failure).
 
 ## Verified CI
-- PR #1 baseline verification: **merged**.
-- PR #2 authenticated patient workflow API tests: **merged**.
-- Latest reported successful main CI: [44927274198](https://github.com/drpast/dantbook-master/actions/runs/44927274198).
-- Job step readback confirms success for migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, workspace type-check, and workspace build.
-- Earlier migration failure [44918122856](https://github.com/drpast/dantbook-master/actions/runs/44918122856) is historical; subsequent CI passed the listed checks.
-- Main CI is currently reported as **success**.
+
+- Main CI: **success** — [run 44948187965](https://github.com/drpast/dantbook-master/actions/runs/44948187965). Verified job steps include migrations, foundation checks, PostgreSQL RLS, shared-patient access boundaries, concurrent patient-number allocation, type-check, build, browser acceptance, and authenticated API acceptance.
+- PR #12 Codex development workflow docs: **success** — [run 44950575811](https://github.com/drpast/dantbook-master/actions/runs/44950575811). Documentation-only; open draft, not merged.
+- PR #11 Dental Laboratory case API: **failure** — [run 44949784904](https://github.com/drpast/dantbook-master/actions/runs/44949784904). Failed at Prisma Client generation (P1012): five invalid bare `labOrders` relation declarations in Organization, Branch, Patient, PatientBranchAccess, and ClinicalRecord models. Later validation/build/acceptance stages were skipped. This blocks PR #11 only; main remains green.
+
+## Recently merged milestones
+
+- PR #3 patient browser acceptance — merged; latest PR-head CI passed [44929846484](https://github.com/drpast/dantbook-master/actions/runs/44929846484).
+- PR #4 Medical History alert/correction browser acceptance — merged; CI passed [44932842340](https://github.com/drpast/dantbook-master/actions/runs/44932842340).
+- PRs #5–#10 also merged with passing CI: clinical record, treatment plan, FDI odontogram, prescription workflow, billing workflow, and branch inventory workspace.
+- These merged features are recorded as source activity. Overall/module progress remains at the conservative, evidence-reviewed **25%**; no percentages were increased in this synchronization.
 
 ## Granular task tracker
 
-The tracker now contains **39 checkpoints** across seven work groups:
+The tracker contains **39 checkpoints** across seven work groups:
 
 - Engineering foundation: 6 checkpoints
 - Medical History: 7 checkpoints
@@ -24,28 +29,30 @@ The tracker now contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **5/39 — Medical History alert and correction browser tests** (PR #4 open draft; CI in progress). PR #3 has passed CI but remains an unmerged draft. Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **7/39 — Medical History data model and migration acceptance** (pending; Next checkpoint; no acceptance evidence recorded yet.). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
-Percentages live in `progress-manifest.json`. Review acceptance criteria and tests before changing values; no automatic increases based on activity alone.
+
+Percentages live in `progress-manifest.json`. Progress was reviewed on **22 November 2026** for checkpoint/PR state only. Overall progress remains **25%** and module percentages were not changed; a full module-evidence review is still required before adjusting them.
 
 ## Permanent exclusions
+
 Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage, NanoPix integration, and periodontal charting remain excluded.
 
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 22 November 2026, 12:48 AM IST
+**Checked:** 22 November 2026, 03:46 PM IST
 
-- Open PR: [#8 — feat: add patient prescription workflow](https://github.com/drpast/dantbook-master/pull/8) (open-draft); branch CI: **in_progress**.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44927274198))
-- Main commit: [efa75f6](https://github.com/drpast/dantbook-master/commit/efa75f6ce3eaff024f41c3b8aabd59dcb404d60c) — test: verify authenticated patient workflows
-- Progress manifest reviewed: **2026-11-21**; overall **25%**.
+- Open PRs: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft; CI **success**); [#11 — feat: add branch-scoped dental laboratory case API](https://github.com/drpast/dantbook-master/pull/11) (open-draft; CI **failure**)
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/44948187965))
+- Main commit: [e711c78](https://github.com/drpast/dantbook-master/commit/e711c78569257c7370a2fa9fa4fd43bcd672daf6) — feat: add branch inventory workspace (#10)
+- Progress manifest reviewed: **2026-11-22**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
 
-
 ## Current desktop view
-The desktop app now displays an installer-style live task: task-level progress plus one row per involved file/activity, each with its own bar, status, and explanatory note. It no longer renders the long checkpoint list as the main task view.
+
+The desktop app displays installer-style live task progress plus one row per involved file/activity, each with its own bar, status, and explanatory note. It polls the raw `status.json` feed and refreshes on its configured interval.
