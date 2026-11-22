@@ -2,7 +2,7 @@
 
 **Last checked:** 22 November 2026, 10:27 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI pending; Open PRs: #12 docs: add Codex development workflow (CI success); #11 feat: add branch-scoped dental laboratory case API (CI success).
+**Current source activity:** Main CI success; Open PRs: #12 docs: add Codex development workflow (CI success); #11 feat: add branch-scoped dental laboratory case API (CI success).
 
 ## Verified CI
 
@@ -45,7 +45,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 **Checked:** 22 November 2026, 10:27 PM IST
 
 - Open PRs: [#12 — docs: add Codex development workflow](https://github.com/drpast/dantbook-master/pull/12) (open-draft; CI **success**); [#11 — feat: add branch-scoped dental laboratory case API](https://github.com/drpast/dantbook-master/pull/11) (open-draft; CI **success**)
-- Main CI: **pending** ([run](https://github.com/drpast/dantbook-master/actions/runs/45046697396))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45046697396))
 - Main commit: [89d769d](https://github.com/drpast/dantbook-master/commit/89d769db964b8676cd2d4e9164013101bfb9d09c) — chore: notify dashboard immediately on DantBook changes (#13)
 - Progress manifest reviewed: **2026-11-22**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.

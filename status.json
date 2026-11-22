@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #12 CI success; #11 CI success; main CI pending",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #12 CI success; #11 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -87,7 +87,7 @@
     "main_commit": "89d769db964b8676cd2d4e9164013101bfb9d09c",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/89d769db964b8676cd2d4e9164013101bfb9d09c",
     "main_commit_message": "chore: notify dashboard immediately on DantBook changes (#13)",
-    "main_ci_status": "pending",
+    "main_ci_status": "success",
     "main_workflow_run_id": 45046697396,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45046697396",
     "open_pull_requests": [
@@ -443,8 +443,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T16:57:34Z",
-  "last_sync_success": "2026-11-22T16:57:34Z",
+  "sync_generated_at": "2026-11-22T16:57:47Z",
+  "last_sync_success": "2026-11-22T16:57:47Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }

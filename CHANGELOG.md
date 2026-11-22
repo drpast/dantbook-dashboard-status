@@ -165,3 +165,10 @@
 - Main CI: pending.
 - Open PRs: #12 docs: add Codex development workflow (open-draft, CI success); #11 feat: add branch-scoped dental laboratory case API (open-draft, CI success).
 - Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-22 — GitHub/progress sync
+- Verified main commit: 89d769db964b8676cd2d4e9164013101bfb9d09c (chore: notify dashboard immediately on DantBook changes (#13)).
+- Main CI: success.
+- Open PRs: #12 docs: add Codex development workflow (open-draft, CI success); #11 feat: add branch-scoped dental laboratory case API (open-draft, CI success).
+- Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
