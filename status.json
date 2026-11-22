@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "project": "DantBook",
-  "dashboard_updated": "2026-11-22",
+  "dashboard_updated": "2026-11-23",
   "overall_progress_percent": 25,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #12 CI success; #11 CI success; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #14 CI success; #12 CI success; #11 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -83,7 +83,7 @@
     "Verified 22 Nov 2026: PR #1, #2, #3, #4 and #10 are merged. Open drafts are #11 and #12, both with passing CI. Open PRs are not considered complete until owner review/merge."
   ],
   "latest_verified_snapshot": {
-    "checked_on": "2026-11-22",
+    "checked_on": "2026-11-23",
     "main_commit": "89d769db964b8676cd2d4e9164013101bfb9d09c",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/89d769db964b8676cd2d4e9164013101bfb9d09c",
     "main_commit_message": "chore: notify dashboard immediately on DantBook changes (#13)",
@@ -91,6 +91,20 @@
     "main_workflow_run_id": 45046994495,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45046994495",
     "open_pull_requests": [
+      {
+        "number": 14,
+        "title": "DEMO: verify live progress reflection (temporary)",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/14",
+        "head_branch": "demo/progress-reflection-20261123",
+        "head_sha": "4b0a0feaab3de85e46154642391a84268e0670d8",
+        "updated_at": "2026-11-22T18:49:16Z",
+        "ci": {
+          "status": "success",
+          "run_id": 45057237603,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45057237603"
+        }
+      },
       {
         "number": 12,
         "title": "docs: add Codex development workflow",
@@ -120,13 +134,13 @@
         }
       }
     ],
-    "open_pull_request": 12,
-    "pull_request_title": "docs: add Codex development workflow",
+    "open_pull_request": 14,
+    "pull_request_title": "DEMO: verify live progress reflection (temporary)",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45042687063,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45042687063",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/12",
+    "workflow_run_id": 45057237603,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45057237603",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/14",
     "blocker": null
   },
   "dashboard_connection": {
@@ -138,7 +152,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "22 November 2026, 11:23 PM IST"
+    "verified_at": "23 November 2026, 12:19 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -443,8 +457,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T17:53:50Z",
-  "last_sync_success": "2026-11-22T17:53:50Z",
+  "sync_generated_at": "2026-11-22T18:49:37Z",
+  "last_sync_success": "2026-11-22T18:49:37Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
