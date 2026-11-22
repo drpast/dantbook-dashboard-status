@@ -80,7 +80,7 @@
     "Progress percentages are evidence-reviewed estimates, not automated code metrics; canonical values live in progress-manifest.json.",
     "Excluded: enterprise features, initial X-ray/photo storage and integrations, digital treatment consent forms.",
     "Earlier PR CI run 44918122856 failed with PostgreSQL migration error 42830; the later PR run 44922607698 succeeded. Its job steps confirmed migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, type-check, and build.",
-    "PR #1 and #2 are merged. PR #3 is open-draft with successful CI; PR #4 is open-draft with CI in progress. Open PRs are not considered complete until review/merge."
+    "Verified 22 Nov 2026: PR #1, #2, #3, #4 and #10 are merged. Open drafts are #11 and #12, both with passing CI. Open PRs are not considered complete until owner review/merge."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-22",
