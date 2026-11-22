@@ -281,3 +281,10 @@
 - Main CI: success.
 - Open PRs: #15 test: medical history data model and migration acceptance (open-draft, CI success).
 - Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: 11cb60e7ee89997e78f1923500ae6724778a6884 (feat: add branch-scoped dental laboratory case API (#11)).
+- Main CI: success.
+- Open PRs: #15 test: medical history data model and migration acceptance (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-22; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
