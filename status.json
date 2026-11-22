@@ -97,12 +97,12 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/15",
         "head_branch": "feat/medical-history-model-acceptance",
-        "head_sha": "2f4722c9d8873c53ccd46e6e2f2ade346e254af1",
-        "updated_at": "2026-11-22T22:04:46Z",
+        "head_sha": "3eba1f7e0fefc04eae8ddb44964641aa57dcde81",
+        "updated_at": "2026-11-22T22:09:10Z",
         "ci": {
           "status": "success",
-          "run_id": 45075653584,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45075653584"
+          "run_id": 45076088337,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45076088337"
         }
       }
     ],
@@ -110,8 +110,8 @@
     "pull_request_title": "test: medical history data model and migration acceptance",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45075653584,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45075653584",
+    "workflow_run_id": 45076088337,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45076088337",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/15",
     "blocker": null
   },
@@ -124,7 +124,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 03:38 AM IST"
+    "verified_at": "23 November 2026, 03:39 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -429,8 +429,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T22:08:53Z",
-  "last_sync_success": "2026-11-22T22:08:53Z",
+  "sync_generated_at": "2026-11-22T22:09:26Z",
+  "last_sync_success": "2026-11-22T22:09:26Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
