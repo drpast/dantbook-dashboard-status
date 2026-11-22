@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI success; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -97,21 +97,21 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/15",
         "head_branch": "feat/medical-history-model-acceptance",
-        "head_sha": "131f6e9ed53e19e8d6b2e9912aa91f0da735f9c0",
-        "updated_at": "2026-11-22T22:20:40Z",
+        "head_sha": "582b6276a6f400ae7e378ff8bf8e0cf22cfd8336",
+        "updated_at": "2026-11-22T22:23:39Z",
         "ci": {
-          "status": "success",
-          "run_id": 45077196017,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45077196017"
+          "status": "in_progress",
+          "run_id": 45077480410,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45077480410"
         }
       }
     ],
     "open_pull_request": 15,
     "pull_request_title": "test: medical history data model and migration acceptance",
     "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45077196017,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45077196017",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45077480410,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45077480410",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/15",
     "blocker": null
   },
@@ -124,7 +124,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 03:52 AM IST"
+    "verified_at": "23 November 2026, 03:53 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -429,8 +429,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T22:22:00Z",
-  "last_sync_success": "2026-11-22T22:22:00Z",
+  "sync_generated_at": "2026-11-22T22:23:57Z",
+  "last_sync_success": "2026-11-22T22:23:57Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
