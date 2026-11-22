@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 22 November 2026, 09:50 AM IST  
+**Last checked:** 22 November 2026, 09:52 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source activity:** Main is at `e711c78` (PR #10 inventory merged). Open PR #12 is documentation-only with CI passing; PR #11 Dental Lab API is open-draft with CI failing. Main CI passes.
 
