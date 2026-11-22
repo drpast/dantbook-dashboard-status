@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI failure; main CI success",
+  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -97,23 +97,23 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/15",
         "head_branch": "feat/medical-history-model-acceptance",
-        "head_sha": "75339ba6254c2279a2c72d9afcf22fa2563252b2",
-        "updated_at": "2026-11-22T22:01:44Z",
+        "head_sha": "2f4722c9d8873c53ccd46e6e2f2ade346e254af1",
+        "updated_at": "2026-11-22T22:04:46Z",
         "ci": {
-          "status": "failure",
-          "run_id": 45075359234,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45075359234"
+          "status": "in_progress",
+          "run_id": 45075653563,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45075653563"
         }
       }
     ],
     "open_pull_request": 15,
     "pull_request_title": "test: medical history data model and migration acceptance",
     "pull_request_state": "open-draft",
-    "ci_status": "failure",
-    "workflow_run_id": 45075359234,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45075359234",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45075653563,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45075653563",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/15",
-    "blocker": "CI failing for PR #15; inspect linked run(s)."
+    "blocker": null
   },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
@@ -124,7 +124,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 03:33 AM IST"
+    "verified_at": "23 November 2026, 03:35 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -429,8 +429,8 @@
       "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
     }
   ],
-  "sync_generated_at": "2026-11-22T22:03:14Z",
-  "last_sync_success": "2026-11-22T22:03:14Z",
+  "sync_generated_at": "2026-11-22T22:05:02Z",
+  "last_sync_success": "2026-11-22T22:05:02Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
