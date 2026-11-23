@@ -99,12 +99,12 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/31",
         "head_branch": "feat/lab-submission-checkpoint-20-clean",
-        "head_sha": "02b208630b79c5d9227b058dfaf9fe22ef4a57f4",
-        "updated_at": "2026-11-23T22:14:34Z",
+        "head_sha": "01d0e2287ac751c12bee01307fa71ffd29136d12",
+        "updated_at": "2026-11-23T22:19:32Z",
         "ci": {
           "status": "success",
-          "run_id": 45277777133,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45277777133"
+          "run_id": 45278584342,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45278584342"
         }
       }
     ],
@@ -112,8 +112,8 @@
     "pull_request_title": "Feat: complete checkpoint 20/39 Create and submit laboratory cases",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45277777133,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45277777133",
+    "workflow_run_id": 45278584342,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45278584342",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/31",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 03:48 AM IST"
+    "verified_at": "24 November 2026, 03:49 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -456,8 +456,8 @@
       "note": "Checkpoint 20/39; dental lab case data model and setup is complete via PR #29 and CI 45271873096. Awaiting create and submit laboratory cases evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T22:18:40Z",
-  "last_sync_success": "2026-11-23T22:18:40Z",
+  "sync_generated_at": "2026-11-23T22:19:53Z",
+  "last_sync_success": "2026-11-23T22:19:53Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
