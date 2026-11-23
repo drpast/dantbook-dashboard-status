@@ -932,3 +932,9 @@
 - Verified main commit: 1448365afb6b15603b67dbb511a489ab4e1b9dbb (Merge pull request #16 from drpast/docs/checkpoint-8-medical-history-api-evidence).
 - Main CI: in_progress.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: 1448365afb6b15603b67dbb511a489ab4e1b9dbb (Merge pull request #16 from drpast/docs/checkpoint-8-medical-history-api-evidence).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
