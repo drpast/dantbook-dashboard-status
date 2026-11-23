@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 16/39: Payment recording, balances and adjustments —  | Open PRs: #25 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-24",
-    "main_commit": "81d58a240b941ce6e611d4d6f348f3017e7f5747",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/81d58a240b941ce6e611d4d6f348f3017e7f5747",
-    "main_commit_message": "Merge pull request #24 from drpast/docs/checkpoint-15-billing-ui-evidence",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45241991680,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45241991680",
-    "open_pull_requests": [
-      {
-        "number": 25,
-        "title": "Docs: correct checkpoint 16 title and current main HEAD",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/25",
-        "head_branch": "docs/fix-checkpoint-16-title",
-        "head_sha": "d393199485a3a05b1990be21ff873b541152e0ba",
-        "updated_at": "2026-11-23T18:42:47Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45241293865,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45241293865"
-        }
-      }
-    ],
-    "open_pull_request": 25,
-    "pull_request_title": "Docs: correct checkpoint 16 title and current main HEAD",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45241293865,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45241293865",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/25",
+    "main_commit": "9f5e43d9632d29743522c5134d0750c13a5ee660",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/9f5e43d9632d29743522c5134d0750c13a5ee660",
+    "main_commit_message": "Merge pull request #25 from drpast/docs/fix-checkpoint-16-title",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45242308780,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45242308780",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45242308780,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45242308780",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 12:17 AM IST"
+    "verified_at": "24 November 2026, 12:18 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -442,14 +427,14 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Finance summaries and reports",
+      "name": "Payment recording, balances and adjustments",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting finance summaries and reports evidence review."
+      "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting payment recording, balance and adjustment evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T18:47:05Z",
-  "last_sync_success": "2026-11-23T18:47:05Z",
+  "sync_generated_at": "2026-11-23T18:48:56Z",
+  "last_sync_success": "2026-11-23T18:48:56Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
