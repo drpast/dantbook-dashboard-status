@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 09:58 PM IST  
+**Last checked:** 23 November 2026, 10:01 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI cancelled; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,10 +41,10 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 09:58 PM IST
+**Checked:** 23 November 2026, 10:01 PM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45216538118))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45217487722))
 - Main commit: [beafada](https://github.com/drpast/dantbook-master/commit/beafadabce470bd7a30bea0b6eb928d545333185) — Merge pull request #19 from drpast/docs/checkpoint-10-alert-evidence
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 
