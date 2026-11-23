@@ -6,6 +6,11 @@
 - Progress percentages/status remain copied from the evidence-reviewed manifest and are not calculated or changed by the heartbeat.
 # DantBook Progress Changelog
 
+## 2026-11-23 — Checkpoint 8/39 complete
+- PR #4 authenticated Medical History API/browser acceptance and PR #15 database acceptance are now recorded as checkpoint 8/39 evidence by merged PR #16 ([CI 45166134533](https://github.com/drpast/dantbook-master/actions/runs/45166134533)).
+- Marked "Medical History API endpoints and validation" complete; current checkpoint advances to #9, Medical History forms and patient-record UI.
+- Overall progress remains 25%; module percentages were not increased without separate evidence review.
+
 ## 2026-11-23 — Checkpoint 7/39 complete
 - PR #15 Medical History data-model/migration acceptance merged with CI success ([run 45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471)).
 - Marked "Medical History data model and migration acceptance" complete; current checkpoint advances to #8, Medical History API endpoints and validation.
