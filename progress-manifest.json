@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#13 and #15–#19 with passing acceptance CI where applicable; checkpoints 7/39 through 10/39 (Medical History data model, API, UI, and allergy/medication/condition alerts) are complete. Next checkpoint is #11, History corrections, audit trail and safety checks. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#13 and #15–#20 with passing acceptance CI where applicable; checkpoints 7/39 through 11/39 (Medical History data model, API, UI, allergy/medication/condition alerts, and history corrections/audit/safety checks) are complete. Next checkpoint is #12, Integrate Medical History into patient workflow. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -162,8 +162,11 @@
     {
       "id": "medical-history-corrections",
       "title": "History corrections, audit trail and safety checks",
-      "status": "pending",
-      "group": "Medical History"
+      "status": "completed",
+      "group": "Medical History",
+      "note": "PR #4 correction/revision API and browser acceptance (CI 44933570034); PR #15 append-only, audit and safety acceptance (CI 45079372471); PR #8 append-only prescription events (CI 44944050424); PR #20 records checkpoint 11 evidence (CI 45218954192).",
+      "pr": 15,
+      "ci": "success"
     },
     {
       "id": "medical-history-integration",
@@ -335,18 +338,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-corrections",
-  "current_task_step_number": 11,
+  "current_task_step_id": "medical-history-integration",
+  "current_task_step_number": 12,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "History corrections, audit trail and safety checks",
+      "name": "Integrate Medical History into patient workflow",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 11/39; allergy/medication/condition alert evidence is complete via PR #2/#8/#19. Awaiting separate audit-trail and safety-check evidence review."
+      "note": "Checkpoint 12/39; history corrections, audit trail and safety checks are complete via PR #4/#15/#20. Awaiting separate patient-workflow integration evidence review."
     }
   ]
 }
