@@ -1062,3 +1062,9 @@
 - Verified main commit: b3fc5e13f2199a7ee60586e117bce3803d9c1a31 (Merge pull request #20 from drpast/docs/checkpoint-11-audit-evidence).
 - Main CI: cancelled.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: b3fc5e13f2199a7ee60586e117bce3803d9c1a31 (Merge pull request #20 from drpast/docs/checkpoint-11-audit-evidence).
+- Main CI: cancelled.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
