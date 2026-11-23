@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 10:41 PM IST  
+**Last checked:** 23 November 2026, 10:57 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: #22 test: complete checkpoint 13/39 Medical History module acceptance and regression (CI in_progress).
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,12 +41,13 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 10:41 PM IST
+**Checked:** 23 November 2026, 10:57 PM IST
 
-- No open pull requests returned by GitHub.
+- Open PRs: [#22 — test: complete checkpoint 13/39 Medical History module acceptance and regression](https://github.com/drpast/dantbook-master/pull/22) (open-draft; CI **in_progress**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45224822076))
 - Main commit: [c624bc2](https://github.com/drpast/dantbook-master/commit/c624bc256edcb533fec1932164e0f20d8e4c07dc) — Merge pull request #21 from drpast/test/checkpoint-12-history-workflow-integration
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
