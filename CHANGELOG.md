@@ -1481,3 +1481,10 @@
 - Main CI: success.
 - Open PRs: #31 Feat: complete checkpoint 20/39 Create and submit laboratory cases (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 5bf98c2ff87b832a62b5e3a0ef6562ca6d415e8d (Merge pull request #29 from drpast/docs/dental-lab-model-checkpoint-19).
+- Main CI: success.
+- Open PRs: #31 Feat: complete checkpoint 20/39 Create and submit laboratory cases (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
