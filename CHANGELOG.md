@@ -1502,3 +1502,9 @@
 - Main CI: success.
 - Open PRs: #31 Feat: complete checkpoint 20/39 Create and submit laboratory cases (open-draft, CI success).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 09b7b62b5c82672c5b4969da3be009849b6c56ec (Merge pull request #31 from drpast/feat/lab-submission-checkpoint-20-clean).
+- Main CI: cancelled.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
