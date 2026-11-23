@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 17/39: Finance summaries and reports —  | Open PRs: #27 CI in_progress; main CI queued",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,17 +89,32 @@
     "main_commit": "d2ea0dd5767e7160d206e5f5593dc8de5be48e08",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/d2ea0dd5767e7160d206e5f5593dc8de5be48e08",
     "main_commit_message": "Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45247773505,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247773505",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45247773505,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247773505",
-    "pr_url": null,
+    "main_ci_status": "queued",
+    "main_workflow_run_id": 45251894564,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45251894564",
+    "open_pull_requests": [
+      {
+        "number": 27,
+        "title": "Feat: complete checkpoint 17/39 Finance summaries and reports",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/27",
+        "head_branch": "feat/finance-summary-report-checkpoint-17",
+        "head_sha": "f11977b45027883578b4b021b2a0728cb2dd90c1",
+        "updated_at": "2026-11-23T19:43:35Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45251869439,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45251869439"
+        }
+      }
+    ],
+    "open_pull_request": 27,
+    "pull_request_title": "Feat: complete checkpoint 17/39 Finance summaries and reports",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45251869439,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45251869439",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/27",
     "blocker": null
   },
   "dashboard_connection": {
@@ -111,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 01:01 AM IST"
+    "verified_at": "24 November 2026, 01:13 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -435,8 +450,8 @@
       "note": "Checkpoint 17/39; payment recording, balances and adjustments is complete via PR #26 and CI 45245153183. Awaiting finance summaries and reports evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T19:31:05Z",
-  "last_sync_success": "2026-11-23T19:31:05Z",
+  "sync_generated_at": "2026-11-23T19:43:37Z",
+  "last_sync_success": "2026-11-23T19:43:37Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
