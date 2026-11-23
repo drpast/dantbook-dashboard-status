@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#27 with passing acceptance CI where applicable; checkpoints 7/39 through 17/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, and Finance summaries and reports) are complete. Next checkpoint is #18, Finance permissions, calculations and acceptance tests. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#28 with passing acceptance CI where applicable; checkpoints 7/39 through 18/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, and Finance permissions, calculations and acceptance tests) are complete. Next checkpoint is #19, Dental Lab case data model and setup. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -225,8 +225,11 @@
     {
       "id": "finance-tests",
       "title": "Finance permissions, calculations and acceptance tests",
-      "status": "pending",
-      "group": "Finance"
+      "status": "completed",
+      "group": "Finance",
+      "pr": 28,
+      "ci": "success",
+      "note": "PR #28 adds a live READ_ONLY/staff finance permission matrix and exact four-decimal multi-line calculation assertions (PR CI 45262490595; post-merge main CI 45264858637; merge commit 7af9b26beb1ddc547009d67358683a5149e0020e)."
     },
     {
       "id": "lab-model",
@@ -356,18 +359,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "finance-tests",
-  "current_task_step_number": 18,
+  "current_task_step_id": "lab-model",
+  "current_task_step_number": 19,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Finance permissions, calculations and acceptance tests",
+      "name": "Dental Lab case data model and setup",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 18/39; finance summaries and reports is complete via PR #27 and CI 45256819620. Awaiting finance permissions, calculations and acceptance tests evidence review."
+      "note": "Checkpoint 19/39; finance permissions, calculations and acceptance tests is complete via PR #28 and CI 45262490595. Awaiting dental lab case data model and setup evidence review."
     }
   ]
 }
