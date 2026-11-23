@@ -1262,3 +1262,10 @@
 - Main CI: success.
 - Open PRs: #26 Test: complete checkpoint 16/39 Payment recording, balances and adjustments (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 9f5e43d9632d29743522c5134d0750c13a5ee660 (Merge pull request #25 from drpast/docs/fix-checkpoint-16-title).
+- Main CI: success.
+- Open PRs: #26 Test: complete checkpoint 16/39 Payment recording, balances and adjustments (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
