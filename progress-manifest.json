@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_on": "2026-11-22",
+  "reviewed_on": "2026-11-23",
   "overall_progress_percent": 25,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. PR #3 and #4 are merged with passing acceptance CI; next checkpoint is #7, Medical History data model and migration acceptance. Merged PRs #5–#10 also delivered clinical-record, treatment-plan, odontogram, prescription, billing, and inventory workflows. Overall/module percentages remain conservative pending a separate full evidence review.",
+  "note": "39-step roadmap retained. PR #3 and #4 are merged with passing acceptance CI; next checkpoint is #7, Medical History data model and migration acceptance. PRs #5–#10, #11, #12, and #13 are merged; PR #11 and #12 final CI passed. PR #15 is open draft with CI success but does not complete checkpoint 7. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -128,7 +128,7 @@
       "title": "Medical History data model and migration acceptance",
       "status": "pending",
       "group": "Medical History",
-      "note": "Next checkpoint; no acceptance evidence recorded yet."
+      "note": "PR #15 open draft; CI success (45079372471). Checkpoint awaits review/merge and verified acceptance."
     },
     {
       "id": "medical-history-api",
@@ -335,7 +335,7 @@
       "name": "Medical History data model and migration acceptance",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
+      "note": "Checkpoint 7/39; PR #15 draft CI passed, awaiting review/merge and accepted evidence."
     }
   ]
 }
