@@ -44,7 +44,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 **Checked:** 23 November 2026, 11:21 PM IST
 
 - Open PRs: [#23 — test: complete checkpoint 14/39 Finance data model and billing rules](https://github.com/drpast/dantbook-master/pull/23) (open-draft; CI **in_progress**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45229398742))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45232178543))
 - Main commit: [c7be570](https://github.com/drpast/dantbook-master/commit/c7be5705a30c51cbb98b03d99abdfd88cbe436f7) — Merge pull request #22 from drpast/test/checkpoint-13-module-regression
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
