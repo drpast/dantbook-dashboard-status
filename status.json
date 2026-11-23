@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 11:01 PM IST"
+    "verified_at": "23 November 2026, 11:05 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -223,8 +223,11 @@
     {
       "id": "medical-history-acceptance",
       "title": "Medical History module acceptance and regression tests",
-      "status": "pending",
-      "group": "Medical History"
+      "status": "completed",
+      "group": "Medical History",
+      "note": "PR #22 merged",
+      "pr": 22,
+      "ci": "success"
     },
     {
       "id": "finance-model",
@@ -384,11 +387,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-acceptance",
-  "current_task_step_number": 13,
+  "current_task_step_id": "finance-model",
+  "current_task_step_number": 14,
   "task_steps_total": 39,
   "queue": [
-    "Medical History module acceptance and regression tests",
     "Finance data model and billing rules",
     "Treatment billing and invoice workflow UI",
     "Payment recording, balances and adjustments",
@@ -416,19 +418,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 13/39: Medical History module acceptance and regression tests",
+  "current_task": "Step 14/39: Finance data model and billing rules",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Medical History module acceptance and regression tests",
+      "name": "Finance data model and billing rules",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 13/39; patient-workflow integration is complete via PR #21. Awaiting consolidated Medical History module acceptance and regression evidence review."
+      "note": "Checkpoint 14/39; Medical History module acceptance and regression gates are complete via PR #22. Awaiting finance data model and billing-rule evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T17:31:57Z",
-  "last_sync_success": "2026-11-23T17:31:57Z",
+  "sync_generated_at": "2026-11-23T17:35:46Z",
+  "last_sync_success": "2026-11-23T17:35:46Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
