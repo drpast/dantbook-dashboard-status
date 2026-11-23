@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 10:37 PM IST"
+    "verified_at": "23 November 2026, 10:39 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -214,8 +214,11 @@
     {
       "id": "medical-history-integration",
       "title": "Integrate Medical History into patient workflow",
-      "status": "pending",
-      "group": "Medical History"
+      "status": "completed",
+      "group": "Medical History",
+      "note": "PR #21 merged",
+      "pr": 21,
+      "ci": "success"
     },
     {
       "id": "medical-history-acceptance",
@@ -381,11 +384,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-integration",
-  "current_task_step_number": 12,
+  "current_task_step_id": "medical-history-acceptance",
+  "current_task_step_number": 13,
   "task_steps_total": 39,
   "queue": [
-    "Integrate Medical History into patient workflow",
     "Medical History module acceptance and regression tests",
     "Finance data model and billing rules",
     "Treatment billing and invoice workflow UI",
@@ -414,19 +416,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 12/39: Integrate Medical History into patient workflow",
+  "current_task": "Step 13/39: Medical History module acceptance and regression tests",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Integrate Medical History into patient workflow",
+      "name": "Medical History module acceptance and regression tests",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 12/39; history corrections, audit trail and safety checks are complete via PR #4/#15/#20. Awaiting separate patient-workflow integration evidence review."
+      "note": "Checkpoint 13/39; patient-workflow integration is complete via PR #21. Awaiting consolidated Medical History module acceptance and regression evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T17:07:45Z",
-  "last_sync_success": "2026-11-23T17:07:45Z",
+  "sync_generated_at": "2026-11-23T17:09:49Z",
+  "last_sync_success": "2026-11-23T17:09:49Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
