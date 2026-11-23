@@ -1381,3 +1381,10 @@
 - Main CI: success.
 - Open PRs: #28 Test: complete checkpoint 18/39 Finance permissions, calculations and acceptance tests (open-draft, CI success).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 41693ef5aafcb0389b43e73be1d630ee5d5f467e (Merge pull request #27 from drpast/feat/finance-summary-report-checkpoint-17).
+- Main CI: in_progress.
+- Open PRs: #28 Test: complete checkpoint 18/39 Finance permissions, calculations and acceptance tests (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
