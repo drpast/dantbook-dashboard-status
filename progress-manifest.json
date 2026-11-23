@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. PRs #3–#17 are merged with passing acceptance CI where applicable; checkpoints 7/39 (Medical History data model acceptance), 8/39 (Medical History API endpoints and validation), and 9/39 (Medical History forms and patient-record UI) are complete. Next checkpoint is #10, Allergy, medication and condition alerts. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#13 and #15–#19 with passing acceptance CI where applicable; checkpoints 7/39 through 10/39 (Medical History data model, API, UI, and allergy/medication/condition alerts) are complete. Next checkpoint is #11, History corrections, audit trail and safety checks. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -153,8 +153,11 @@
     {
       "id": "medical-history-alerts",
       "title": "Allergy, medication and condition alerts",
-      "status": "pending",
-      "group": "Medical History"
+      "status": "completed",
+      "group": "Medical History",
+      "note": "PR #2 patient API acceptance (CI 44927048038); PR #8 prescriptions/allergy safety and browser acceptance (CI 44944050424); PR #19 records checkpoint 10 evidence with CI 45215325156. Shared read-only allergy alerts verified in CI.",
+      "pr": 8,
+      "ci": "success"
     },
     {
       "id": "medical-history-corrections",
@@ -332,18 +335,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-alerts",
-  "current_task_step_number": 10,
+  "current_task_step_id": "medical-history-corrections",
+  "current_task_step_number": 11,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Allergy, medication and condition alerts",
+      "name": "History corrections, audit trail and safety checks",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 10/39; Medical History data model, API, and UI acceptance are complete. Awaiting separate alert-rule evidence review."
+      "note": "Checkpoint 11/39; allergy/medication/condition alert evidence is complete via PR #2/#8/#19. Awaiting separate audit-trail and safety-check evidence review."
     }
   ]
 }
