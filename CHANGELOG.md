@@ -1408,3 +1408,9 @@
 - Verified main commit: 7af9b26beb1ddc547009d67358683a5149e0020e (Merge pull request #28 from drpast/test/finance-permissions-calculations-checkpoint-18).
 - Main CI: in_progress.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 7af9b26beb1ddc547009d67358683a5149e0020e (Merge pull request #28 from drpast/test/finance-permissions-calculations-checkpoint-18).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.

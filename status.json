@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,16 +89,16 @@
     "main_commit": "7af9b26beb1ddc547009d67358683a5149e0020e",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/7af9b26beb1ddc547009d67358683a5149e0020e",
     "main_commit_message": "Merge pull request #28 from drpast/test/finance-permissions-calculations-checkpoint-18",
-    "main_ci_status": "in_progress",
-    "main_workflow_run_id": 45263619976,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45263619976",
+    "main_ci_status": "success",
+    "main_workflow_run_id": 45264858637,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45264858637",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "in_progress",
-    "workflow_run_id": 45263619976,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45263619976",
+    "ci_status": "success",
+    "workflow_run_id": 45264858637,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45264858637",
     "pr_url": null,
     "blocker": null
   },
@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 02:21 AM IST"
+    "verified_at": "24 November 2026, 02:28 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -437,8 +437,8 @@
       "note": "Checkpoint 18/39; finance summaries and reports is complete via PR #27 and CI 45256819620. Awaiting finance permissions, calculations and acceptance tests evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T20:51:27Z",
-  "last_sync_success": "2026-11-23T20:51:27Z",
+  "sync_generated_at": "2026-11-23T20:58:52Z",
+  "last_sync_success": "2026-11-23T20:58:52Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
