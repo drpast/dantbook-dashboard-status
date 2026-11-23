@@ -998,3 +998,9 @@
 - Main CI: success.
 - Open PRs: #18 docs: correct checkpoint 10/39 reference (open-draft, CI success).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: 00ba02aab9c0860d578c1d59a1e8a2a2d8499b90 (Merge pull request #18 from drpast/docs/fix-checkpoint-10-reference).
+- Main CI: in_progress.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
