@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#24 with passing acceptance CI where applicable; checkpoints 7/39 through 15/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, and Treatment billing and invoice workflow UI) are complete. Next checkpoint is #16, Finance summaries and reports. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#24 with passing acceptance CI where applicable; checkpoints 7/39 through 15/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, and Treatment billing and invoice workflow UI) are complete. Next checkpoint is #16, Payment recording, balances and adjustments. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -350,7 +350,7 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "finance-reports",
+  "current_task_step_id": "finance-payments",
   "current_task_step_number": 16,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
@@ -358,10 +358,10 @@
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Finance summaries and reports",
+      "name": "Payment recording, balances and adjustments",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting finance summaries and reports evidence review."
+      "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting payment recording, balance and adjustment evidence review."
     }
   ]
 }
