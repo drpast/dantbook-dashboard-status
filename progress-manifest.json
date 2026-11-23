@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. PRs #3–#17 are merged with passing acceptance CI where applicable; checkpoints 7/39 (Medical History data model acceptance), 8/39 (Medical History API endpoints and validation), and 9/39 (Medical History forms and patient-record UI) are complete. Next checkpoint is #10, Integrate Medical History into patient workflow. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. PRs #3–#17 are merged with passing acceptance CI where applicable; checkpoints 7/39 (Medical History data model acceptance), 8/39 (Medical History API endpoints and validation), and 9/39 (Medical History forms and patient-record UI) are complete. Next checkpoint is #10, Allergy, medication and condition alerts. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -332,7 +332,7 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-integration",
+  "current_task_step_id": "medical-history-alerts",
   "current_task_step_number": 10,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
@@ -340,10 +340,10 @@
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Integrate Medical History into patient workflow",
+      "name": "Allergy, medication and condition alerts",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 10/39; forms and API acceptance are complete via PR #4/#15. Awaiting separate workflow integration evidence review."
+      "note": "Checkpoint 10/39; Medical History data model, API, and UI acceptance are complete. Awaiting separate alert-rule evidence review."
     }
   ]
 }
