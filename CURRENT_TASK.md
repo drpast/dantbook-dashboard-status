@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 04:28 PM IST  
+**Last checked:** 23 November 2026, 04:32 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** PR #15 merged; checkpoint 7/39 complete. Main CI and open-PR details are tracked in the auto-sync snapshot below.
+**Current source activity:** Main CI success; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -29,7 +29,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **8/39 — Medical History API endpoints and validation** (pending). Checkpoint 7 is complete via merged PR #15 with passing CI. Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **8/39 — Medical History API endpoints and validation** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 Progress percentages live in `progress-manifest.json`. Reviewed **23 November 2026** for repository and checkpoint status. Overall remains **25%**; module percentages were not increased. PR #15 merged with passing CI and completes checkpoint 7; the next evidence-backed checkpoint is #8.
@@ -41,10 +41,10 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 04:28 PM IST
+**Checked:** 23 November 2026, 04:32 PM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45160935190))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45161510376))
 - Main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — Merge pull request #15 from drpast/feat/medical-history-model-acceptance
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 

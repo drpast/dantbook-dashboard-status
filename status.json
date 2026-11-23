@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,16 +89,16 @@
     "main_commit": "1cee2068ef77649b2ef9035da7495acd6ca6bbe8",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8",
     "main_commit_message": "Merge pull request #15 from drpast/feat/medical-history-model-acceptance",
-    "main_ci_status": "in_progress",
-    "main_workflow_run_id": 45160935190,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45160935190",
+    "main_ci_status": "success",
+    "main_workflow_run_id": 45161510376,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45161510376",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "in_progress",
-    "workflow_run_id": 45160935190,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45160935190",
+    "ci_status": "success",
+    "workflow_run_id": 45161510376,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45161510376",
     "pr_url": null,
     "blocker": null
   },
@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 04:28 PM IST"
+    "verified_at": "23 November 2026, 04:32 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -169,9 +169,11 @@
     {
       "id": "medical-history-model",
       "title": "Medical History data model and migration acceptance",
-      "status": "pending",
+      "status": "completed",
       "group": "Medical History",
-      "note": "PR #15 open draft; CI success (45079372471). Checkpoint awaits review/merge and verified acceptance."
+      "note": "PR #15 merged",
+      "pr": 15,
+      "ci": "success"
     },
     {
       "id": "medical-history-api",
@@ -367,11 +369,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-model",
-  "current_task_step_number": 7,
+  "current_task_step_id": "medical-history-api",
+  "current_task_step_number": 8,
   "task_steps_total": 39,
   "queue": [
-    "Medical History data model and migration acceptance",
     "Medical History API endpoints and validation",
     "Medical History forms and patient-record UI",
     "Allergy, medication and condition alerts",
@@ -405,19 +406,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 7/39: Medical History data model and migration acceptance",
+  "current_task": "Step 8/39: Medical History API endpoints and validation",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Medical History data model and migration acceptance",
+      "name": "Medical History API endpoints and validation",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 7/39; PR #15 draft CI passed, awaiting review/merge and accepted evidence."
+      "note": "Checkpoint 8/39; PR #15 established data-model acceptance. Awaiting API/validation evidence."
     }
   ],
-  "sync_generated_at": "2026-11-23T10:58:56Z",
-  "last_sync_success": "2026-11-23T10:58:56Z",
+  "sync_generated_at": "2026-11-23T11:02:40Z",
+  "last_sync_success": "2026-11-23T11:02:40Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
