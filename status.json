@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 7/39: Medical History data model and migration acceptance — Next checkpoint; no acceptance evidence recorded yet. | Open PRs: #15 CI success; main CI success",
+  "current_focus": "Checkpoint 7/39: Medical History data model and migration acceptance — PR #15 open-draft; CI success, awaiting review/merge. Latest main commit 11cb60e; direct main CI unverified (notification workflow only).",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -80,16 +80,18 @@
     "Progress percentages are evidence-reviewed estimates, not automated code metrics; canonical values live in progress-manifest.json.",
     "Excluded: enterprise features, initial X-ray/photo storage and integrations, digital treatment consent forms.",
     "Earlier PR CI run 44918122856 failed with PostgreSQL migration error 42830; the later PR run 44922607698 succeeded. Its job steps confirmed migrations, foundation checks, PostgreSQL RLS, shared patient access boundaries, concurrent patient-number allocation, type-check, and build.",
-    "Verified 22 Nov 2026: PR #1, #2, #3, #4 and #10 are merged. Open drafts are #11 and #12, both with passing CI. Open PRs are not considered complete until owner review/merge."
+    "Verified 23 Nov 2026: PR #11 Dental Laboratory case API, PR #12 Codex workflow documentation, and PR #13 immediate dashboard notification are merged. PR #11's earlier Prisma P1012 CI failure (run 44949784904) was superseded by successful rerun 45041948662; PR #12 CI passed run 45042687063.",
+    "PR #15 Medical History data-model acceptance remains open draft; CI passed (run 45079372471). Checkpoint 7/39 remains pending until review/merge and acceptance evidence; open PR work is not counted complete.",
+    "Latest main commit is 11cb60e7ee89997e78f1923500ae6724778a6884. The only run surfaced for it (45079706235) is the dashboard-notification workflow, not CI; direct main CI is unverified. Progress remains 25%."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-23",
     "main_commit": "11cb60e7ee89997e78f1923500ae6724778a6884",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884",
     "main_commit_message": "feat: add branch-scoped dental laboratory case API (#11)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45079706235,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45079706235",
+    "main_ci_status": "unverified",
+    "main_workflow_run_id": null,
+    "main_workflow_run_url": null,
     "open_pull_requests": [
       {
         "number": 15,
@@ -101,8 +103,8 @@
         "updated_at": "2026-11-22T22:44:13Z",
         "ci": {
           "status": "success",
-          "run_id": 45079372414,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45079372414"
+          "run_id": 45079372471,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45079372471"
         }
       }
     ],
@@ -110,10 +112,14 @@
     "pull_request_title": "test: medical history data model and migration acceptance",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45079372414,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45079372414",
+    "workflow_run_id": 45079372471,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45079372471",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/15",
-    "blocker": null
+    "blocker": "PR #15 remains draft awaiting owner review/merge. Direct main CI for latest HEAD is unverified; latest surfaced run is notification-only.",
+    "main_ci_note": "Direct CI for this main HEAD was not surfaced. Run 45079706235 is a successful dashboard-notification workflow with only a notify job, not CI. PR #11 pre-merge CI passed.",
+    "main_notification_status": "success",
+    "main_notification_workflow_run_id": 45079706235,
+    "main_notification_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45079706235"
   },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
@@ -124,11 +130,11 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 09:13 AM IST"
+    "verified_at": "23 November 2026, 09:36 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
-    "last_reviewed": "2026-11-22",
+    "last_reviewed": "2026-11-23",
     "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
     "sync_poll_minutes": 5
   },
@@ -184,7 +190,7 @@
       "title": "Medical History data model and migration acceptance",
       "status": "pending",
       "group": "Medical History",
-      "note": "Next checkpoint; no acceptance evidence recorded yet."
+      "note": "PR #15 is open draft with CI success (run 45079372471); checkpoint remains pending review/merge and acceptance evidence."
     },
     {
       "id": "medical-history-api",
@@ -426,7 +432,7 @@
       "name": "Medical History data model and migration acceptance",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 7/39; awaiting implementation and verified acceptance."
+      "note": "Checkpoint 7/39; PR #15 draft CI passed, awaiting review/merge and accepted evidence."
     }
   ],
   "sync_generated_at": "2026-11-23T03:43:45Z",
