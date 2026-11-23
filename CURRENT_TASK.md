@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 07:56 PM IST  
+**Last checked:** 23 November 2026, 09:50 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: #19 docs: record checkpoint 10/39 Allergy, medication and condition alerts evidence (CI in_progress).
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,12 +41,13 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 07:56 PM IST
+**Checked:** 23 November 2026, 09:50 PM IST
 
-- No open pull requests returned by GitHub.
+- Open PRs: [#19 — docs: record checkpoint 10/39 Allergy, medication and condition alerts evidence](https://github.com/drpast/dantbook-master/pull/19) (open-draft; CI **in_progress**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45194175185))
 - Main commit: [00ba02a](https://github.com/drpast/dantbook-master/commit/00ba02aab9c0860d578c1d59a1e8a2a2d8499b90) — Merge pull request #18 from drpast/docs/fix-checkpoint-10-reference
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->

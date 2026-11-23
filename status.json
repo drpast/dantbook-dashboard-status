@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 10/39: Allergy, medication and condition alerts —  | Open PRs: #19 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -92,14 +92,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45194175185,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45194175185",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45194175185,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45194175185",
-    "pr_url": null,
+    "open_pull_requests": [
+      {
+        "number": 19,
+        "title": "docs: record checkpoint 10/39 Allergy, medication and condition alerts evidence",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/19",
+        "head_branch": "docs/checkpoint-10-alert-evidence",
+        "head_sha": "74a6c1228f2f753bf7a33e9986ec04cd0c62c851",
+        "updated_at": "2026-11-23T16:20:04Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45215325156,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45215325156"
+        }
+      }
+    ],
+    "open_pull_request": 19,
+    "pull_request_title": "docs: record checkpoint 10/39 Allergy, medication and condition alerts evidence",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45215325156,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45215325156",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/19",
     "blocker": null
   },
   "dashboard_connection": {
@@ -111,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 07:56 PM IST"
+    "verified_at": "23 November 2026, 09:50 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -421,8 +436,8 @@
       "note": "Checkpoint 10/39; Medical History data model, API, and UI acceptance are complete. Awaiting separate alert-rule evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T14:26:25Z",
-  "last_sync_success": "2026-11-23T14:26:25Z",
+  "sync_generated_at": "2026-11-23T16:20:24Z",
+  "last_sync_success": "2026-11-23T16:20:24Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
