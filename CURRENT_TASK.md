@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 07:40 PM IST  
+**Last checked:** 23 November 2026, 07:41 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #17 docs: record checkpoint 9/39 Medical History UI evidence (CI success).
+**Current source activity:** Main CI queued; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,13 +41,12 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 07:40 PM IST
+**Checked:** 23 November 2026, 07:41 PM IST
 
-- Open PRs: [#17 — docs: record checkpoint 9/39 Medical History UI evidence](https://github.com/drpast/dantbook-master/pull/17) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45191224016))
-- Main commit: [1448365](https://github.com/drpast/dantbook-master/commit/1448365afb6b15603b67dbb511a489ab4e1b9dbb) — Merge pull request #16 from drpast/docs/checkpoint-8-medical-history-api-evidence
+- No open pull requests returned by GitHub.
+- Main CI: **queued** ([run](https://github.com/drpast/dantbook-master/actions/runs/45191541126))
+- Main commit: [b208b2b](https://github.com/drpast/dantbook-master/commit/b208b2bcee52183585765f8e6f60715655ed9ec5) — Merge pull request #17 from drpast/docs/checkpoint-9-medical-history-ui-evidence
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
