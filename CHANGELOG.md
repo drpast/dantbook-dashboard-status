@@ -1113,3 +1113,10 @@
 - Main CI: success.
 - Open PRs: #22 test: complete checkpoint 13/39 Medical History module acceptance and regression (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: c624bc256edcb533fec1932164e0f20d8e4c07dc (Merge pull request #21 from drpast/test/checkpoint-12-history-workflow-integration).
+- Main CI: success.
+- Open PRs: #22 test: complete checkpoint 13/39 Medical History module acceptance and regression (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
