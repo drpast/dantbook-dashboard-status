@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#26 with passing acceptance CI where applicable; checkpoints 7/39 through 16/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, and Payment recording, balances and adjustments) are complete. Next checkpoint is #17, Finance summaries and reports. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#27 with passing acceptance CI where applicable; checkpoints 7/39 through 17/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, and Finance summaries and reports) are complete. Next checkpoint is #18, Finance permissions, calculations and acceptance tests. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -216,8 +216,11 @@
     {
       "id": "finance-reports",
       "title": "Finance summaries and reports",
-      "status": "pending",
-      "group": "Finance"
+      "status": "completed",
+      "group": "Finance",
+      "pr": 27,
+      "ci": "success",
+      "note": "PR #27 adds a branch-scoped aggregate finance summary with live assertions for issued/voided invoices, active collections, reversals, outstanding balances, role denial, patient-ID privacy and branch isolation (CI 45256819620; post-merge main CI 45259455866)."
     },
     {
       "id": "finance-tests",
@@ -353,18 +356,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "finance-reports",
-  "current_task_step_number": 17,
+  "current_task_step_id": "finance-tests",
+  "current_task_step_number": 18,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Finance summaries and reports",
+      "name": "Finance permissions, calculations and acceptance tests",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 17/39; payment recording, balances and adjustments is complete via PR #26 and CI 45245153183. Awaiting finance summaries and reports evidence review."
+      "note": "Checkpoint 18/39; finance summaries and reports is complete via PR #27 and CI 45256819620. Awaiting finance permissions, calculations and acceptance tests evidence review."
     }
   ]
 }
