@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 11:43 PM IST  
+**Last checked:** 23 November 2026, 11:44 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI in_progress; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,10 +41,10 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 11:43 PM IST
+**Checked:** 23 November 2026, 11:44 PM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45235629919))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45236194925))
 - Main commit: [b7e16fa](https://github.com/drpast/dantbook-master/commit/b7e16fab745c4c58037d97a2f36c522d1a823ebe) — Merge pull request #23 from drpast/test/checkpoint-14-finance-model-regression
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 
