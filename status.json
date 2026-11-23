@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 03:58 AM IST"
+    "verified_at": "24 November 2026, 04:02 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -286,8 +286,11 @@
     {
       "id": "lab-submission",
       "title": "Create and submit laboratory cases",
-      "status": "pending",
-      "group": "Dental Laboratory"
+      "status": "completed",
+      "group": "Dental Laboratory",
+      "pr": 31,
+      "ci": "success",
+      "note": "PR #31 merged"
     },
     {
       "id": "lab-status",
@@ -405,11 +408,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "lab-submission",
-  "current_task_step_number": 20,
+  "current_task_step_id": "lab-status",
+  "current_task_step_number": 21,
   "task_steps_total": 39,
   "queue": [
-    "Create and submit laboratory cases",
     "Case status, expected delivery and tracking",
     "Laboratory expense recording and linkage",
     "Dental Lab workflow and acceptance tests",
@@ -430,19 +432,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 20/39: Create and submit laboratory cases",
+  "current_task": "Step 21/39: Case status, expected delivery and tracking",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Create and submit laboratory cases",
+      "name": "Case status, expected delivery and tracking",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 20/39; dental lab case data model and setup is complete via PR #29 and CI 45271873096. Awaiting create and submit laboratory cases evidence review."
+      "note": "Checkpoint 21/39; create and submit laboratory cases is complete via PR #31 and CI 45278584250. Awaiting case status, expected delivery and tracking evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T22:28:39Z",
-  "last_sync_success": "2026-11-23T22:28:39Z",
+  "sync_generated_at": "2026-11-23T22:32:20Z",
+  "last_sync_success": "2026-11-23T22:32:20Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }

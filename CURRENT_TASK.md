@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 03:58 AM IST  
+**Last checked:** 24 November 2026, 04:02 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source activity:** Main CI success; Open PRs: .
 
@@ -29,7 +29,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **20/39 — Create and submit laboratory cases** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **21/39 — Case status, expected delivery and tracking** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 Progress percentages live in `progress-manifest.json`. Reviewed **23 November 2026** for repository and checkpoint status. Overall remains **25%**; module percentages were not increased. PR #15 merged with passing CI and completes checkpoint 7; the next evidence-backed checkpoint is #8.
@@ -41,7 +41,7 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 03:58 AM IST
+**Checked:** 24 November 2026, 04:02 AM IST
 
 - No open pull requests returned by GitHub.
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45279997678))
