@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#29 with passing acceptance CI where applicable; checkpoints 7/39 through 19/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, and Dental Lab case data model and setup) are complete. Next checkpoint is #20, Create and submit laboratory cases. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#31 with passing acceptance CI where applicable; checkpoints 7/39 through 20/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, and Create and submit laboratory cases) are complete. Next checkpoint is #21, Case status, expected delivery and tracking. Overall/module percentages remain conservative pending separate full evidence review.",
   "task_steps": [
     {
       "id": "foundation",
@@ -243,8 +243,11 @@
     {
       "id": "lab-submission",
       "title": "Create and submit laboratory cases",
-      "status": "pending",
-      "group": "Dental Laboratory"
+      "status": "completed",
+      "group": "Dental Laboratory",
+      "pr": 31,
+      "ci": "success",
+      "note": "PR #31 adds a branch-local dental laboratory web workflow linked from the patient record, a validated same-origin proxy, fictional draft creation and DRAFT to SUBMITTED submission, and fixture Playwright coverage (PR CI 45278584250; post-merge main CI 45279997678; merge commit 09b7b62b5c82672c5b4969da3be009849b6c56ec)."
     },
     {
       "id": "lab-status",
@@ -362,18 +365,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "lab-submission",
-  "current_task_step_number": 20,
+  "current_task_step_id": "lab-status",
+  "current_task_step_number": 21,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Create and submit laboratory cases",
+      "name": "Case status, expected delivery and tracking",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 20/39; dental lab case data model and setup is complete via PR #29 and CI 45271873096. Awaiting create and submit laboratory cases evidence review."
+      "note": "Checkpoint 21/39; create and submit laboratory cases is complete via PR #31 and CI 45278584250. Awaiting case status, expected delivery and tracking evidence review."
     }
   ]
 }
