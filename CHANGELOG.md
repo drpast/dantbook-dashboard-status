@@ -1287,3 +1287,9 @@
 - Verified main commit: d2ea0dd5767e7160d206e5f5593dc8de5be48e08 (Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: d2ea0dd5767e7160d206e5f5593dc8de5be48e08 (Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
