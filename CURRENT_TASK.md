@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 03:20 AM IST  
+**Last checked:** 24 November 2026, 03:23 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #30 feat(web): checkpoint 20 dental laboratory create/submit workflow (CI in_progress).
+**Current source activity:** Main CI success; Open PRs: #30 feat(web): checkpoint 20 dental laboratory create/submit workflow (CI success).
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -29,7 +29,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **19/39 — Dental Lab case data model and setup** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **20/39 — Create and submit laboratory cases** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 Progress percentages live in `progress-manifest.json`. Reviewed **23 November 2026** for repository and checkpoint status. Overall remains **25%**; module percentages were not increased. PR #15 merged with passing CI and completes checkpoint 7; the next evidence-backed checkpoint is #8.
@@ -41,9 +41,9 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 03:20 AM IST
+**Checked:** 24 November 2026, 03:23 AM IST
 
-- Open PRs: [#30 — feat(web): checkpoint 20 dental laboratory create/submit workflow](https://github.com/drpast/dantbook-master/pull/30) (open-draft; CI **in_progress**)
+- Open PRs: [#30 — feat(web): checkpoint 20 dental laboratory create/submit workflow](https://github.com/drpast/dantbook-master/pull/30) (open-draft; CI **success**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45273679491))
 - Main commit: [5bf98c2](https://github.com/drpast/dantbook-master/commit/5bf98c2ff87b832a62b5e3a0ef6562ca6d415e8d) — Merge pull request #29 from drpast/docs/dental-lab-model-checkpoint-19
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
