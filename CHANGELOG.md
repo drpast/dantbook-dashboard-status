@@ -1049,3 +1049,10 @@
 - Main CI: success.
 - Open PRs: #20 docs: record checkpoint 11/39 History corrections, audit trail and safety checks evidence (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: beafadabce470bd7a30bea0b6eb928d545333185 (Merge pull request #19 from drpast/docs/checkpoint-10-alert-evidence).
+- Main CI: success.
+- Open PRs: #20 docs: record checkpoint 11/39 History corrections, audit trail and safety checks evidence (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
