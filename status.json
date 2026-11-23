@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,16 +89,16 @@
     "main_commit": "d2ea0dd5767e7160d206e5f5593dc8de5be48e08",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/d2ea0dd5767e7160d206e5f5593dc8de5be48e08",
     "main_commit_message": "Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression",
-    "main_ci_status": "cancelled",
-    "main_workflow_run_id": 45247129434,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247129434",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45247129489,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247129489",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "cancelled",
-    "workflow_run_id": 45247129434,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247129434",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45247129489,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247129489",
     "pr_url": null,
     "blocker": null
   },
@@ -433,8 +433,8 @@
       "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting payment recording, balance and adjustment evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T19:16:12Z",
-  "last_sync_success": "2026-11-23T19:16:12Z",
+  "sync_generated_at": "2026-11-23T19:16:25Z",
+  "last_sync_success": "2026-11-23T19:16:25Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
