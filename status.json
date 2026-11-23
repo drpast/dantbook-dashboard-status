@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 16/39: Payment recording, balances and adjustments —  | Open PRs: #26 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-24",
-    "main_commit": "9f5e43d9632d29743522c5134d0750c13a5ee660",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/9f5e43d9632d29743522c5134d0750c13a5ee660",
-    "main_commit_message": "Merge pull request #25 from drpast/docs/fix-checkpoint-16-title",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45245886202,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45245886202",
-    "open_pull_requests": [
-      {
-        "number": 26,
-        "title": "Test: complete checkpoint 16/39 Payment recording, balances and adjustments",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/26",
-        "head_branch": "test/checkpoint-16-payment-balance-regression",
-        "head_sha": "2ad4f83d7357de1989a143b082502f39bfdd8e40",
-        "updated_at": "2026-11-23T19:04:58Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45245153214,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45245153214"
-        }
-      }
-    ],
-    "open_pull_request": 26,
-    "pull_request_title": "Test: complete checkpoint 16/39 Payment recording, balances and adjustments",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45245153214,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45245153214",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/26",
+    "main_commit": "d2ea0dd5767e7160d206e5f5593dc8de5be48e08",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/d2ea0dd5767e7160d206e5f5593dc8de5be48e08",
+    "main_commit_message": "Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression",
+    "main_ci_status": "cancelled",
+    "main_workflow_run_id": 45247129434,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247129434",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "cancelled",
+    "workflow_run_id": 45247129434,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45247129434",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 12:39 AM IST"
+    "verified_at": "24 November 2026, 12:46 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -448,8 +433,8 @@
       "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting payment recording, balance and adjustment evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T19:09:22Z",
-  "last_sync_success": "2026-11-23T19:09:22Z",
+  "sync_generated_at": "2026-11-23T19:16:12Z",
+  "last_sync_success": "2026-11-23T19:16:12Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }

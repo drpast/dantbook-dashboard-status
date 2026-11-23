@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 12:39 AM IST  
+**Last checked:** 24 November 2026, 12:46 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #26 Test: complete checkpoint 16/39 Payment recording, balances and adjustments (CI success).
+**Current source activity:** Main CI cancelled; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,13 +41,12 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 12:39 AM IST
+**Checked:** 24 November 2026, 12:46 AM IST
 
-- Open PRs: [#26 — Test: complete checkpoint 16/39 Payment recording, balances and adjustments](https://github.com/drpast/dantbook-master/pull/26) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45245886202))
-- Main commit: [9f5e43d](https://github.com/drpast/dantbook-master/commit/9f5e43d9632d29743522c5134d0750c13a5ee660) — Merge pull request #25 from drpast/docs/fix-checkpoint-16-title
+- No open pull requests returned by GitHub.
+- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45247129434))
+- Main commit: [d2ea0dd](https://github.com/drpast/dantbook-master/commit/d2ea0dd5767e7160d206e5f5593dc8de5be48e08) — Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
