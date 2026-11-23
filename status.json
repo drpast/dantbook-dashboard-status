@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 8/39: Medical History API endpoints and validation —  | Open PRs: #16 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -92,14 +92,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45161510376,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45161510376",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45161510376,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45161510376",
-    "pr_url": null,
+    "open_pull_requests": [
+      {
+        "number": 16,
+        "title": "docs: record checkpoint 8/39 Medical History API evidence",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/16",
+        "head_branch": "docs/checkpoint-8-medical-history-api-evidence",
+        "head_sha": "d593cd1f5bb5c0d18f6fbf7f2f42dc93e46bdf4f",
+        "updated_at": "2026-11-23T11:32:28Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45166134533,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45166134533"
+        }
+      }
+    ],
+    "open_pull_request": 16,
+    "pull_request_title": "docs: record checkpoint 8/39 Medical History API evidence",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45166134533,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45166134533",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/16",
     "blocker": null
   },
   "dashboard_connection": {
@@ -111,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 04:32 PM IST"
+    "verified_at": "23 November 2026, 05:02 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -417,8 +432,8 @@
       "note": "Checkpoint 8/39; PR #15 established data-model acceptance. Awaiting API/validation evidence."
     }
   ],
-  "sync_generated_at": "2026-11-23T11:02:40Z",
-  "last_sync_success": "2026-11-23T11:02:40Z",
+  "sync_generated_at": "2026-11-23T11:32:45Z",
+  "last_sync_success": "2026-11-23T11:32:45Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
