@@ -965,3 +965,9 @@
 - Verified main commit: b208b2bcee52183585765f8e6f60715655ed9ec5 (Merge pull request #17 from drpast/docs/checkpoint-9-medical-history-ui-evidence).
 - Main CI: queued.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: b208b2bcee52183585765f8e6f60715655ed9ec5 (Merge pull request #17 from drpast/docs/checkpoint-9-medical-history-ui-evidence).
+- Main CI: cancelled.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
