@@ -890,3 +890,9 @@
 - Main CI: success.
 - Open PRs: #15 test: medical history data model and migration acceptance (open, CI success).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: 1cee2068ef77649b2ef9035da7495acd6ca6bbe8 (Merge pull request #15 from drpast/feat/medical-history-model-acceptance).
+- Main CI: in_progress.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.

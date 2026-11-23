@@ -2,7 +2,7 @@
 
 **Last checked:** 23 November 2026, 04:28 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #15 test: medical history data model and migration acceptance (CI success).
+**Current source activity:** Main CI in_progress; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884). The connector's surfaced run [45079706235](https://github.com/drpast/dantbook-master/actions/runs/45079706235) is the **dashboard-notification workflow** (job `notify` only), not CI. Direct CI for this merge commit is **unverified**.
@@ -43,11 +43,10 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 
 **Checked:** 23 November 2026, 04:28 PM IST
 
-- Open PRs: [#15 — test: medical history data model and migration acceptance](https://github.com/drpast/dantbook-master/pull/15) (open; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45079706235))
-- Main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884) — feat: add branch-scoped dental laboratory case API (#11)
+- No open pull requests returned by GitHub.
+- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45160935190))
+- Main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — Merge pull request #15 from drpast/feat/medical-history-model-acceptance
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
