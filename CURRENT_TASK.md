@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 10:32 PM IST  
+**Last checked:** 23 November 2026, 10:37 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #21 test: cover checkpoint 12/39 Medical History patient-workflow integration (CI success).
+**Current source activity:** Main CI cancelled; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,13 +41,12 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 10:32 PM IST
+**Checked:** 23 November 2026, 10:37 PM IST
 
-- Open PRs: [#21 — test: cover checkpoint 12/39 Medical History patient-workflow integration](https://github.com/drpast/dantbook-master/pull/21) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45223220705))
-- Main commit: [b3fc5e1](https://github.com/drpast/dantbook-master/commit/b3fc5e13f2199a7ee60586e117bce3803d9c1a31) — Merge pull request #20 from drpast/docs/checkpoint-11-audit-evidence
+- No open pull requests returned by GitHub.
+- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45224155376))
+- Main commit: [c624bc2](https://github.com/drpast/dantbook-master/commit/c624bc256edcb533fec1932164e0f20d8e4c07dc) — Merge pull request #21 from drpast/test/checkpoint-12-history-workflow-integration
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
