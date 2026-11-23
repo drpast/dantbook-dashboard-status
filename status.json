@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 18/39: Finance permissions, calculations and acceptance tests —  | Open PRs: #28 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-24",
-    "main_commit": "41693ef5aafcb0389b43e73be1d630ee5d5f467e",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/41693ef5aafcb0389b43e73be1d630ee5d5f467e",
-    "main_commit_message": "Merge pull request #27 from drpast/feat/finance-summary-report-checkpoint-17",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45263126803,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45263126803",
-    "open_pull_requests": [
-      {
-        "number": 28,
-        "title": "Test: complete checkpoint 18/39 Finance permissions, calculations and acceptance tests",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/28",
-        "head_branch": "test/finance-permissions-calculations-checkpoint-18",
-        "head_sha": "03278f36673f0e9a97ee5f4025b76d59b983468b",
-        "updated_at": "2026-11-23T20:44:27Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45262490443,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45262490443"
-        }
-      }
-    ],
-    "open_pull_request": 28,
-    "pull_request_title": "Test: complete checkpoint 18/39 Finance permissions, calculations and acceptance tests",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45262490443,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45262490443",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/28",
+    "main_commit": "7af9b26beb1ddc547009d67358683a5149e0020e",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/7af9b26beb1ddc547009d67358683a5149e0020e",
+    "main_commit_message": "Merge pull request #28 from drpast/test/finance-permissions-calculations-checkpoint-18",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45263619976,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45263619976",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45263619976,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45263619976",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 02:18 AM IST"
+    "verified_at": "24 November 2026, 02:21 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -452,8 +437,8 @@
       "note": "Checkpoint 18/39; finance summaries and reports is complete via PR #27 and CI 45256819620. Awaiting finance permissions, calculations and acceptance tests evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T20:48:35Z",
-  "last_sync_success": "2026-11-23T20:48:35Z",
+  "sync_generated_at": "2026-11-23T20:51:27Z",
+  "last_sync_success": "2026-11-23T20:51:27Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
