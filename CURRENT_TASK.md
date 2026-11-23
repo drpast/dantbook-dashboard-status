@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 01:45 AM IST  
+**Last checked:** 24 November 2026, 01:53 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #27 Feat: complete checkpoint 17/39 Finance summaries and reports (CI success).
+**Current source activity:** Main CI cancelled; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,13 +41,12 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 01:45 AM IST
+**Checked:** 24 November 2026, 01:53 AM IST
 
-- Open PRs: [#27 — Feat: complete checkpoint 17/39 Finance summaries and reports](https://github.com/drpast/dantbook-master/pull/27) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45257486133))
-- Main commit: [d2ea0dd](https://github.com/drpast/dantbook-master/commit/d2ea0dd5767e7160d206e5f5593dc8de5be48e08) — Merge pull request #26 from drpast/test/checkpoint-16-payment-balance-regression
+- No open pull requests returned by GitHub.
+- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45258799372))
+- Main commit: [41693ef](https://github.com/drpast/dantbook-master/commit/41693ef5aafcb0389b43e73be1d630ee5d5f467e) — Merge pull request #27 from drpast/feat/finance-summary-report-checkpoint-17
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
