@@ -103,8 +103,8 @@
         "updated_at": "2026-11-23T19:43:35Z",
         "ci": {
           "status": "in_progress",
-          "run_id": 45251869439,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45251869439"
+          "run_id": 45251922664,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45251922664"
         }
       }
     ],
@@ -112,8 +112,8 @@
     "pull_request_title": "Feat: complete checkpoint 17/39 Finance summaries and reports",
     "pull_request_state": "open-draft",
     "ci_status": "in_progress",
-    "workflow_run_id": 45251869439,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45251869439",
+    "workflow_run_id": 45251922664,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45251922664",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/27",
     "blocker": null
   },
@@ -450,8 +450,8 @@
       "note": "Checkpoint 17/39; payment recording, balances and adjustments is complete via PR #26 and CI 45245153183. Awaiting finance summaries and reports evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T19:43:37Z",
-  "last_sync_success": "2026-11-23T19:43:37Z",
+  "sync_generated_at": "2026-11-23T19:43:53Z",
+  "last_sync_success": "2026-11-23T19:43:53Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
