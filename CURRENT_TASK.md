@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 11:37 PM IST  
+**Last checked:** 23 November 2026, 11:41 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: #23 test: complete checkpoint 14/39 Finance data model and billing rules (CI success).
+**Current source activity:** Main CI in_progress; Open PRs: .
 
 ## Verified CI
 - Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
@@ -41,13 +41,12 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 11:37 PM IST
+**Checked:** 23 November 2026, 11:41 PM IST
 
-- Open PRs: [#23 — test: complete checkpoint 14/39 Finance data model and billing rules](https://github.com/drpast/dantbook-master/pull/23) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45234965299))
-- Main commit: [c7be570](https://github.com/drpast/dantbook-master/commit/c7be5705a30c51cbb98b03d99abdfd88cbe436f7) — Merge pull request #22 from drpast/test/checkpoint-13-module-regression
+- No open pull requests returned by GitHub.
+- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45235629919))
+- Main commit: [b7e16fa](https://github.com/drpast/dantbook-master/commit/b7e16fab745c4c58037d97a2f36c522d1a823ebe) — Merge pull request #23 from drpast/test/checkpoint-14-finance-model-regression
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->

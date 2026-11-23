@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 14/39: Finance data model and billing rules —  | Open PRs: #23 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-23",
-    "main_commit": "c7be5705a30c51cbb98b03d99abdfd88cbe436f7",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/c7be5705a30c51cbb98b03d99abdfd88cbe436f7",
-    "main_commit_message": "Merge pull request #22 from drpast/test/checkpoint-13-module-regression",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45234965299,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45234965299",
-    "open_pull_requests": [
-      {
-        "number": 23,
-        "title": "test: complete checkpoint 14/39 Finance data model and billing rules",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/23",
-        "head_branch": "test/checkpoint-14-finance-model-regression",
-        "head_sha": "b2add86d1632807a4fc0e8deaeb63a347dc8411c",
-        "updated_at": "2026-11-23T18:03:53Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45234346411,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45234346411"
-        }
-      }
-    ],
-    "open_pull_request": 23,
-    "pull_request_title": "test: complete checkpoint 14/39 Finance data model and billing rules",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45234346411,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45234346411",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/23",
+    "main_commit": "b7e16fab745c4c58037d97a2f36c522d1a823ebe",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/b7e16fab745c4c58037d97a2f36c522d1a823ebe",
+    "main_commit_message": "Merge pull request #23 from drpast/test/checkpoint-14-finance-model-regression",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45235629919,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45235629919",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45235629919,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45235629919",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 11:37 PM IST"
+    "verified_at": "23 November 2026, 11:41 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -444,8 +429,8 @@
       "note": "Checkpoint 14/39; Medical History module acceptance and regression gates are complete via PR #22. Awaiting finance data model and billing-rule evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T18:07:38Z",
-  "last_sync_success": "2026-11-23T18:07:38Z",
+  "sync_generated_at": "2026-11-23T18:11:11Z",
+  "last_sync_success": "2026-11-23T18:11:11Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
