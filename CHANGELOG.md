@@ -1198,3 +1198,10 @@
 - Main CI: success.
 - Open PRs: #24 Docs: complete checkpoint 15/39 (Treatment billing and invoice workflow UI) (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: b7e16fab745c4c58037d97a2f36c522d1a823ebe (Merge pull request #23 from drpast/test/checkpoint-14-finance-model-regression).
+- Main CI: success.
+- Open PRs: #24 Docs: complete checkpoint 15/39 (Treatment billing and invoice workflow UI) (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "project": "DantBook",
-  "dashboard_updated": "2026-11-23",
+  "dashboard_updated": "2026-11-24",
   "overall_progress_percent": 25,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 15/39: Treatment billing and invoice workflow UI —  | Open PRs: #24 CI in_progress; main CI success",
+  "current_focus": "Step 15/39: Treatment billing and invoice workflow UI —  | Open PRs: #24 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -85,13 +85,13 @@
     "Latest main commit is 11cb60e7ee89997e78f1923500ae6724778a6884. The only run surfaced for it (45079706235) is the dashboard-notification workflow, not CI; direct main CI is unverified. Progress remains 25%."
   ],
   "latest_verified_snapshot": {
-    "checked_on": "2026-11-23",
+    "checked_on": "2026-11-24",
     "main_commit": "b7e16fab745c4c58037d97a2f36c522d1a823ebe",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/b7e16fab745c4c58037d97a2f36c522d1a823ebe",
     "main_commit_message": "Merge pull request #23 from drpast/test/checkpoint-14-finance-model-regression",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45236194925,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45236194925",
+    "main_workflow_run_id": 45239104095,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45239104095",
     "open_pull_requests": [
       {
         "number": 24,
@@ -102,18 +102,18 @@
         "head_sha": "9ab07e44684b862d553dda1879acf1567ffd9a38",
         "updated_at": "2026-11-23T18:26:23Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45238407658,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45238407658"
+          "status": "success",
+          "run_id": 45238407778,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45238407778"
         }
       }
     ],
     "open_pull_request": 24,
     "pull_request_title": "Docs: complete checkpoint 15/39 (Treatment billing and invoice workflow UI)",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45238407658,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45238407658",
+    "ci_status": "success",
+    "workflow_run_id": 45238407778,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45238407778",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/24",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 11:56 PM IST"
+    "verified_at": "24 November 2026, 12:00 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -446,8 +446,8 @@
       "note": "Checkpoint 15/39; finance data model and billing rules are complete via PR #23. Awaiting treatment billing and invoice workflow UI evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T18:26:43Z",
-  "last_sync_success": "2026-11-23T18:26:43Z",
+  "sync_generated_at": "2026-11-23T18:30:36Z",
+  "last_sync_success": "2026-11-23T18:30:36Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
