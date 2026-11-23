@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 8/39: Medical History API endpoints and validation —  | Open PRs: #16 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-23",
-    "main_commit": "1cee2068ef77649b2ef9035da7495acd6ca6bbe8",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8",
-    "main_commit_message": "Merge pull request #15 from drpast/feat/medical-history-model-acceptance",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45166686851,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45166686851",
-    "open_pull_requests": [
-      {
-        "number": 16,
-        "title": "docs: record checkpoint 8/39 Medical History API evidence",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/16",
-        "head_branch": "docs/checkpoint-8-medical-history-api-evidence",
-        "head_sha": "d593cd1f5bb5c0d18f6fbf7f2f42dc93e46bdf4f",
-        "updated_at": "2026-11-23T11:32:28Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45166134634,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45166134634"
-        }
-      }
-    ],
-    "open_pull_request": 16,
-    "pull_request_title": "docs: record checkpoint 8/39 Medical History API evidence",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45166134634,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45166134634",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/16",
+    "main_commit": "1448365afb6b15603b67dbb511a489ab4e1b9dbb",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/1448365afb6b15603b67dbb511a489ab4e1b9dbb",
+    "main_commit_message": "Merge pull request #16 from drpast/docs/checkpoint-8-medical-history-api-evidence",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45167422538,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45167422538",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45167422538,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45167422538",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 05:06 PM IST"
+    "verified_at": "23 November 2026, 05:11 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -432,8 +417,8 @@
       "note": "Checkpoint 8/39; PR #15 established data-model acceptance. Awaiting API/validation evidence."
     }
   ],
-  "sync_generated_at": "2026-11-23T11:36:30Z",
-  "last_sync_success": "2026-11-23T11:36:30Z",
+  "sync_generated_at": "2026-11-23T11:41:24Z",
+  "last_sync_success": "2026-11-23T11:41:24Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
