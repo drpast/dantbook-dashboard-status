@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,16 +89,16 @@
     "main_commit": "00ba02aab9c0860d578c1d59a1e8a2a2d8499b90",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/00ba02aab9c0860d578c1d59a1e8a2a2d8499b90",
     "main_commit_message": "Merge pull request #18 from drpast/docs/fix-checkpoint-10-reference",
-    "main_ci_status": "in_progress",
-    "main_workflow_run_id": 45193506956,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45193506956",
+    "main_ci_status": "success",
+    "main_workflow_run_id": 45194175185,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45194175185",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "in_progress",
-    "workflow_run_id": 45193506956,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45193506956",
+    "ci_status": "success",
+    "workflow_run_id": 45194175185,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45194175185",
     "pr_url": null,
     "blocker": null
   },
@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 07:52 PM IST"
+    "verified_at": "23 November 2026, 07:56 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -421,8 +421,8 @@
       "note": "Checkpoint 10/39; Medical History data model, API, and UI acceptance are complete. Awaiting separate alert-rule evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T14:22:40Z",
-  "last_sync_success": "2026-11-23T14:22:40Z",
+  "sync_generated_at": "2026-11-23T14:26:25Z",
+  "last_sync_success": "2026-11-23T14:26:25Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
