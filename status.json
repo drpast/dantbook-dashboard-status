@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 09:56 PM IST"
+    "verified_at": "23 November 2026, 09:58 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -196,8 +196,11 @@
     {
       "id": "medical-history-alerts",
       "title": "Allergy, medication and condition alerts",
-      "status": "pending",
-      "group": "Medical History"
+      "status": "completed",
+      "group": "Medical History",
+      "note": "PR #8 merged",
+      "pr": 8,
+      "ci": "success"
     },
     {
       "id": "medical-history-corrections",
@@ -375,11 +378,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "medical-history-alerts",
-  "current_task_step_number": 10,
+  "current_task_step_id": "medical-history-corrections",
+  "current_task_step_number": 11,
   "task_steps_total": 39,
   "queue": [
-    "Allergy, medication and condition alerts",
     "History corrections, audit trail and safety checks",
     "Integrate Medical History into patient workflow",
     "Medical History module acceptance and regression tests",
@@ -410,19 +412,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 10/39: Allergy, medication and condition alerts",
+  "current_task": "Step 11/39: History corrections, audit trail and safety checks",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Allergy, medication and condition alerts",
+      "name": "History corrections, audit trail and safety checks",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 10/39; Medical History data model, API, and UI acceptance are complete. Awaiting separate alert-rule evidence review."
+      "note": "Checkpoint 11/39; allergy/medication/condition alert evidence is complete via PR #2/#8/#19. Awaiting separate audit-trail and safety-check evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T16:26:43Z",
-  "last_sync_success": "2026-11-23T16:26:43Z",
+  "sync_generated_at": "2026-11-23T16:28:41Z",
+  "last_sync_success": "2026-11-23T16:28:41Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
