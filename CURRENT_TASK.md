@@ -1,8 +1,8 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 23 November 2026, 09:36 AM IST
+**Last checked:** 23 November 2026, 09:38 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main commit 11cb60e; direct main CI unverified; open PR #15 CI success (draft).
+**Current source activity:** Main CI success; Open PRs: #15 test: medical history data model and migration acceptance (CI success).
 
 ## Verified CI
 - Latest main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884). The connector's surfaced run [45079706235](https://github.com/drpast/dantbook-master/actions/runs/45079706235) is the **dashboard-notification workflow** (job `notify` only), not CI. Direct CI for this merge commit is **unverified**.
@@ -29,7 +29,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **7/39 — Medical History data model and migration acceptance** (pending; Next checkpoint; no acceptance evidence recorded yet.). Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **7/39 — Medical History data model and migration acceptance** (pending; PR #15 open draft; CI success (45079372471). Checkpoint awaits review/merge and verified acceptance.). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 Progress percentages live in `progress-manifest.json`. Reviewed **23 November 2026** for repository and checkpoint status. Overall remains **25%**; module percentages and task completion were not increased. PR #15 CI alone is not sufficient to complete checkpoint 7.
@@ -41,16 +41,15 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 23 November 2026, 09:36 AM IST
+**Checked:** 23 November 2026, 09:38 AM IST
 
-- Open PR: [#15 — test: medical history data model and migration acceptance](https://github.com/drpast/dantbook-master/pull/15) (open-draft; CI **success**, [run 45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471)).
-- Latest main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884) — feat: add branch-scoped dental laboratory case API (#11).
-- Direct main CI: **unverified**. The surfaced [run 45079706235](https://github.com/drpast/dantbook-master/actions/runs/45079706235) is notification-only, not CI.
-- PRs #11, #12, and #13 merged; final PR #11 and #12 CI runs passed.
-- Progress manifest reviewed: **23 November 2026**; overall **25%**.
-- Checkpoint 7/39 remains pending until acceptance is reviewed and merged. Open PR work is not counted as complete.
+- Open PRs: [#15 — test: medical history data model and migration acceptance](https://github.com/drpast/dantbook-master/pull/15) (open-draft; CI **success**)
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45079706235))
+- Main commit: [11cb60e](https://github.com/drpast/dantbook-master/commit/11cb60e7ee89997e78f1923500ae6724778a6884) — feat: add branch-scoped dental laboratory case API (#11)
+- Progress manifest reviewed: **2026-11-23**; overall **25%**.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
-Progress is read from progress-manifest.json and updated only after evidence review.
+Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
 
 ## Current desktop view

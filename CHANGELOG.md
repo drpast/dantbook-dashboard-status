@@ -876,3 +876,10 @@
 - PR #11 and #12 are merged; their final CI runs 45041948662 and 45042687063 passed. PR #11's earlier P1012 failure is historical/superseded. PR #13 dashboard notification is also merged.
 - PR #15 remains open draft; CI run 45079372471 passed. Checkpoint 7/39 stays pending review/merge and evidence.
 - Progress reviewed, unchanged at 25%; module percentages unchanged.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: 11cb60e7ee89997e78f1923500ae6724778a6884 (feat: add branch-scoped dental laboratory case API (#11)).
+- Main CI: success.
+- Open PRs: #15 test: medical history data model and migration acceptance (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
