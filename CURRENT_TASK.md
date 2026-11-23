@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 02:15 AM IST  
+**Last checked:** 24 November 2026, 02:18 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source activity:** Main CI success; Open PRs: #28 Test: complete checkpoint 18/39 Finance permissions, calculations and acceptance tests (CI success).
 
@@ -41,10 +41,10 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 02:15 AM IST
+**Checked:** 24 November 2026, 02:18 AM IST
 
 - Open PRs: [#28 — Test: complete checkpoint 18/39 Finance permissions, calculations and acceptance tests](https://github.com/drpast/dantbook-master/pull/28) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45262508377))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45263126803))
 - Main commit: [41693ef](https://github.com/drpast/dantbook-master/commit/41693ef5aafcb0389b43e73be1d630ee5d5f467e) — Merge pull request #27 from drpast/feat/finance-summary-report-checkpoint-17
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
