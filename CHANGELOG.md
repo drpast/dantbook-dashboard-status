@@ -6,6 +6,11 @@
 - Progress percentages/status remain copied from the evidence-reviewed manifest and are not calculated or changed by the heartbeat.
 # DantBook Progress Changelog
 
+## 2026-11-23 — Checkpoint 7/39 complete
+- PR #15 Medical History data-model/migration acceptance merged with CI success ([run 45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471)).
+- Marked "Medical History data model and migration acceptance" complete; current checkpoint advances to #8, Medical History API endpoints and validation.
+- Overall progress remains 25%; module percentages were not increased without separate evidence review.
+
 ## 2026-11-21 — Expanded granular tracker to 39 checkpoints
 - Expanded the task tracker from 8 broad steps to 39 small checkpoints across engineering foundation, Medical History, Finance, Dental Laboratory, Recall & Follow-up, Integration & Testing, and Release & Deployment.
 - Current checkpoint remains 5/39: Medical History alert and correction browser tests (PR #4; CI in progress).
