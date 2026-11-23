@@ -1217,3 +1217,9 @@
 - Verified main commit: 81d58a240b941ce6e611d4d6f348f3017e7f5747 (Merge pull request #24 from drpast/docs/checkpoint-15-billing-ui-evidence).
 - Main CI: cancelled.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 81d58a240b941ce6e611d4d6f348f3017e7f5747 (Merge pull request #24 from drpast/docs/checkpoint-15-billing-ui-evidence).
+- Main CI: cancelled.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.

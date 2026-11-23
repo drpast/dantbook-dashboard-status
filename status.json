@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 12:05 AM IST"
+    "verified_at": "24 November 2026, 12:08 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -241,8 +241,11 @@
     {
       "id": "finance-billing-ui",
       "title": "Treatment billing and invoice workflow UI",
-      "status": "pending",
-      "group": "Finance"
+      "status": "completed",
+      "group": "Finance",
+      "note": "PR #9 merged",
+      "pr": 9,
+      "ci": "success"
     },
     {
       "id": "finance-payments",
@@ -390,11 +393,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "finance-billing-ui",
-  "current_task_step_number": 15,
+  "current_task_step_id": "finance-payments",
+  "current_task_step_number": 16,
   "task_steps_total": 39,
   "queue": [
-    "Treatment billing and invoice workflow UI",
     "Payment recording, balances and adjustments",
     "Finance summaries and reports",
     "Finance permissions, calculations and acceptance tests",
@@ -420,19 +422,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 15/39: Treatment billing and invoice workflow UI",
+  "current_task": "Step 16/39: Payment recording, balances and adjustments",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Treatment billing and invoice workflow UI",
+      "name": "Finance summaries and reports",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 15/39; finance data model and billing rules are complete via PR #23. Awaiting treatment billing and invoice workflow UI evidence review."
+      "note": "Checkpoint 16/39; treatment billing and invoice workflow UI is complete via PR #9 and checkpoint 14 journal assertions. Awaiting finance summaries and reports evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T18:35:51Z",
-  "last_sync_success": "2026-11-23T18:35:51Z",
+  "sync_generated_at": "2026-11-23T18:38:54Z",
+  "last_sync_success": "2026-11-23T18:38:54Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
