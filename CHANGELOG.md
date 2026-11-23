@@ -1166,3 +1166,10 @@
 - Main CI: success.
 - Open PRs: #23 test: complete checkpoint 14/39 Finance data model and billing rules (open-draft, CI success).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-23 — GitHub/progress sync
+- Verified main commit: c7be5705a30c51cbb98b03d99abdfd88cbe436f7 (Merge pull request #22 from drpast/test/checkpoint-13-module-regression).
+- Main CI: success.
+- Open PRs: #23 test: complete checkpoint 14/39 Finance data model and billing rules (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.

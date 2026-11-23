@@ -90,8 +90,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/c7be5705a30c51cbb98b03d99abdfd88cbe436f7",
     "main_commit_message": "Merge pull request #22 from drpast/test/checkpoint-13-module-regression",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45232845102,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45232845102",
+    "main_workflow_run_id": 45234965299,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45234965299",
     "open_pull_requests": [
       {
         "number": 23,
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "23 November 2026, 11:34 PM IST"
+    "verified_at": "23 November 2026, 11:37 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -444,8 +444,8 @@
       "note": "Checkpoint 14/39; Medical History module acceptance and regression gates are complete via PR #22. Awaiting finance data model and billing-rule evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-23T18:04:12Z",
-  "last_sync_success": "2026-11-23T18:04:12Z",
+  "sync_generated_at": "2026-11-23T18:07:38Z",
+  "last_sync_success": "2026-11-23T18:07:38Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
