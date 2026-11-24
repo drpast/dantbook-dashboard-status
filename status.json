@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 27/39: Automated reminders, retry and opt-out handling — PR #38 open-draft; CI success | Open PRs: #38 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-25",
-    "main_commit": "f158276b215421efb61a6c6c156a1ef67c80fa0b",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/f158276b215421efb61a6c6c156a1ef67c80fa0b",
-    "main_commit_message": "Feat: checkpoint 26/39 follow-up message templates and delivery options (#37)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45469020556,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45469020556",
-    "open_pull_requests": [
-      {
-        "number": 38,
-        "title": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/38",
-        "head_branch": "feat/recall-automation-checkpoint-27",
-        "head_sha": "71f09f52ba21260f6382a180e165aae807542754",
-        "updated_at": "2026-11-24T19:15:29Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45468296718,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45468296718"
-        }
-      }
-    ],
-    "open_pull_request": 38,
-    "pull_request_title": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45468296718,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45468296718",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/38",
+    "main_commit": "0b5784c3a5fde247842d91e0aa14a8959993ff17",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17",
+    "main_commit_message": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)",
+    "main_ci_status": "cancelled",
+    "main_workflow_run_id": 45470198849,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470198849",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "cancelled",
+    "workflow_run_id": 45470198849,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470198849",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 12:49 AM IST"
+    "verified_at": "25 November 2026, 12:56 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -364,11 +349,11 @@
     {
       "id": "recall-automation",
       "title": "Automated reminders, retry and opt-out handling",
-      "status": "checks-passed-draft",
+      "status": "completed",
       "group": "Recall & Follow-up",
       "pr": 38,
-      "ci": "success",
-      "note": "PR #38 open-draft; CI success"
+      "ci": "queued",
+      "note": "PR #38 merged"
     },
     {
       "id": "recall-tests",
@@ -444,11 +429,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "recall-automation",
-  "current_task_step_number": 27,
+  "current_task_step_id": "recall-tests",
+  "current_task_step_number": 28,
   "task_steps_total": 39,
   "queue": [
-    "Automated reminders, retry and opt-out handling",
     "Recall/follow-up acceptance and scheduling tests",
     "Integrated patient registration and appointment workflow",
     "Role permissions and access-boundary verification",
@@ -462,7 +446,7 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 27/39: Automated reminders, retry and opt-out handling",
+  "current_task": "Step 28/39: Recall/follow-up acceptance and scheduling tests",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
@@ -473,8 +457,8 @@
       "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
     }
   ],
-  "sync_generated_at": "2026-11-24T19:19:52Z",
-  "last_sync_success": "2026-11-24T19:19:52Z",
+  "sync_generated_at": "2026-11-24T19:26:29Z",
+  "last_sync_success": "2026-11-24T19:26:29Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
