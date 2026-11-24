@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 21/39: Case status, expected delivery and tracking —  | Open PRs: #32 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-24",
-    "main_commit": "09b7b62b5c82672c5b4969da3be009849b6c56ec",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec",
-    "main_commit_message": "Merge pull request #31 from drpast/feat/lab-submission-checkpoint-20-clean",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45351072726,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45351072726",
-    "open_pull_requests": [
-      {
-        "number": 32,
-        "title": "Test: complete checkpoint 21/39 lab status, delivery and tracking",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/32",
-        "head_branch": "test/lab-status-tracking-checkpoint-21",
-        "head_sha": "09038d926a891a5188b31c4f77a7f9f59eb5a000",
-        "updated_at": "2026-11-24T07:46:13Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45350569431,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45350569431"
-        }
-      }
-    ],
-    "open_pull_request": 32,
-    "pull_request_title": "Test: complete checkpoint 21/39 lab status, delivery and tracking",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45350569431,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45350569431",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/32",
+    "main_commit": "f16e8ef443e84d0e13cb0c8e48240c234d4375e8",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/f16e8ef443e84d0e13cb0c8e48240c234d4375e8",
+    "main_commit_message": "Merge pull request #32 from drpast/test/lab-status-tracking-checkpoint-21",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45351282772,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45351282772",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45351282772,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45351282772",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 01:20 PM IST"
+    "verified_at": "24 November 2026, 01:22 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -458,8 +443,8 @@
       "note": "Checkpoint 21/39; create and submit laboratory cases is complete via PR #31 and CI 45278584250. Awaiting case status, expected delivery and tracking evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T07:50:30Z",
-  "last_sync_success": "2026-11-24T07:50:30Z",
+  "sync_generated_at": "2026-11-24T07:52:10Z",
+  "last_sync_success": "2026-11-24T07:52:10Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
