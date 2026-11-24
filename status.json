@@ -364,8 +364,11 @@
     {
       "id": "recall-automation",
       "title": "Automated reminders, retry and opt-out handling",
-      "status": "pending",
-      "group": "Recall & Follow-up"
+      "status": "in-progress",
+      "group": "Recall & Follow-up",
+      "pr": 38,
+      "ci": "queued",
+      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
     },
     {
       "id": "recall-tests",
@@ -466,8 +469,8 @@
     {
       "name": "Automated reminders, retry and opt-out handling",
       "percent": 0,
-      "status": "Pending",
-      "note": "Checkpoint 27/39 awaiting implementation; substeps advance automatically from PR/CI status once the PR number is attached to this checkpoint."
+      "status": "In progress",
+      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
     }
   ],
   "sync_generated_at": "2026-11-24T18:59:22Z",
