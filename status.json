@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 25/39: Recall lists, due patients and workflow UI —  | Open PRs: #36 CI in_progress; main CI success",
+  "current_focus": "Step 25/39: Recall lists, due patients and workflow UI —  | Open PRs: #36 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -90,8 +90,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/bf8247c7546352d0013db42bafa6b49f68b6fff3",
     "main_commit_message": "Feat: checkpoint 24/39 recall and follow-up scheduling rules (#35)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45438973015,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45438973015",
+    "main_workflow_run_id": 45446010599,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45446010599",
     "open_pull_requests": [
       {
         "number": 36,
@@ -102,18 +102,18 @@
         "head_sha": "b8190cef05f6619ffb393fe83dfb13f559f94023",
         "updated_at": "2026-11-24T17:08:54Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45445300915,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45445300915"
+          "status": "success",
+          "run_id": 45445300968,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45445300968"
         }
       }
     ],
     "open_pull_request": 36,
     "pull_request_title": "Feat: checkpoint 25/39 recall lists and workflow UI",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45445300915,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45445300915",
+    "ci_status": "success",
+    "workflow_run_id": 45445300968,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45445300968",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/36",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 10:39 PM IST"
+    "verified_at": "24 November 2026, 10:42 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -466,8 +466,8 @@
       "note": "Checkpoint 25/39; Recall and follow-up scheduling rules is complete via PR #35 and CI 45436011526. Awaiting Recall lists, due patients and workflow UI evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T17:09:20Z",
-  "last_sync_success": "2026-11-24T17:09:20Z",
+  "sync_generated_at": "2026-11-24T17:12:58Z",
+  "last_sync_success": "2026-11-24T17:12:58Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
