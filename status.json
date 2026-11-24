@@ -111,11 +111,11 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 11:39 PM IST"
+    "verified_at": "24 November 2026, 11:56 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
-    "last_reviewed": "2026-11-23",
+    "last_reviewed": "2026-11-24",
     "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
     "sync_poll_minutes": 5
   },
@@ -455,8 +455,8 @@
       "note": "Checkpoint 27/39; Follow-up message templates and delivery options is complete via PR #37 and CI 45452900382. Awaiting Automated reminders, retry and opt-out handling evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T18:09:31Z",
-  "last_sync_success": "2026-11-24T18:09:31Z",
+  "sync_generated_at": "2026-11-24T18:26:12Z",
+  "last_sync_success": "2026-11-24T18:26:12Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
