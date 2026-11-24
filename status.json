@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 10:06 PM IST"
+    "verified_at": "24 November 2026, 10:09 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -322,8 +322,11 @@
     {
       "id": "recall-rules",
       "title": "Recall and follow-up scheduling rules",
-      "status": "pending",
-      "group": "Recall & Follow-up"
+      "status": "completed",
+      "group": "Recall & Follow-up",
+      "pr": 35,
+      "ci": "success",
+      "note": "PR #35 merged"
     },
     {
       "id": "recall-queue",
@@ -417,11 +420,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "recall-rules",
-  "current_task_step_number": 24,
+  "current_task_step_id": "recall-queue",
+  "current_task_step_number": 25,
   "task_steps_total": 39,
   "queue": [
-    "Recall and follow-up scheduling rules",
     "Recall lists, due patients and workflow UI",
     "Follow-up message templates and delivery options",
     "Automated reminders, retry and opt-out handling",
@@ -438,19 +440,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 24/39: Recall and follow-up scheduling rules",
+  "current_task": "Step 25/39: Recall lists, due patients and workflow UI",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Recall and follow-up scheduling rules",
+      "name": "Recall lists, due patients and workflow UI",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 24/39; Dental Lab workflow and acceptance tests is complete via PR #34 and CI 45415885660. Awaiting Recall and follow-up scheduling rules evidence review."
+      "note": "Checkpoint 25/39; Recall and follow-up scheduling rules is complete via PR #35 and CI 45436011526. Awaiting Recall lists, due patients and workflow UI evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T16:36:14Z",
-  "last_sync_success": "2026-11-24T16:36:14Z",
+  "sync_generated_at": "2026-11-24T16:39:52Z",
+  "last_sync_success": "2026-11-24T16:39:52Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
