@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 25/39: Recall lists, due patients and workflow UI —  | Open PRs: #36 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -86,35 +86,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-24",
-    "main_commit": "bf8247c7546352d0013db42bafa6b49f68b6fff3",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/bf8247c7546352d0013db42bafa6b49f68b6fff3",
-    "main_commit_message": "Feat: checkpoint 24/39 recall and follow-up scheduling rules (#35)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45448316067,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45448316067",
-    "open_pull_requests": [
-      {
-        "number": 36,
-        "title": "Feat: checkpoint 25/39 recall lists and workflow UI",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/36",
-        "head_branch": "feat/recall-workflow-checkpoint-25",
-        "head_sha": "c02ea2a9df8b83a14305cc7c42f4cb66e631df6e",
-        "updated_at": "2026-11-24T17:20:47Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45447553351,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45447553351"
-        }
-      }
-    ],
-    "open_pull_request": 36,
-    "pull_request_title": "Feat: checkpoint 25/39 recall lists and workflow UI",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45447553351,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45447553351",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/36",
+    "main_commit": "ae6839c701661688f9dec45c407b1a65d56a55f6",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/ae6839c701661688f9dec45c407b1a65d56a55f6",
+    "main_commit_message": "Feat: checkpoint 25/39 recall lists and workflow UI (#36)",
+    "main_ci_status": "cancelled",
+    "main_workflow_run_id": 45448474636,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45448474636",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "cancelled",
+    "workflow_run_id": 45448474636,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45448474636",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -126,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 10:55 PM IST"
+    "verified_at": "24 November 2026, 10:56 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -466,8 +451,8 @@
       "note": "Checkpoint 25/39; Recall and follow-up scheduling rules is complete via PR #35 and CI 45436011526. Awaiting Recall lists, due patients and workflow UI evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T17:25:17Z",
-  "last_sync_success": "2026-11-24T17:25:17Z",
+  "sync_generated_at": "2026-11-24T17:26:08Z",
+  "last_sync_success": "2026-11-24T17:26:08Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
