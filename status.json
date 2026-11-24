@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 22/39: Laboratory expense recording and linkage —  | Open PRs: #33 CI success; main CI success",
+  "current_focus": "Step 22/39: Laboratory expense recording and linkage —  | Open PRs: #33 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -99,21 +99,21 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/33",
         "head_branch": "feat/lab-expense-checkpoint-22",
-        "head_sha": "f8b7e01b72bce2a0363613610b402988fbc60c20",
-        "updated_at": "2026-11-24T09:10:25Z",
+        "head_sha": "b5a30367fc1f36cda5afa7de2fe209252ac9c8f2",
+        "updated_at": "2026-11-24T09:17:01Z",
         "ci": {
-          "status": "success",
-          "run_id": 45362668384,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45362668384"
+          "status": "in_progress",
+          "run_id": 45363723030,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45363723030"
         }
       }
     ],
     "open_pull_request": 33,
     "pull_request_title": "Feat: complete checkpoint 22/39 laboratory expense recording and linkage",
     "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45362668384,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45362668384",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45363723030,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45363723030",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/33",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 02:44 PM IST"
+    "verified_at": "24 November 2026, 02:47 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -460,8 +460,8 @@
       "note": "Checkpoint 22/39; case status, expected delivery and tracking is complete via PR #32 and CI 45350569286. Awaiting laboratory expense recording and linkage evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T09:14:56Z",
-  "last_sync_success": "2026-11-24T09:14:56Z",
+  "sync_generated_at": "2026-11-24T09:17:21Z",
+  "last_sync_success": "2026-11-24T09:17:21Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
