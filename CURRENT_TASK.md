@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 25 November 2026, 12:29 AM IST  
+**Last checked:** 25 November 2026, 12:31 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — merged PR #31, checkpoint 20/39.
@@ -43,7 +43,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **27/39 — Automated reminders, retry and opt-out handling** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **27/39 — Automated reminders, retry and opt-out handling** (checks-passed-draft; PR #38 open-draft; CI success). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 
@@ -63,7 +63,7 @@ The Windows Progress Dashboard consumes the raw `status.json` feed and polls it 
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 25 November 2026, 12:29 AM IST
+**Checked:** 25 November 2026, 12:31 AM IST
 
 - Open PRs: [#38 — Feat: checkpoint 27/39 automated recall reminders, retry and opt-out](https://github.com/drpast/dantbook-master/pull/38) (open-draft; CI **success**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45454640653))
