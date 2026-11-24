@@ -1963,3 +1963,9 @@
 - Verified main commit: 0b5784c3a5fde247842d91e0aa14a8959993ff17 (Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-25; overall progress 67%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: 0b5784c3a5fde247842d91e0aa14a8959993ff17 (Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-25; overall progress 67%. Progress percentages unchanged; checkpoint/task state may have changed.

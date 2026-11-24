@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 12:59 AM IST"
+    "verified_at": "25 November 2026, 02:38 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -457,8 +457,8 @@
       "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
     }
   ],
-  "sync_generated_at": "2026-11-24T19:29:58Z",
-  "last_sync_success": "2026-11-24T19:29:58Z",
+  "sync_generated_at": "2026-11-24T21:08:47Z",
+  "last_sync_success": "2026-11-24T21:08:47Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
