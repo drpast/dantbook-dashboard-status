@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 03:02 PM IST"
+    "verified_at": "24 November 2026, 03:05 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -304,8 +304,11 @@
     {
       "id": "lab-expenses",
       "title": "Laboratory expense recording and linkage",
-      "status": "pending",
-      "group": "Dental Laboratory"
+      "status": "completed",
+      "group": "Dental Laboratory",
+      "pr": 33,
+      "ci": "success",
+      "note": "PR #33 merged"
     },
     {
       "id": "lab-tests",
@@ -411,11 +414,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "lab-expenses",
-  "current_task_step_number": 22,
+  "current_task_step_id": "lab-tests",
+  "current_task_step_number": 23,
   "task_steps_total": 39,
   "queue": [
-    "Laboratory expense recording and linkage",
     "Dental Lab workflow and acceptance tests",
     "Recall and follow-up scheduling rules",
     "Recall lists, due patients and workflow UI",
@@ -434,19 +436,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 22/39: Laboratory expense recording and linkage",
+  "current_task": "Step 23/39: Dental Lab workflow and acceptance tests",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Laboratory expense recording and linkage",
+      "name": "Dental Lab workflow and acceptance tests",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 22/39; case status, expected delivery and tracking is complete via PR #32 and CI 45350569286. Awaiting laboratory expense recording and linkage evidence review."
+      "note": "Checkpoint 23/39; laboratory expense recording and linkage is complete via PR #33 and CI 45363723030. Awaiting Dental Lab workflow and acceptance tests evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T09:32:10Z",
-  "last_sync_success": "2026-11-24T09:32:10Z",
+  "sync_generated_at": "2026-11-24T09:35:39Z",
+  "last_sync_success": "2026-11-24T09:35:39Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
