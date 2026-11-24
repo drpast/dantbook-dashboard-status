@@ -99,12 +99,12 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/38",
         "head_branch": "feat/recall-automation-checkpoint-27",
-        "head_sha": "dcb3c0df3f525ad8a8a752c0ef9ab5cb007b6e7a",
-        "updated_at": "2026-11-24T19:10:46Z",
+        "head_sha": "71f09f52ba21260f6382a180e165aae807542754",
+        "updated_at": "2026-11-24T19:15:29Z",
         "ci": {
           "status": "success",
-          "run_id": 45467466275,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45467466275"
+          "run_id": 45468296718,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45468296718"
         }
       }
     ],
@@ -112,8 +112,8 @@
     "pull_request_title": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45467466275,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45467466275",
+    "workflow_run_id": 45468296718,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45468296718",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/38",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 12:44 AM IST"
+    "verified_at": "25 November 2026, 12:45 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -473,8 +473,8 @@
       "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
     }
   ],
-  "sync_generated_at": "2026-11-24T19:14:46Z",
-  "last_sync_success": "2026-11-24T19:14:46Z",
+  "sync_generated_at": "2026-11-24T19:15:48Z",
+  "last_sync_success": "2026-11-24T19:15:48Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
