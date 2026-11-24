@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "DantBook",
   "dashboard_updated": "2026-11-24",
-  "overall_progress_percent": 25,
+  "overall_progress_percent": 67,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
@@ -15,23 +15,23 @@
     },
     {
       "name": "Medical History",
-      "status": "in-progress",
-      "progress_percent": 20
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Finance",
-      "status": "not-started",
-      "progress_percent": 0
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Dental Laboratory",
-      "status": "not-started",
-      "progress_percent": 0
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Recall & Follow-up",
-      "status": "not-started",
-      "progress_percent": 0
+      "status": "in-progress",
+      "progress_percent": 75
     },
     {
       "name": "Integration & testing",
