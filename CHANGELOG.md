@@ -1653,3 +1653,10 @@
 - Main CI: success.
 - Open PRs: #34 Docs: record checkpoint 23/39 dental lab workflow acceptance (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 497331c80de4bd76c361e816243a502e63f7dc2f (Feat: complete checkpoint 22/39 laboratory expense recording and linkage (#33)).
+- Main CI: success.
+- Open PRs: #34 Docs: record checkpoint 23/39 dental lab workflow acceptance (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.

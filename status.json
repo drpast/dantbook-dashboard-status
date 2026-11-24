@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 23/39: Dental Lab workflow and acceptance tests —  | Open PRs: #34 CI in_progress; main CI success",
+  "current_focus": "Step 23/39: Dental Lab workflow and acceptance tests —  | Open PRs: #34 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -90,8 +90,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/497331c80de4bd76c361e816243a502e63f7dc2f",
     "main_commit_message": "Feat: complete checkpoint 22/39 laboratory expense recording and linkage (#33)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45366073699,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45366073699",
+    "main_workflow_run_id": 45416504337,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45416504337",
     "open_pull_requests": [
       {
         "number": 34,
@@ -100,20 +100,20 @@
         "url": "https://github.com/drpast/dantbook-master/pull/34",
         "head_branch": "docs/lab-workflow-acceptance-checkpoint-23",
         "head_sha": "9ed18fc63367bbe4a13f4bda7626d1b505673b33",
-        "updated_at": "2026-11-24T14:35:51Z",
+        "updated_at": "2026-11-24T14:39:28Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45415885660,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45415885660"
+          "status": "success",
+          "run_id": 45415885689,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45415885689"
         }
       }
     ],
     "open_pull_request": 34,
     "pull_request_title": "Docs: record checkpoint 23/39 dental lab workflow acceptance",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45415885660,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45415885660",
+    "ci_status": "success",
+    "workflow_run_id": 45415885689,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45415885689",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/34",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 08:06 PM IST"
+    "verified_at": "24 November 2026, 08:09 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -462,8 +462,8 @@
       "note": "Checkpoint 23/39; laboratory expense recording and linkage is complete via PR #33 and CI 45363723030. Awaiting Dental Lab workflow and acceptance tests evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T14:36:14Z",
-  "last_sync_success": "2026-11-24T14:36:14Z",
+  "sync_generated_at": "2026-11-24T14:39:30Z",
+  "last_sync_success": "2026-11-24T14:39:30Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
