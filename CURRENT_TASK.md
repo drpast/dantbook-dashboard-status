@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 09:50 PM IST  
+**Last checked:** 24 November 2026, 09:55 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — merged PR #31, checkpoint 20/39.
@@ -63,10 +63,10 @@ The Windows Progress Dashboard consumes the raw `status.json` feed and polls it 
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 09:50 PM IST
+**Checked:** 24 November 2026, 09:55 PM IST
 
-- Open PRs: [#35 — Feat: checkpoint 24/39 recall and follow-up scheduling rules](https://github.com/drpast/dantbook-master/pull/35) (open-draft; CI **in_progress**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45435663425))
+- Open PRs: [#35 — Feat: checkpoint 24/39 recall and follow-up scheduling rules](https://github.com/drpast/dantbook-master/pull/35) (open-draft; CI **success**)
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45436857780))
 - Main commit: [574091c](https://github.com/drpast/dantbook-master/commit/574091c918904d355b7a4bcf64861b028f082e3f) — Docs: record checkpoint 23/39 dental lab workflow acceptance (#34)
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
