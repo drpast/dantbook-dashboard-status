@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 09:38 AM IST  
+**Last checked:** 24 November 2026, 01:03 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — merged PR #31, checkpoint 20/39.
@@ -43,7 +43,7 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **21/39 — Case status, expected delivery and tracking** (pending).
+Current checkpoint: **21/39 — Case status, expected delivery and tracking** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
 
 ## Progress evidence
 
@@ -59,3 +59,17 @@ Digital treatment consent/consent management, enterprise features, initial-relea
 ## Current desktop view
 
 The Windows Progress Dashboard consumes the raw `status.json` feed and polls it on its configured interval. Its current-task activity should show checkpoint 21/39 as pending at 0%; the desktop app's own refresh is not directly verified from this GitHub sync.
+
+<!-- AUTO-SYNC START -->
+## Automatically verified GitHub snapshot
+
+**Checked:** 24 November 2026, 01:03 PM IST
+
+- Open PRs: [#32 — Test: complete checkpoint 21/39 lab status, delivery and tracking](https://github.com/drpast/dantbook-master/pull/32) (open-draft; CI **success**)
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45279997678))
+- Main commit: [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — Merge pull request #31 from drpast/feat/lab-submission-checkpoint-20-clean
+- Progress manifest reviewed: **2026-11-23**; overall **25%**.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
+
+Progress is read from progress-manifest.json and is updated only after evidence review.
+<!-- AUTO-SYNC END -->

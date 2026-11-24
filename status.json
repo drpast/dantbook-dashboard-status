@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Dental Laboratory: checkpoint 21/39 — Case status, expected delivery and tracking. No open PRs; latest main CI unverified (the successful post-merge run was notification-only).",
+  "current_focus": "Step 21/39: Case status, expected delivery and tracking —  | Open PRs: #32 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Dental Laboratory",
-      "status": "in-progress",
+      "status": "not-started",
       "progress_percent": 0
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "name": "Dental Laboratory",
-      "status": "in-progress",
+      "status": "not-started",
       "progress_percent": 0
     },
     {
@@ -89,25 +89,33 @@
     "main_commit": "09b7b62b5c82672c5b4969da3be009849b6c56ec",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec",
     "main_commit_message": "Merge pull request #31 from drpast/feat/lab-submission-checkpoint-20-clean",
-    "main_ci_status": "unverified",
-    "main_workflow_run_id": null,
-    "main_workflow_run_url": null,
-    "pr_ci_status": "success",
-    "pr_ci_run_id": 45278584250,
-    "pr_ci_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45278584250",
-    "notification_workflow_status": "success",
-    "notification_workflow_run_id": 45279997678,
-    "notification_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45279997678",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "unverified",
-    "workflow_run_id": null,
-    "workflow_run_url": null,
-    "pr_url": null,
-    "blocker": null,
-    "ci_note": "The latest successful main-commit workflow run is notification-only; post-merge CI has not been independently verified."
+    "main_ci_status": "success",
+    "main_workflow_run_id": 45279997678,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45279997678",
+    "open_pull_requests": [
+      {
+        "number": 32,
+        "title": "Test: complete checkpoint 21/39 lab status, delivery and tracking",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/32",
+        "head_branch": "test/lab-status-tracking-checkpoint-21",
+        "head_sha": "8b6566748354dbefebc9aa942cea28ab432a1d64",
+        "updated_at": "2026-11-24T07:33:16Z",
+        "ci": {
+          "status": "success",
+          "run_id": 45348890013,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45348890013"
+        }
+      }
+    ],
+    "open_pull_request": 32,
+    "pull_request_title": "Test: complete checkpoint 21/39 lab status, delivery and tracking",
+    "pull_request_state": "open-draft",
+    "ci_status": "success",
+    "workflow_run_id": 45348890013,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45348890013",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/32",
+    "blocker": null
   },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
@@ -118,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 09:38 AM IST"
+    "verified_at": "24 November 2026, 01:03 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -447,11 +455,11 @@
       "name": "Case status, expected delivery and tracking",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 20/39 is complete via merged PR #31 and passing PR CI 45278584250. Checkpoint 21/39 remains pending; no completion evidence is recorded yet."
+      "note": "Checkpoint 21/39; create and submit laboratory cases is complete via PR #31 and CI 45278584250. Awaiting case status, expected delivery and tracking evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T04:08:12Z",
-  "last_sync_success": "2026-11-24T04:08:12Z",
+  "sync_generated_at": "2026-11-24T07:33:36Z",
+  "last_sync_success": "2026-11-24T07:33:36Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }

@@ -1534,3 +1534,10 @@
 - Corrected the CI classification: run [45279997678](https://github.com/drpast/dantbook-master/actions/runs/45279997678) is notification-only (`notify` job), not CI. Combined commit statuses were empty; post-merge main CI is therefore **unverified**, not success.
 - Current checkpoint is 21/39 (Case status, expected delivery and tracking), pending. Checkpoint 20/39 is complete. Overall progress remains 25%; no module or overall percentages were increased.
 - Updated `status.json` and `CURRENT_TASK.md` to remove stale PR #15/current-commit references and accurately distinguish PR CI from main notification status.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: 09b7b62b5c82672c5b4969da3be009849b6c56ec (Merge pull request #31 from drpast/feat/lab-submission-checkpoint-20-clean).
+- Main CI: success.
+- Open PRs: #32 Test: complete checkpoint 21/39 lab status, delivery and tracking (open-draft, CI success).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages updated from manifest.
