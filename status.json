@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 03:05 PM IST"
+    "verified_at": "24 November 2026, 04:36 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -447,8 +447,8 @@
       "note": "Checkpoint 23/39; laboratory expense recording and linkage is complete via PR #33 and CI 45363723030. Awaiting Dental Lab workflow and acceptance tests evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T09:35:39Z",
-  "last_sync_success": "2026-11-24T09:35:39Z",
+  "sync_generated_at": "2026-11-24T11:06:32Z",
+  "last_sync_success": "2026-11-24T11:06:32Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
