@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "reviewed_on": "2026-11-25",
-  "overall_progress_percent": 67,
+  "overall_progress_percent": 69,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
@@ -28,8 +28,8 @@
     },
     {
       "name": "Recall & Follow-up",
-      "status": "in-progress",
-      "progress_percent": 75
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Integration & testing",
@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#37 with passing acceptance CI where applicable; checkpoints 7/39 through 26/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, and Follow-up message templates/delivery options) are complete. Next checkpoint is #27, Automated reminders, retry and opt-out handling. Overall and module percentages now reflect the 26 verified completed checkpoints; checkpoint 27/39 remains pending. Substep status is driven by live PR/CI state via auto-sync; add the PR number to the active checkpoint as soon as its PR opens. Checkpoint 27/39 is in progress via PR #38.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#38 with passing acceptance CI where applicable; checkpoints 7/39 through 27/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, Follow-up message templates/delivery options, and Automated reminders, retry and opt-out handling) are complete. Next checkpoint is #28, Recall/follow-up acceptance and scheduling tests. Overall and module percentages now reflect the 27 verified completed checkpoints. PR #38 merged after a successful full CI run, including 16 Playwright tests and live API acceptance. Substep status remains driven by live PR/CI state via auto-sync; add the PR number to the active checkpoint as soon as its PR opens.",
   "task_steps": [
     {
       "id": "foundation",
@@ -386,18 +386,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "recall-automation",
-  "current_task_step_number": 27,
+  "current_task_step_id": "recall-tests",
+  "current_task_step_number": 28,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Automated reminders, retry and opt-out handling",
+      "name": "Recall/follow-up acceptance and scheduling tests",
       "percent": 0,
-      "status": "In progress",
-      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
+      "status": "Pending",
+      "note": "Checkpoint 28/39 is next; awaiting an evidence-backed PR and acceptance results."
     }
   ]
 }

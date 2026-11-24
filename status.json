@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "DantBook",
   "dashboard_updated": "2026-11-25",
-  "overall_progress_percent": 67,
+  "overall_progress_percent": 69,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
@@ -30,8 +30,8 @@
     },
     {
       "name": "Recall & Follow-up",
-      "status": "in-progress",
-      "progress_percent": 75
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Integration & testing",
@@ -451,10 +451,10 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Automated reminders, retry and opt-out handling",
+      "name": "Recall/follow-up acceptance and scheduling tests",
       "percent": 0,
-      "status": "In progress",
-      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
+      "status": "Pending",
+      "note": "Checkpoint 28/39 is next; awaiting an evidence-backed PR and acceptance results."
     }
   ],
   "sync_generated_at": "2026-11-24T19:29:58Z",
