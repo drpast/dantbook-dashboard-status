@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,16 +89,16 @@
     "main_commit": "bf8247c7546352d0013db42bafa6b49f68b6fff3",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/bf8247c7546352d0013db42bafa6b49f68b6fff3",
     "main_commit_message": "Feat: checkpoint 24/39 recall and follow-up scheduling rules (#35)",
-    "main_ci_status": "in_progress",
-    "main_workflow_run_id": 45438135085,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45438135085",
+    "main_ci_status": "success",
+    "main_workflow_run_id": 45438134508,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45438134508",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "in_progress",
-    "workflow_run_id": 45438135085,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45438135085",
+    "ci_status": "success",
+    "workflow_run_id": 45438134508,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45438134508",
     "pr_url": null,
     "blocker": null
   },
@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 10:01 PM IST"
+    "verified_at": "24 November 2026, 10:02 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -449,8 +449,8 @@
       "note": "Checkpoint 24/39; Dental Lab workflow and acceptance tests is complete via PR #34 and CI 45415885660. Awaiting Recall and follow-up scheduling rules evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T16:31:49Z",
-  "last_sync_success": "2026-11-24T16:31:49Z",
+  "sync_generated_at": "2026-11-24T16:32:09Z",
+  "last_sync_success": "2026-11-24T16:32:09Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }

@@ -1746,3 +1746,9 @@
 - Verified main commit: bf8247c7546352d0013db42bafa6b49f68b6fff3 (Feat: checkpoint 24/39 recall and follow-up scheduling rules (#35)).
 - Main CI: in_progress.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: bf8247c7546352d0013db42bafa6b49f68b6fff3 (Feat: checkpoint 24/39 recall and follow-up scheduling rules (#35)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
