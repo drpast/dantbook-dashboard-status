@@ -1,21 +1,35 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 06:45 AM IST  
+**Last checked:** 24 November 2026, 09:38 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
-**Current source activity:** Main CI success; Open PRs: .
+**Current source:** `drpast/dantbook-master`, branch `main`  
+**Latest main commit:** [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — merged PR #31, checkpoint 20/39.
 
-## Verified CI
-- Latest main commit: [1cee206](https://github.com/drpast/dantbook-master/commit/1cee2068ef77649b2ef9035da7495acd6ca6bbe8) — merge pull request #15. PR-head CI [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471) passed; post-merge main CI is reported in the auto-sync snapshot.
-- PR #11 Dental Laboratory case API: **merged**. Earlier CI [44949784904](https://github.com/drpast/dantbook-master/actions/runs/44949784904) failed at Prisma generation (P1012), but the final rerun [45041948662](https://github.com/drpast/dantbook-master/actions/runs/45041948662) passed; the PR was merged.
-- PR #12 Codex development workflow docs: **merged**; final CI [45042687063](https://github.com/drpast/dantbook-master/actions/runs/45042687063) passed.
-- PR #13 immediate dashboard notification: **merged**.
-- PR #15 Medical History data-model acceptance: **merged**; CI **success** [45079372471](https://github.com/drpast/dantbook-master/actions/runs/45079372471). Live acceptance covers snapshot constraints, alert/date checks, append-only revision immutability, correction/audit flow, and branch-local isolation. This completes checkpoint 7/39.
-- PR #15's dashboard-notification run [45079372414](https://github.com/drpast/dantbook-master/actions/runs/45079372414) also passed; this is separate from CI.
+## Current task
 
-## Recently merged milestones
-- PRs #3 and #4 merged with passing acceptance CI; PRs #5–#10 also merged with passing CI.
-- PR #11 Dental Laboratory case API, #12 Codex workflow docs, and #13 dashboard notification are merged. PR #11's initial P1012 failure was superseded by a successful rerun.
-- PR #15 adds live Medical History data-model/migration acceptance coverage. It merged with passing CI; checkpoint 7/39 is complete. Overall/module percentages remain unchanged pending separate evidence review.
+**Checkpoint 21/39 — Case status, expected delivery and tracking**  
+Status: **Pending**. Checkpoint 20/39 (Create and submit laboratory cases) is complete. Do not mark checkpoint 21 complete until its implementation and acceptance evidence are verified.
+
+## Verified repository state
+
+- Latest main commit: [09b7b62b5c82672c5b4969da3be009849b6c56ec](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), merged from PR #31.
+- Open PRs: **None returned by GitHub search**.
+- PR #31, [Create and submit laboratory cases](https://github.com/drpast/dantbook-master/pull/31), is **merged**.
+- PR #31 CI [run 45278584250](https://github.com/drpast/dantbook-master/actions/runs/45278584250) passed. Its `Verify workspace` job completed all steps successfully, including Prisma generation/validation, migrations, PostgreSQL RLS and Medical History acceptance, shared-patient access boundaries, type-check, build, browser acceptance and authenticated patient API acceptance.
+- PR #30 was closed unmerged after an encoding regression; PR #31 is the clean replacement and is merged. This is not an active blocker.
+
+## CI distinction — important
+
+- The successful workflow [45279997678](https://github.com/drpast/dantbook-master/actions/runs/45279997678) on the latest main commit is **Notify DantBook dashboard**. Its only job is `notify`; it is not the CI workflow.
+- The combined commit-status query returned no status contexts. Therefore **post-merge main CI for 09b7b62 is unverified**, not successful.
+- PR-head CI success is verified separately by run 45278584250. Do not substitute notification success for main CI.
+
+## Completed checkpoint evidence
+
+- Checkpoints 1–20/39 are recorded complete in `progress-manifest.json`.
+- Checkpoint 20/39 was completed by merged PR #31: a branch-local Dental Laboratory page linked from the patient record, a same-origin proxy, fictional draft creation, DRAFT-to-SUBMITTED submission, and fixture Playwright coverage.
+- PR #31 reused the already-merged Dental Laboratory API/model; it introduced no schema or migration changes.
+- Earlier merged checkpoints include Medical History data model/API/UI, alerts, correction/audit/safety, patient workflow integration and acceptance; Finance data model, billing UI, payments, reports and acceptance; and Dental Laboratory model/setup.
 
 ## Granular task tracker
 
@@ -29,28 +43,19 @@ The tracker contains **39 checkpoints** across seven work groups:
 - Integration & testing: 7 checkpoints
 - Release & deployment: 4 checkpoints
 
-Current checkpoint: **21/39 — Case status, expected delivery and tracking** (pending; awaiting verified work). Checkpoint statuses are tracked separately from overall/module progress.
+Current checkpoint: **21/39 — Case status, expected delivery and tracking** (pending).
 
 ## Progress evidence
-Progress percentages live in `progress-manifest.json`. Reviewed **23 November 2026** for repository and checkpoint status. Overall remains **25%**; module percentages were not increased. PR #15 merged with passing CI and completes checkpoint 7; the next evidence-backed checkpoint is #8.
+
+- Overall progress remains **25%**.
+- Module percentages remain unchanged.
+- The progress manifest was last reviewed **23 November 2026**. Percentages are evidence-reviewed estimates, not inferred from commit counts, PR merges, or CI runs. No percentage increase is made by this synchronization.
+- Target MVP date remains **20 December 2026** (ambitious).
 
 ## Permanent exclusions
 
-Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage, NanoPix integration, and periodontal charting remain excluded.
-
-<!-- AUTO-SYNC START -->
-## Automatically verified GitHub snapshot
-
-**Checked:** 24 November 2026, 06:45 AM IST
-
-- No open pull requests returned by GitHub.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45279997678))
-- Main commit: [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — Merge pull request #31 from drpast/feat/lab-submission-checkpoint-20-clean
-- Progress manifest reviewed: **2026-11-23**; overall **25%**.
-
-Progress is read from progress-manifest.json and is updated only after evidence review.
-<!-- AUTO-SYNC END -->
+Digital treatment consent/consent management, enterprise features, initial-release X-ray/photo storage and integrations, NanoPix/radiograph integration, and periodontal charting remain excluded.
 
 ## Current desktop view
 
-The desktop app displays installer-style live task progress plus one row per involved file/activity, each with its own bar, status, and explanatory note. It polls the raw `status.json` feed and refreshes on its configured interval.
+The Windows Progress Dashboard consumes the raw `status.json` feed and polls it on its configured interval. Its current-task activity should show checkpoint 21/39 as pending at 0%; the desktop app's own refresh is not directly verified from this GitHub sync.
