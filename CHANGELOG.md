@@ -1812,3 +1812,9 @@
 - Verified main commit: ae6839c701661688f9dec45c407b1a65d56a55f6 (Feat: checkpoint 25/39 recall lists and workflow UI (#36)).
 - Main CI: cancelled.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: ae6839c701661688f9dec45c407b1a65d56a55f6 (Feat: checkpoint 25/39 recall lists and workflow UI (#36)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
