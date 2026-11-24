@@ -66,7 +66,7 @@ The Windows Progress Dashboard consumes the raw `status.json` feed and polls it 
 **Checked:** 24 November 2026, 11:26 PM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45453995019))
+- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45453994840))
 - Main commit: [f158276](https://github.com/drpast/dantbook-master/commit/f158276b215421efb61a6c6c156a1ef67c80fa0b) — Feat: checkpoint 26/39 follow-up message templates and delivery options (#37)
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 
