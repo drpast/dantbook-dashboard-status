@@ -1876,3 +1876,9 @@
 - Verified main commit: f158276b215421efb61a6c6c156a1ef67c80fa0b (Feat: checkpoint 26/39 follow-up message templates and delivery options (#37)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-24; overall progress 67%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: f158276b215421efb61a6c6c156a1ef67c80fa0b (Feat: checkpoint 26/39 follow-up message templates and delivery options (#37)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-25; overall progress 67%. Progress percentages unchanged; checkpoint/task state may have changed.
