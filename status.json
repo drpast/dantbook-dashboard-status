@@ -90,15 +90,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/497331c80de4bd76c361e816243a502e63f7dc2f",
     "main_commit_message": "Feat: complete checkpoint 22/39 laboratory expense recording and linkage (#33)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45365548390,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45365548390",
+    "main_workflow_run_id": 45366073699,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45366073699",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45365548390,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45365548390",
+    "workflow_run_id": 45366073699,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45366073699",
     "pr_url": null,
     "blocker": null
   },
@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 02:58 PM IST"
+    "verified_at": "24 November 2026, 03:02 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -445,8 +445,8 @@
       "note": "Checkpoint 22/39; case status, expected delivery and tracking is complete via PR #32 and CI 45350569286. Awaiting laboratory expense recording and linkage evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T09:28:46Z",
-  "last_sync_success": "2026-11-24T09:28:46Z",
+  "sync_generated_at": "2026-11-24T09:32:10Z",
+  "last_sync_success": "2026-11-24T09:32:10Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }

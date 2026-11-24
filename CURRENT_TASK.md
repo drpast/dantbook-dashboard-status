@@ -1,6 +1,6 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 24 November 2026, 02:58 PM IST  
+**Last checked:** 24 November 2026, 03:02 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec) — merged PR #31, checkpoint 20/39.
@@ -63,10 +63,10 @@ The Windows Progress Dashboard consumes the raw `status.json` feed and polls it 
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 24 November 2026, 02:58 PM IST
+**Checked:** 24 November 2026, 03:02 PM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45365548390))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45366073699))
 - Main commit: [497331c](https://github.com/drpast/dantbook-master/commit/497331c80de4bd76c361e816243a502e63f7dc2f) — Feat: complete checkpoint 22/39 laboratory expense recording and linkage (#33)
 - Progress manifest reviewed: **2026-11-23**; overall **25%**.
 
