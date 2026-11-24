@@ -1594,3 +1594,10 @@
 - Verified main commit: f16e8ef443e84d0e13cb0c8e48240c234d4375e8 (Merge pull request #32 from drpast/test/lab-status-tracking-checkpoint-21).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-24 — GitHub/progress sync
+- Verified main commit: f16e8ef443e84d0e13cb0c8e48240c234d4375e8 (Merge pull request #32 from drpast/test/lab-status-tracking-checkpoint-21).
+- Main CI: success.
+- Open PRs: #33 Feat: complete checkpoint 22/39 laboratory expense recording and linkage (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-23; overall progress 25%. Progress percentages unchanged; checkpoint/task state may have changed.
