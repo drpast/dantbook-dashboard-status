@@ -452,11 +452,12 @@
       "name": "Automated reminders, retry and opt-out handling",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 27/39; Follow-up message templates and delivery options is complete via PR #37 and CI 45452900382. Awaiting Automated reminders, retry and opt-out handling evidence review."
+      "note": "Checkpoint 27/39 awaiting implementation; substeps advance automatically from PR/CI status once the PR number is attached to this checkpoint."
     }
   ],
   "sync_generated_at": "2026-11-24T18:26:12Z",
   "last_sync_success": "2026-11-24T18:26:12Z",
   "sync_status": "healthy",
-  "sync_poll_minutes": 5
+  "sync_poll_minutes": 5,
+  "reviewed_on": "2026-11-25"
 }
