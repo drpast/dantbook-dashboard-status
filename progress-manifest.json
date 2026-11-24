@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "reviewed_on": "2026-11-23",
-  "overall_progress_percent": 25,
+  "reviewed_on": "2026-11-24",
+  "overall_progress_percent": 67,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
@@ -13,23 +13,23 @@
     },
     {
       "name": "Medical History",
-      "status": "in-progress",
-      "progress_percent": 20
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Finance",
-      "status": "not-started",
-      "progress_percent": 0
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Dental Laboratory",
-      "status": "not-started",
-      "progress_percent": 0
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Recall & Follow-up",
-      "status": "not-started",
-      "progress_percent": 0
+      "status": "in-progress",
+      "progress_percent": 75
     },
     {
       "name": "Integration & testing",
@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#37 with passing acceptance CI where applicable; checkpoints 7/39 through 26/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, and Follow-up message templates/delivery options) are complete. Next checkpoint is #27, Automated reminders, retry and opt-out handling. Overall/module percentages remain conservative pending separate full evidence review.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#37 with passing acceptance CI where applicable; checkpoints 7/39 through 26/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, and Follow-up message templates/delivery options) are complete. Next checkpoint is #27, Automated reminders, retry and opt-out handling. Overall and module percentages now reflect the 26 verified completed checkpoints; checkpoint 27/39 remains pending.",
   "task_steps": [
     {
       "id": "foundation",
