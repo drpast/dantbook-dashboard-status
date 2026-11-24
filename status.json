@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 25/39: Recall lists, due patients and workflow UI —  | Open PRs: #37 CI success; main CI success",
+  "current_focus": "Step 25/39: Recall lists, due patients and workflow UI —  | Open PRs: #37 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -99,21 +99,21 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/37",
         "head_branch": "feat/recall-message-templates-checkpoint-26",
-        "head_sha": "9938097eeae2ca7c92797c19081c68f67ce5702a",
-        "updated_at": "2026-11-24T17:43:43Z",
+        "head_sha": "25efbaedebac66e8f3f0e71a1fa1461ca84ddb7a",
+        "updated_at": "2026-11-24T17:49:56Z",
         "ci": {
-          "status": "success",
-          "run_id": 45451763631,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45451763631"
+          "status": "in_progress",
+          "run_id": 45452900382,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45452900382"
         }
       }
     ],
     "open_pull_request": 37,
     "pull_request_title": "Feat: checkpoint 26/39 follow-up message templates and delivery options",
     "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45451763631,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45451763631",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45452900382,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45452900382",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/37",
     "blocker": null
   },
@@ -126,7 +126,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 11:17 PM IST"
+    "verified_at": "24 November 2026, 11:20 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -466,8 +466,8 @@
       "note": "Checkpoint 25/39; Recall and follow-up scheduling rules is complete via PR #35 and CI 45436011526. Awaiting Recall lists, due patients and workflow UI evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T17:47:49Z",
-  "last_sync_success": "2026-11-24T17:47:49Z",
+  "sync_generated_at": "2026-11-24T17:50:18Z",
+  "last_sync_success": "2026-11-24T17:50:18Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
