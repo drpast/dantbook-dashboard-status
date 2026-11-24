@@ -111,7 +111,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "24 November 2026, 01:26 PM IST"
+    "verified_at": "24 November 2026, 01:30 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -295,8 +295,11 @@
     {
       "id": "lab-status",
       "title": "Case status, expected delivery and tracking",
-      "status": "pending",
-      "group": "Dental Laboratory"
+      "status": "completed",
+      "group": "Dental Laboratory",
+      "pr": 32,
+      "ci": "success",
+      "note": "PR #32 merged"
     },
     {
       "id": "lab-expenses",
@@ -408,11 +411,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "lab-status",
-  "current_task_step_number": 21,
+  "current_task_step_id": "lab-expenses",
+  "current_task_step_number": 22,
   "task_steps_total": 39,
   "queue": [
-    "Case status, expected delivery and tracking",
     "Laboratory expense recording and linkage",
     "Dental Lab workflow and acceptance tests",
     "Recall and follow-up scheduling rules",
@@ -432,19 +434,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 21/39: Case status, expected delivery and tracking",
+  "current_task": "Step 22/39: Laboratory expense recording and linkage",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Case status, expected delivery and tracking",
+      "name": "Laboratory expense recording and linkage",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 21/39; create and submit laboratory cases is complete via PR #31 and CI 45278584250. Awaiting case status, expected delivery and tracking evidence review."
+      "note": "Checkpoint 22/39; case status, expected delivery and tracking is complete via PR #32 and CI 45350569286. Awaiting laboratory expense recording and linkage evidence review."
     }
   ],
-  "sync_generated_at": "2026-11-24T07:56:07Z",
-  "last_sync_success": "2026-11-24T07:56:07Z",
+  "sync_generated_at": "2026-11-24T08:00:19Z",
+  "last_sync_success": "2026-11-24T08:00:19Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5
 }
