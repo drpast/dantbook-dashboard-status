@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#37 with passing acceptance CI where applicable; checkpoints 7/39 through 26/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, and Follow-up message templates/delivery options) are complete. Next checkpoint is #27, Automated reminders, retry and opt-out handling. Overall and module percentages now reflect the 26 verified completed checkpoints; checkpoint 27/39 remains pending. Substep status is driven by live PR/CI state via auto-sync; add the PR number to the active checkpoint as soon as its PR opens. Checkpoint 27/39 is in progress via PR #38.",
+  "note": "39-step roadmap retained. Checkpoints 1–27/39 are complete. Checkpoint 27/39 (Automated reminders, retry and opt-out handling) is complete via merged PR #38, with passing PR verification and post-merge main CI. The next checkpoint is 28/39 (Recall/follow-up acceptance and scheduling tests), currently pending. Overall and module percentages remain evidence-reviewed values (67% overall) and were not recalculated during this GitHub sync. Recall automation remains queue-only: no external provider dispatch or background scheduler. Substep status is reconciled from verified merged PR and CI evidence.",
   "task_steps": [
     {
       "id": "foundation",
@@ -306,11 +306,11 @@
     {
       "id": "recall-automation",
       "title": "Automated reminders, retry and opt-out handling",
-      "status": "in-progress",
+      "status": "completed",
       "group": "Recall & Follow-up",
       "pr": 38,
-      "ci": "queued",
-      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
+      "ci": "success",
+      "note": "PR #38 merged on 24 Nov 2026. Verify workspace CI 45468296638 passed; post-merge main CI 45470198858 passed. Automated queue/retry/opt-out remains queue-only; no external provider dispatch or background scheduler."
     },
     {
       "id": "recall-tests",
@@ -386,18 +386,18 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "recall-automation",
-  "current_task_step_number": 27,
+  "current_task_step_id": "recall-tests",
+  "current_task_step_number": 28,
   "task_steps_total": 39,
   "step_tracking_method": "39 granular checkpoints; statuses change only on verified evidence (merged PRs, successful acceptance tests, and reviewed criteria). Draft PRs and CI alone do not equal completion.",
   "current_task_files_title": "Current task activity",
   "current_task_percent": 0,
   "current_task_files": [
     {
-      "name": "Automated reminders, retry and opt-out handling",
+      "name": "Recall/follow-up acceptance and scheduling tests",
       "percent": 0,
-      "status": "In progress",
-      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
+      "status": "Pending",
+      "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ]
 }
