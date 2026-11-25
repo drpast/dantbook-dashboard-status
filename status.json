@@ -91,15 +91,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2",
     "main_commit_message": "test: checkpoint 28 recall scheduling acceptance (#39)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45633000571,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633000571",
+    "main_workflow_run_id": 45633654230,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633654230",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45633000571,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633000571",
+    "workflow_run_id": 45633654230,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633654230",
     "pr_url": null,
     "blocker": null
   },
@@ -112,7 +112,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 07:50 PM IST"
+    "verified_at": "25 November 2026, 07:54 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -458,8 +458,8 @@
       "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T14:20:51Z",
-  "last_sync_success": "2026-11-25T14:20:51Z",
+  "sync_generated_at": "2026-11-25T14:24:35Z",
+  "last_sync_success": "2026-11-25T14:24:35Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
