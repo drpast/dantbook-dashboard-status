@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; checkpoint 33 gap recorded; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -96,30 +96,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/871241d3bc0e74186faa0519b8243c8fbe2f90ea",
     "main_commit_message": "docs: record checkpoint 33 gap merged evidence (#49)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45702589407,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45702589407",
-    "open_pull_requests": [
-      {
-        "number": 49,
-        "title": "docs: record checkpoint 33 gap merged evidence",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/49",
-        "head_branch": "docs/checkpoint-33-gap-merged-evidence",
-        "head_sha": "857e9a27ed7685a647bdce1b8053fc019c0dc406",
-        "updated_at": "2026-11-25T21:08:57Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45701640374,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45701640374"
-        }
-      }
-    ],
-    "open_pull_request": 49,
-    "pull_request_title": "docs: record checkpoint 33 gap merged evidence",
-    "pull_request_state": "open-draft",
+    "main_workflow_run_id": 45703145657,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45703145657",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45702589407,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45702589407",
+    "workflow_run_id": 45703145657,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45703145657",
     "pr_url": null,
     "blocker": null
   },
@@ -132,7 +117,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 02:48 AM IST"
+    "verified_at": "26 November 2026, 02:55 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -413,9 +398,9 @@
     {
       "id": "integration-backup",
       "title": "Backup, restore and security checks",
-      "status": "pending",
+      "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 32/39 is not complete: master PR #46 audited backup, restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates and recorded them as absent; PR #47 refreshed the merged evidence. Narrow security headers, RLS, CI gates and the informational dependency audit remain in force. Active step advances to 32/39 for evidence work; checkpoint 31 remains pending/blocked and overall stays at 72%."
+      "note": "Checkpoint 32/39 remains pending/blocked: backup/restore and continuous security verification are absent (PR #46/#47 recorded the verified gap)."
     },
     {
       "id": "integration-regression",
@@ -466,7 +451,6 @@
   "current_task_step_number": 33,
   "task_steps_total": 39,
   "queue": [
-    "Backup, restore and security checks",
     "Cross-module end-to-end regression testing",
     "Performance, accessibility and usability checks",
     "Resolve blockers and verify fixes",
@@ -475,7 +459,7 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 32/39: Backup, restore and security checks",
+  "current_task": "Step 33/39: Cross-module end-to-end regression testing",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
@@ -486,8 +470,8 @@
       "note": "Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-25T21:18:51Z",
-  "last_sync_success": "2026-11-25T21:18:51Z",
+  "sync_generated_at": "2026-11-25T21:25:16Z",
+  "last_sync_success": "2026-11-25T21:25:16Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
