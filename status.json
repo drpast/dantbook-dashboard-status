@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 28/39: Recall/follow-up acceptance and scheduling tests —  | Open PRs: #39 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -93,14 +93,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45470784324,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470784324",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
+    "open_pull_requests": [
+      {
+        "number": 39,
+        "title": "test: checkpoint 28 recall scheduling acceptance",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/39",
+        "head_branch": "feat/recall-acceptance-checkpoint-28",
+        "head_sha": "8a64ec5e6fc737875f222c3a8939482a6e76f735",
+        "updated_at": "2026-11-25T09:30:19Z",
+        "ci": {
+          "status": "success",
+          "run_id": 45586036105,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45586036105"
+        }
+      }
+    ],
+    "open_pull_request": 39,
+    "pull_request_title": "test: checkpoint 28 recall scheduling acceptance",
+    "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45470784324,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470784324",
-    "pr_url": null,
+    "workflow_run_id": 45586036105,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45586036105",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/39",
     "blocker": null
   },
   "dashboard_connection": {
@@ -112,7 +127,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 01:58 PM IST"
+    "verified_at": "25 November 2026, 03:00 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -458,8 +473,8 @@
       "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T08:28:55Z",
-  "last_sync_success": "2026-11-25T08:28:55Z",
+  "sync_generated_at": "2026-11-25T09:30:37Z",
+  "last_sync_success": "2026-11-25T09:30:37Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"

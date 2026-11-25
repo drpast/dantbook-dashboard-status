@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 25 November 2026, 01:58 PM IST  
+**Last checked:** 25 November 2026, 03:00 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [0b5784c](https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17) — merged PR #38, checkpoint 27/39  
-**Current source activity:** Main CI success; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: #39 test: checkpoint 28 recall scheduling acceptance (CI success).
 
 ## Current task
 
@@ -55,12 +55,13 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 25 November 2026, 01:58 PM IST
+**Checked:** 25 November 2026, 03:00 PM IST
 
-- No open pull requests returned by GitHub.
+- Open PRs: [#39 — test: checkpoint 28 recall scheduling acceptance](https://github.com/drpast/dantbook-master/pull/39) (open-draft; CI **success**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45470784324))
 - Main commit: [0b5784c](https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17) — Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)
 - Progress manifest reviewed: **2026-11-25**; overall **69%**.
+- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
