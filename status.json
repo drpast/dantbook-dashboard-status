@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 33/39: Cross-module end-to-end regression testing — Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%. | Open PRs: #50 CI in_progress; main CI success",
+  "current_focus": "Step 33/39: Cross-module end-to-end regression testing — Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%. | Open PRs: #50 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -96,8 +96,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/871241d3bc0e74186faa0519b8243c8fbe2f90ea",
     "main_commit_message": "docs: record checkpoint 33 gap merged evidence (#49)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45703145657,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45703145657",
+    "main_workflow_run_id": 45705983566,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45705983566",
     "open_pull_requests": [
       {
         "number": 50,
@@ -108,18 +108,18 @@
         "head_sha": "aa3c539d02877954addd92e6770ac9da12cb695e",
         "updated_at": "2026-11-25T21:32:50Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45705350058,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45705350058"
+          "status": "success",
+          "run_id": 45705350059,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45705350059"
         }
       }
     ],
     "open_pull_request": 50,
     "pull_request_title": "docs: record checkpoint 34 performance accessibility gap",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45705350058,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45705350058",
+    "ci_status": "success",
+    "workflow_run_id": 45705350059,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45705350059",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/50",
     "blocker": null
   },
@@ -132,7 +132,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 03:03 AM IST"
+    "verified_at": "26 November 2026, 03:07 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -485,8 +485,8 @@
       "note": "Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-25T21:33:09Z",
-  "last_sync_success": "2026-11-25T21:33:09Z",
+  "sync_generated_at": "2026-11-25T21:37:26Z",
+  "last_sync_success": "2026-11-25T21:37:26Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
