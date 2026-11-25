@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 28/39: Recall/follow-up acceptance and scheduling tests —  | Open PRs: #39 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -87,35 +87,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-25",
-    "main_commit": "0b5784c3a5fde247842d91e0aa14a8959993ff17",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17",
-    "main_commit_message": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)",
+    "main_commit": "509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2",
+    "main_commit_message": "test: checkpoint 28 recall scheduling acceptance (#39)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45589929207,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45589929207",
-    "open_pull_requests": [
-      {
-        "number": 39,
-        "title": "test: checkpoint 28 recall scheduling acceptance",
-        "state": "open",
-        "url": "https://github.com/drpast/dantbook-master/pull/39",
-        "head_branch": "feat/recall-acceptance-checkpoint-28",
-        "head_sha": "fb312ebb248e8e6b1d91360cec52bdf5cb5ac135",
-        "updated_at": "2026-11-25T14:19:01Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45632721430,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45632721430"
-        }
-      }
-    ],
-    "open_pull_request": 39,
-    "pull_request_title": "test: checkpoint 28 recall scheduling acceptance",
-    "pull_request_state": "open",
+    "main_workflow_run_id": 45633000571,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633000571",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45632721430,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45632721430",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/39",
+    "workflow_run_id": 45633000571,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633000571",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -127,7 +112,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 07:49 PM IST"
+    "verified_at": "25 November 2026, 07:50 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -473,8 +458,8 @@
       "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T14:19:26Z",
-  "last_sync_success": "2026-11-25T14:19:26Z",
+  "sync_generated_at": "2026-11-25T14:20:51Z",
+  "last_sync_success": "2026-11-25T14:20:51Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
