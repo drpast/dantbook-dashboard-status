@@ -132,7 +132,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 02:43 AM IST"
+    "verified_at": "26 November 2026, 02:48 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -486,8 +486,8 @@
       "note": "Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-25T21:13:55Z",
-  "last_sync_success": "2026-11-25T21:13:55Z",
+  "sync_generated_at": "2026-11-25T21:18:51Z",
+  "last_sync_success": "2026-11-25T21:18:51Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
