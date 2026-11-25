@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 32/39: Backup, restore and security checks — Checkpoint 32/39 is not complete: master PR #46 audited backup, restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates and recorded them as absent; PR #47 refreshed the merged evidence. Narrow security headers, RLS, CI gates and the informational dependency audit remain in force. Active step advances to 32/39 for evidence work; checkpoint 31 remains pending/blocked and overall stays at 72%. | Open PRs: #49 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; checkpoint 33 gap recorded; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -87,16 +87,17 @@
     "Verified 2026-11-25: PR #40 merged as 7e9fe32c9e6c1aefa2c6ea3f8ae566a5fccfb11f; checkpoint 29/39 (Integrated patient registration and appointment workflow) is complete with draft PR CI 45650514543, post-merge main CI 45651429692, 19 Playwright tests and live API acceptance. Next checkpoint is 30/39 (Role permissions and access-boundary verification).",
     "Verified 2026-11-25: PR #42 merged as 7f8e56d695835406c447a8b928f1db7a873e520f; checkpoint 30/39 (Role permissions and access-boundary verification) is complete with PR CI 45661690949, post-merge main CI 45662918098, 21 Playwright tests and live API acceptance. Next checkpoint is 31/39 (Offline mode, sync and conflict scenarios). Notification run 45663590942 is not CI.",
     "Verified 2026-11-26: PR #44 merged as 2a728fa685442e2f8a92b7f20e416dc69bfd8a8d and PR #45 merged as c1181206e67050ba3692c42200e1007bc0541a5c; checkpoint 31/39 is audited as not implemented and remains pending, with PR CI 45685840444, gap-record post-merge CI 45687165315, doc CI 45688017120 and final post-merge main CI 45689303156. Notification runs 45687787085 and 45689921001 are not CI.",
-    "Verified 2026-11-26: PR #46 merged as e0a50adf229420451de525e09976cd3db92abe4e and PR #47 merged as f63f848aaf148b86352d42907f03c8be9e672241; checkpoint 32/39 is audited as not implemented and remains pending, with PR CI 45693177069, gap-record post-merge CI 45693959604, doc CI 45695275738 and final post-merge main CI 45696004411. Notification runs 45696003925 and 45696846391 are not CI."
+    "Verified 2026-11-26: PR #46 merged as e0a50adf229420451de525e09976cd3db92abe4e and PR #47 merged as f63f848aaf148b86352d42907f03c8be9e672241; checkpoint 32/39 is audited as not implemented and remains pending, with PR CI 45693177069, gap-record post-merge CI 45693959604, doc CI 45695275738 and final post-merge main CI 45696004411. Notification runs 45696003925 and 45696846391 are not CI.",
+    "Verified 2026-11-26: PR #48 merged as 80671b661adea7dd2309615dc1eee9b02fc2e36b and PR #49 merged as 871241d3bc0e74186faa0519b8243c8fbe2f90ea; checkpoint 33/39 is audited as not implemented and remains pending, with PR CI 45699696290, gap-record post-merge CI 45700644773, doc CI 45701640374 and final post-merge main CI 45702589407. Notification runs 45702589714 and 45703145657 are not CI."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
-    "main_commit": "80671b661adea7dd2309615dc1eee9b02fc2e36b",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/80671b661adea7dd2309615dc1eee9b02fc2e36b",
-    "main_commit_message": "docs: record checkpoint 33 cross-module regression gap (#48)",
+    "main_commit": "871241d3bc0e74186faa0519b8243c8fbe2f90ea",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/871241d3bc0e74186faa0519b8243c8fbe2f90ea",
+    "main_commit_message": "docs: record checkpoint 33 gap merged evidence (#49)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45702373870,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45702373870",
+    "main_workflow_run_id": 45702589407,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45702589407",
     "open_pull_requests": [
       {
         "number": 49,
@@ -117,9 +118,9 @@
     "pull_request_title": "docs: record checkpoint 33 gap merged evidence",
     "pull_request_state": "open-draft",
     "ci_status": "success",
-    "workflow_run_id": 45701640374,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45701640374",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/49",
+    "workflow_run_id": 45702589407,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45702589407",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -420,7 +421,8 @@
       "id": "integration-regression",
       "title": "Cross-module end-to-end regression testing",
       "status": "pending",
-      "group": "Integration & Testing"
+      "group": "Integration & Testing",
+      "note": "Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%."
     },
     {
       "id": "integration-performance",
@@ -460,8 +462,8 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "integration-backup",
-  "current_task_step_number": 32,
+  "current_task_step_id": "integration-regression",
+  "current_task_step_number": 33,
   "task_steps_total": 39,
   "queue": [
     "Backup, restore and security checks",
@@ -478,10 +480,10 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Backup, restore and security checks",
+      "name": "Cross-module end-to-end regression testing",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 32/39 is not complete: PR #46/#47 recorded that backup/restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates are absent. Checkpoint 31 remains pending/blocked and overall stays at 72%."
+      "note": "Checkpoint 33/39 is not complete: master PR #48 audited cross-module regression coverage and recorded that no dedicated journey suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate exists; PR #49 refreshed the merged evidence. Existing 11 Playwright specs and 21 tests plus two narrow handoffs and CI/API/RLS gates remain in force. Checkpoints 31 and 32 remain pending/blocked; overall stays at 72%."
     }
   ],
   "sync_generated_at": "2026-11-25T21:13:55Z",
