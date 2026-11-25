@@ -3,18 +3,18 @@
 **Last checked:** 25 November 2026, 08:03 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
-**Latest main commit:** [0b5784c](https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17) — merged PR #38, checkpoint 27/39  
+**Latest main commit:** [509eed4](https://github.com/drpast/dantbook-master/commit/509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2) — merged PR #39, checkpoint 28/39  
 **Current source activity:** Main CI success; Open PRs: .
 
 ## Current task
 
-**Checkpoint 28/39 — Recall/follow-up acceptance and scheduling tests**  
-Status: **Pending**. Checkpoint 27/39 (Automated reminders, retry and opt-out handling) is complete through merged PR #38. Do not mark checkpoint 28 complete until its implementation and acceptance evidence are verified.
+**Checkpoint 29/39 — Integrated patient registration and appointment workflow**  
+Status: **Pending**. Checkpoint 28/39 (Recall/follow-up acceptance and scheduling tests) is complete through merged PR #39. Do not mark checkpoint 29 complete until its implementation and acceptance evidence are verified.
 
 ## Verified repository state
 
-- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **20 commits ahead** and no commits behind.
-- **PRs #32–#38 are merged**; GitHub search returned no open PRs.
+- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **21 commits ahead** and no commits behind.
+- **PRs #32–#39 are merged**; GitHub search returned no open PRs.
 - PR #32 completed checkpoint 21/39: expected-delivery and ordered status-history tracking acceptance.
 - PR #33 completed checkpoint 22/39: one-time laboratory expense recording and case linkage.
 - PR #34 completed checkpoint 23/39: Dental Laboratory workflow acceptance evidence.
@@ -22,8 +22,11 @@ Status: **Pending**. Checkpoint 27/39 (Automated reminders, retry and opt-out ha
 - PR #36 completed checkpoint 25/39: all-rules recall due list, patient links and queue workflow.
 - PR #37 completed checkpoint 26/39: fixed follow-up templates and queue-only EMAIL/SMS/PUSH options.
 - PR #38 completed checkpoint 27/39: automated due-reminder queueing, retry, local FAILED/SENT outcomes and patient/rule opt-out suppression with audit history.
+- PR #39 completed checkpoint 28/39: deterministic scheduling fixtures for the 180-day boundary, exact 180/90-day due dates, too-recent/non-matching/superseded visit exclusions, branch isolation, descending overdue ordering and browser display of calculated due windows.
 - PR #38 [Verify workspace CI run 45468296638](https://github.com/drpast/dantbook-master/actions/runs/45468296638) passed.
-- Post-merge main [CI run 45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858) passed the full Verify workspace job, including Prisma validation, migrations, PostgreSQL/RLS checks, type-check, build, browser acceptance and authenticated patient API acceptance.
+- PR #39 [Verify workspace CI run 45589292148](https://github.com/drpast/dantbook-master/actions/runs/45589292148) passed with 17 Playwright tests, migrations/RLS checks, typecheck, build and live API acceptance.
+- Post-merge main [CI run 45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858) passed the full Verify workspace job for checkpoint 27/39.
+- Post-merge main [CI run 45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700) passed the full Verify workspace job for checkpoint 28/39, including 17 Playwright tests and live API acceptance.
 - [Run 45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) is the separate dashboard-notification workflow, not the CI run.
 - No published releases were returned by GitHub. The tag-ref query returned 404, so no tag listing was available.
 
@@ -33,11 +36,11 @@ The new automation remains **queue-only**. It does not dispatch real email, SMS 
 
 ## Completed checkpoints
 
-Checkpoints **1–27/39** are recorded complete in the task tracker. The next checkpoint is **28/39 — Recall/follow-up acceptance and scheduling tests**.
+Checkpoints **1–28/39** are recorded complete in the task tracker. The next checkpoint is **29/39 — Integrated patient registration and appointment workflow**.
 
 ## Progress evidence
 
-- Overall progress remains **67%**; module percentages are unchanged.
+- Overall progress is now **70%**; `Recall & Follow-up` remains **100%** and all other module percentages are unchanged.
 - Percentages were not recalculated from commit counts, PR merges or CI runs. They remain evidence-reviewed manifest values.
 - The manifest review date remains **25 November 2026**.
 - The target MVP date remains **20 December 2026** (ambitious).
@@ -45,8 +48,8 @@ Checkpoints **1–27/39** are recorded complete in the task tracker. The next ch
 ## Dashboard data-quality notes
 
 - The milestone-level status/percentage entries still conflict with the module-level statuses (for example, completed modules alongside milestone entries marked not started). They were left unchanged pending a separate evidence review.
-- The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This caused the earlier snapshot to attach notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) to the main-CI field. This monitor corrected status.json and the auto-sync block to the actual CI run [45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858); the script defect remains and may recur until separately fixed. No code was changed in this monitoring run.
-- The Windows app's actual refresh on the user's PC is not directly verified by this GitHub check.
+- The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This caused the earlier snapshot to attach notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) to the main-CI field. This monitor corrected status.json and the auto-sync block to the actual CI runs [45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858) and [45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700); the script defect remains and may recur until separately fixed. No code was changed in this monitoring run.
+- The Windows sidebar was verified locally after checkpoint 28: its cache and UI showed overall **70%**, the active **Step 29/39**, and step 28 recorded as completed with PR #39/CI success.
 
 ## Permanent exclusions
 
