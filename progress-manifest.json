@@ -75,7 +75,7 @@
     }
   ],
   "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
-  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10–#15 and #16–#38 with passing acceptance CI where applicable; checkpoints 7/39 through 27/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, Follow-up message templates/delivery options, and Automated reminders, retry and opt-out handling) are complete. Next checkpoint is #28, Recall/follow-up acceptance and scheduling tests. Overall and module percentages now reflect the 27 verified completed checkpoints. PR #38 merged after a successful full CI run, including 16 Playwright tests and live API acceptance. Substep status remains driven by live PR/CI state via auto-sync; add the PR number to the active checkpoint as soon as its PR opens.",
+  "note": "39-step roadmap retained. Merged evidence PRs include #2, #3, #4, #8, #10-#15 and #16-#38 with passing acceptance CI where applicable; checkpoints 7/39 through 27/39 (Medical History data model, API, UI, alerts, corrections/audit/safety, patient-workflow integration, module acceptance/regression, Finance data model/billing rules, Treatment billing and invoice workflow UI, Payment recording, balances and adjustments, Finance summaries and reports, Finance permissions, calculations and acceptance tests, Dental Lab case data model and setup, Create and submit laboratory cases, Case status, expected delivery and tracking, Laboratory expense recording and linkage, Dental Lab workflow and acceptance tests, Recall and follow-up scheduling rules, Recall lists/due patients/workflow UI, Follow-up message templates/delivery options, and Automated reminders, retry and opt-out handling) are complete. Next checkpoint is #28, Recall/follow-up acceptance and scheduling tests. Overall and module percentages now reflect the 27 verified completed checkpoints. PR #38 merged after a successful full CI run, including 16 Playwright tests and live API acceptance. Substep status remains driven by live PR/CI state via auto-sync; add the PR number to the active checkpoint as soon as its PR opens.",
   "task_steps": [
     {
       "id": "foundation",
@@ -173,7 +173,7 @@
       "title": "Integrate Medical History into patient workflow",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #21 adds a round-trip Playwright test for patient-record → Medical History → patient-record with preserved organization/branch/patient context (CI 45222494140); PR #4/#15/#20 cover the underlying API, correction, audit and alert acceptance.",
+      "note": "PR #21 adds a round-trip Playwright test for patient-record ? Medical History ? patient-record with preserved organization/branch/patient context (CI 45222494140); PR #4/#15/#20 cover the underlying API, correction, audit and alert acceptance.",
       "pr": 21,
       "ci": "success"
     },
@@ -306,11 +306,11 @@
     {
       "id": "recall-automation",
       "title": "Automated reminders, retry and opt-out handling",
-      "status": "in-progress",
+      "status": "completed",
       "group": "Recall & Follow-up",
       "pr": 38,
-      "ci": "queued",
-      "note": "Checkpoint 27/39 is in progress via PR #38: automated recall reminders, retry handling and patient/rule opt-out suppression."
+      "ci": "success",
+      "note": "PR #38 merged on 24 Nov 2026. Verify workspace CI 45468296638 passed; post-merge main CI 45470198858 passed. Automated queue/retry/opt-out remains queue-only; no external provider dispatch or background scheduler."
     },
     {
       "id": "recall-tests",
@@ -397,7 +397,7 @@
       "name": "Recall/follow-up acceptance and scheduling tests",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 28/39 is next; awaiting an evidence-backed PR and acceptance results."
+      "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ]
 }

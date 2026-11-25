@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI success (run 45470198858)",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -82,7 +82,8 @@
     "PR #31 merged on 2026-11-23 as commit 09b7b62b5c82672c5b4969da3be009849b6c56ec. Its CI run 45278584250 passed the Verify workspace job, including migrations, PostgreSQL/RLS checks, Medical History acceptance, shared-patient boundaries, type-check, build, browser acceptance, and authenticated patient API acceptance.",
     "PR #30 was closed unmerged after an encoding regression; PR #31 is the clean replacement and is merged. No open pull requests were returned by the current GitHub search.",
     "Checkpoint 20/39 (Create and submit laboratory cases) is complete through merged PR #31 and passing PR CI. Checkpoint 21/39 (Case status, expected delivery and tracking) is the current pending task.",
-    "The successful run 45279997678 on the latest main commit is the Notify DantBook dashboard workflow and contains only the notify job. It is not CI. The combined commit-status query returned no status contexts, so post-merge main CI is recorded as unverified rather than success."
+    "The successful run 45279997678 on the latest main commit is the Notify DantBook dashboard workflow and contains only the notify job. It is not CI. The combined commit-status query returned no status contexts, so post-merge main CI is recorded as unverified rather than success.",
+    "Verified 2026-11-25: PRs #32-#38 merged; checkpoints 21-27/39 complete. Next checkpoint 28/39 is Recall/follow-up acceptance and scheduling tests. Main CI run 45470198858 passed; notification run 45470784324 is not CI. No open PRs or published releases found."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-25",
@@ -90,15 +91,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17",
     "main_commit_message": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45470784324,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470784324",
+    "main_workflow_run_id": 45470198858,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470198858",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45470784324,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470784324",
+    "workflow_run_id": 45470198858,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470198858",
     "pr_url": null,
     "blocker": null
   },
@@ -111,7 +112,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 12:59 AM IST"
+    "verified_at": "25 November 2026, 09:40 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -352,7 +353,7 @@
       "status": "completed",
       "group": "Recall & Follow-up",
       "pr": 38,
-      "ci": "queued",
+      "ci": "success",
       "note": "PR #38 merged"
     },
     {
@@ -454,11 +455,11 @@
       "name": "Recall/follow-up acceptance and scheduling tests",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 28/39 is next; awaiting an evidence-backed PR and acceptance results."
+      "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-24T19:29:58Z",
-  "last_sync_success": "2026-11-24T19:29:58Z",
+  "sync_generated_at": "2026-11-25T04:10:24Z",
+  "last_sync_success": "2026-11-25T04:10:24Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
