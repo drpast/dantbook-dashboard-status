@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "DantBook",
   "dashboard_updated": "2026-11-25",
-  "overall_progress_percent": 69,
+  "overall_progress_percent": 70,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
@@ -359,8 +359,11 @@
     {
       "id": "recall-tests",
       "title": "Recall/follow-up acceptance and scheduling tests",
-      "status": "pending",
-      "group": "Recall & Follow-up"
+      "status": "completed",
+      "group": "Recall & Follow-up",
+      "pr": 39,
+      "ci": "success",
+      "note": "PR #39 adds deterministic scheduling fixtures for the 180-day boundary, too-recent/non-matching/superseded visits, exact 180/90-day due dates, descending overdue ordering, branch isolation and browser display of calculated due windows (draft PR CI 45589292148; post-merge main CI 45633000700; merge commit 509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2)."
     },
     {
       "id": "integration-patient",
@@ -430,11 +433,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "recall-tests",
-  "current_task_step_number": 28,
+  "current_task_step_id": "integration-patient",
+  "current_task_step_number": 29,
   "task_steps_total": 39,
   "queue": [
-    "Recall/follow-up acceptance and scheduling tests",
     "Integrated patient registration and appointment workflow",
     "Role permissions and access-boundary verification",
     "Offline mode, sync and conflict scenarios",
@@ -447,15 +449,15 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 28/39: Recall/follow-up acceptance and scheduling tests",
+  "current_task": "Step 29/39: Integrated patient registration and appointment workflow",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Recall/follow-up acceptance and scheduling tests",
+      "name": "Integrated patient registration and appointment workflow",
       "percent": 0,
       "status": "Pending",
-      "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
+      "note": "Next checkpoint 29/39. Checkpoint 28/39 is complete via merged PR #39; no PR for checkpoint 29 is currently open."
     }
   ],
   "sync_generated_at": "2026-11-25T14:24:35Z",
