@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -96,16 +96,16 @@
     "main_commit": "428f5ebda606f78d8cff7a91b435951726bbd53f",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/428f5ebda606f78d8cff7a91b435951726bbd53f",
     "main_commit_message": "docs: record checkpoint 35 blocker fix verification gap (#52)",
-    "main_ci_status": "cancelled",
-    "main_workflow_run_id": 45710667225,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45710667225",
+    "main_ci_status": "success",
+    "main_workflow_run_id": 45711254427,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45711254427",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "cancelled",
-    "workflow_run_id": 45710667225,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45710667225",
+    "ci_status": "success",
+    "workflow_run_id": 45711254427,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45711254427",
     "pr_url": null,
     "blocker": null
   },
@@ -118,7 +118,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 03:38 AM IST"
+    "verified_at": "26 November 2026, 03:43 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -471,8 +471,8 @@
       "note": "Checkpoint 34/39 is not complete: master PR #50 audited performance, accessibility and usability readiness and recorded that no Lighthouse/axe/pa11y/web-vitals gate, performance budget, Core Web Vitals threshold, keyboard/screen-reader/contrast/WCAG test, usability record or device matrix exists; PR #51 refreshed the merged evidence. Narrow ARIA/role markup, 86 label-based browser locators, visible-label association evidence, 11 Playwright specs and 21 tests remain in force. Checkpoints 31-33 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-25T22:08:55Z",
-  "last_sync_success": "2026-11-25T22:08:55Z",
+  "sync_generated_at": "2026-11-25T22:13:07Z",
+  "last_sync_success": "2026-11-25T22:13:07Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
