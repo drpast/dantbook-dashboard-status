@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "GitHub sync: no open PRs; checkpoint 35 gap recorded; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -89,7 +89,8 @@
     "Verified 2026-11-26: PR #44 merged as 2a728fa685442e2f8a92b7f20e416dc69bfd8a8d and PR #45 merged as c1181206e67050ba3692c42200e1007bc0541a5c; checkpoint 31/39 is audited as not implemented and remains pending, with PR CI 45685840444, gap-record post-merge CI 45687165315, doc CI 45688017120 and final post-merge main CI 45689303156. Notification runs 45687787085 and 45689921001 are not CI.",
     "Verified 2026-11-26: PR #46 merged as e0a50adf229420451de525e09976cd3db92abe4e and PR #47 merged as f63f848aaf148b86352d42907f03c8be9e672241; checkpoint 32/39 is audited as not implemented and remains pending, with PR CI 45693177069, gap-record post-merge CI 45693959604, doc CI 45695275738 and final post-merge main CI 45696004411. Notification runs 45696003925 and 45696846391 are not CI.",
     "Verified 2026-11-26: PR #48 merged as 80671b661adea7dd2309615dc1eee9b02fc2e36b and PR #49 merged as 871241d3bc0e74186faa0519b8243c8fbe2f90ea; checkpoint 33/39 is audited as not implemented and remains pending, with PR CI 45699696290, gap-record post-merge CI 45700644773, doc CI 45701640374 and final post-merge main CI 45702589407. Notification runs 45702589714 and 45703145657 are not CI.",
-    "Verified 2026-11-26: PR #50 merged as a0835ea0d2521cd78e95cd01505c3600cc0058dd and PR #51 merged as 620314e0572b90de5ac22567c8b5b9776e3be5dc; checkpoint 34/39 is audited as not implemented and remains pending, with PR CI 45705350058, gap-record post-merge CI 45706279519, doc CI 45707018581 and final post-merge main CI 45707642453. Notification runs 45707642392 and 45708182171 are not CI."
+    "Verified 2026-11-26: PR #50 merged as a0835ea0d2521cd78e95cd01505c3600cc0058dd and PR #51 merged as 620314e0572b90de5ac22567c8b5b9776e3be5dc; checkpoint 34/39 is audited as not implemented and remains pending, with PR CI 45705350058, gap-record post-merge CI 45706279519, doc CI 45707018581 and final post-merge main CI 45707642453. Notification runs 45707642392 and 45708182171 are not CI.",
+    "Verified 2026-11-26: PR #52 merged as 428f5ebda606f78d8cff7a91b435951726bbd53f and PR #53 merged as 686060e535f78a77370fb5713c3bb100d7d395f6; checkpoint 35/39 is audited as not implemented and remains pending, with PR CI 45709807207, gap-record post-merge CI 45710667363, doc CI 45711415543 and final post-merge main CI 45712017862. Notification runs 45712018094 and 45712574458 are not CI."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
@@ -97,15 +98,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6",
     "main_commit_message": "docs: record checkpoint 35 gap merged evidence (#53)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45712574458,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45712574458",
+    "main_workflow_run_id": 45712017862,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45712017862",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45712574458,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45712574458",
+    "workflow_run_id": 45712017862,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45712017862",
     "pr_url": null,
     "blocker": null
   },
@@ -421,7 +422,8 @@
       "id": "integration-bugs",
       "title": "Resolve blockers and verify fixes",
       "status": "pending",
-      "group": "Integration & Testing"
+      "group": "Integration & Testing",
+      "note": "Checkpoint 35/39 is not complete: master PR #52 audited blocker resolution and fix verification and recorded that no issue templates, blocker register, severity/owner/reproduction record, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off exists; PR #53 refreshed the merged evidence. GitHub REST returned 0 open/closed issues in both repos. Narrow documented defect repairs, 13 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-34 remain pending/blocked; overall stays at 72%."
     },
     {
       "id": "release-config",
@@ -449,8 +451,8 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "integration-performance",
-  "current_task_step_number": 34,
+  "current_task_step_id": "integration-bugs",
+  "current_task_step_number": 35,
   "task_steps_total": 39,
   "queue": [
     "Performance, accessibility and usability checks",
@@ -465,10 +467,10 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Performance, accessibility and usability checks",
+      "name": "Resolve blockers and verify fixes",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 34/39 is not complete: master PR #50 audited performance, accessibility and usability readiness and recorded that no Lighthouse/axe/pa11y/web-vitals gate, performance budget, Core Web Vitals threshold, keyboard/screen-reader/contrast/WCAG test, usability record or device matrix exists; PR #51 refreshed the merged evidence. Narrow ARIA/role markup, 86 label-based browser locators, visible-label association evidence, 11 Playwright specs and 21 tests remain in force. Checkpoints 31-33 remain pending/blocked; overall stays at 72%."
+      "note": "Checkpoint 35/39 is not complete: master PR #52 audited blocker resolution and fix verification and recorded that no issue templates, blocker register, severity/owner/reproduction record, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off exists; PR #53 refreshed the merged evidence. GitHub REST returned 0 open/closed issues in both repos. Narrow documented defect repairs, 13 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-34 remain pending/blocked; overall stays at 72%."
     }
   ],
   "sync_generated_at": "2026-11-25T22:22:11Z",
