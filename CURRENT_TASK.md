@@ -4,7 +4,7 @@
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [0b5784c](https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17) — merged PR #38, checkpoint 27/39  
-**Current source activity:** Main CI success; Open PRs: .
+**Current source activity:** Main CI success ([CI run 45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858)); no open PRs.
 
 ## Current task
 
@@ -45,7 +45,7 @@ Checkpoints **1–27/39** are recorded complete in the task tracker. The next ch
 ## Dashboard data-quality notes
 
 - The milestone-level status/percentage entries still conflict with the module-level statuses (for example, completed modules alongside milestone entries marked not started). They were left unchanged pending a separate evidence review.
-- The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This can attach a successful notification run to the main-CI field. The verified main CI run for this commit is **45470198858**.
+- The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This caused the earlier snapshot to attach notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) to the main-CI field. This monitor corrected status.json and the auto-sync block to the actual CI run [45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858); the script defect remains and may recur until separately fixed. No code was changed in this monitoring run.
 - The Windows app's actual refresh on the user's PC is not directly verified by this GitHub check.
 
 ## Permanent exclusions
@@ -58,7 +58,7 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 **Checked:** 25 November 2026, 09:40 AM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45470784324))
+- Main CI: **success** ([CI run 45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858)); notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) is separate and is not CI.
 - Main commit: [0b5784c](https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17) — Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)
 - Progress manifest reviewed: **2026-11-25**; overall **67%**.
 
