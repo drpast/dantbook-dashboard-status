@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; checkpoint 32 gap recorded; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -95,15 +95,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/f63f848aaf148b86352d42907f03c8be9e672241",
     "main_commit_message": "docs: record checkpoint 32 gap merged evidence (#47)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45696004411,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45696004411",
+    "main_workflow_run_id": 45696846391,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45696846391",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45696004411,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45696004411",
+    "workflow_run_id": 45696846391,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45696846391",
     "pr_url": null,
     "blocker": null
   },
@@ -116,7 +116,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 02:08 AM IST"
+    "verified_at": "26 November 2026, 02:13 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -446,7 +446,7 @@
   ],
   "task_steps_title": "Detailed implementation checkpoints",
   "current_task_step_id": "integration-offline",
-  "current_task_step_number": 32,
+  "current_task_step_number": 31,
   "task_steps_total": 39,
   "queue": [
     "Offline mode, sync and conflict scenarios",
@@ -464,14 +464,14 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Backup, restore and security checks",
+      "name": "Offline mode, sync and conflict scenarios",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 32/39 is not complete: master PR #46 audited backup, restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates and recorded them as absent; PR #47 refreshed the merged evidence. Narrow security headers, RLS, CI gates and the informational dependency audit remain in force. Active step advances to 32/39 for evidence work; checkpoint 31 remains pending/blocked and overall stays at 72%."
+      "note": "Next checkpoint 31/39. Checkpoint 30/39 is complete via merged PR #42; no PR for checkpoint 31 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T20:38:31Z",
-  "last_sync_success": "2026-11-25T20:38:31Z",
+  "sync_generated_at": "2026-11-25T20:43:36Z",
+  "last_sync_success": "2026-11-25T20:43:36Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
