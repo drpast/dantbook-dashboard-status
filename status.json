@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "GitHub sync: no open PRs; checkpoint 31 gap recorded; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -85,7 +85,8 @@
     "The successful run 45279997678 on the latest main commit is the Notify DantBook dashboard workflow and contains only the notify job. It is not CI. The combined commit-status query returned no status contexts, so post-merge main CI is recorded as unverified rather than success.",
     "Verified 2026-11-25: PRs #32-#38 merged; checkpoints 21-27/39 complete. Next checkpoint 28/39 is Recall/follow-up acceptance and scheduling tests. Main CI run 45470198858 passed; notification run 45470784324 is not CI. No open PRs or published releases found.",
     "Verified 2026-11-25: PR #40 merged as 7e9fe32c9e6c1aefa2c6ea3f8ae566a5fccfb11f; checkpoint 29/39 (Integrated patient registration and appointment workflow) is complete with draft PR CI 45650514543, post-merge main CI 45651429692, 19 Playwright tests and live API acceptance. Next checkpoint is 30/39 (Role permissions and access-boundary verification).",
-    "Verified 2026-11-25: PR #42 merged as 7f8e56d695835406c447a8b928f1db7a873e520f; checkpoint 30/39 (Role permissions and access-boundary verification) is complete with PR CI 45661690949, post-merge main CI 45662918098, 21 Playwright tests and live API acceptance. Next checkpoint is 31/39 (Offline mode, sync and conflict scenarios). Notification run 45663590942 is not CI."
+    "Verified 2026-11-25: PR #42 merged as 7f8e56d695835406c447a8b928f1db7a873e520f; checkpoint 30/39 (Role permissions and access-boundary verification) is complete with PR CI 45661690949, post-merge main CI 45662918098, 21 Playwright tests and live API acceptance. Next checkpoint is 31/39 (Offline mode, sync and conflict scenarios). Notification run 45663590942 is not CI.",
+    "Verified 2026-11-26: PR #44 merged as 2a728fa685442e2f8a92b7f20e416dc69bfd8a8d and PR #45 merged as c1181206e67050ba3692c42200e1007bc0541a5c; checkpoint 31/39 is audited as not implemented and remains pending, with PR CI 45685840444, gap-record post-merge CI 45687165315, doc CI 45688017120 and final post-merge main CI 45689303156. Notification runs 45687787085 and 45689921001 are not CI."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
@@ -93,15 +94,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/c1181206e67050ba3692c42200e1007bc0541a5c",
     "main_commit_message": "docs: record checkpoint 31 gap merged evidence (#45)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45689921001,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45689921001",
+    "main_workflow_run_id": 45689303156,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45689303156",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45689921001,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45689921001",
+    "workflow_run_id": 45689303156,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45689303156",
     "pr_url": null,
     "blocker": null
   },
@@ -118,7 +119,7 @@
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
-    "last_reviewed": "2026-11-25",
+    "last_reviewed": "2026-11-26",
     "method": "Evidence-based manual progress. Update this file after verified acceptance criteria/tests; do not infer percentages from commits, PRs, or CI alone.",
     "sync_poll_minutes": 5
   },
@@ -389,7 +390,8 @@
       "id": "integration-offline",
       "title": "Offline mode, sync and conflict scenarios",
       "status": "pending",
-      "group": "Integration & Testing"
+      "group": "Integration & Testing",
+      "note": "Checkpoint 31/39 is not complete: master PR #44 audited the offline-first target and recorded that IndexedDB, service worker/PWA sync, temporary-ID mapping, field-level conflict resolution, device lifecycle and cross-device/offline tests are absent; PR #45 refreshed the merged evidence. Narrow notification/recall idempotency, retry and server-side domain conflict controls remain in force. Tracker intentionally remains Step 31/39 at 72%."
     },
     {
       "id": "integration-backup",
@@ -463,12 +465,12 @@
       "name": "Offline mode, sync and conflict scenarios",
       "percent": 0,
       "status": "Pending",
-      "note": "Next checkpoint 31/39. Checkpoint 30/39 is complete via merged PR #42; no PR for checkpoint 31 is currently open."
+      "note": "Checkpoint 31/39 is not complete: master PR #44 audited the offline-first target and recorded that IndexedDB, service worker/PWA sync, temporary-ID mapping, field-level conflict resolution, device lifecycle and cross-device/offline tests are absent; PR #45 refreshed the merged evidence. Narrow notification/recall idempotency, retry and server-side domain conflict controls remain in force. Tracker intentionally remains Step 31/39 at 72%."
     }
   ],
   "sync_generated_at": "2026-11-25T19:55:40Z",
   "last_sync_success": "2026-11-25T19:55:40Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
-  "reviewed_on": "2026-11-25"
+  "reviewed_on": "2026-11-26"
 }
