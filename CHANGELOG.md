@@ -2228,3 +2228,9 @@
 - Main CI: success.
 - Open PRs: #44 docs: record checkpoint 31 offline sync gap (open-draft, CI success).
 - Progress manifest reviewed 2026-11-25; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 2a728fa685442e2f8a92b7f20e416dc69bfd8a8d (docs: record checkpoint 31 offline sync gap (#44)).
+- Main CI: in_progress.
+- Progress manifest reviewed 2026-11-25; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
