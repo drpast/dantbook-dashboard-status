@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 29/39: Integrated patient registration and appointment workflow —  | Open PRs: #40 CI in_progress; main CI success",
+  "current_focus": "Step 29/39: Integrated patient registration and appointment workflow —  | Open PRs: #40 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -91,8 +91,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2",
     "main_commit_message": "test: checkpoint 28 recall scheduling acceptance (#39)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45650233682,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45650233682",
+    "main_workflow_run_id": 45651030203,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45651030203",
     "open_pull_requests": [
       {
         "number": 40,
@@ -103,18 +103,18 @@
         "head_sha": "f63a3cb418699629b00411d0990c250d7f5d1b3a",
         "updated_at": "2026-11-25T16:01:52Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45650514543,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45650514543"
+          "status": "success",
+          "run_id": 45650514316,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45650514316"
         }
       }
     ],
     "open_pull_request": 40,
     "pull_request_title": "test: checkpoint 29 patient registration and appointment integration",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45650514543,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45650514543",
+    "ci_status": "success",
+    "workflow_run_id": 45650514316,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45650514316",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/40",
     "blocker": null
   },
@@ -127,7 +127,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 09:32 PM IST"
+    "verified_at": "25 November 2026, 09:36 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -475,8 +475,8 @@
       "note": "Next checkpoint 29/39. Checkpoint 28/39 is complete via merged PR #39; no PR for checkpoint 29 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T16:02:14Z",
-  "last_sync_success": "2026-11-25T16:02:14Z",
+  "sync_generated_at": "2026-11-25T16:06:20Z",
+  "last_sync_success": "2026-11-25T16:06:20Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
