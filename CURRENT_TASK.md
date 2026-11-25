@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 26 November 2026, 03:48 AM IST  
+**Last checked:** 26 November 2026, 03:52 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [620314e](https://github.com/drpast/dantbook-master/commit/620314e0572b90de5ac22567c8b5b9776e3be5dc) — docs: record checkpoint 34 gap merged evidence (#51); checkpoint 34 audit recorded as not complete in PR #50  
-**Current source activity:** Main CI cancelled; Open PRs: .
+**Current source activity:** Main CI success; Open PRs: .
 
 ## Current task
 
@@ -95,10 +95,10 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 26 November 2026, 03:48 AM IST
+**Checked:** 26 November 2026, 03:52 AM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45712018094))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45712574458))
 - Main commit: [686060e](https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6) — docs: record checkpoint 35 gap merged evidence (#53)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
 
