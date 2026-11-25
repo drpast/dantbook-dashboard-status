@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 31/39: Offline mode, sync and conflict scenarios — Checkpoint 31/39 is not complete: master PR #44 audited the offline-first target and recorded that IndexedDB, service worker/PWA sync, temporary-ID mapping, field-level conflict resolution, device lifecycle and cross-device/offline tests are absent; PR #45 refreshed the merged evidence. Narrow notification/recall idempotency, retry and server-side domain conflict controls remain in force. Tracker intentionally remains Step 31/39 at 72%. | Open PRs: #47 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -96,14 +96,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45694675250,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45694675250",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45694675250,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45694675250",
-    "pr_url": null,
+    "open_pull_requests": [
+      {
+        "number": 47,
+        "title": "docs: record checkpoint 32 gap merged evidence",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/47",
+        "head_branch": "docs/checkpoint-32-gap-merged-evidence",
+        "head_sha": "3ceb89db5886ebcf01e92383997c198d2fd8308c",
+        "updated_at": "2026-11-25T20:28:16Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45695275738,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45695275738"
+        }
+      }
+    ],
+    "open_pull_request": 47,
+    "pull_request_title": "docs: record checkpoint 32 gap merged evidence",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45695275738,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45695275738",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/47",
     "blocker": null
   },
   "dashboard_connection": {
@@ -115,7 +130,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 01:54 AM IST"
+    "verified_at": "26 November 2026, 01:58 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -468,8 +483,8 @@
       "note": "Next checkpoint 31/39. Checkpoint 30/39 is complete via merged PR #42; no PR for checkpoint 31 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T20:24:46Z",
-  "last_sync_success": "2026-11-25T20:24:46Z",
+  "sync_generated_at": "2026-11-25T20:28:37Z",
+  "last_sync_success": "2026-11-25T20:28:37Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
