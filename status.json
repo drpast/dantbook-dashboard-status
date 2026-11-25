@@ -116,7 +116,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 02:13 AM IST"
+    "verified_at": "26 November 2026, 02:18 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -390,9 +390,9 @@
     {
       "id": "integration-offline",
       "title": "Offline mode, sync and conflict scenarios",
-      "status": "pending",
+      "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 31/39 is not complete: master PR #44 audited the offline-first target and recorded that IndexedDB, service worker/PWA sync, temporary-ID mapping, field-level conflict resolution, device lifecycle and cross-device/offline tests are absent; PR #45 refreshed the merged evidence. Narrow notification/recall idempotency, retry and server-side domain conflict controls remain in force. Tracker intentionally remains Step 31/39 at 72%."
+      "note": "Checkpoint 31/39 remains pending/blocked: offline-first implementation is absent (PR #44/#45 recorded the verified gap). Do not mark complete until IndexedDB, sync queue, temporary-ID mapping, conflict UI, device lifecycle and cross-device tests are evidenced."
     },
     {
       "id": "integration-backup",
@@ -445,11 +445,10 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "integration-offline",
-  "current_task_step_number": 31,
+  "current_task_step_id": "integration-backup",
+  "current_task_step_number": 32,
   "task_steps_total": 39,
   "queue": [
-    "Offline mode, sync and conflict scenarios",
     "Backup, restore and security checks",
     "Cross-module end-to-end regression testing",
     "Performance, accessibility and usability checks",
@@ -459,19 +458,19 @@
     "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 31/39: Offline mode, sync and conflict scenarios",
+  "current_task": "Step 32/39: Backup, restore and security checks",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Offline mode, sync and conflict scenarios",
+      "name": "Backup, restore and security checks",
       "percent": 0,
       "status": "Pending",
-      "note": "Next checkpoint 31/39. Checkpoint 30/39 is complete via merged PR #42; no PR for checkpoint 31 is currently open."
+      "note": "Checkpoint 32/39 is not complete: PR #46/#47 recorded that backup/restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates are absent. Checkpoint 31 remains pending/blocked and overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-25T20:43:36Z",
-  "last_sync_success": "2026-11-25T20:43:36Z",
+  "sync_generated_at": "2026-11-25T20:48:40Z",
+  "last_sync_success": "2026-11-25T20:48:40Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
