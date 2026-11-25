@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 29/39: Integrated patient registration and appointment workflow —  | Open PRs: #40 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -93,14 +93,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45633654230,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633654230",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45633654230,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45633654230",
-    "pr_url": null,
+    "open_pull_requests": [
+      {
+        "number": 40,
+        "title": "test: checkpoint 29 patient registration and appointment integration",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/40",
+        "head_branch": "feat/patient-appointment-integration-checkpoint-29",
+        "head_sha": "feecafa93b9154d5d405ec412a14b83aa3faa696",
+        "updated_at": "2026-11-25T15:56:10Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45649818007,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45649818007"
+        }
+      }
+    ],
+    "open_pull_request": 40,
+    "pull_request_title": "test: checkpoint 29 patient registration and appointment integration",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45649818007,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45649818007",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/40",
     "blocker": null
   },
   "dashboard_connection": {
@@ -112,7 +127,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 08:35 PM IST"
+    "verified_at": "25 November 2026, 09:26 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -460,8 +475,8 @@
       "note": "Next checkpoint 29/39. Checkpoint 28/39 is complete via merged PR #39; no PR for checkpoint 29 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T15:05:55Z",
-  "last_sync_success": "2026-11-25T15:05:55Z",
+  "sync_generated_at": "2026-11-25T15:56:28Z",
+  "last_sync_success": "2026-11-25T15:56:28Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
