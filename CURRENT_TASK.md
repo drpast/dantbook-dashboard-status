@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 25 November 2026, 10:43 PM IST  
+**Last checked:** 25 November 2026, 10:46 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [1c9e991](https://github.com/drpast/dantbook-master/commit/1c9e991ade0800ab19d30b8dfdb574980ad7832d) — docs: record checkpoint 29 merged evidence (#41); checkpoint 29 implementation merged in PR #40  
-**Current source activity:** Main CI success; Open PRs: #42 test: checkpoint 30 role access boundaries (CI success).
+**Current source activity:** Main CI cancelled; Open PRs: .
 
 ## Current task
 
@@ -62,13 +62,12 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 25 November 2026, 10:43 PM IST
+**Checked:** 25 November 2026, 10:46 PM IST
 
-- Open PRs: [#42 — test: checkpoint 30 role access boundaries](https://github.com/drpast/dantbook-master/pull/42) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45662381327))
-- Main commit: [1c9e991](https://github.com/drpast/dantbook-master/commit/1c9e991ade0800ab19d30b8dfdb574980ad7832d) — docs: record checkpoint 29 merged evidence (#41)
+- No open pull requests returned by GitHub.
+- Main CI: **cancelled** ([run](https://github.com/drpast/dantbook-master/actions/runs/45662918119))
+- Main commit: [7f8e56d](https://github.com/drpast/dantbook-master/commit/7f8e56d695835406c447a8b928f1db7a873e520f) — test: verify checkpoint 30 role access boundaries (#42)
 - Progress manifest reviewed: **2026-11-25**; overall **71%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
