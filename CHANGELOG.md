@@ -2123,3 +2123,10 @@
 - Main CI: success.
 - Open PRs: #41 docs: record checkpoint 29 merged evidence (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-25; overall progress 71%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: 7e9fe32c9e6c1aefa2c6ea3f8ae566a5fccfb11f (test: checkpoint 29 patient appointment integration (#40)).
+- Main CI: success.
+- Open PRs: #41 docs: record checkpoint 29 merged evidence (open-draft, CI success).
+- Progress manifest reviewed 2026-11-25; overall progress 71%. Progress percentages unchanged; checkpoint/task state may have changed.

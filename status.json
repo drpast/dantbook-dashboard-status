@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 30/39: Role permissions and access-boundary verification —  | Open PRs: #41 CI in_progress; main CI success",
+  "current_focus": "Step 30/39: Role permissions and access-boundary verification —  | Open PRs: #41 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -92,8 +92,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/7e9fe32c9e6c1aefa2c6ea3f8ae566a5fccfb11f",
     "main_commit_message": "test: checkpoint 29 patient appointment integration (#40)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45651931696,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45651931696",
+    "main_workflow_run_id": 45654174665,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45654174665",
     "open_pull_requests": [
       {
         "number": 41,
@@ -104,18 +104,18 @@
         "head_sha": "a366238f9ea76a1218dca8c847473eb43f89bba1",
         "updated_at": "2026-11-25T16:23:49Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45653409645,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45653409645"
+          "status": "success",
+          "run_id": 45653409626,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45653409626"
         }
       }
     ],
     "open_pull_request": 41,
     "pull_request_title": "docs: record checkpoint 29 merged evidence",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45653409645,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45653409645",
+    "ci_status": "success",
+    "workflow_run_id": 45653409626,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45653409626",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/41",
     "blocker": null
   },
@@ -128,7 +128,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 09:54 PM IST"
+    "verified_at": "25 November 2026, 09:58 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -478,8 +478,8 @@
       "note": "Next checkpoint 30/39. Checkpoint 29/39 is complete via merged PR #40; no PR for checkpoint 30 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T16:24:08Z",
-  "last_sync_success": "2026-11-25T16:24:08Z",
+  "sync_generated_at": "2026-11-25T16:28:23Z",
+  "last_sync_success": "2026-11-25T16:28:23Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
