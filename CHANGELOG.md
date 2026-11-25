@@ -2214,3 +2214,10 @@
 - Verified main commit: 3813d79c0e249758056748418661a0fe984bcd3e (docs: record checkpoint 30 merged evidence (#43)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-25; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 3813d79c0e249758056748418661a0fe984bcd3e (docs: record checkpoint 30 merged evidence (#43)).
+- Main CI: success.
+- Open PRs: #44 docs: record checkpoint 31 offline sync gap (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-25; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
