@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 30/39: Role permissions and access-boundary verification —  | Open PRs: #42 CI success; main CI success",
+  "current_focus": "Step 30/39: Role permissions and access-boundary verification —  | Open PRs: #42 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -101,21 +101,21 @@
         "state": "open-draft",
         "url": "https://github.com/drpast/dantbook-master/pull/42",
         "head_branch": "feat/role-access-boundary-verification-checkpoint-30",
-        "head_sha": "2c4c61c9875b305fb8bf64e40595afc594f1d752",
-        "updated_at": "2026-11-25T17:02:20Z",
+        "head_sha": "16c207584764e8fe9508d5a356f116687fc763df",
+        "updated_at": "2026-11-25T17:09:14Z",
         "ci": {
-          "status": "success",
-          "run_id": 45660422505,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45660422505"
+          "status": "in_progress",
+          "run_id": 45661690949,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45661690949"
         }
       }
     ],
     "open_pull_request": 42,
     "pull_request_title": "test: checkpoint 30 role access boundaries",
     "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45660422505,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45660422505",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45661690949,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45661690949",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/42",
     "blocker": null
   },
@@ -128,7 +128,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 10:36 PM IST"
+    "verified_at": "25 November 2026, 10:39 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -478,8 +478,8 @@
       "note": "Next checkpoint 30/39. Checkpoint 29/39 is complete via merged PR #40; no PR for checkpoint 30 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T17:06:18Z",
-  "last_sync_success": "2026-11-25T17:06:18Z",
+  "sync_generated_at": "2026-11-25T17:09:32Z",
+  "last_sync_success": "2026-11-25T17:09:32Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
