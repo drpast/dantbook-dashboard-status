@@ -2350,3 +2350,9 @@
 - Main CI: success.
 - Open PRs: #48 docs: record checkpoint 33 cross-module regression gap (open-draft, CI success).
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 80671b661adea7dd2309615dc1eee9b02fc2e36b (docs: record checkpoint 33 cross-module regression gap (#48)).
+- Main CI: in_progress.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.

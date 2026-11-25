@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 32/39: Backup, restore and security checks — Checkpoint 32/39 is not complete: master PR #46 audited backup, restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates and recorded them as absent; PR #47 refreshed the merged evidence. Narrow security headers, RLS, CI gates and the informational dependency audit remain in force. Active step advances to 32/39 for evidence work; checkpoint 31 remains pending/blocked and overall stays at 72%. | Open PRs: #48 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -91,35 +91,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
-    "main_commit": "f63f848aaf148b86352d42907f03c8be9e672241",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/f63f848aaf148b86352d42907f03c8be9e672241",
-    "main_commit_message": "docs: record checkpoint 32 gap merged evidence (#47)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45700304557,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45700304557",
-    "open_pull_requests": [
-      {
-        "number": 48,
-        "title": "docs: record checkpoint 33 cross-module regression gap",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/48",
-        "head_branch": "evidence/cross-module-regression-gap-checkpoint-33",
-        "head_sha": "3d8678a7373e6015051f0e879081b778a97e27da",
-        "updated_at": "2026-11-25T20:56:23Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45699696256,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45699696256"
-        }
-      }
-    ],
-    "open_pull_request": 48,
-    "pull_request_title": "docs: record checkpoint 33 cross-module regression gap",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45699696256,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45699696256",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/48",
+    "main_commit": "80671b661adea7dd2309615dc1eee9b02fc2e36b",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/80671b661adea7dd2309615dc1eee9b02fc2e36b",
+    "main_commit_message": "docs: record checkpoint 33 cross-module regression gap (#48)",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45700644773,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45700644773",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45700644773,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45700644773",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -131,7 +116,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 02:30 AM IST"
+    "verified_at": "26 November 2026, 02:32 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -484,8 +469,8 @@
       "note": "Checkpoint 32/39 is not complete: PR #46/#47 recorded that backup/restore, PITR, retention/encryption, restore drills, deployment config, security policy, SAST/secret scanning, Dependabot and blocking dependency gates are absent. Checkpoint 31 remains pending/blocked and overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-25T21:00:45Z",
-  "last_sync_success": "2026-11-25T21:00:45Z",
+  "sync_generated_at": "2026-11-25T21:02:53Z",
+  "last_sync_success": "2026-11-25T21:02:53Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
