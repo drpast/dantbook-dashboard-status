@@ -2070,3 +2070,9 @@
 - Verified main commit: 509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2 (test: checkpoint 28 recall scheduling acceptance (#39)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-25; overall progress 70%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: 509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2 (test: checkpoint 28 recall scheduling acceptance (#39)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-25; overall progress 70%. Progress percentages unchanged; checkpoint/task state may have changed.
