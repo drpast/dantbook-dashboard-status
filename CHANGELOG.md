@@ -2104,3 +2104,9 @@
 - Main CI: success.
 - Open PRs: #40 test: checkpoint 29 patient registration and appointment integration (open-draft, CI success).
 - Progress manifest reviewed 2026-11-25; overall progress 70%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: 7e9fe32c9e6c1aefa2c6ea3f8ae566a5fccfb11f (test: checkpoint 29 patient appointment integration (#40)).
+- Main CI: in_progress.
+- Progress manifest reviewed 2026-11-25; overall progress 70%. Progress percentages unchanged; checkpoint/task state may have changed.
