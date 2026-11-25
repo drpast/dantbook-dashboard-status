@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "DantBook",
   "dashboard_updated": "2026-11-25",
-  "overall_progress_percent": 67,
+  "overall_progress_percent": 69,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
@@ -30,8 +30,8 @@
     },
     {
       "name": "Recall & Follow-up",
-      "status": "in-progress",
-      "progress_percent": 75
+      "status": "completed",
+      "progress_percent": 100
     },
     {
       "name": "Integration & testing",
@@ -83,7 +83,7 @@
     "PR #30 was closed unmerged after an encoding regression; PR #31 is the clean replacement and is merged. No open pull requests were returned by the current GitHub search.",
     "Checkpoint 20/39 (Create and submit laboratory cases) is complete through merged PR #31 and passing PR CI. Checkpoint 21/39 (Case status, expected delivery and tracking) is the current pending task.",
     "The successful run 45279997678 on the latest main commit is the Notify DantBook dashboard workflow and contains only the notify job. It is not CI. The combined commit-status query returned no status contexts, so post-merge main CI is recorded as unverified rather than success.",
-    "Verified 2026-11-25: PRs #32–#38 merged; checkpoints 21–27/39 complete. Next checkpoint 28/39 is Recall/follow-up acceptance and scheduling tests. Main CI run 45470198858 passed; notification run 45470784324 is not CI. No open PRs or published releases found."
+    "Verified 2026-11-25: PRs #32-#38 merged; checkpoints 21-27/39 complete. Next checkpoint 28/39 is Recall/follow-up acceptance and scheduling tests. Main CI run 45470198858 passed; notification run 45470784324 is not CI. No open PRs or published releases found."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-25",
