@@ -2279,3 +2279,10 @@
 - Main CI: success.
 - Open PRs: #46 docs: record checkpoint 32 backup restore gap (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: c1181206e67050ba3692c42200e1007bc0541a5c (docs: record checkpoint 31 gap merged evidence (#45)).
+- Main CI: success.
+- Open PRs: #46 docs: record checkpoint 32 backup restore gap (open-draft, CI success).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
