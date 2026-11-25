@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 28/39: Recall/follow-up acceptance and scheduling tests — pending; checkpoint 27/39 completed via merged PR #38.",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -91,15 +91,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/0b5784c3a5fde247842d91e0aa14a8959993ff17",
     "main_commit_message": "Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45470198858,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470198858",
+    "main_workflow_run_id": 45470784324,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470784324",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45470198858,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470198858",
+    "workflow_run_id": 45470784324,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45470784324",
     "pr_url": null,
     "blocker": null
   },
@@ -112,7 +112,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 09:12 AM IST"
+    "verified_at": "25 November 2026, 09:18 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -147,7 +147,7 @@
       "title": "Patient workflow browser acceptance tests",
       "status": "completed",
       "group": "Engineering Foundation",
-      "note": "PR #3 merged; latest PR-head CI passed (run 44929846484).",
+      "note": "PR #3 merged",
       "pr": 3,
       "ci": "success"
     },
@@ -156,7 +156,7 @@
       "title": "Medical History alert and correction browser tests",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged; CI passed (run 44932842340).",
+      "note": "PR #4 merged",
       "pr": 4,
       "ci": "success"
     },
@@ -172,7 +172,7 @@
       "title": "Medical History data model and migration acceptance",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #15 merged; CI success (run 45079372471).",
+      "note": "PR #15 merged",
       "pr": 15,
       "ci": "success"
     },
@@ -181,7 +181,7 @@
       "title": "Medical History API endpoints and validation",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged (API/browser acceptance, run 44932842340; final head run 44933570034); PR #15 DB acceptance run 45079372471; PR #16 records evidence with CI 45166134533.",
+      "note": "PR #4 merged",
       "pr": 4,
       "ci": "success"
     },
@@ -190,7 +190,7 @@
       "title": "Medical History forms and patient-record UI",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged (browser e2e spec for form, alert, correction reason, revision history; final head run 44933570034, browser acceptance 44932842340); PR #16 records API evidence; PR #17 records UI evidence with CI 45190549018.",
+      "note": "PR #4 merged",
       "pr": 4,
       "ci": "success"
     },
@@ -199,7 +199,7 @@
       "title": "Allergy, medication and condition alerts",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #2 patient API acceptance (CI 44927048038); PR #8 prescriptions/allergy safety and browser acceptance (CI 44944050424); PR #19 records checkpoint 10 evidence with CI 45215325156. Shared read-only allergy alerts verified in CI.",
+      "note": "PR #8 merged",
       "pr": 8,
       "ci": "success"
     },
@@ -208,7 +208,7 @@
       "title": "History corrections, audit trail and safety checks",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 correction/revision API and browser acceptance (CI 44933570034); PR #15 append-only, audit and safety acceptance (CI 45079372471); PR #8 append-only prescription events (CI 44944050424); PR #20 records checkpoint 11 evidence (CI 45218954192).",
+      "note": "PR #15 merged",
       "pr": 15,
       "ci": "success"
     },
@@ -217,7 +217,7 @@
       "title": "Integrate Medical History into patient workflow",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #21 adds a round-trip Playwright test for patient-record → Medical History → patient-record with preserved organization/branch/patient context (CI 45222494140); PR #4/#15/#20 cover the underlying API, correction, audit and alert acceptance.",
+      "note": "PR #21 merged",
       "pr": 21,
       "ci": "success"
     },
@@ -226,7 +226,7 @@
       "title": "Medical History module acceptance and regression tests",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #22 adds a CI gate for the live Medical History DB acceptance and an alert-first ordering regression assertion (CI 45227772687); PR #4/#15/#21 cover API, DB, browser, and integration acceptance.",
+      "note": "PR #22 merged",
       "pr": 22,
       "ci": "success"
     },
@@ -235,7 +235,7 @@
       "title": "Finance data model and billing rules",
       "status": "completed",
       "group": "Finance",
-      "note": "PR #23 verifies the live finance journal invariant: four balanced postings with correct account pairs, branch-local isolation, deferred rejection of unbalanced lines, and zero-row restricted-role mutations (CI 45234346647).",
+      "note": "PR #23 merged",
       "pr": 23,
       "ci": "success"
     },
@@ -244,7 +244,7 @@
       "title": "Treatment billing and invoice workflow UI",
       "status": "completed",
       "group": "Finance",
-      "note": "PR #9 delivered the patient-linked invoice workflow UI with browser and authenticated API acceptance (CI 44945132212); checkpoint 14 PR #23 verifies the underlying journal postings (CI 45234346647).",
+      "note": "PR #9 merged",
       "pr": 9,
       "ci": "success"
     },
@@ -255,7 +255,7 @@
       "group": "Finance",
       "pr": 26,
       "ci": "success",
-      "note": "PR #26 adds live concurrent payment/balance assertions; existing authenticated API and browser acceptance cover payment recording, reasoned reversal/void and balanced journal postings (CI 45245153183)."
+      "note": "PR #26 merged"
     },
     {
       "id": "finance-reports",
@@ -264,7 +264,7 @@
       "group": "Finance",
       "pr": 27,
       "ci": "success",
-      "note": "PR #27 adds a branch-scoped aggregate finance summary with live assertions for issued/voided invoices, active collections, reversals, outstanding balances, role denial, patient-ID privacy and branch isolation (CI 45256819620; post-merge main CI 45259455866)."
+      "note": "PR #27 merged"
     },
     {
       "id": "finance-tests",
@@ -273,7 +273,7 @@
       "group": "Finance",
       "pr": 28,
       "ci": "success",
-      "note": "PR #28 adds a live READ_ONLY/staff finance permission matrix and exact four-decimal multi-line calculation assertions (PR CI 45262490595; post-merge main CI 45264858637; merge commit 7af9b26beb1ddc547009d67358683a5149e0020e)."
+      "note": "PR #28 merged"
     },
     {
       "id": "lab-model",
@@ -282,7 +282,7 @@
       "group": "Dental Laboratory",
       "pr": 29,
       "ci": "success",
-      "note": "PR #29 records the already-merged PR #11 Dental Laboratory case model, migration, forced RLS, append-only triggers and live acceptance coverage (PR CI 45271873096; post-merge main CI 45273679491; merge commit 5bf98c2ff87b832a62b5e3a0ef6562ca6d415e8d)."
+      "note": "PR #29 merged"
     },
     {
       "id": "lab-submission",
@@ -291,7 +291,7 @@
       "group": "Dental Laboratory",
       "pr": 31,
       "ci": "success",
-      "note": "PR #31 adds a branch-local dental laboratory web workflow linked from the patient record, a validated same-origin proxy, fictional draft creation and DRAFT to SUBMITTED submission, and fixture Playwright coverage (PR CI 45278584250; post-merge main CI 45279997678; merge commit 09b7b62b5c82672c5b4969da3be009849b6c56ec)."
+      "note": "PR #31 merged"
     },
     {
       "id": "lab-status",
@@ -300,7 +300,7 @@
       "group": "Dental Laboratory",
       "pr": 32,
       "ci": "success",
-      "note": "PR #32 adds live expected-delivery and ordered append-only status-history assertions plus fixture browser coverage for tracking display (PR CI 45350569286; post-merge main CI 45351807669; merge commit f16e8ef443e84d0e13cb0c8e48240c234d4375e8)."
+      "note": "PR #32 merged"
     },
     {
       "id": "lab-expenses",
@@ -309,7 +309,7 @@
       "group": "Dental Laboratory",
       "pr": 33,
       "ci": "success",
-      "note": "PR #33 adds a one-time laboratory expense form and validated proxy action, linked case display, live acceptance assertions and fixture browser coverage (PR CI 45363723030; post-merge main CI 45366073699; merge commit 497331c80de4bd76c361e816243a502e63f7dc2f)."
+      "note": "PR #33 merged"
     },
     {
       "id": "lab-tests",
@@ -318,7 +318,7 @@
       "group": "Dental Laboratory",
       "pr": 34,
       "ci": "success",
-      "note": "PR #34 records merged Dental Laboratory workflow evidence across API, browser and CI (PR CI 45415885660; post-merge main CI 45417172137; merge commit 574091c918904d355b7a4bcf64861b028f082e3f)."
+      "note": "PR #34 merged"
     },
     {
       "id": "recall-rules",
@@ -327,7 +327,7 @@
       "group": "Recall & Follow-up",
       "pr": 35,
       "ci": "success",
-      "note": "PR #35 adds fixed review/scaling/treatment follow-up rules, branch-scoped due evaluation, idempotent notification queueing, a same-origin proxy and recall workspace, plus live/browser acceptance (PR CI 45436011526; post-merge main CI 45438973015; merge commit bf8247c7546352d0013db42bafa6b49f68b6fff3)."
+      "note": "PR #35 merged"
     },
     {
       "id": "recall-queue",
@@ -336,7 +336,7 @@
       "group": "Recall & Follow-up",
       "pr": 36,
       "ci": "success",
-      "note": "PR #36 adds an all-rules recall due list, linked patient-record workflow, live acceptance and fixture browser coverage (PR CI 45447553269; post-merge main CI 45448474642; merge commit ae6839c701661688f9dec45c407b1a65d56a55f6)."
+      "note": "PR #36 merged"
     },
     {
       "id": "recall-templates",
@@ -345,7 +345,7 @@
       "group": "Recall & Follow-up",
       "pr": 37,
       "ci": "success",
-      "note": "PR #37 adds fixed recall message templates, queue-only delivery options, a template preview and delivery selector, payload metadata, and live/browser acceptance (PR CI 45452900382; post-merge main CI 45453995019; merge commit f158276b215421efb61a6c6c156a1ef67c80fa0b)."
+      "note": "PR #37 merged"
     },
     {
       "id": "recall-automation",
@@ -354,7 +354,7 @@
       "group": "Recall & Follow-up",
       "pr": 38,
       "ci": "success",
-      "note": "PR #38 merged on 24 Nov 2026. Verify workspace CI 45468296638 passed; post-merge main CI 45470198858 passed. Automated queue/retry/opt-out remains queue-only; no external provider dispatch or background scheduler."
+      "note": "PR #38 merged"
     },
     {
       "id": "recall-tests",
@@ -458,8 +458,8 @@
       "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T03:42:21Z",
-  "last_sync_success": "2026-11-25T03:42:21Z",
+  "sync_generated_at": "2026-11-25T03:48:49Z",
+  "last_sync_success": "2026-11-25T03:48:49Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
