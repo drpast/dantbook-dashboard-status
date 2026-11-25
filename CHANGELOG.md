@@ -1989,3 +1989,11 @@
 - Verified main commit: 0b5784c3a5fde247842d91e0aa14a8959993ff17 (Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-25; overall progress 67%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+## 2026-11-25 — Verified dashboard CI-reference correction
+- Main branch head remains 0b5784c3a5fde247842d91e0aa14a8959993ff17 (merged PR #38; checkpoint 27/39).
+- Confirmed main CI run 45470198858 is workflow **CI**, event push, branch main, and its head SHA exactly matches the main commit; Verify workspace completed successfully.
+- Notification run 45470784324 is a separate **notify** workflow and was incorrectly referenced as main CI in the prior status.json snapshot and CURRENT_TASK auto-sync block. Corrected both references to CI run 45470198858.
+- PR #38 Verify workspace run 45468296638 passed; PR #38 is merged. GitHub search returned no open PRs.
+- Checkpoint 28/39 (Recall/follow-up acceptance and scheduling tests) remains pending. Overall progress remains 67%; no percentages or milestone states were changed.
+- The dashboard sync script's workflow-selection defect remains documented; no product-repository or code changes were made by this monitoring run.
