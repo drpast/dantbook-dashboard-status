@@ -2038,3 +2038,10 @@
 - Main CI: success.
 - Open PRs: #39 test: checkpoint 28 recall scheduling acceptance (open-draft, CI in_progress).
 - Progress manifest reviewed 2026-11-25; overall progress 69%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: 0b5784c3a5fde247842d91e0aa14a8959993ff17 (Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)).
+- Main CI: success.
+- Open PRs: #39 test: checkpoint 28 recall scheduling acceptance (open-draft, CI success).
+- Progress manifest reviewed 2026-11-25; overall progress 69%. Progress percentages unchanged; checkpoint/task state may have changed.
