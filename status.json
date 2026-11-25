@@ -112,7 +112,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 09:18 AM IST"
+    "verified_at": "25 November 2026, 09:40 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -458,8 +458,8 @@
       "note": "Next checkpoint 28/39. Checkpoint 27/39 is complete via merged PR #38; no PR for checkpoint 28 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T03:48:49Z",
-  "last_sync_success": "2026-11-25T03:48:49Z",
+  "sync_generated_at": "2026-11-25T04:10:57Z",
+  "last_sync_success": "2026-11-25T04:10:57Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
