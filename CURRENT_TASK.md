@@ -77,7 +77,7 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 **Checked:** 26 November 2026, 01:30 AM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45689921001))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45689303156))
 - Main commit: [c118120](https://github.com/drpast/dantbook-master/commit/c1181206e67050ba3692c42200e1007bc0541a5c) — docs: record checkpoint 31 gap merged evidence (#45)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
 
