@@ -2336,3 +2336,10 @@
 - Verified main commit: f63f848aaf148b86352d42907f03c8be9e672241 (docs: record checkpoint 32 gap merged evidence (#47)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: f63f848aaf148b86352d42907f03c8be9e672241 (docs: record checkpoint 32 gap merged evidence (#47)).
+- Main CI: success.
+- Open PRs: #48 docs: record checkpoint 33 cross-module regression gap (open-draft, CI success).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
