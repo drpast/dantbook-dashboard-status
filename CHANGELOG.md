@@ -2142,3 +2142,10 @@
 - Verified main commit: 1c9e991ade0800ab19d30b8dfdb574980ad7832d (docs: record checkpoint 29 merged evidence (#41)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-25; overall progress 71%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — GitHub/progress sync
+- Verified main commit: 1c9e991ade0800ab19d30b8dfdb574980ad7832d (docs: record checkpoint 29 merged evidence (#41)).
+- Main CI: success.
+- Open PRs: #42 test: checkpoint 30 role access boundaries (open-draft, CI success).
+- Progress manifest reviewed 2026-11-25; overall progress 71%. Progress percentages unchanged; checkpoint/task state may have changed.
