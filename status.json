@@ -93,15 +93,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/7f8e56d695835406c447a8b928f1db7a873e520f",
     "main_commit_message": "test: verify checkpoint 30 role access boundaries (#42)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45662918098,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45662918098",
+    "main_workflow_run_id": 45663590942,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45663590942",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45662918098,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45662918098",
+    "workflow_run_id": 45663590942,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45663590942",
     "pr_url": null,
     "blocker": null
   },
@@ -114,7 +114,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "25 November 2026, 10:50 PM IST"
+    "verified_at": "25 November 2026, 10:54 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -383,7 +383,7 @@
       "group": "Integration & Testing",
       "pr": 42,
       "ci": "success",
-      "note": "PR #42 adds live ADMIN and foreign-organization acceptance fixtures, patient role-matrix assertions, cross-organization and header/path denial, and fixture browser checks for STAFF and BILLING controls (PR CI 45661690949; post-merge main CI 45662918098; merge commit 7f8e56d695835406c447a8b928f1db7a873e520f; 21 Playwright tests)."
+      "note": "PR #42 merged"
     },
     {
       "id": "integration-offline",
@@ -466,8 +466,8 @@
       "note": "Next checkpoint 31/39. Checkpoint 30/39 is complete via merged PR #42; no PR for checkpoint 31 is currently open."
     }
   ],
-  "sync_generated_at": "2026-11-25T17:20:09Z",
-  "last_sync_success": "2026-11-25T17:20:09Z",
+  "sync_generated_at": "2026-11-25T17:24:58Z",
+  "last_sync_success": "2026-11-25T17:24:58Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-25"
