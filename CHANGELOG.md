@@ -2489,3 +2489,10 @@
 - Verified main commit: 428f5ebda606f78d8cff7a91b435951726bbd53f (docs: record checkpoint 35 blocker fix verification gap (#52)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 428f5ebda606f78d8cff7a91b435951726bbd53f (docs: record checkpoint 35 blocker fix verification gap (#52)).
+- Main CI: success.
+- Open PRs: #53 docs: record checkpoint 35 gap merged evidence (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
