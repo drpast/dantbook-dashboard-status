@@ -1969,3 +1969,11 @@
 - Verified main commit: 0b5784c3a5fde247842d91e0aa14a8959993ff17 (Feat: checkpoint 27/39 automated recall reminders, retry and opt-out (#38)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-25; overall progress 67%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-25 — Verified GitHub checkpoint reconciliation
+- Main commit: 0b5784c3a5fde247842d91e0aa14a8959993ff17 (20 commits ahead of the prior monitored baseline 09b7b62b5c82672c5b4969da3be009849b6c56ec).
+- PRs #32–#38 merged; checkpoints 21–27/39 complete. Next checkpoint: 28/39, Recall/follow-up acceptance and scheduling tests.
+- PR #38 Verify workspace CI 45468296638 passed; post-merge main CI 45470198858 passed. Notification workflow 45470784324 is separate from CI.
+- No open PRs; no published releases returned. Tag-ref listing was unavailable (404).
+- Overall progress retained at 67%; no percentage recalculation.
