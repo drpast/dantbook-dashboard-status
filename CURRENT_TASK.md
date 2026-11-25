@@ -3,18 +3,18 @@
 **Last checked:** 26 November 2026, 03:52 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
-**Latest main commit:** [620314e](https://github.com/drpast/dantbook-master/commit/620314e0572b90de5ac22567c8b5b9776e3be5dc) — docs: record checkpoint 34 gap merged evidence (#51); checkpoint 34 audit recorded as not complete in PR #50  
-**Current source activity:** Main CI success; Open PRs: .
+**Latest main commit:** [686060e](https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6) — docs: record checkpoint 35 gap merged evidence (#53); checkpoint 35 audit recorded as not complete in PR #52  
+**Current source activity:** Main CI success; Open PRs: none.
 
 ## Current task
 
-**Checkpoint 34/39 — Performance, accessibility and usability checks**  
-Status: **Pending / blocked**. PR #50 audited the release-readiness target and recorded that no Lighthouse/axe/pa11y/web-vitals gate, performance budget, Core Web Vitals threshold, keyboard/screen-reader/contrast/WCAG test, usability record or device matrix exists. Narrow ARIA/role markup, 86 label-based browser locators, visible-label association evidence and 21 browser tests remain in force. Checkpoints 31-33 remain pending/blocked; do not mark any of these checkpoints complete without genuine acceptance evidence.
+**Checkpoint 35/39 — Resolve blockers and verify fixes**  
+Status: **Pending / blocked**. PR #52 audited the release-readiness target and recorded that no issue templates, blocker register, severity/owner/reproduction record, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off exists. GitHub REST returned 0 open/closed issues in both repos. Narrow documented defect repairs, 13 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-34 remain pending/blocked; do not mark any of these checkpoints complete without genuine acceptance evidence.
 
 ## Verified repository state
 
-- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **33 commits ahead** and no commits behind.
-- **PRs #32–#51 are merged**; GitHub search returned no open PRs.
+- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **35 commits ahead** and no commits behind.
+- **PRs #32–#53 are merged**; GitHub search returned no open PRs.
 - PR #32 completed checkpoint 21/39: expected-delivery and ordered status-history tracking acceptance.
 - PR #33 completed checkpoint 22/39: one-time laboratory expense recording and case linkage.
 - PR #34 completed checkpoint 23/39: Dental Laboratory workflow acceptance evidence.
@@ -33,7 +33,9 @@ Status: **Pending / blocked**. PR #50 audited the release-readiness target and r
 - PR #48 recorded checkpoint 33/39 as not implemented: the repository has 11 per-module Playwright specs with 21 tests and two narrow handoffs, but no dedicated cross-module regression suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate; it added a read-only readiness checker.
 - PR #49 refreshed checkpoint 33 merged evidence; checkpoint 33 remains pending/blocked.
 - PR #50 recorded checkpoint 34/39 as not implemented: no Lighthouse/axe/pa11y/web-vitals gate, performance budget, Core Web Vitals threshold, keyboard/screen-reader/contrast/WCAG test, usability record or device matrix; it added a read-only readiness checker.
-- PR #51 refreshed checkpoint 34 merged evidence; the active tracker step advances to 34/39 for evidence work while overall stays at 72%.
+- PR #51 refreshed checkpoint 34 merged evidence; checkpoint 34 remains pending/blocked.
+- PR #52 recorded checkpoint 35/39 as not implemented: no issue templates, blocker register, severity/owner/reproduction linkage, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off record; it added a read-only readiness checker.
+- PR #53 refreshed checkpoint 35 merged evidence; the active tracker step advances to 35/39 for evidence work while overall stays at 72%.
 - PR #38 [Verify workspace CI run 45468296638](https://github.com/drpast/dantbook-master/actions/runs/45468296638) passed.
 - PR #39 [Verify workspace CI run 45589292148](https://github.com/drpast/dantbook-master/actions/runs/45589292148) passed with 17 Playwright tests, migrations/RLS checks, typecheck, build and live API acceptance.
 - PR #40 [Verify workspace CI run 45650514543](https://github.com/drpast/dantbook-master/actions/runs/45650514543) passed with 19 Playwright tests, migrations/RLS checks, typecheck, build and live API acceptance.
@@ -46,6 +48,8 @@ Status: **Pending / blocked**. PR #50 audited the release-readiness target and r
 - PR #49 [Verify workspace CI run 45701640374](https://github.com/drpast/dantbook-master/actions/runs/45701640374) passed after the merged-evidence refresh.
 - PR #50 [Verify workspace CI run 45705350058](https://github.com/drpast/dantbook-master/actions/runs/45705350058) passed with 12 foundation checks, 21 Playwright tests and live API acceptance.
 - PR #51 [Verify workspace CI run 45707018581](https://github.com/drpast/dantbook-master/actions/runs/45707018581) passed after the merged-evidence refresh.
+- PR #52 [Verify workspace CI run 45709807207](https://github.com/drpast/dantbook-master/actions/runs/45709807207) passed with 13 foundation checks, 21 Playwright tests and live API acceptance.
+- PR #53 [Verify workspace CI run 45711415543](https://github.com/drpast/dantbook-master/actions/runs/45711415543) passed after the merged-evidence refresh.
 - Post-merge main [CI run 45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858) passed the full Verify workspace job for checkpoint 27/39.
 - Post-merge main [CI run 45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700) passed the full Verify workspace job for checkpoint 28/39, including 17 Playwright tests and live API acceptance.
 - Post-merge main [CI run 45651429692](https://github.com/drpast/dantbook-master/actions/runs/45651429692) passed the full Verify workspace job for checkpoint 29/39, including 19 Playwright tests and live API acceptance.
@@ -60,6 +64,8 @@ Status: **Pending / blocked**. PR #50 audited the release-readiness target and r
 - Post-merge main [CI run 45702589407](https://github.com/drpast/dantbook-master/actions/runs/45702589407) passed after the checkpoint 33 gap evidence refresh.
 - Post-merge main [CI run 45706279519](https://github.com/drpast/dantbook-master/actions/runs/45706279519) passed after the checkpoint 34 gap record.
 - Post-merge main [CI run 45707642453](https://github.com/drpast/dantbook-master/actions/runs/45707642453) passed after the checkpoint 34 gap evidence refresh.
+- Post-merge main [CI run 45710667363](https://github.com/drpast/dantbook-master/actions/runs/45710667363) passed after the checkpoint 35 gap record.
+- Post-merge main [CI run 45712017862](https://github.com/drpast/dantbook-master/actions/runs/45712017862) passed after the checkpoint 35 gap evidence refresh.
 - [Run 45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) is the separate dashboard-notification workflow, not the CI run.
 - No published releases were returned by GitHub. The tag-ref query returned 404, so no tag listing was available.
 
@@ -69,7 +75,7 @@ The new automation remains **queue-only**. It does not dispatch real email, SMS 
 
 ## Completed checkpoints
 
-Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints **31/39 — Offline mode, sync and conflict scenarios**, **32/39 — Backup, restore and security checks**, **33/39 — Cross-module end-to-end regression testing** and **34/39 — Performance, accessibility and usability checks** remain pending/blocked. The active evidence checkpoint is **34/39**.
+Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints **31/39 — Offline mode, sync and conflict scenarios**, **32/39 — Backup, restore and security checks**, **33/39 — Cross-module end-to-end regression testing**, **34/39 — Performance, accessibility and usability checks** and **35/39 — Resolve blockers and verify fixes** remain pending/blocked. The active evidence checkpoint is **35/39**.
 
 ## Progress evidence
 
@@ -81,12 +87,13 @@ Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints
 ## Dashboard data-quality notes
 
 - The milestone-level status/percentage entries still conflict with the module-level statuses (for example, completed modules alongside milestone entries marked not started). They were left unchanged pending a separate evidence review.
-- The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This caused the earlier snapshot to attach notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) to the main-CI field. This monitor corrected status.json and the auto-sync block to the actual CI runs [45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858), [45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700), [45651429692](https://github.com/drpast/dantbook-master/actions/runs/45651429692), [45654373006](https://github.com/drpast/dantbook-master/actions/runs/45654373006), [45662918098](https://github.com/drpast/dantbook-master/actions/runs/45662918098) and [45667246148](https://github.com/drpast/dantbook-master/actions/runs/45667246148); notification runs [45654999024](https://github.com/drpast/dantbook-master/actions/runs/45654999024), [45667896133](https://github.com/drpast/dantbook-master/actions/runs/45667896133), [45687787085](https://github.com/drpast/dantbook-master/actions/runs/45687787085), [45689921001](https://github.com/drpast/dantbook-master/actions/runs/45689921001), [45696003925](https://github.com/drpast/dantbook-master/actions/runs/45696003925), [45696846391](https://github.com/drpast/dantbook-master/actions/runs/45696846391), [45702589714](https://github.com/drpast/dantbook-master/actions/runs/45702589714), [45703145657](https://github.com/drpast/dantbook-master/actions/runs/45703145657), [45707642392](https://github.com/drpast/dantbook-master/actions/runs/45707642392) and [45708182171](https://github.com/drpast/dantbook-master/actions/runs/45708182171) are not CI. The script defect remains and may recur until separately fixed. No code was changed in this monitoring run.
+- The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This caused the earlier snapshot to attach notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) to the main-CI field. This monitor corrected status.json and the auto-sync block to the actual CI runs [45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858), [45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700), [45651429692](https://github.com/drpast/dantbook-master/actions/runs/45651429692), [45654373006](https://github.com/drpast/dantbook-master/actions/runs/45654373006), [45662918098](https://github.com/drpast/dantbook-master/actions/runs/45662918098) and [45667246148](https://github.com/drpast/dantbook-master/actions/runs/45667246148); notification runs [45654999024](https://github.com/drpast/dantbook-master/actions/runs/45654999024), [45667896133](https://github.com/drpast/dantbook-master/actions/runs/45667896133), [45687787085](https://github.com/drpast/dantbook-master/actions/runs/45687787085), [45689921001](https://github.com/drpast/dantbook-master/actions/runs/45689921001), [45696003925](https://github.com/drpast/dantbook-master/actions/runs/45696003925), [45696846391](https://github.com/drpast/dantbook-master/actions/runs/45696846391), [45702589714](https://github.com/drpast/dantbook-master/actions/runs/45702589714), [45703145657](https://github.com/drpast/dantbook-master/actions/runs/45703145657), [45707642392](https://github.com/drpast/dantbook-master/actions/runs/45707642392), [45708182171](https://github.com/drpast/dantbook-master/actions/runs/45708182171), [45712018094](https://github.com/drpast/dantbook-master/actions/runs/45712018094) and [45712574458](https://github.com/drpast/dantbook-master/actions/runs/45712574458) are not CI. The script defect remains and may recur until separately fixed. No code was changed in this monitoring run.
 - The Windows sidebar was verified locally after checkpoint 30: its cache and UI showed overall **72%**, the active **Step 31/39**, step 30 recorded as completed with PR #42/CI success, and step 31 pending.
 - Checkpoint 31/39 remains pending because offline-first implementation is absent; PR #44/#45 only record that verified gap.
 - Checkpoint 32/39 remains pending because backup/restore and continuous security verification are absent; PR #46/#47 only record that verified gap.
 - Checkpoint 33/39 remains pending because consolidated cross-module regression coverage is absent; PR #48/#49 only record that verified gap.
 - Checkpoint 34/39 remains pending because formal performance, accessibility and usability checks are absent; PR #50/#51 only record that verified gap.
+- Checkpoint 35/39 remains pending because blocker resolution and fix verification are absent; PR #52/#53 only record that verified gap.
 
 ## Permanent exclusions
 
@@ -98,7 +105,7 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 **Checked:** 26 November 2026, 03:52 AM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45712574458))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45712017862))
 - Main commit: [686060e](https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6) — docs: record checkpoint 35 gap merged evidence (#53)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
 
