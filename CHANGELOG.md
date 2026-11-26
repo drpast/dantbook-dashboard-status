@@ -2546,3 +2546,9 @@
 
 ## 2026-11-26 — Milestone consistency flag
 - Milestone values remain flagged for review: the module summary shows Medical History, Finance, Dental Laboratory and Recall & Follow-up at 100%, while similarly named milestone entries remain at 20%/0%. No milestone values were changed pending semantic/evidence review.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 686060e535f78a77370fb5713c3bb100d7d395f6 (docs: record checkpoint 35 gap merged evidence (#53)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
