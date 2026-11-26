@@ -2542,3 +2542,7 @@
 - Open PRs: none. PRs #52 and #53 are merged. No published releases found.
 - Checkpoint 35/39 remains pending; checkpoints 31–34 remain blocked. Overall progress remains 72%; progress-manifest.json was not changed.
 - Updated status.json and CURRENT_TASK.md to reflect the verified run and blocker state.
+
+
+## 2026-11-26 — Milestone consistency flag
+- Milestone values remain flagged for review: the module summary shows Medical History, Finance, Dental Laboratory and Recall & Follow-up at 100%, while similarly named milestone entries remain at 20%/0%. No milestone values were changed pending semantic/evidence review.
