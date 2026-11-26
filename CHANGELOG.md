@@ -2910,3 +2910,9 @@
 - Verified main commit: 1a3057106a1500d62c6bbe5f5075e38adbf5ed7e (docs: record gap index guard merged evidence (#65)).
 - Main CI: in_progress.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 1a3057106a1500d62c6bbe5f5075e38adbf5ed7e (docs: record gap index guard merged evidence (#65)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
