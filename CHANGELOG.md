@@ -3370,3 +3370,10 @@
 - Main CI: success.
 - Open PRs: #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (open, CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (open, CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (open, CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (open, CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (open, CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (open, CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (open, CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (open, CI success).
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-27 — GitHub/progress sync
+- Verified main commit: 1eac8b341fb77db55fbddf7467ec8caab3dbd8fb (docs: record checkpoint 38 merged evidence (#87)).
+- Main CI: success.
+- Open PRs: #88 feat: implement checkpoint 39 readiness preparation (open-draft, CI in_progress); #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (open, CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (open, CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (open, CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (open, CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (open, CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (open, CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (open, CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (open, CI success).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
