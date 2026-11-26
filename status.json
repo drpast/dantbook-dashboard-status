@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "GitHub sync: no open PRs; checkpoint 36 gap recorded; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -92,7 +92,8 @@
     "Verified 2026-11-26: PR #50 merged as a0835ea0d2521cd78e95cd01505c3600cc0058dd and PR #51 merged as 620314e0572b90de5ac22567c8b5b9776e3be5dc; checkpoint 34/39 is audited as not implemented and remains pending, with PR CI 45705350058, gap-record post-merge CI 45706279519, doc CI 45707018581 and final post-merge main CI 45707642453. Notification runs 45707642392 and 45708182171 are not CI.",
     "Verified 2026-11-26: PR #52 merged as 428f5ebda606f78d8cff7a91b435951726bbd53f and PR #53 merged as 686060e535f78a77370fb5713c3bb100d7d395f6; checkpoint 35/39 is audited as not implemented and remains pending, with PR CI 45709807207, gap-record post-merge CI 45710667363, doc CI 45711415543 and final post-merge main CI 45712017862. Notification runs 45712018094 and 45712574458 are not CI.",
     "Verified 2026-11-26 09:54 AM IST: main HEAD is 686060e535f78a77370fb5713c3bb100d7d395f6. Main CI run 45712017862 (CI workflow, push event) passed for the exact HEAD. Notification run 45712574458 is not CI. No open PRs; PRs #52 and #53 are merged. Checkpoint 35/39 remains pending and checkpoints 31–34 remain blocked; overall progress remains 72%.",
-    "Milestone consistency review required: modules show Medical History, Finance, Dental Laboratory and Recall & Follow-up completed at 100%, while the similarly named milestone entries remain at 20% or 0%. These milestone values are retained unchanged pending a semantic/evidence review; do not infer or copy module percentages into milestones."
+    "Milestone consistency review required: modules show Medical History, Finance, Dental Laboratory and Recall & Follow-up completed at 100%, while the similarly named milestone entries remain at 20% or 0%. These milestone values are retained unchanged pending a semantic/evidence review; do not infer or copy module percentages into milestones.",
+    "Verified 2026-11-26: PR #54 merged as 987a8d557dace5015cde777352db759b2e779f75 and PR #55 merged as 05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd; checkpoint 36/39 is audited as not implemented and remains pending, with PR CI 45811450429, gap-record post-merge CI 45812396171, doc CI 45813380851 and final post-merge main CI 45814068739. Notification runs 45814068900 and 45814602941 are not CI."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
@@ -100,15 +101,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd",
     "main_commit_message": "docs: record checkpoint 36 gap merged evidence (#55)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45814602941,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45814602941",
+    "main_workflow_run_id": 45814068739,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45814068739",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45814602941,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45814602941",
+    "workflow_run_id": 45814068739,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45814068739",
     "pr_url": null,
     "blocker": null
   },
@@ -431,7 +432,8 @@
       "id": "release-config",
       "title": "Production configuration and deployment preparation",
       "status": "pending",
-      "group": "Release & Deployment"
+      "group": "Release & Deployment",
+      "note": "Checkpoint 36/39 is not complete: master PR #54 audited production configuration and deployment preparation and recorded that no Dockerfile/compose/PaaS/IaC/Kubernetes artifact, production config, deploy/release workflow, deployment environment/secrets, staged rollout, rollback plan, promotion gate, secret rotation, TLS/ingress config, monitoring/alerting or operational runbook exists; PR #55 refreshed the merged evidence. Development-only .env.example, ignored .env files, unchanged rate-limit defaults, local db:migrate:deploy, 14 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-35 remain pending/blocked; overall stays at 72%."
     },
     {
       "id": "release-acceptance",
@@ -453,8 +455,8 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "integration-bugs",
-  "current_task_step_number": 35,
+  "current_task_step_id": "release-config",
+  "current_task_step_number": 36,
   "task_steps_total": 39,
   "queue": [
     "Resolve blockers and verify fixes",
@@ -468,10 +470,10 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Resolve blockers and verify fixes",
+      "name": "Production configuration and deployment preparation",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 35/39 is not complete: master PR #52 audited blocker resolution and fix verification and recorded that no issue templates, blocker register, severity/owner/reproduction record, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off exists; PR #53 refreshed the merged evidence. GitHub REST returned 0 open/closed issues in both repos. Narrow documented defect repairs, 13 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-34 remain pending/blocked; overall stays at 72%."
+      "note": "Checkpoint 36/39 is not complete: master PR #54 audited production configuration and deployment preparation and recorded that no Dockerfile/compose/PaaS/IaC/Kubernetes artifact, production config, deploy/release workflow, deployment environment/secrets, staged rollout, rollback plan, promotion gate, secret rotation, TLS/ingress config, monitoring/alerting or operational runbook exists; PR #55 refreshed the merged evidence. Development-only .env.example, ignored .env files, unchanged rate-limit defaults, local db:migrate:deploy, 14 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-35 remain pending/blocked; overall stays at 72%."
     }
   ],
   "sync_generated_at": "2026-11-26T11:53:40Z",
