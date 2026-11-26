@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 26 November 2026, 11:52 PM IST  
+**Last checked:** 26 November 2026, 11:53 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [1240456](https://github.com/drpast/dantbook-master/commit/124045686ac334fcff1294ea944cba7123ed061d) — docs: record checkpoint 39 gap merged evidence (#61); checkpoint 39 audit recorded as not complete in PR #60  
-**Current source activity:** Main CI success; Open PRs: #78 feat: implement checkpoint 34 quality gates (CI success); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
+**Current source activity:** Main CI in_progress; Open PRs: #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
 
 ## Current task
 
@@ -130,11 +130,11 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 26 November 2026, 11:52 PM IST
+**Checked:** 26 November 2026, 11:53 PM IST
 
-- Open PRs: [#78 — feat: implement checkpoint 34 quality gates](https://github.com/drpast/dantbook-master/pull/78) (open-draft; CI **success**); [#74 — build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15](https://github.com/drpast/dantbook-master/pull/74) (open; CI **success**); [#73 — build(deps-dev): bump prisma from 6.19.3 to 7.10.1](https://github.com/drpast/dantbook-master/pull/73) (open; CI **failure**); [#72 — build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/72) (open; CI **failure**); [#71 — build(deps): bump @nestjs/core from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/71) (open; CI **failure**); [#70 — build(deps): bump dotenv from 16.6.1 to 18.0.10](https://github.com/drpast/dantbook-master/pull/70) (open; CI **success**); [#69 — build(deps): bump @nestjs/common from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/69) (open; CI **failure**); [#68 — build(deps): bump actions/checkout from 4 to 7](https://github.com/drpast/dantbook-master/pull/68) (open; CI **success**); [#67 — build(deps): bump actions/setup-node from 4 to 7](https://github.com/drpast/dantbook-master/pull/67) (open; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45871628292))
-- Main commit: [3a77414](https://github.com/drpast/dantbook-master/commit/3a7741483d39b4818b6214fbbc35c012b5fb9d0c) — docs: record checkpoint 33 merged evidence (#77)
+- Open PRs: [#74 — build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15](https://github.com/drpast/dantbook-master/pull/74) (open; CI **success**); [#73 — build(deps-dev): bump prisma from 6.19.3 to 7.10.1](https://github.com/drpast/dantbook-master/pull/73) (open; CI **failure**); [#72 — build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/72) (open; CI **failure**); [#71 — build(deps): bump @nestjs/core from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/71) (open; CI **failure**); [#70 — build(deps): bump dotenv from 16.6.1 to 18.0.10](https://github.com/drpast/dantbook-master/pull/70) (open; CI **success**); [#69 — build(deps): bump @nestjs/common from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/69) (open; CI **failure**); [#68 — build(deps): bump actions/checkout from 4 to 7](https://github.com/drpast/dantbook-master/pull/68) (open; CI **success**); [#67 — build(deps): bump actions/setup-node from 4 to 7](https://github.com/drpast/dantbook-master/pull/67) (open; CI **success**)
+- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45875562809))
+- Main commit: [0ada5fc](https://github.com/drpast/dantbook-master/commit/0ada5fce8c9a4e9faaa25a9ff79cee1a0805933f) — feat: implement checkpoint 34 quality gates (#78)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
