@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 26 November 2026, 05:19 PM IST  
+**Last checked:** 26 November 2026, 05:20 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [686060e](https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6) — docs: record checkpoint 35 gap merged evidence (#53); checkpoint 35 audit recorded as not complete in PR #52  
-**Current source activity:** Main CI success; Open PRs: #55 docs: record checkpoint 36 gap merged evidence (CI success).
+**Current source activity:** Main CI in_progress; Open PRs: .
 
 ## Current task
 
@@ -102,13 +102,12 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 26 November 2026, 05:19 PM IST
+**Checked:** 26 November 2026, 05:20 PM IST
 
-- Open PRs: [#55 — docs: record checkpoint 36 gap merged evidence](https://github.com/drpast/dantbook-master/pull/55) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45814002865))
-- Main commit: [987a8d5](https://github.com/drpast/dantbook-master/commit/987a8d557dace5015cde777352db759b2e779f75) — docs: record checkpoint 36 production deployment gap (#54)
+- No open pull requests returned by GitHub.
+- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45814068739))
+- Main commit: [05ac9c6](https://github.com/drpast/dantbook-master/commit/05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd) — docs: record checkpoint 36 gap merged evidence (#55)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
