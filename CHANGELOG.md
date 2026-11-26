@@ -2673,3 +2673,10 @@
 - Verified main commit: f3ec8d84204a52455997b519f573244d4724adf1 (docs: record checkpoint 37 gap merged evidence (#57)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: f3ec8d84204a52455997b519f573244d4724adf1 (docs: record checkpoint 37 gap merged evidence (#57)).
+- Main CI: success.
+- Open PRs: #58 docs: record checkpoint 38 user admin documentation gap (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
