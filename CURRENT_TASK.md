@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 26 November 2026, 10:34 PM IST  
+**Last checked:** 26 November 2026, 10:36 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [1240456](https://github.com/drpast/dantbook-master/commit/124045686ac334fcff1294ea944cba7123ed061d) — docs: record checkpoint 39 gap merged evidence (#61); checkpoint 39 audit recorded as not complete in PR #60  
-**Current source activity:** Main CI success; Open PRs: #66 feat: implement checkpoint 32 backup and security (CI success).
+**Current source activity:** Main CI in_progress; Open PRs: .
 
 ## Current task
 
@@ -130,13 +130,12 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 26 November 2026, 10:34 PM IST
+**Checked:** 26 November 2026, 10:36 PM IST
 
-- Open PRs: [#66 — feat: implement checkpoint 32 backup and security](https://github.com/drpast/dantbook-master/pull/66) (open-draft; CI **success**)
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45855462872))
-- Main commit: [1a30571](https://github.com/drpast/dantbook-master/commit/1a3057106a1500d62c6bbe5f5075e38adbf5ed7e) — docs: record gap index guard merged evidence (#65)
+- No open pull requests returned by GitHub.
+- Main CI: **in_progress** ([run](https://github.com/drpast/dantbook-master/actions/runs/45864772917))
+- Main commit: [fafc9ec](https://github.com/drpast/dantbook-master/commit/fafc9ec7f0aede7a3a375755f817bc08463aa61f) — feat: implement checkpoint 32 backup and security (#66)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
-- PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
