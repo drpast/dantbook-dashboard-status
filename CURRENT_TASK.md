@@ -120,4 +120,5 @@ Progress is read from progress-manifest.json and is updated only after evidence 
 - [Run 45712574458](https://github.com/drpast/dantbook-master/actions/runs/45712574458) is the separate notification workflow and is not a CI result.
 - Open PRs: none. PRs #52 and #53 are merged; no release is published.
 - Checkpoint 35/39 — Resolve blockers and verify fixes: **pending**, not complete. Checkpoints 31–34 remain blocked for offline sync, backup/restore/security, cross-module regression, and performance/accessibility/usability evidence.
+- Milestone consistency flag: the module summary shows Medical History, Finance, Dental Laboratory and Recall & Follow-up at 100%, while similarly named milestone entries remain at 20%/0%. Values are intentionally unchanged pending semantic/evidence review; no milestone completion is inferred from module percentages.
 - Overall progress remains **72%**; progress-manifest.json was not changed.
