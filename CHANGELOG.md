@@ -2713,3 +2713,9 @@
 - Main CI: success.
 - Open PRs: #59 docs: record checkpoint 38 gap merged evidence (open-draft, CI success).
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 60296b0e2f237b7e207aedecfc0aeabd8891d08c (docs: record checkpoint 38 gap merged evidence (#59)).
+- Main CI: cancelled.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
