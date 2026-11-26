@@ -1,5 +1,11 @@
 
 
+## 26 Nov 2026 — CI metadata selection repair
+- Dashboard sync now selects CI metadata only from the `CI` workflow run matching the exact main commit or PR head SHA.
+- Notification and dispatch workflow runs are no longer treated as CI results; this corrects stale or mislabeled `main_workflow_run_id` values without changing evidence-reviewed percentages.
+- Added a deterministic CI-run-selection self-test to the sync automation validation workflow.
+
+
 ## 22 Nov 2026 — Sync freshness improvement
 - Added UTC `sync_generated_at` and `last_sync_success` heartbeat fields, separate from progress review date.
 - GitHub metadata sync still polls every 5 minutes; heartbeat commits occur at least every 15 minutes when no data changes.

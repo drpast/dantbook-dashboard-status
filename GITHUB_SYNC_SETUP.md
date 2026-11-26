@@ -12,7 +12,7 @@ This public repository syncs public-safe project metadata from private `drpast/d
 
 ## Behavior
 - Scheduled every 5 minutes; manual dispatch also supported. Meaningful updates are committed immediately; a sync-health heartbeat is committed at least every 15 minutes.
-- Reads private repo default-branch commit, open PRs, and CI statuses.
+- Reads private repo default-branch commit and open PRs. CI status is taken only from the `CI` workflow run for the exact commit or PR head SHA; notification and dispatch runs are excluded.
 - Reads `progress-manifest.json` as the single progress source of truth and applies it to `status.json`.
 - Updates `status.json`, `CURRENT_TASK.md` auto-sync section, and `CHANGELOG.md` on meaningful changes or heartbeat. `sync_generated_at` is separate from the progress review date.
 - Progress percentages are evidence-reviewed manually; CI/commits/PRs never auto-increase them.
