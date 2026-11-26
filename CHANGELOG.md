@@ -2616,3 +2616,10 @@
 - Verified main commit: 05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd (docs: record checkpoint 36 gap merged evidence (#55)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd (docs: record checkpoint 36 gap merged evidence (#55)).
+- Main CI: success.
+- Open PRs: #56 docs: record checkpoint 37 final MVP acceptance gap (open-draft, CI success).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
