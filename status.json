@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #75 CI success; #74 CI success; #73 CI failure; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #74 CI success; #73 CI failure; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -100,28 +100,13 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
-    "main_commit": "fafc9ec7f0aede7a3a375755f817bc08463aa61f",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/fafc9ec7f0aede7a3a375755f817bc08463aa61f",
-    "main_commit_message": "feat: implement checkpoint 32 backup and security (#66)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45864772917,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45864772917",
+    "main_commit": "e56eacfe522aa7e8b40551a657a27c2abf1d6a2c",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/e56eacfe522aa7e8b40551a657a27c2abf1d6a2c",
+    "main_commit_message": "docs: record checkpoint 32 merged evidence (#75)",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45866333064,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45866333064",
     "open_pull_requests": [
-      {
-        "number": 75,
-        "title": "docs: record checkpoint 32 merged evidence",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/75",
-        "head_branch": "docs/checkpoint-32-merged-evidence",
-        "head_sha": "19f4f29cac4dcb307b3aa1625e8719437e473638",
-        "updated_at": "2026-11-26T17:11:49Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45865636535,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45865636535",
-          "workflow_name": "CI"
-        }
-      },
       {
         "number": 74,
         "title": "build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15",
@@ -243,13 +228,13 @@
         }
       }
     ],
-    "open_pull_request": 75,
-    "pull_request_title": "docs: record checkpoint 32 merged evidence",
-    "pull_request_state": "open-draft",
+    "open_pull_request": 74,
+    "pull_request_title": "build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15",
+    "pull_request_state": "open",
     "ci_status": "success",
-    "workflow_run_id": 45865636535,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45865636535",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/75",
+    "workflow_run_id": 45865031241,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45865031241",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/74",
     "blocker": "CI failing for PR #73, PR #72, PR #71, PR #69; inspect linked run(s)."
   },
   "dashboard_connection": {
@@ -261,7 +246,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 10:45 PM IST"
+    "verified_at": "26 November 2026, 10:46 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -614,8 +599,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T17:15:59Z",
-  "last_sync_success": "2026-11-26T17:15:59Z",
+  "sync_generated_at": "2026-11-26T17:16:44Z",
+  "last_sync_success": "2026-11-26T17:16:44Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
