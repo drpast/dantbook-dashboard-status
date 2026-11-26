@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #74 CI in_progress; #73 CI failure; #72 CI in_progress; #71 CI in_progress; #70 CI in_progress; #69 CI failure; #68 CI in_progress; #67 CI in_progress; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -106,15 +106,136 @@
     "main_ci_status": "in_progress",
     "main_workflow_run_id": 45864772917,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45864772917",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
+    "open_pull_requests": [
+      {
+        "number": 74,
+        "title": "build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/74",
+        "head_branch": "dependabot/npm_and_yarn/nestjs/cli-12.0.15",
+        "head_sha": "2a543a43f375f7d3a8739bb7cb1ced34c4742f41",
+        "updated_at": "2026-11-26T17:07:47Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45865031241,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45865031241",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 73,
+        "title": "build(deps-dev): bump prisma from 6.19.3 to 7.10.1",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/73",
+        "head_branch": "dependabot/npm_and_yarn/prisma-7.10.1",
+        "head_sha": "eab44046e368f9a751fa5c18f14fcb23da74acc4",
+        "updated_at": "2026-11-26T17:07:42Z",
+        "ci": {
+          "status": "failure",
+          "run_id": 45865025940,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45865025940",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 72,
+        "title": "build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/72",
+        "head_branch": "dependabot/npm_and_yarn/nestjs/platform-express-12.6.0",
+        "head_sha": "595fb3fa03e888b272ff55ebf17c2b7a78d12fb9",
+        "updated_at": "2026-11-26T17:07:31Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45864991856,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45864991856",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 71,
+        "title": "build(deps): bump @nestjs/core from 11.2.11 to 12.6.0",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/71",
+        "head_branch": "dependabot/npm_and_yarn/nestjs/core-12.6.0",
+        "head_sha": "99c4ab209e59c652877df7a415e9282238424493",
+        "updated_at": "2026-11-26T17:07:20Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45864958781,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45864958781",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 70,
+        "title": "build(deps): bump dotenv from 16.6.1 to 18.0.10",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/70",
+        "head_branch": "dependabot/npm_and_yarn/dotenv-18.0.10",
+        "head_sha": "793c319f1f6e189efcc17631d4a9a2b14dcb53e3",
+        "updated_at": "2026-11-26T17:07:11Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45864936428,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45864936428",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 69,
+        "title": "build(deps): bump @nestjs/common from 11.2.11 to 12.6.0",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/69",
+        "head_branch": "dependabot/npm_and_yarn/nestjs/common-12.6.0",
+        "head_sha": "bb84d06c996701135e5590b97401cc5dc43b397b",
+        "updated_at": "2026-11-26T17:07:04Z",
+        "ci": {
+          "status": "failure",
+          "run_id": 45864924001,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45864924001",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 68,
+        "title": "build(deps): bump actions/checkout from 4 to 7",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/68",
+        "head_branch": "dependabot/github_actions/actions/checkout-7",
+        "head_sha": "67110e54ea60c45bf2198ffd62cb08affe1a6689",
+        "updated_at": "2026-11-26T17:06:56Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45864897435,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45864897435",
+          "workflow_name": "CI"
+        }
+      },
+      {
+        "number": 67,
+        "title": "build(deps): bump actions/setup-node from 4 to 7",
+        "state": "open",
+        "url": "https://github.com/drpast/dantbook-master/pull/67",
+        "head_branch": "dependabot/github_actions/actions/setup-node-7",
+        "head_sha": "675f467c2ab5f4c6ca69e9b21015a9e56c117398",
+        "updated_at": "2026-11-26T17:06:53Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45864893132,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45864893132",
+          "workflow_name": "CI"
+        }
+      }
+    ],
+    "open_pull_request": 74,
+    "pull_request_title": "build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15",
+    "pull_request_state": "open",
     "ci_status": "in_progress",
-    "workflow_run_id": 45864772917,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45864772917",
-    "pr_url": null,
-    "blocker": null
+    "workflow_run_id": 45865031241,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45865031241",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/74",
+    "blocker": "CI failing for PR #73, PR #69; inspect linked run(s)."
   },
   "dashboard_connection": {
     "source": "GitHub raw status.json",
@@ -125,7 +246,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 10:36 PM IST"
+    "verified_at": "26 November 2026, 10:39 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -478,8 +599,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T17:06:17Z",
-  "last_sync_success": "2026-11-26T17:06:17Z",
+  "sync_generated_at": "2026-11-26T17:09:10Z",
+  "last_sync_success": "2026-11-26T17:09:10Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
