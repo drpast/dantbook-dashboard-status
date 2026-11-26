@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #82 CI in_progress; #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #82 CI success; #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -116,7 +116,7 @@
         "head_sha": "563b9fc0fbb62c5b8336227d1a1f3b76bcc5b363",
         "updated_at": "2026-11-26T19:34:45Z",
         "ci": {
-          "status": "in_progress",
+          "status": "success",
           "run_id": 45884690337,
           "url": "https://github.com/drpast/dantbook-master/actions/runs/45884690337",
           "workflow_name": "CI"
@@ -246,7 +246,7 @@
     "open_pull_request": 82,
     "pull_request_title": "feat: implement checkpoint 36 runtime preparation",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
+    "ci_status": "success",
     "workflow_run_id": 45884690337,
     "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45884690337",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/82",
@@ -261,7 +261,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "27 November 2026, 01:05 AM IST"
+    "verified_at": "27 November 2026, 01:11 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -614,8 +614,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T19:35:06Z",
-  "last_sync_success": "2026-11-26T19:35:06Z",
+  "sync_generated_at": "2026-11-26T19:41:22Z",
+  "last_sync_success": "2026-11-26T19:41:22Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
