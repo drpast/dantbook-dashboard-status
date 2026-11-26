@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 35/39: Resolve blockers and verify fixes — Checkpoint 35/39 is not complete: master PR #52 audited blocker resolution and fix verification and recorded that no issue templates, blocker register, severity/owner/reproduction record, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off exists; PR #53 refreshed the merged evidence. GitHub REST returned 0 open/closed issues in both repos. Narrow documented defect repairs, 13 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-34 remain pending/blocked; overall stays at 72%. | Open PRs: #55 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -102,14 +102,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45812915191,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45812915191",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45812915191,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45812915191",
-    "pr_url": null,
+    "open_pull_requests": [
+      {
+        "number": 55,
+        "title": "docs: record checkpoint 36 gap merged evidence",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/55",
+        "head_branch": "docs/checkpoint-36-gap-merged-evidence",
+        "head_sha": "06a83be7b589998e138916d4ee5d93703e091ce9",
+        "updated_at": "2026-11-26T11:45:05Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45813380851,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45813380851"
+        }
+      }
+    ],
+    "open_pull_request": 55,
+    "pull_request_title": "docs: record checkpoint 36 gap merged evidence",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45813380851,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45813380851",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/55",
     "blocker": null
   },
   "dashboard_connection": {
@@ -121,7 +136,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 05:12 PM IST"
+    "verified_at": "26 November 2026, 05:15 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -474,8 +489,8 @@
       "note": "Checkpoint 35/39 is not complete: master PR #52 audited blocker resolution and fix verification and recorded that no issue templates, blocker register, severity/owner/reproduction record, blocker-to-fix linkage, re-test matrix, open-blocker CI gate or release sign-off exists; PR #53 refreshed the merged evidence. GitHub REST returned 0 open/closed issues in both repos. Narrow documented defect repairs, 13 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-34 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T11:42:12Z",
-  "last_sync_success": "2026-11-26T11:42:12Z",
+  "sync_generated_at": "2026-11-26T11:45:23Z",
+  "last_sync_success": "2026-11-26T11:45:23Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
