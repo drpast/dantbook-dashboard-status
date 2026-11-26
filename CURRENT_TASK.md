@@ -141,7 +141,9 @@ Progress is read from progress-manifest.json and is updated only after evidence 
 <!-- AUTO-SYNC END -->
 
 
-## Latest sync verification — 26 November 2026, 08:00 PM IST
+## Checkpoint 39 verification — 26 November 2026, 08:00 PM IST (historical)
+
+This section is a dated historical record. Current verified main, CI and tracker state is in the auto-sync section above.
 
 - Main HEAD: [1240456](https://github.com/drpast/dantbook-master/commit/124045686ac334fcff1294ea944cba7123ed061d) — docs: record checkpoint 39 gap merged evidence (#61).
 - Main CI: **passed** on the exact HEAD in [run 45837733923](https://github.com/drpast/dantbook-master/actions/runs/45837733923) (workflow name CI, push event).
