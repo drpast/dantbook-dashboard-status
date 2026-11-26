@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; checkpoint 39 gap recorded; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -104,15 +104,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/124045686ac334fcff1294ea944cba7123ed061d",
     "main_commit_message": "docs: record checkpoint 39 gap merged evidence (#61)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45837733923,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45837733923",
+    "main_workflow_run_id": 45838402567,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45838402567",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45837733923,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45837733923",
+    "workflow_run_id": 45838402567,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45838402567",
     "pr_url": null,
     "blocker": null
   },
@@ -125,7 +125,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 07:52 PM IST"
+    "verified_at": "26 November 2026, 07:58 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -448,9 +448,9 @@
     {
       "id": "release-docs",
       "title": "User/admin documentation and handover",
-      "status": "pending",
+      "status": "blocked",
       "group": "Release & Deployment",
-      "note": "Checkpoint 38/39 is not complete: master PR #58 audited user/admin documentation and handover and recorded that no user guide, admin guide, operator manual, quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists; PR #59 refreshed the merged evidence. Existing AI handover, engineering guides and 15 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-37 remain pending/blocked; overall stays at 72%."
+      "note": "Checkpoint 38/39 remains pending/blocked: user/admin documentation and handover are absent (PR #58/#59 recorded the verified gap)."
     },
     {
       "id": "release-ready",
@@ -465,10 +465,9 @@
   "current_task_step_number": 39,
   "task_steps_total": 39,
   "queue": [
-    "User/admin documentation and handover",
     "Release readiness and launch checklist"
   ],
-  "current_task": "Step 38/39: User/admin documentation and handover",
+  "current_task": "Step 39/39: Release readiness and launch checklist",
   "current_task_percent": 0,
   "current_task_files_title": "Current task activity",
   "current_task_files": [
@@ -479,8 +478,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T14:22:59Z",
-  "last_sync_success": "2026-11-26T14:22:59Z",
+  "sync_generated_at": "2026-11-26T14:28:50Z",
+  "last_sync_success": "2026-11-26T14:28:50Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
