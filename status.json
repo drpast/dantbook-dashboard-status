@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
+  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -103,16 +103,16 @@
     "main_commit": "a9c337d29a8f34b9339e9b66ef29a5765deb6a6e",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/a9c337d29a8f34b9339e9b66ef29a5765deb6a6e",
     "main_commit_message": "docs: add final release gap handover index (#62)",
-    "main_ci_status": "in_progress",
-    "main_workflow_run_id": 45842646584,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45842646584",
+    "main_ci_status": "cancelled",
+    "main_workflow_run_id": 45842646579,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45842646579",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
-    "ci_status": "in_progress",
-    "workflow_run_id": 45842646584,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45842646584",
+    "ci_status": "cancelled",
+    "workflow_run_id": 45842646579,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45842646579",
     "pr_url": null,
     "blocker": null
   },
@@ -478,8 +478,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T14:48:12Z",
-  "last_sync_success": "2026-11-26T14:48:12Z",
+  "sync_generated_at": "2026-11-26T14:48:26Z",
+  "last_sync_success": "2026-11-26T14:48:26Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
