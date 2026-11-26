@@ -2687,3 +2687,9 @@
 - Main CI: success.
 - Open PRs: #58 docs: record checkpoint 38 user admin documentation gap (open-draft, CI success).
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: e52b15e198236cbf61b090014fc5db4ebca566c8 (docs: record checkpoint 38 user admin documentation gap (#58)).
+- Main CI: cancelled.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
