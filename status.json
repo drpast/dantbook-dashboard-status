@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 36/39: Production configuration and deployment preparation — Checkpoint 36/39 is not complete: master PR #54 audited production configuration and deployment preparation and recorded that no Dockerfile/compose/PaaS/IaC/Kubernetes artifact, production config, deploy/release workflow, deployment environment/secrets, staged rollout, rollback plan, promotion gate, secret rotation, TLS/ingress config, monitoring/alerting or operational runbook exists; PR #55 refreshed the merged evidence. Development-only .env.example, ignored .env files, unchanged rate-limit defaults, local db:migrate:deploy, 14 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-35 remain pending/blocked; overall stays at 72%. | Open PRs: #56 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -97,35 +97,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
-    "main_commit": "05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd",
-    "main_commit_message": "docs: record checkpoint 36 gap merged evidence (#55)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45823743612,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45823743612",
-    "open_pull_requests": [
-      {
-        "number": 56,
-        "title": "docs: record checkpoint 37 final MVP acceptance gap",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/56",
-        "head_branch": "evidence/final-mvp-acceptance-gap-checkpoint-37",
-        "head_sha": "75c47b4bd64fe2ce9b5f77ab017b22be3ff5a8a2",
-        "updated_at": "2026-11-26T12:48:14Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45823083740,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45823083740"
-        }
-      }
-    ],
-    "open_pull_request": 56,
-    "pull_request_title": "docs: record checkpoint 37 final MVP acceptance gap",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45823083740,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45823083740",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/56",
+    "main_commit": "928c8f9c7bdbbd84e1ad527cc79d7fc977a7f81f",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/928c8f9c7bdbbd84e1ad527cc79d7fc977a7f81f",
+    "main_commit_message": "docs: record checkpoint 37 final MVP acceptance gap (#56)",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 45823988572,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45823988572",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "in_progress",
+    "workflow_run_id": 45823988572,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45823988572",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -137,7 +122,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 06:22 PM IST"
+    "verified_at": "26 November 2026, 06:24 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -490,8 +475,8 @@
       "note": "Checkpoint 36/39 is not complete: master PR #54 audited production configuration and deployment preparation and recorded that no Dockerfile/compose/PaaS/IaC/Kubernetes artifact, production config, deploy/release workflow, deployment environment/secrets, staged rollout, rollback plan, promotion gate, secret rotation, TLS/ingress config, monitoring/alerting or operational runbook exists; PR #55 refreshed the merged evidence. Development-only .env.example, ignored .env files, unchanged rate-limit defaults, local db:migrate:deploy, 14 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-35 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T12:52:49Z",
-  "last_sync_success": "2026-11-26T12:52:49Z",
+  "sync_generated_at": "2026-11-26T12:54:23Z",
+  "last_sync_success": "2026-11-26T12:54:23Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
