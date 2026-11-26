@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "GitHub sync: no open PRs; checkpoint 38 gap recorded; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -94,7 +94,8 @@
     "Verified 2026-11-26 09:54 AM IST: main HEAD is 686060e535f78a77370fb5713c3bb100d7d395f6. Main CI run 45712017862 (CI workflow, push event) passed for the exact HEAD. Notification run 45712574458 is not CI. No open PRs; PRs #52 and #53 are merged. Checkpoint 35/39 remains pending and checkpoints 31–34 remain blocked; overall progress remains 72%.",
     "Milestone consistency review required: modules show Medical History, Finance, Dental Laboratory and Recall & Follow-up completed at 100%, while the similarly named milestone entries remain at 20% or 0%. These milestone values are retained unchanged pending a semantic/evidence review; do not infer or copy module percentages into milestones.",
     "Verified 2026-11-26: PR #54 merged as 987a8d557dace5015cde777352db759b2e779f75 and PR #55 merged as 05ac9c6b80f1d50fcfbf2d5112d94ac5e6cf97bd; checkpoint 36/39 is audited as not implemented and remains pending, with PR CI 45811450429, gap-record post-merge CI 45812396171, doc CI 45813380851 and final post-merge main CI 45814068739. Notification runs 45814068900 and 45814602941 are not CI.",
-    "Verified 2026-11-26: PR #56 merged as 928c8f9c7bdbbd84e1ad527cc79d7fc977a7f81f and PR #57 merged as f3ec8d84204a52455997b519f573244d4724adf1; checkpoint 37/39 is audited as not implemented and remains pending, with PR CI 45823083773, gap-record post-merge CI 45823988572, doc CI 45824738481 and final post-merge main CI 45825406042. Notification runs 45824575674, 45825344769, 45825406076 and 45825980930 are not CI."
+    "Verified 2026-11-26: PR #56 merged as 928c8f9c7bdbbd84e1ad527cc79d7fc977a7f81f and PR #57 merged as f3ec8d84204a52455997b519f573244d4724adf1; checkpoint 37/39 is audited as not implemented and remains pending, with PR CI 45823083773, gap-record post-merge CI 45823988572, doc CI 45824738481 and final post-merge main CI 45825406042. Notification runs 45824575674, 45825344769, 45825406076 and 45825980930 are not CI.",
+    "Verified 2026-11-26: PR #58 merged as e52b15e198236cbf61b090014fc5db4ebca566c8 and PR #59 merged as 60296b0e2f237b7e207aedecfc0aeabd8891d08c; checkpoint 38/39 is audited as not implemented and remains pending, with PR CI 45829984369, gap-record post-merge CI 45830949289, doc CI 45831752129 and final post-merge main CI 45832771718. Notification runs 45831537066, 45832419537, 45832771775 and 45833440632 are not CI."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
@@ -102,15 +103,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/60296b0e2f237b7e207aedecfc0aeabd8891d08c",
     "main_commit_message": "docs: record checkpoint 38 gap merged evidence (#59)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45833440632,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45833440632",
+    "main_workflow_run_id": 45832771718,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45832771718",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45833440632,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45833440632",
+    "workflow_run_id": 45832771718,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45832771718",
     "pr_url": null,
     "blocker": null
   },
@@ -447,7 +448,8 @@
       "id": "release-docs",
       "title": "User/admin documentation and handover",
       "status": "pending",
-      "group": "Release & Deployment"
+      "group": "Release & Deployment",
+      "note": "Checkpoint 38/39 is not complete: master PR #58 audited user/admin documentation and handover and recorded that no user guide, admin guide, operator manual, quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists; PR #59 refreshed the merged evidence. Existing AI handover, engineering guides and 15 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-37 remain pending/blocked; overall stays at 72%."
     },
     {
       "id": "release-ready",
@@ -457,8 +459,8 @@
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
-  "current_task_step_id": "release-acceptance",
-  "current_task_step_number": 37,
+  "current_task_step_id": "release-docs",
+  "current_task_step_number": 38,
   "task_steps_total": 39,
   "queue": [
     "Final MVP acceptance against scope",
@@ -470,10 +472,10 @@
   "current_task_files_title": "Current task activity",
   "current_task_files": [
     {
-      "name": "Final MVP acceptance against scope",
+      "name": "User/admin documentation and handover",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 37/39 is not complete: master PR #56 audited final MVP acceptance against scope and recorded that no acceptance report, scope matrix, requirement-to-evidence trace, owner test record, go/no-go decision, release tag or independent clinical/security/privacy/accounting/jurisdictional sign-off exists; PR #57 refreshed the merged evidence. GitHub REST returned 0 releases and 0 issues in the master repo, and the dashboard issue is unrelated. Narrow 15 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-36 remain pending/blocked; overall stays at 72%."
+      "note": "Checkpoint 38/39 is not complete: master PR #58 audited user/admin documentation and handover and recorded that no user guide, admin guide, operator manual, quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists; PR #59 refreshed the merged evidence. Existing AI handover, engineering guides and 15 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-37 remain pending/blocked; overall stays at 72%."
     }
   ],
   "sync_generated_at": "2026-11-26T13:53:08Z",
