@@ -104,15 +104,15 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/f77a5b53cbf7ad99457f686108fec7d0e7b3d440",
     "main_commit_message": "docs: record final gap index merged evidence (#63)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45845222322,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45845222322",
+    "main_workflow_run_id": 45844476884,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45844476884",
     "open_pull_requests": [],
     "open_pull_request": null,
     "pull_request_title": null,
     "pull_request_state": null,
     "ci_status": "success",
-    "workflow_run_id": 45845222322,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45845222322",
+    "workflow_run_id": 45844476884,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45844476884",
     "pr_url": null,
     "blocker": null
   },
@@ -125,7 +125,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 08:33 PM IST"
+    "verified_at": "26 November 2026, 08:44 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -478,8 +478,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T15:03:53Z",
-  "last_sync_success": "2026-11-26T15:03:53Z",
+  "sync_generated_at": "2026-11-26T15:14:18Z",
+  "last_sync_success": "2026-11-26T15:14:18Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
