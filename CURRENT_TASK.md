@@ -3,18 +3,18 @@
 **Last checked:** 26 November 2026, 07:23 PM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
-**Latest main commit:** [f3ec8d8](https://github.com/drpast/dantbook-master/commit/f3ec8d84204a52455997b519f573244d4724adf1) — docs: record checkpoint 37 gap merged evidence (#57); checkpoint 37 audit recorded as not complete in PR #56  
-**Current source activity:** Main CI success; Open PRs: .
+**Latest main commit:** [60296b0](https://github.com/drpast/dantbook-master/commit/60296b0e2f237b7e207aedecfc0aeabd8891d08c) — docs: record checkpoint 38 gap merged evidence (#59); checkpoint 38 audit recorded as not complete in PR #58  
+**Current source activity:** Main CI success; Open PRs: none.
 
 ## Current task
 
-**Checkpoint 37/39 — Final MVP acceptance against scope**  
-Status: **Pending / blocked**. PR #56 audited the release-readiness target and recorded that no acceptance report, scope matrix, requirement-to-evidence trace, owner test record, go/no-go decision, release tag or independent clinical/security/privacy/accounting/jurisdictional sign-off exists. GitHub REST returned 0 releases and 0 issues in the master repo, and the dashboard issue is unrelated. Narrow 15 foundation checks, 21 Playwright tests, 19 migrations, 60 RLS-covered tables and live API acceptance remain in force. Checkpoints 31-36 remain pending/blocked; do not mark any of these checkpoints complete without genuine acceptance evidence.
+**Checkpoint 38/39 — User/admin documentation and handover**  
+Status: **Pending / blocked**. PR #58 audited the release-readiness target and recorded that no user guide, admin guide, operator manual, clinic quick-start, role-based workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists. No administrator runbook covers Super Admin setup, branch/staff provisioning, devices, security policies, audit/export, backup approval, incident response or support boundaries. Existing AI handover, engineering guides, 15 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-37 remain pending/blocked; do not mark any of these checkpoints complete without genuine acceptance evidence.
 
 ## Verified repository state
 
-- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **39 commits ahead** and no commits behind.
-- **PRs #32–#57 are merged**; GitHub search returned no open PRs.
+- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **41 commits ahead** and no commits behind.
+- **PRs #32–#59 are merged**; GitHub search returned no open PRs.
 - PR #32 completed checkpoint 21/39: expected-delivery and ordered status-history tracking acceptance.
 - PR #33 completed checkpoint 22/39: one-time laboratory expense recording and case linkage.
 - PR #34 completed checkpoint 23/39: Dental Laboratory workflow acceptance evidence.
@@ -39,7 +39,9 @@ Status: **Pending / blocked**. PR #56 audited the release-readiness target and r
 - PR #54 recorded checkpoint 36/39 as not implemented: no deployment artifact, production config, deploy/release workflow, deployment environment/secrets, staged rollout, rollback plan, promotion gate, secret rotation, TLS/ingress config, monitoring/alerting or operational runbook; it added a read-only readiness checker.
 - PR #55 refreshed checkpoint 36 merged evidence; checkpoint 36 remains pending/blocked.
 - PR #56 recorded checkpoint 37/39 as not implemented: no acceptance report, scope matrix, requirement-to-evidence trace, owner test record, go/no-go decision, release tag or independent clinical/security/privacy/accounting/jurisdictional sign-off; it added a read-only readiness checker.
-- PR #57 refreshed checkpoint 37 merged evidence; the active tracker step advances to 37/39 for evidence work while overall stays at 72%.
+- PR #57 refreshed checkpoint 37 merged evidence; checkpoint 37 remains pending/blocked.
+- PR #58 recorded checkpoint 38/39 as not implemented: no user/admin guide, operator manual, clinic quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist; it added a read-only readiness checker.
+- PR #59 refreshed checkpoint 38 merged evidence; the active tracker step advances to 38/39 for evidence work while overall stays at 72%.
 - PR #38 [Verify workspace CI run 45468296638](https://github.com/drpast/dantbook-master/actions/runs/45468296638) passed.
 - PR #39 [Verify workspace CI run 45589292148](https://github.com/drpast/dantbook-master/actions/runs/45589292148) passed with 17 Playwright tests, migrations/RLS checks, typecheck, build and live API acceptance.
 - PR #40 [Verify workspace CI run 45650514543](https://github.com/drpast/dantbook-master/actions/runs/45650514543) passed with 19 Playwright tests, migrations/RLS checks, typecheck, build and live API acceptance.
@@ -58,6 +60,8 @@ Status: **Pending / blocked**. PR #56 audited the release-readiness target and r
 - PR #55 [Verify workspace CI run 45813380851](https://github.com/drpast/dantbook-master/actions/runs/45813380851) passed after the merged-evidence refresh.
 - PR #56 [Verify workspace CI run 45823083773](https://github.com/drpast/dantbook-master/actions/runs/45823083773) passed with 15 foundation checks, 21 Playwright tests and live API acceptance.
 - PR #57 [Verify workspace CI run 45824738481](https://github.com/drpast/dantbook-master/actions/runs/45824738481) passed after the merged-evidence refresh.
+- PR #58 [Verify workspace CI run 45829984369](https://github.com/drpast/dantbook-master/actions/runs/45829984369) passed with 16 foundation checks, 21 Playwright tests and live API acceptance.
+- PR #59 [Verify workspace CI run 45831752129](https://github.com/drpast/dantbook-master/actions/runs/45831752129) passed after the merged-evidence refresh.
 - Post-merge main [CI run 45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858) passed the full Verify workspace job for checkpoint 27/39.
 - Post-merge main [CI run 45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700) passed the full Verify workspace job for checkpoint 28/39, including 17 Playwright tests and live API acceptance.
 - Post-merge main [CI run 45651429692](https://github.com/drpast/dantbook-master/actions/runs/45651429692) passed the full Verify workspace job for checkpoint 29/39, including 19 Playwright tests and live API acceptance.
@@ -78,6 +82,8 @@ Status: **Pending / blocked**. PR #56 audited the release-readiness target and r
 - Post-merge main [CI run 45814068739](https://github.com/drpast/dantbook-master/actions/runs/45814068739) passed after the checkpoint 36 gap evidence refresh.
 - Post-merge main [CI run 45823988572](https://github.com/drpast/dantbook-master/actions/runs/45823988572) passed after the checkpoint 37 gap record.
 - Post-merge main [CI run 45825406042](https://github.com/drpast/dantbook-master/actions/runs/45825406042) passed after the checkpoint 37 gap evidence refresh.
+- Post-merge main [CI run 45830949289](https://github.com/drpast/dantbook-master/actions/runs/45830949289) passed after the checkpoint 38 gap record.
+- Post-merge main [CI run 45832771718](https://github.com/drpast/dantbook-master/actions/runs/45832771718) passed after the checkpoint 38 gap evidence refresh.
 - [Run 45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) is the separate dashboard-notification workflow, not the CI run.
 - No published releases were returned by GitHub. The tag-ref query returned 404, so no tag listing was available.
 
@@ -87,7 +93,7 @@ The new automation remains **queue-only**. It does not dispatch real email, SMS 
 
 ## Completed checkpoints
 
-Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints **31/39 — Offline mode, sync and conflict scenarios**, **32/39 — Backup, restore and security checks**, **33/39 — Cross-module end-to-end regression testing**, **34/39 — Performance, accessibility and usability checks**, **35/39 — Resolve blockers and verify fixes**, **36/39 — Production configuration and deployment preparation** and **37/39 — Final MVP acceptance against scope** remain pending/blocked. The active evidence checkpoint is **37/39**.
+Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints **31/39 — Offline mode, sync and conflict scenarios**, **32/39 — Backup, restore and security checks**, **33/39 — Cross-module end-to-end regression testing**, **34/39 — Performance, accessibility and usability checks**, **35/39 — Resolve blockers and verify fixes**, **36/39 — Production configuration and deployment preparation**, **37/39 — Final MVP acceptance against scope** and **38/39 — User/admin documentation and handover** remain pending/blocked. The active evidence checkpoint is **38/39**.
 
 ## Progress evidence
 
@@ -108,6 +114,7 @@ Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints
 - Checkpoint 35/39 remains pending because blocker resolution and fix verification are absent; PR #52/#53 only record that verified gap.
 - Checkpoint 36/39 remains pending because production configuration and deployment preparation are absent; PR #54/#55 only record that verified gap.
 - Checkpoint 37/39 remains pending because final MVP acceptance against scope is absent; PR #56/#57 only record that verified gap.
+- Checkpoint 38/39 remains pending because user/admin documentation and handover are absent; PR #58/#59 only record that verified gap.
 
 ## Permanent exclusions
 
@@ -119,7 +126,7 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 **Checked:** 26 November 2026, 07:23 PM IST
 
 - No open pull requests returned by GitHub.
-- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45833440632))
+- Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45832771718))
 - Main commit: [60296b0](https://github.com/drpast/dantbook-master/commit/60296b0e2f237b7e207aedecfc0aeabd8891d08c) — docs: record checkpoint 38 gap merged evidence (#59)
 - Progress manifest reviewed: **2026-11-26**; overall **72%**.
 
@@ -127,12 +134,12 @@ Progress is read from progress-manifest.json and is updated only after evidence 
 <!-- AUTO-SYNC END -->
 
 
-## Latest sync verification — 26 November 2026, 06:40 PM IST
+## Latest sync verification — 26 November 2026, 07:25 PM IST
 
-- Main HEAD: [f3ec8d8](https://github.com/drpast/dantbook-master/commit/f3ec8d84204a52455997b519f573244d4724adf1) — docs: record checkpoint 37 gap merged evidence (#57).
-- Main CI: **passed** on the exact HEAD in [run 45825406042](https://github.com/drpast/dantbook-master/actions/runs/45825406042) (workflow name CI, push event).
-- [Run 45825980930](https://github.com/drpast/dantbook-master/actions/runs/45825980930) is the separate notification workflow and is not a CI result.
-- Open PRs: none. PRs #56 and #57 are merged; no release is published.
-- Checkpoint 37/39 — Final MVP acceptance against scope: **pending**, not complete. Checkpoints 31–36 remain pending/blocked for offline sync, backup/restore/security, cross-module regression, performance/accessibility/usability, blocker/fix verification, and production deployment evidence.
+- Main HEAD: [60296b0](https://github.com/drpast/dantbook-master/commit/60296b0e2f237b7e207aedecfc0aeabd8891d08c) — docs: record checkpoint 38 gap merged evidence (#59).
+- Main CI: **passed** on the exact HEAD in [run 45832771718](https://github.com/drpast/dantbook-master/actions/runs/45832771718) (workflow name CI, push event).
+- [Run 45833440632](https://github.com/drpast/dantbook-master/actions/runs/45833440632) is the separate notification workflow and is not a CI result.
+- Open PRs: none. PRs #58 and #59 are merged; no release is published.
+- Checkpoint 38/39 — User/admin documentation and handover: **pending**, not complete. Checkpoints 31–37 remain pending/blocked for offline sync, backup/restore/security, cross-module regression, performance/accessibility/usability, blocker/fix verification, production deployment and final MVP acceptance evidence.
 - Milestone consistency flag: the module summary shows Medical History, Finance, Dental Laboratory and Recall & Follow-up at 100%, while similarly named milestone entries remain at 20%/0%. Values are intentionally unchanged pending semantic/evidence review; no milestone completion is inferred from module percentages.
 - Overall progress remains **72%**; progress-manifest.json percentages were not changed.
