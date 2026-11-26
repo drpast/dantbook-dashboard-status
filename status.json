@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 38/39: User/admin documentation and handover — Checkpoint 38/39 is not complete: master PR #58 audited user/admin documentation and handover and recorded that no user guide, admin guide, operator manual, quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists; PR #59 refreshed the merged evidence. Existing AI handover, engineering guides and 15 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-37 remain pending/blocked; overall stays at 72%. | Open PRs: #60 CI success; main CI success",
+  "current_focus": "GitHub sync: no open PRs; main CI cancelled",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -99,35 +99,20 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-26",
-    "main_commit": "60296b0e2f237b7e207aedecfc0aeabd8891d08c",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/60296b0e2f237b7e207aedecfc0aeabd8891d08c",
-    "main_commit_message": "docs: record checkpoint 38 gap merged evidence (#59)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 45835824800,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45835824800",
-    "open_pull_requests": [
-      {
-        "number": 60,
-        "title": "docs: record checkpoint 39 release launch gap",
-        "state": "open-draft",
-        "url": "https://github.com/drpast/dantbook-master/pull/60",
-        "head_branch": "evidence/release-readiness-launch-gap-checkpoint-39",
-        "head_sha": "cb3047aa4785b6f07649b41f3b05fc96413e0413",
-        "updated_at": "2026-11-26T14:03:16Z",
-        "ci": {
-          "status": "success",
-          "run_id": 45835150550,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45835150550"
-        }
-      }
-    ],
-    "open_pull_request": 60,
-    "pull_request_title": "docs: record checkpoint 39 release launch gap",
-    "pull_request_state": "open-draft",
-    "ci_status": "success",
-    "workflow_run_id": 45835150550,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45835150550",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/60",
+    "main_commit": "2ed470fbe8266140008445fd25cb8f4451d351f4",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/2ed470fbe8266140008445fd25cb8f4451d351f4",
+    "main_commit_message": "docs: record checkpoint 39 release launch gap (#60)",
+    "main_ci_status": "cancelled",
+    "main_workflow_run_id": 45836120914,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45836120914",
+    "open_pull_requests": [],
+    "open_pull_request": null,
+    "pull_request_title": null,
+    "pull_request_state": null,
+    "ci_status": "cancelled",
+    "workflow_run_id": 45836120914,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45836120914",
+    "pr_url": null,
     "blocker": null
   },
   "dashboard_connection": {
@@ -139,7 +124,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 07:37 PM IST"
+    "verified_at": "26 November 2026, 07:39 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -492,8 +477,8 @@
       "note": "Checkpoint 38/39 is not complete: master PR #58 audited user/admin documentation and handover and recorded that no user guide, admin guide, operator manual, quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists; PR #59 refreshed the merged evidence. Existing AI handover, engineering guides and 15 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-37 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T14:07:39Z",
-  "last_sync_success": "2026-11-26T14:07:39Z",
+  "sync_generated_at": "2026-11-26T14:09:25Z",
+  "last_sync_success": "2026-11-26T14:09:25Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
