@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 26 November 2026, 04:42 AM IST  
+**Last checked:** 26 November 2026, 09:54 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [686060e](https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6) — docs: record checkpoint 35 gap merged evidence (#53); checkpoint 35 audit recorded as not complete in PR #52  
-**Current source activity:** Main CI success; Open PRs: .
+**Current source activity:** No open PRs. Latest main CI passed for the exact HEAD (run [45712017862](https://github.com/drpast/dantbook-master/actions/runs/45712017862)); notification run 45712574458 is not CI.
 
 ## Current task
 
@@ -111,3 +111,13 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
 <!-- AUTO-SYNC END -->
+
+
+## Latest sync verification — 26 November 2026, 09:54 AM IST
+
+- Main HEAD: [686060e](https://github.com/drpast/dantbook-master/commit/686060e535f78a77370fb5713c3bb100d7d395f6) — docs: record checkpoint 35 gap merged evidence (#53).
+- Main CI: **passed** on the exact HEAD in [run 45712017862](https://github.com/drpast/dantbook-master/actions/runs/45712017862) (workflow name CI, push event).
+- [Run 45712574458](https://github.com/drpast/dantbook-master/actions/runs/45712574458) is the separate notification workflow and is not a CI result.
+- Open PRs: none. PRs #52 and #53 are merged; no release is published.
+- Checkpoint 35/39 — Resolve blockers and verify fixes: **pending**, not complete. Checkpoints 31–34 remain blocked for offline sync, backup/restore/security, cross-module regression, and performance/accessibility/usability evidence.
+- Overall progress remains **72%**; progress-manifest.json was not changed.
