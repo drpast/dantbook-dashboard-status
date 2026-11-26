@@ -103,8 +103,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/60296b0e2f237b7e207aedecfc0aeabd8891d08c",
     "main_commit_message": "docs: record checkpoint 38 gap merged evidence (#59)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45833440632,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45833440632",
+    "main_workflow_run_id": 45835824800,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45835824800",
     "open_pull_requests": [
       {
         "number": 60,
@@ -139,7 +139,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 07:33 PM IST"
+    "verified_at": "26 November 2026, 07:37 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -492,8 +492,8 @@
       "note": "Checkpoint 38/39 is not complete: master PR #58 audited user/admin documentation and handover and recorded that no user guide, admin guide, operator manual, quick-start, role workflow guide, onboarding/training material, support guide, FAQ, release notes or handover checklist exists; PR #59 refreshed the merged evidence. Existing AI handover, engineering guides and 15 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-37 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T14:03:34Z",
-  "last_sync_success": "2026-11-26T14:03:34Z",
+  "sync_generated_at": "2026-11-26T14:07:39Z",
+  "last_sync_success": "2026-11-26T14:07:39Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
