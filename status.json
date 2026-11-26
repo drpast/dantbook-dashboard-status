@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #74 CI success; #73 CI failure; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI in_progress",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #74 CI success; #73 CI failure; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -103,7 +103,7 @@
     "main_commit": "d91690cfc2d59a3cbca9a79a85f07235e6217a44",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/d91690cfc2d59a3cbca9a79a85f07235e6217a44",
     "main_commit_message": "feat: implement checkpoint 33 cross-module regression (#76)",
-    "main_ci_status": "in_progress",
+    "main_ci_status": "success",
     "main_workflow_run_id": 45869768903,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45869768903",
     "open_pull_requests": [
@@ -246,7 +246,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 11:11 PM IST"
+    "verified_at": "26 November 2026, 11:16 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -599,8 +599,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T17:41:04Z",
-  "last_sync_success": "2026-11-26T17:41:04Z",
+  "sync_generated_at": "2026-11-26T17:46:55Z",
+  "last_sync_success": "2026-11-26T17:46:55Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
