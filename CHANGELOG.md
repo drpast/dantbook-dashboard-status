@@ -2533,3 +2533,12 @@
 - Verified main commit: 686060e535f78a77370fb5713c3bb100d7d395f6 (docs: record checkpoint 35 gap merged evidence (#53)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — Verified GitHub/dashboard synchronization (09:54 AM IST)
+- Latest DantBook main commit: 686060e535f78a77370fb5713c3bb100d7d395f6 (docs: record checkpoint 35 gap merged evidence, PR #53).
+- Main CI: success on the exact main HEAD in run 45712017862 (CI workflow, push event).
+- Corrected stale run references: 45712574458 is a notification workflow, not CI; status.json now points to 45712017862.
+- Open PRs: none. PRs #52 and #53 are merged. No published releases found.
+- Checkpoint 35/39 remains pending; checkpoints 31–34 remain blocked. Overall progress remains 72%; progress-manifest.json was not changed.
+- Updated status.json and CURRENT_TASK.md to reflect the verified run and blocker state.
