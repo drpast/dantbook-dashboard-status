@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "GitHub sync: no open PRs; main CI success",
+  "current_focus": "Step 37/39: Final MVP acceptance against scope — Checkpoint 37/39 is not complete: master PR #56 audited final MVP acceptance against scope and recorded that no acceptance report, scope matrix, requirement-to-evidence trace, owner test record, go/no-go decision, release tag or independent clinical/security/privacy/accounting/jurisdictional sign-off exists; PR #57 refreshed the merged evidence. GitHub REST returned 0 releases and 0 issues in the master repo, and the dashboard issue is unrelated. Narrow 15 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-36 remain pending/blocked; overall stays at 72%. | Open PRs: #59 CI in_progress; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -104,14 +104,29 @@
     "main_ci_status": "success",
     "main_workflow_run_id": 45831537066,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45831537066",
-    "open_pull_requests": [],
-    "open_pull_request": null,
-    "pull_request_title": null,
-    "pull_request_state": null,
-    "ci_status": "success",
-    "workflow_run_id": 45831537066,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45831537066",
-    "pr_url": null,
+    "open_pull_requests": [
+      {
+        "number": 59,
+        "title": "docs: record checkpoint 38 gap merged evidence",
+        "state": "open-draft",
+        "url": "https://github.com/drpast/dantbook-master/pull/59",
+        "head_branch": "docs/checkpoint-38-gap-merged-evidence",
+        "head_sha": "4628b2078f69e16186fe4d3acc49fe92822539ba",
+        "updated_at": "2026-11-26T13:42:21Z",
+        "ci": {
+          "status": "in_progress",
+          "run_id": 45831752129,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45831752129"
+        }
+      }
+    ],
+    "open_pull_request": 59,
+    "pull_request_title": "docs: record checkpoint 38 gap merged evidence",
+    "pull_request_state": "open-draft",
+    "ci_status": "in_progress",
+    "workflow_run_id": 45831752129,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45831752129",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/59",
     "blocker": null
   },
   "dashboard_connection": {
@@ -123,7 +138,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 07:11 PM IST"
+    "verified_at": "26 November 2026, 07:12 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -476,8 +491,8 @@
       "note": "Checkpoint 37/39 is not complete: master PR #56 audited final MVP acceptance against scope and recorded that no acceptance report, scope matrix, requirement-to-evidence trace, owner test record, go/no-go decision, release tag or independent clinical/security/privacy/accounting/jurisdictional sign-off exists; PR #57 refreshed the merged evidence. GitHub REST returned 0 releases and 0 issues in the master repo, and the dashboard issue is unrelated. Narrow 15 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-36 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T13:41:22Z",
-  "last_sync_success": "2026-11-26T13:41:22Z",
+  "sync_generated_at": "2026-11-26T13:42:38Z",
+  "last_sync_success": "2026-11-26T13:42:38Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
