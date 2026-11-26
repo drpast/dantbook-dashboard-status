@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #64 CI in_progress; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #64 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -116,7 +116,7 @@
         "head_sha": "2a7710bd305b8833913c412159b1593c5f29442a",
         "updated_at": "2026-11-26T15:49:32Z",
         "ci": {
-          "status": "in_progress",
+          "status": "success",
           "run_id": 45852900209,
           "url": "https://github.com/drpast/dantbook-master/actions/runs/45852900209",
           "workflow_name": "CI"
@@ -126,7 +126,7 @@
     "open_pull_request": 64,
     "pull_request_title": "evidence: guard final gap index integrity",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
+    "ci_status": "success",
     "workflow_run_id": 45852900209,
     "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45852900209",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/64",
@@ -141,7 +141,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 09:19 PM IST"
+    "verified_at": "26 November 2026, 09:24 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -494,8 +494,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T15:49:51Z",
-  "last_sync_success": "2026-11-26T15:49:51Z",
+  "sync_generated_at": "2026-11-26T15:54:23Z",
+  "last_sync_success": "2026-11-26T15:54:23Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
