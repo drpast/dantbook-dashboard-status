@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #63 CI in_progress; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%. | Open PRs: #63 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -104,8 +104,8 @@
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/a9c337d29a8f34b9339e9b66ef29a5765deb6a6e",
     "main_commit_message": "docs: add final release gap handover index (#62)",
     "main_ci_status": "success",
-    "main_workflow_run_id": 45843267328,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45843267328",
+    "main_workflow_run_id": 45844246973,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45844246973",
     "open_pull_requests": [
       {
         "number": 63,
@@ -116,18 +116,18 @@
         "head_sha": "9b18834c46f7dc318967c2169a925660fce5d120",
         "updated_at": "2026-11-26T14:53:27Z",
         "ci": {
-          "status": "in_progress",
-          "run_id": 45843541540,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/45843541540"
+          "status": "success",
+          "run_id": 45843541768,
+          "url": "https://github.com/drpast/dantbook-master/actions/runs/45843541768"
         }
       }
     ],
     "open_pull_request": 63,
     "pull_request_title": "docs: record final gap index merged evidence",
     "pull_request_state": "open-draft",
-    "ci_status": "in_progress",
-    "workflow_run_id": 45843541540,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45843541540",
+    "ci_status": "success",
+    "workflow_run_id": 45843541768,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45843541768",
     "pr_url": "https://github.com/drpast/dantbook-master/pull/63",
     "blocker": null
   },
@@ -140,7 +140,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "26 November 2026, 08:23 PM IST"
+    "verified_at": "26 November 2026, 08:28 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -493,8 +493,8 @@
       "note": "Checkpoint 39/39 is not complete: master PR #60 audited release readiness and launch checklist and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists; PR #61 refreshed the merged evidence. GitHub REST returned 0 releases. Existing release requirements and 17 foundation checks, 21 Playwright tests and live API acceptance remain. Checkpoints 31-38 remain pending/blocked; overall stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-26T14:53:47Z",
-  "last_sync_success": "2026-11-26T14:53:47Z",
+  "sync_generated_at": "2026-11-26T14:58:04Z",
+  "last_sync_success": "2026-11-26T14:58:04Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-26"
