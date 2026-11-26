@@ -1,5 +1,11 @@
 
 
+## 26 Nov 2026 — Gap checkpoint validation guard
+- Dashboard validation now requires every non-PR checkpoint status to match the evidence-reviewed manifest.
+- Blocked or pending gap checkpoints cannot be auto-marked complete by sync metadata changes.
+- Corrected a literal newline escape in `SYNC_PROTOCOL.md`. No progress percentages or manifest values changed.
+
+
 ## 26 Nov 2026 — CI metadata selection repair
 - Dashboard sync now selects CI metadata only from the `CI` workflow run matching the exact main commit or PR head SHA.
 - Notification and dispatch workflow runs are no longer treated as CI results; this corrects stale or mislabeled `main_workflow_run_id` values without changing evidence-reviewed percentages.

@@ -37,5 +37,15 @@ jobs:
           assert status["overall_progress_percent"] == progress["overall_progress_percent"]
           assert status["modules"] == progress["modules"]
           assert status["milestones"] == progress["milestones"]
-          print("JSON valid; progress manifest and status values match.")
+          manifest_steps = {step["id"]: step for step in progress["task_steps"]}
+          live_steps = {step["id"]: step for step in status["task_steps"]}
+          assert set(manifest_steps) == set(live_steps), "task step IDs differ from manifest"
+          for step_id, step in manifest_steps.items():
+              if step.get("pr"):
+                  continue
+              live_status = live_steps[step_id]["status"]
+              assert live_status == step["status"], f"{step_id}: status {live_status} differs from manifest {step['status']}"
+              if step["status"] in ("blocked", "pending"):
+                  assert live_status != "completed", f"{step_id}: blocked/pending gap must not be completed"
+          print("JSON valid; progress, modules, milestones and non-PR checkpoint statuses match manifest.")
           PY
