@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Sync verified private-repo metadata and the evidence-reviewed progress manifest."""
-import json, os, re, urllib.request, urllib.parse
+import json, os, re, sys, urllib.request, urllib.parse
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -11,6 +11,7 @@ SYNC_ISO = SYNC_NOW.isoformat().replace("+00:00", "Z")
 TODAY = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
 STAMP = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%d %B %Y, %I:%M %p IST")
 API = "https://api.github.com"
+CI_WORKFLOW_NAME = "CI"
 
 def api(path):
     req = urllib.request.Request(API + path, headers={
@@ -21,16 +22,47 @@ def api(path):
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode())
 
-def runs_for(branch):
-    data = api(f"/repos/{OWNER}/{REPO}/actions/runs?branch={urllib.parse.quote(branch)}&per_page=10")
+def runs_for(branch, head_sha=None):
+    query = {"branch": branch, "per_page": "100"}
+    if head_sha:
+        query["head_sha"] = head_sha
+    data = api(f"/repos/{OWNER}/{REPO}/actions/runs?" + urllib.parse.urlencode(query))
     return data.get("workflow_runs", [])
 
-def summarize(runs):
-    if not runs:
-        return {"status": "not-found", "run_id": None, "url": None}
-    r = runs[0]
+def select_ci_run(runs, expected_sha=None):
+    """Select only the CI workflow, never notification or other workflow runs."""
+    candidates = [r for r in runs if r.get("name") == CI_WORKFLOW_NAME]
+    if expected_sha:
+        candidates = [r for r in candidates if r.get("head_sha") == expected_sha]
+    return candidates[0] if candidates else None
+
+def summarize(runs, expected_sha=None):
+    r = select_ci_run(runs, expected_sha)
+    if not r:
+        return {"status": "not-found", "run_id": None, "url": None,
+                "workflow_name": CI_WORKFLOW_NAME}
     state = r.get("conclusion") if r.get("status") == "completed" else r.get("status")
-    return {"status": state or "unknown", "run_id": r.get("id"), "url": r.get("html_url")}
+    return {"status": state or "unknown", "run_id": r.get("id"),
+            "url": r.get("html_url"), "workflow_name": r.get("name")}
+
+if "--self-test" in sys.argv[1:]:
+    sample = [
+        {"id": 99, "name": "Notify DantBook dashboard", "head_sha": "current",
+         "status": "completed", "conclusion": "success", "html_url": "https://example.test/99"},
+        {"id": 42, "name": "CI", "head_sha": "current",
+         "status": "completed", "conclusion": "success", "html_url": "https://example.test/42"},
+        {"id": 41, "name": "CI", "head_sha": "older",
+         "status": "completed", "conclusion": "failure", "html_url": "https://example.test/41"},
+        {"id": 98, "name": "Notify DantBook dashboard", "head_sha": "older",
+         "status": "completed", "conclusion": "success", "html_url": "https://example.test/98"},
+    ]
+    current = summarize(sample, "current")
+    assert current["run_id"] == 42 and current["status"] == "success", current
+    assert summarize(sample, "older")["run_id"] == 41, summarize(sample, "older")
+    assert summarize(sample, "missing")["status"] == "not-found"
+    assert all(x["workflow_name"] == CI_WORKFLOW_NAME for x in (current, summarize(sample, "older")))
+    print("CI run selection self-test passed")
+    raise SystemExit(0)
 
 def auto_block(text, block):
     start, end = "<!-- AUTO-SYNC START -->", "<!-- AUTO-SYNC END -->"
@@ -51,10 +83,11 @@ commit = api(f"/repos/{OWNER}/{REPO}/commits/{repo['default_branch']}")
 prs = api(f"/repos/{OWNER}/{REPO}/pulls?state=open&per_page=100")
 closed_prs = api(f"/repos/{OWNER}/{REPO}/pulls?state=closed&per_page=100")
 merged_pr_numbers = {p["number"] for p in closed_prs if p.get("merged_at")}
-main_ci = summarize(runs_for(repo["default_branch"]))
+main_ci = summarize(runs_for(repo["default_branch"], commit["sha"]), commit["sha"])
 pr_data = []
 for p in prs:
-    ci = summarize(runs_for(p["head"]["ref"]))
+    head_sha = p["head"]["sha"]
+    ci = summarize(runs_for(p["head"]["ref"], head_sha), head_sha)
     pr_data.append({"number": p["number"], "title": p["title"],
         "state": "open-draft" if p.get("draft") else "open", "url": p["html_url"],
         "head_branch": p["head"]["ref"], "head_sha": p["head"]["sha"],
