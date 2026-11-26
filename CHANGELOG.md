@@ -2578,3 +2578,9 @@
 - Verified main commit: 987a8d557dace5015cde777352db759b2e779f75 (docs: record checkpoint 36 production deployment gap (#54)).
 - Main CI: in_progress.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 987a8d557dace5015cde777352db759b2e779f75 (docs: record checkpoint 36 production deployment gap (#54)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
