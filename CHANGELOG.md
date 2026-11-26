@@ -2890,3 +2890,10 @@
 - Verified main commit: a4e9a4fb569f4fd679e4e00836386900315aea8e (evidence: guard final gap index integrity (#64)).
 - Main CI: success.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: a4e9a4fb569f4fd679e4e00836386900315aea8e (evidence: guard final gap index integrity (#64)).
+- Main CI: success.
+- Open PRs: #65 docs: record gap index guard merged evidence (open-draft, CI in_progress).
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
