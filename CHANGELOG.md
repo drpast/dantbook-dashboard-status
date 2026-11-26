@@ -2636,3 +2636,9 @@
 - Verified main commit: 928c8f9c7bdbbd84e1ad527cc79d7fc977a7f81f (docs: record checkpoint 37 final MVP acceptance gap (#56)).
 - Main CI: in_progress.
 - Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
+
+
+## 2026-11-26 — GitHub/progress sync
+- Verified main commit: 928c8f9c7bdbbd84e1ad527cc79d7fc977a7f81f (docs: record checkpoint 37 final MVP acceptance gap (#56)).
+- Main CI: success.
+- Progress manifest reviewed 2026-11-26; overall progress 72%. Progress percentages unchanged; checkpoint/task state may have changed.
