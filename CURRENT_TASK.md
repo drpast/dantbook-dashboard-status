@@ -1,10 +1,10 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 27 November 2026, 11:12 PM IST  
+**Last checked:** 28 November 2026, 12:13 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [1d26fc3](https://github.com/drpast/dantbook-master/commit/1d26fc3fd123837634ff930d416c3a48119b1d96) — docs: accept checkpoint 38 owner handover evidence (#93); exact-HEAD CI and security scan both passed
-**Current source activity:** Main CI success; Open PRs: #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
+**Current source activity:** Main CI success; Open PRs: #94 feat(offline): add branch-scoped sync runtime (CI in_progress); #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
 
 ## Current task
 
@@ -133,9 +133,9 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 27 November 2026, 11:12 PM IST
+**Checked:** 28 November 2026, 12:13 AM IST
 
-- Open PRs: [#73 — build(deps-dev): bump prisma from 6.19.3 to 7.10.1](https://github.com/drpast/dantbook-master/pull/73) (open; CI **failure**); [#74 — build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15](https://github.com/drpast/dantbook-master/pull/74) (open; CI **success**); [#72 — build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/72) (open; CI **failure**); [#71 — build(deps): bump @nestjs/core from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/71) (open; CI **failure**); [#70 — build(deps): bump dotenv from 16.6.1 to 18.0.10](https://github.com/drpast/dantbook-master/pull/70) (open; CI **success**); [#69 — build(deps): bump @nestjs/common from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/69) (open; CI **failure**); [#68 — build(deps): bump actions/checkout from 4 to 7](https://github.com/drpast/dantbook-master/pull/68) (open; CI **success**); [#67 — build(deps): bump actions/setup-node from 4 to 7](https://github.com/drpast/dantbook-master/pull/67) (open; CI **success**)
+- Open PRs: [#94 — feat(offline): add branch-scoped sync runtime](https://github.com/drpast/dantbook-master/pull/94) (open; CI **in_progress**); [#73 — build(deps-dev): bump prisma from 6.19.3 to 7.10.1](https://github.com/drpast/dantbook-master/pull/73) (open; CI **failure**); [#74 — build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15](https://github.com/drpast/dantbook-master/pull/74) (open; CI **success**); [#72 — build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/72) (open; CI **failure**); [#71 — build(deps): bump @nestjs/core from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/71) (open; CI **failure**); [#70 — build(deps): bump dotenv from 16.6.1 to 18.0.10](https://github.com/drpast/dantbook-master/pull/70) (open; CI **success**); [#69 — build(deps): bump @nestjs/common from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/69) (open; CI **failure**); [#68 — build(deps): bump actions/checkout from 4 to 7](https://github.com/drpast/dantbook-master/pull/68) (open; CI **success**); [#67 — build(deps): bump actions/setup-node from 4 to 7](https://github.com/drpast/dantbook-master/pull/67) (open; CI **success**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/46042774625))
 - Main commit: [1d26fc3](https://github.com/drpast/dantbook-master/commit/1d26fc3fd123837634ff930d416c3a48119b1d96) — docs: accept checkpoint 38 owner handover evidence (#93)
 - Progress manifest reviewed: **2026-11-27**; overall **73%**.
