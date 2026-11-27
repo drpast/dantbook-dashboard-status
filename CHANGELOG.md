@@ -3440,6 +3440,7 @@
 - Exact-HEAD main CI passed: [run 45911264253](https://github.com/drpast/dantbook-master/actions/runs/45911264253). Main security scan passed: [run 45911264323](https://github.com/drpast/dantbook-master/actions/runs/45911264323).
 - PR #88 and PR #89 are merged. PR #88 adds draft launch-readiness artifacts and a read-only verifier; PR #89 records the evidence. Checkpoint 39 remains pending owner acceptance: publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. Readiness verification covers 4 artifacts and 13 sections with 0 decisions; the no-go gate correctly fails.
 - Eight open dependency PRs: #73, #72, #71 and #69 have failing CI; #74, #70, #68 and #67 have passing CI. None is merged.
+- Failure logs: #73 fails Prisma 7 generation with P1012 because schema datasource `url`/`directUrl` are unsupported; #72/#71/#69 fail npm ERESOLVE because NestJS 11 and 12 peer requirements are mixed. These failures are on unmerged dependency PR branches; main CI remains green.
 - GitHub reports 0 published releases. Checkpoints 31-38 remain pending/blocked. Overall progress remains **72%**; module/milestone percentage mismatch remains flagged and unchanged.
 
 
