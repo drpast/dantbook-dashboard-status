@@ -4,7 +4,7 @@
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
 **Latest main commit:** [94ba933](https://github.com/drpast/dantbook-master/commit/94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf) — docs: record checkpoint 39 merged evidence (#89); exact-HEAD CI and security scan both passed
-**Current source activity:** Main CI success; Open PRs: #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
+**Current source activity:** Main CI passed ([45911264253](https://github.com/drpast/dantbook-master/actions/runs/45911264253)); main security scan passed ([45911264323](https://github.com/drpast/dantbook-master/actions/runs/45911264323)). Eight open dependency PRs: #73 CI failure (Prisma 7 P1012: schema datasource `url`/`directUrl` unsupported); #74 success; #72 and #71 failure (NestJS 11/12 peer mismatch); #70 success; #69 failure (reciprocal NestJS 11/12 peer mismatch); #68 success; #67 success.
 
 ## Current task
 
