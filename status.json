@@ -249,7 +249,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "27 November 2026, 11:10 PM IST"
+    "verified_at": "27 November 2026, 11:12 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -576,7 +576,7 @@
       "group": "Release & Deployment",
       "pr": 93,
       "ci": "success",
-      "note": "Checkpoint 38/39 owner accepted from real evidence: master PR #93 publishes v1.0 user/admin guides, operator runbook, support pack and release notes under docs/published/v1.0/ for build a809743cfe1d2c888f47eb12b753f452efec96d2. Owner Himanshu Yadav recorded training, accessibility pass, localization decision and support coverage on 2026-11-27; evidence manifest and handover contract are checksummed and verified. PR #93 merged as 1d26fc3fd123837634ff930d416c3a48119b1d96 with PR CI 46041739711 and security scan 46041739663 passing on head e3154a79d34c1812520ebc27b97d59935c5961e2; post-merge main CI 46042774625 and security scan 46042774602 passed on the exact merged SHA. BLK-038-001 is verified; 31-37 remain blocked and 39 remains pending. No release, deployment or production-readiness claim."
+      "note": "PR #93 merged"
     },
     {
       "id": "release-ready",
@@ -604,8 +604,8 @@
       "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
     }
   ],
-  "sync_generated_at": "2026-11-27T17:40:40Z",
-  "last_sync_success": "2026-11-27T17:40:40Z",
+  "sync_generated_at": "2026-11-27T17:42:48Z",
+  "last_sync_success": "2026-11-27T17:42:48Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-27"
