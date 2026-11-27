@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%. | Open PRs: #94 CI success; #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -103,28 +103,13 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-28",
-    "main_commit": "1d26fc3fd123837634ff930d416c3a48119b1d96",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/1d26fc3fd123837634ff930d416c3a48119b1d96",
-    "main_commit_message": "docs: accept checkpoint 38 owner handover evidence (#93)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 46042774625,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46042774625",
+    "main_commit": "ab8186bbfe6aee4715bc40265cef48c2bfb486d8",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/ab8186bbfe6aee4715bc40265cef48c2bfb486d8",
+    "main_commit_message": "feat(offline): add branch-scoped sync runtime (#94)",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 46052410458,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46052410458",
     "open_pull_requests": [
-      {
-        "number": 94,
-        "title": "feat(offline): add branch-scoped sync runtime",
-        "state": "open",
-        "url": "https://github.com/drpast/dantbook-master/pull/94",
-        "head_branch": "feat/checkpoint-31-offline-sync",
-        "head_sha": "c4386e96ceca203957e4692fc89eef9ceda04b5b",
-        "updated_at": "2026-11-27T18:42:43Z",
-        "ci": {
-          "status": "success",
-          "run_id": 46051480106,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/46051480106",
-          "workflow_name": "CI"
-        }
-      },
       {
         "number": 73,
         "title": "build(deps-dev): bump prisma from 6.19.3 to 7.10.1",
@@ -246,13 +231,13 @@
         }
       }
     ],
-    "open_pull_request": 94,
-    "pull_request_title": "feat(offline): add branch-scoped sync runtime",
+    "open_pull_request": 73,
+    "pull_request_title": "build(deps-dev): bump prisma from 6.19.3 to 7.10.1",
     "pull_request_state": "open",
-    "ci_status": "success",
-    "workflow_run_id": 46051480106,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46051480106",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/94",
+    "ci_status": "failure",
+    "workflow_run_id": 45875977629,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45875977629",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/73",
     "blocker": "CI failing for PR #73, PR #72, PR #71, PR #69; inspect linked run(s)."
   },
   "dashboard_connection": {
@@ -264,7 +249,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "28 November 2026, 12:18 AM IST"
+    "verified_at": "28 November 2026, 12:20 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -619,8 +604,8 @@
       "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
     }
   ],
-  "sync_generated_at": "2026-11-27T18:48:41Z",
-  "last_sync_success": "2026-11-27T18:48:41Z",
+  "sync_generated_at": "2026-11-27T18:50:42Z",
+  "last_sync_success": "2026-11-27T18:50:42Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-27"
