@@ -2,11 +2,11 @@
   "schema_version": 1,
   "project": "DantBook",
   "dashboard_updated": "2026-11-27",
-  "overall_progress_percent": 72,
+  "overall_progress_percent": 73,
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -98,7 +98,8 @@
     "Verified 2026-11-26: PR #58 merged as e52b15e198236cbf61b090014fc5db4ebca566c8 and PR #59 merged as 60296b0e2f237b7e207aedecfc0aeabd8891d08c; checkpoint 38/39 is audited as not implemented and remains pending, with PR CI 45829984369, gap-record post-merge CI 45830949289, doc CI 45831752129 and final post-merge main CI 45832771718. Notification runs 45831537066, 45832419537, 45832771775 and 45833440632 are not CI.",
     "Verified 2026-11-26: PR #60 merged as 2ed470fbe8266140008445fd25cb8f4451d351f4 and PR #61 merged as 124045686ac334fcff1294ea944cba7123ed061d; checkpoint 39/39 is audited as not implemented and remains pending, with PR CI 45835150505, gap-record post-merge CI 45836120819, doc CI 45837000971 and final post-merge main CI 45837733923. Notification runs 45836764088, 45837650877, 45837734008 and 45838402567 are not CI.",
     "Verified 2026-11-27 09:42 AM IST: main HEAD 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 passed. PR #88 and #89 are merged; checkpoint 39 remains pending owner acceptance because publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. Readiness verifier reports 4 artifacts, 13 sections and 0 decisions; no-go gate correctly fails. Eight open dependency PRs #67-#74: CI fails on #73/#72/#71/#69 and passes on #74/#70/#68/#67. No releases; overall progress remains 72%. Milestone/module percentage mismatch remains unresolved and unchanged.",
-    "Verified CI failure causes on open dependency PRs: #73 Prisma 7 P1012 rejects schema datasource url/directUrl and requires prisma.config.ts plus adapter/Accelerate configuration; #72/#71/#69 fail npm ERESOLVE due mixed NestJS 11/12 peer dependency requirements. Main HEAD 94ba933 CI and security scan both pass; these failures are confined to unmerged dependency PR branches."
+    "Verified CI failure causes on open dependency PRs: #73 Prisma 7 P1012 rejects schema datasource url/directUrl and requires prisma.config.ts plus adapter/Accelerate configuration; #72/#71/#69 fail npm ERESOLVE due mixed NestJS 11/12 peer dependency requirements. Main HEAD 94ba933 CI and security scan both pass; these failures are confined to unmerged dependency PR branches.",
+    "Verified 2026-11-27: master PR #93 merged as 1d26fc3fd123837634ff930d416c3a48119b1d96; PR CI 46041739711 and security scan 46041739663 passed on head e3154a79d34c1812520ebc27b97d59935c5961e2, and post-merge main CI 46042774625 and security scan 46042774602 passed on the exact merged SHA. Checkpoint 38 is owner-accepted for handover only; checkpoints 31-37 remain blocked and checkpoint 39 remains pending. Overall progress is 73%. No release, tag, deployment, go/no-go decision or production readiness claim."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-27",
@@ -571,16 +572,18 @@
     {
       "id": "release-docs",
       "title": "User/admin documentation and handover",
-      "status": "blocked",
+      "status": "completed",
       "group": "Release & Deployment",
-      "note": "Checkpoint 38/39 remains pending/blocked: user/admin documentation and handover are absent (PR #58/#59 recorded the verified gap)."
+      "pr": 93,
+      "ci": "success",
+      "note": "Checkpoint 38/39 owner accepted from real evidence: master PR #93 publishes v1.0 user/admin guides, operator runbook, support pack and release notes under docs/published/v1.0/ for build a809743cfe1d2c888f47eb12b753f452efec96d2. Owner Himanshu Yadav recorded training, accessibility pass, localization decision and support coverage on 2026-11-27; evidence manifest and handover contract are checksummed and verified. PR #93 merged as 1d26fc3fd123837634ff930d416c3a48119b1d96 with PR CI 46041739711 and security scan 46041739663 passing on head e3154a79d34c1812520ebc27b97d59935c5961e2; post-merge main CI 46042774625 and security scan 46042774602 passed on the exact merged SHA. BLK-038-001 is verified; 31-37 remain blocked and 39 remains pending. No release, deployment or production-readiness claim."
     },
     {
       "id": "release-ready",
       "title": "Release readiness and launch checklist",
       "status": "pending",
       "group": "Release & Deployment",
-      "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%."
+      "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
@@ -598,7 +601,7 @@
       "name": "Release readiness and launch checklist",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%."
+      "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
     }
   ],
   "sync_generated_at": "2026-11-27T17:40:40Z",

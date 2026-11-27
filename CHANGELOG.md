@@ -1,4 +1,10 @@
 
+ 
+## 27 Nov 2026 — Checkpoint 38 owner acceptance
+- Master PR #93 published v1.0 user/admin documentation, operator runbook, support pack and release notes with a checksummed evidence manifest and owner-accepted handover contract for build `a809743c`.
+- PR #93 merged as `1d26fc3`; PR CI 46041739711 and security scan 46041739663 passed on head `e3154a7`, and post-merge main CI 46042774625 and security scan 46042774602 passed on the exact merged SHA.
+- Dashboard step `release-docs` is `completed` with PR #93 and passing CI; overall progress is 73%. Checkpoints 31-37 remain `blocked` and checkpoint 39 remains `pending`.
+- No release, tag, deployment, go/no-go decision or production-readiness claim was created.
 
 ## 26 Nov 2026 — Gap checkpoint validation guard
 - Dashboard validation now requires every non-PR checkpoint status to match the evidence-reviewed manifest.
