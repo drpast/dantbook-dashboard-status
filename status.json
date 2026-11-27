@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%. | Open PRs: #93 CI success; #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI in_progress",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -102,28 +102,13 @@
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-27",
-    "main_commit": "a809743cfe1d2c888f47eb12b753f452efec96d2",
-    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/a809743cfe1d2c888f47eb12b753f452efec96d2",
-    "main_commit_message": "docs: refresh final handover verified state (#92)",
-    "main_ci_status": "success",
-    "main_workflow_run_id": 46027334422,
-    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46027334422",
+    "main_commit": "1d26fc3fd123837634ff930d416c3a48119b1d96",
+    "main_commit_url": "https://github.com/drpast/dantbook-master/commit/1d26fc3fd123837634ff930d416c3a48119b1d96",
+    "main_commit_message": "docs: accept checkpoint 38 owner handover evidence (#93)",
+    "main_ci_status": "in_progress",
+    "main_workflow_run_id": 46042774625,
+    "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46042774625",
     "open_pull_requests": [
-      {
-        "number": 93,
-        "title": "docs: accept checkpoint 38 owner handover",
-        "state": "open",
-        "url": "https://github.com/drpast/dantbook-master/pull/93",
-        "head_branch": "feat/checkpoint-38-owner-evidence",
-        "head_sha": "e3154a79d34c1812520ebc27b97d59935c5961e2",
-        "updated_at": "2026-11-27T17:26:06Z",
-        "ci": {
-          "status": "success",
-          "run_id": 46041739711,
-          "url": "https://github.com/drpast/dantbook-master/actions/runs/46041739711",
-          "workflow_name": "CI"
-        }
-      },
       {
         "number": 73,
         "title": "build(deps-dev): bump prisma from 6.19.3 to 7.10.1",
@@ -245,13 +230,13 @@
         }
       }
     ],
-    "open_pull_request": 93,
-    "pull_request_title": "docs: accept checkpoint 38 owner handover",
+    "open_pull_request": 73,
+    "pull_request_title": "build(deps-dev): bump prisma from 6.19.3 to 7.10.1",
     "pull_request_state": "open",
-    "ci_status": "success",
-    "workflow_run_id": 46041739711,
-    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46041739711",
-    "pr_url": "https://github.com/drpast/dantbook-master/pull/93",
+    "ci_status": "failure",
+    "workflow_run_id": 45875977629,
+    "workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/45875977629",
+    "pr_url": "https://github.com/drpast/dantbook-master/pull/73",
     "blocker": "CI failing for PR #73, PR #72, PR #71, PR #69; inspect linked run(s)."
   },
   "dashboard_connection": {
@@ -263,7 +248,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "27 November 2026, 11:01 PM IST"
+    "verified_at": "27 November 2026, 11:03 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -616,8 +601,8 @@
       "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-27T17:31:38Z",
-  "last_sync_success": "2026-11-27T17:31:38Z",
+  "sync_generated_at": "2026-11-27T17:33:45Z",
+  "last_sync_success": "2026-11-27T17:33:45Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-27"
