@@ -15,6 +15,7 @@ Status: **Pending / blocked**. PR #60/#61 audited the release-readiness gap. PR 
 
 - Latest verified main HEAD is [94ba933](https://github.com/drpast/dantbook-master/commit/94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf); exact-HEAD CI and security scan both passed.
 - PRs #32–#61 remain merged; PRs #88 and #89 are also merged. Eight open Dependabot PRs #67–#74 remain: CI fails on #73, #72, #71 and #69; CI passes on #74, #70, #68 and #67.
+- Failure logs show PR #73's Prisma 7.10.1 upgrade is incompatible with the current schema's datasource `url`/`directUrl` fields (P1012). PRs #72/#71/#69 have npm ERESOLVE peer-dependency conflicts because NestJS 11 and 12 packages are being mixed; these are confined to the unmerged dependency branches.
 - PR #32 completed checkpoint 21/39: expected-delivery and ordered status-history tracking acceptance.
 - PR #33 completed checkpoint 22/39: one-time laboratory expense recording and case linkage.
 - PR #34 completed checkpoint 23/39: Dental Laboratory workflow acceptance evidence.
