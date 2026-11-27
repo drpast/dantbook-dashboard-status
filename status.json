@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI in_progress",
+  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -105,7 +105,7 @@
     "main_commit": "a809743cfe1d2c888f47eb12b753f452efec96d2",
     "main_commit_url": "https://github.com/drpast/dantbook-master/commit/a809743cfe1d2c888f47eb12b753f452efec96d2",
     "main_commit_message": "docs: refresh final handover verified state (#92)",
-    "main_ci_status": "in_progress",
+    "main_ci_status": "success",
     "main_workflow_run_id": 46027334422,
     "main_workflow_run_url": "https://github.com/drpast/dantbook-master/actions/runs/46027334422",
     "open_pull_requests": [
@@ -248,7 +248,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "27 November 2026, 09:13 PM IST"
+    "verified_at": "27 November 2026, 09:19 PM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -601,8 +601,8 @@
       "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 both passed. GitHub reports 0 releases. Checkpoints 31-38 remain pending/blocked; overall progress stays at 72%."
     }
   ],
-  "sync_generated_at": "2026-11-27T15:43:00Z",
-  "last_sync_success": "2026-11-27T15:43:00Z",
+  "sync_generated_at": "2026-11-27T15:49:44Z",
+  "last_sync_success": "2026-11-27T15:49:44Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-27"
