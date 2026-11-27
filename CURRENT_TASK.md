@@ -1,20 +1,20 @@
 # DantBook — Current Shared Task
 
-**Last checked:** 27 November 2026, 05:22 AM IST  
+**Last checked:** 27 November 2026, 09:42 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
-**Latest main commit:** [1240456](https://github.com/drpast/dantbook-master/commit/124045686ac334fcff1294ea944cba7123ed061d) — docs: record checkpoint 39 gap merged evidence (#61); checkpoint 39 audit recorded as not complete in PR #60  
-**Current source activity:** Main CI success; Open PRs: #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
+**Latest main commit:** [94ba933](https://github.com/drpast/dantbook-master/commit/94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf) — docs: record checkpoint 39 merged evidence (#89); exact-HEAD CI and security scan both passed
+**Current source activity:** Main CI passed ([45911264253](https://github.com/drpast/dantbook-master/actions/runs/45911264253)); main security scan passed ([45911264323](https://github.com/drpast/dantbook-master/actions/runs/45911264323)). Eight open dependency PRs: #73 CI failure; #74 success; #72 failure; #71 failure; #70 success; #69 failure; #68 success; #67 success.
 
 ## Current task
 
 **Checkpoint 39/39 — Release readiness and launch checklist**  
-Status: **Pending / blocked**. PR #60 audited the release-readiness target and recorded that no release checklist, launch record, release approval, go/no-go decision, version-to-build mapping, rollout/promotion record, verified rollback, support coverage or consolidated 39-checkpoint evidence exists. GitHub REST returned 0 releases; no workflow release job, tag trigger, deployment environment or launch secret publishes or approves a release. Existing release requirements, 17 foundation checks, 21 Playwright tests and live API acceptance remain in force. Checkpoints 31-38 remain pending/blocked; do not mark any of these checkpoints complete without genuine acceptance evidence.
+Status: **Pending / blocked**. PR #60/#61 audited the release-readiness gap. PR #88 merged a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and CI report step; it explicitly keeps publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records false. PR #89 merged the evidence record: 18 foundation checks, 27 Playwright tests, readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main CI run [45911264253](https://github.com/drpast/dantbook-master/actions/runs/45911264253) and security scan [45911264323](https://github.com/drpast/dantbook-master/actions/runs/45911264323) passed on exact HEAD 94ba933. GitHub reports 0 releases. Checkpoint 39 remains pending owner acceptance; checkpoints 31-38 remain pending/blocked and overall progress stays at 72%.
 
 ## Verified repository state
 
-- Compared with the previous monitoring baseline [09b7b62](https://github.com/drpast/dantbook-master/commit/09b7b62b5c82672c5b4969da3be009849b6c56ec), GitHub reports **43 commits ahead** and no commits behind.
-- **PRs #32–#61 are merged**; GitHub search returned no open PRs.
+- Latest verified main HEAD is [94ba933](https://github.com/drpast/dantbook-master/commit/94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf); exact-HEAD CI and security scan both passed.
+- PRs #32–#61 remain merged; PRs #88 and #89 are also merged. Eight open Dependabot PRs #67–#74 remain: CI fails on #73, #72, #71 and #69; CI passes on #74, #70, #68 and #67.
 - PR #32 completed checkpoint 21/39: expected-delivery and ordered status-history tracking acceptance.
 - PR #33 completed checkpoint 22/39: one-time laboratory expense recording and case linkage.
 - PR #34 completed checkpoint 23/39: Dental Laboratory workflow acceptance evidence.
@@ -26,6 +26,7 @@ Status: **Pending / blocked**. PR #60 audited the release-readiness target and r
 - PR #40 completed checkpoint 29/39: role-gated patient-card booking handoff to `/schedule`, branch-scoped patient resolution, future-slot preselection, live HTTP registration-to-booking acceptance and fixture browser coverage with read-only denial.
 - PR #41 refreshed checkpoint 29 evidence docs to the verified merged PR #40 state and post-merge CI run 45651429692.
 - PR #42 completed checkpoint 30/39: live ADMIN and foreign-organization acceptance fixtures, patient role-matrix assertions, cross-organization and header/path denial, and fixture browser checks for STAFF and BILLING controls.
+- PR #88 added draft release-readiness artifacts, a consolidated 39-step matrix, readiness contract and read-only verifier; it explicitly leaves release publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records false. PR #89 records the merged evidence and a correctly failing no-go gate. Checkpoint 39 remains pending owner acceptance.
 - PR #44 recorded checkpoint 31/39 as not implemented: no IndexedDB, PWA service worker, sync queue, temporary-ID mapping, field-level conflict UI, device lifecycle or cross-device/offline tests; it added a read-only readiness checker.
 - PR #45 refreshed checkpoint 31 merged evidence; checkpoint 31 remains pending/blocked.
 - PR #46 recorded checkpoint 32/39 as not implemented: no backup/restore command, scheduler, PITR, retention/encryption, restore drill, deployment artifact, security policy, SAST/secret scanning, Dependabot or blocking dependency gate; it added a read-only readiness checker.
@@ -105,7 +106,7 @@ Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints
 
 - Overall progress is now **72%**; `Recall & Follow-up` remains **100%**, `Integration & testing` is now **20%**, and all other module percentages are unchanged.
 - Percentages were not recalculated from commit counts, PR merges or CI runs. They remain evidence-reviewed manifest values.
-- The manifest review date is now **26 November 2026**.
+- The manifest review date is now **27 November 2026**; overall progress remains 72%.
 - The target MVP date remains **20 December 2026** (ambitious).
 
 ## Dashboard data-quality notes
@@ -121,7 +122,7 @@ Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints
 - Checkpoint 36/39 remains pending because production configuration and deployment preparation are absent; PR #54/#55 only record that verified gap.
 - Checkpoint 37/39 remains pending because final MVP acceptance against scope is absent; PR #56/#57 only record that verified gap.
 - Checkpoint 38/39 remains pending because user/admin documentation and handover are absent; PR #58/#59 only record that verified gap.
-- Checkpoint 39/39 remains pending because release readiness and launch checklist are absent; PR #60/#61 only record that verified gap.
+- Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the gap; PR #88/#89 added draft readiness artifacts and evidence but did not satisfy publication, rollback, support, sign-off, go/no-go or release-record requirements.
 
 ## Permanent exclusions
 
@@ -130,12 +131,13 @@ Enterprise features, initial-release X-ray/photo storage and integrations, NanoP
 <!-- AUTO-SYNC START -->
 ## Automatically verified GitHub snapshot
 
-**Checked:** 27 November 2026, 05:22 AM IST
+**Checked:** 27 November 2026, 09:42 AM IST
 
 - Open PRs: [#73 — build(deps-dev): bump prisma from 6.19.3 to 7.10.1](https://github.com/drpast/dantbook-master/pull/73) (open; CI **failure**); [#74 — build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15](https://github.com/drpast/dantbook-master/pull/74) (open; CI **success**); [#72 — build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/72) (open; CI **failure**); [#71 — build(deps): bump @nestjs/core from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/71) (open; CI **failure**); [#70 — build(deps): bump dotenv from 16.6.1 to 18.0.10](https://github.com/drpast/dantbook-master/pull/70) (open; CI **success**); [#69 — build(deps): bump @nestjs/common from 11.2.11 to 12.6.0](https://github.com/drpast/dantbook-master/pull/69) (open; CI **failure**); [#68 — build(deps): bump actions/checkout from 4 to 7](https://github.com/drpast/dantbook-master/pull/68) (open; CI **success**); [#67 — build(deps): bump actions/setup-node from 4 to 7](https://github.com/drpast/dantbook-master/pull/67) (open; CI **success**)
 - Main CI: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45911264253))
+- Main security scan: **success** ([run](https://github.com/drpast/dantbook-master/actions/runs/45911264323))
 - Main commit: [94ba933](https://github.com/drpast/dantbook-master/commit/94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf) — docs: record checkpoint 39 merged evidence (#89)
-- Progress manifest reviewed: **2026-11-26**; overall **72%**.
+- Progress manifest reviewed: **2026-11-27**; overall **72%**.
 - PR work is not treated as merged or complete; progress is changed only from evidence-reviewed manifest.
 
 Progress is read from progress-manifest.json and is updated only after evidence review.
