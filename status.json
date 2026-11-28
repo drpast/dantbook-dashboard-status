@@ -249,7 +249,7 @@
     "repository": "drpast/dantbook-master",
     "visibility": "private",
     "default_branch": "main",
-    "verified_at": "28 November 2026, 01:11 AM IST"
+    "verified_at": "28 November 2026, 05:44 AM IST"
   },
   "progress_tracking": {
     "source": "progress-manifest.json",
@@ -604,8 +604,8 @@
       "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
     }
   ],
-  "sync_generated_at": "2026-11-27T19:41:33Z",
-  "last_sync_success": "2026-11-27T19:41:33Z",
+  "sync_generated_at": "2026-11-28T00:14:35Z",
+  "last_sync_success": "2026-11-28T00:14:35Z",
   "sync_status": "healthy",
   "sync_poll_minutes": 5,
   "reviewed_on": "2026-11-27"
