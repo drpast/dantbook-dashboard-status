@@ -6,7 +6,7 @@
   "target_mvp_date": "2026-12-20",
   "target_is_ambitious": true,
   "current_master": "v0.1.2 Medical History UI (verified baseline; GitHub implementation activity tracked separately)",
-  "current_focus": "Step 39/39: Release readiness and launch checklist — Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%. | Open PRs: #73 CI failure; #74 CI success; #72 CI failure; #71 CI failure; #70 CI success; #69 CI failure; #68 CI success; #67 CI success; main CI success",
+  "current_focus": "Step 39/39 — Release readiness and launch checklist remains pending. Main HEAD e6408fc (#96); latest main CI run 46057111304 passed. PRs #90-#96 are merged. PR #94 delivered the offline sync runtime, but checkpoint 31 remains blocked pending owner acceptance; checkpoints 32-37 have implementation/preparation evidence but remain blocked pending owner acceptance; checkpoint 38 is accepted for the v1.0 documentation handover only; checkpoint 39 remains pending. Nine release blockers remain and eight Dependabot PRs (#67-#74) remain open. Overall progress stays 73%.",
   "modules": [
     {
       "name": "Engineering foundation",
@@ -99,7 +99,8 @@
     "Verified 2026-11-26: PR #60 merged as 2ed470fbe8266140008445fd25cb8f4451d351f4 and PR #61 merged as 124045686ac334fcff1294ea944cba7123ed061d; checkpoint 39/39 is audited as not implemented and remains pending, with PR CI 45835150505, gap-record post-merge CI 45836120819, doc CI 45837000971 and final post-merge main CI 45837733923. Notification runs 45836764088, 45837650877, 45837734008 and 45838402567 are not CI.",
     "Verified 2026-11-27 09:42 AM IST: main HEAD 94ba9330c751a827f55b7a1eb7b5dfe1d0b188cf; exact-HEAD CI run 45911264253 and security scan 45911264323 passed. PR #88 and #89 are merged; checkpoint 39 remains pending owner acceptance because publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. Readiness verifier reports 4 artifacts, 13 sections and 0 decisions; no-go gate correctly fails. Eight open dependency PRs #67-#74: CI fails on #73/#72/#71/#69 and passes on #74/#70/#68/#67. No releases; overall progress remains 72%. Milestone/module percentage mismatch remains unresolved and unchanged.",
     "Verified CI failure causes on open dependency PRs: #73 Prisma 7 P1012 rejects schema datasource url/directUrl and requires prisma.config.ts plus adapter/Accelerate configuration; #72/#71/#69 fail npm ERESOLVE due mixed NestJS 11/12 peer dependency requirements. Main HEAD 94ba933 CI and security scan both pass; these failures are confined to unmerged dependency PR branches.",
-    "Verified 2026-11-27: master PR #93 merged as 1d26fc3fd123837634ff930d416c3a48119b1d96; PR CI 46041739711 and security scan 46041739663 passed on head e3154a79d34c1812520ebc27b97d59935c5961e2, and post-merge main CI 46042774625 and security scan 46042774602 passed on the exact merged SHA. Checkpoint 38 is owner-accepted for handover only; checkpoints 31-37 remain blocked and checkpoint 39 remains pending. Overall progress is 73%. No release, tag, deployment, go/no-go decision or production readiness claim."
+    "Verified 2026-11-27: master PR #93 merged as 1d26fc3fd123837634ff930d416c3a48119b1d96; PR CI 46041739711 and security scan 46041739663 passed on head e3154a79d34c1812520ebc27b97d59935c5961e2, and post-merge main CI 46042774625 and security scan 46042774602 passed on the exact merged SHA. Checkpoint 38 is owner-accepted for handover only; checkpoints 31-37 remain blocked and checkpoint 39 remains pending. Overall progress is 73%. No release, tag, deployment, go/no-go decision or production readiness claim.",
+    "Verified 2026-11-28: main HEAD e6408fc; main CI run 46057111304 passed. PRs #90-#96 merged. PR #94 delivered checkpoint 31 offline runtime with 3 fictional scenarios, but owner review/sign-offs remain outstanding and BLK-031-001 stays open. Checkpoints 32-37 have implemented preparation/evidence but remain blocked pending owner acceptance; checkpoint 38 is owner-accepted for the v1.0 documentation handover only; checkpoint 39 remains pending. Nine release blockers remain; eight Dependabot PRs #67-#74 remain open. Overall progress remains 73%; no percentages changed."
   ],
   "latest_verified_snapshot": {
     "checked_on": "2026-11-28",
@@ -284,7 +285,7 @@
       "title": "Patient workflow browser acceptance tests",
       "status": "completed",
       "group": "Engineering Foundation",
-      "note": "PR #3 merged",
+      "note": "PR #3 merged; latest PR-head CI passed (run 44929846484).",
       "pr": 3,
       "ci": "success"
     },
@@ -293,7 +294,7 @@
       "title": "Medical History alert and correction browser tests",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged",
+      "note": "PR #4 merged; CI passed (run 44932842340).",
       "pr": 4,
       "ci": "success"
     },
@@ -309,7 +310,7 @@
       "title": "Medical History data model and migration acceptance",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #15 merged",
+      "note": "PR #15 merged; CI success (run 45079372471).",
       "pr": 15,
       "ci": "success"
     },
@@ -318,7 +319,7 @@
       "title": "Medical History API endpoints and validation",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged",
+      "note": "PR #4 merged (API/browser acceptance, run 44932842340; final head run 44933570034); PR #15 DB acceptance run 45079372471; PR #16 records evidence with CI 45166134533.",
       "pr": 4,
       "ci": "success"
     },
@@ -327,7 +328,7 @@
       "title": "Medical History forms and patient-record UI",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #4 merged",
+      "note": "PR #4 merged (browser e2e spec for form, alert, correction reason, revision history; final head run 44933570034, browser acceptance 44932842340); PR #16 records API evidence; PR #17 records UI evidence with CI 45190549018.",
       "pr": 4,
       "ci": "success"
     },
@@ -336,7 +337,7 @@
       "title": "Allergy, medication and condition alerts",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #8 merged",
+      "note": "PR #2 patient API acceptance (CI 44927048038); PR #8 prescriptions/allergy safety and browser acceptance (CI 44944050424); PR #19 records checkpoint 10 evidence with CI 45215325156. Shared read-only allergy alerts verified in CI.",
       "pr": 8,
       "ci": "success"
     },
@@ -345,7 +346,7 @@
       "title": "History corrections, audit trail and safety checks",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #15 merged",
+      "note": "PR #4 correction/revision API and browser acceptance (CI 44933570034); PR #15 append-only, audit and safety acceptance (CI 45079372471); PR #8 append-only prescription events (CI 44944050424); PR #20 records checkpoint 11 evidence (CI 45218954192).",
       "pr": 15,
       "ci": "success"
     },
@@ -354,7 +355,7 @@
       "title": "Integrate Medical History into patient workflow",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #21 merged",
+      "note": "PR #21 adds a round-trip Playwright test for patient-record ? Medical History ? patient-record with preserved organization/branch/patient context (CI 45222494140); PR #4/#15/#20 cover the underlying API, correction, audit and alert acceptance.",
       "pr": 21,
       "ci": "success"
     },
@@ -363,7 +364,7 @@
       "title": "Medical History module acceptance and regression tests",
       "status": "completed",
       "group": "Medical History",
-      "note": "PR #22 merged",
+      "note": "PR #22 adds a CI gate for the live Medical History DB acceptance and an alert-first ordering regression assertion (CI 45227772687); PR #4/#15/#21 cover API, DB, browser, and integration acceptance.",
       "pr": 22,
       "ci": "success"
     },
@@ -372,7 +373,7 @@
       "title": "Finance data model and billing rules",
       "status": "completed",
       "group": "Finance",
-      "note": "PR #23 merged",
+      "note": "PR #23 verifies the live finance journal invariant: four balanced postings with correct account pairs, branch-local isolation, deferred rejection of unbalanced lines, and zero-row restricted-role mutations (CI 45234346647).",
       "pr": 23,
       "ci": "success"
     },
@@ -381,7 +382,7 @@
       "title": "Treatment billing and invoice workflow UI",
       "status": "completed",
       "group": "Finance",
-      "note": "PR #9 merged",
+      "note": "PR #9 delivered the patient-linked invoice workflow UI with browser and authenticated API acceptance (CI 44945132212); checkpoint 14 PR #23 verifies the underlying journal postings (CI 45234346647).",
       "pr": 9,
       "ci": "success"
     },
@@ -392,7 +393,7 @@
       "group": "Finance",
       "pr": 26,
       "ci": "success",
-      "note": "PR #26 merged"
+      "note": "PR #26 adds live concurrent payment/balance assertions; existing authenticated API and browser acceptance cover payment recording, reasoned reversal/void and balanced journal postings (CI 45245153183)."
     },
     {
       "id": "finance-reports",
@@ -401,7 +402,7 @@
       "group": "Finance",
       "pr": 27,
       "ci": "success",
-      "note": "PR #27 merged"
+      "note": "PR #27 adds a branch-scoped aggregate finance summary with live assertions for issued/voided invoices, active collections, reversals, outstanding balances, role denial, patient-ID privacy and branch isolation (CI 45256819620; post-merge main CI 45259455866)."
     },
     {
       "id": "finance-tests",
@@ -410,7 +411,7 @@
       "group": "Finance",
       "pr": 28,
       "ci": "success",
-      "note": "PR #28 merged"
+      "note": "PR #28 adds a live READ_ONLY/staff finance permission matrix and exact four-decimal multi-line calculation assertions (PR CI 45262490595; post-merge main CI 45264858637; merge commit 7af9b26beb1ddc547009d67358683a5149e0020e)."
     },
     {
       "id": "lab-model",
@@ -419,7 +420,7 @@
       "group": "Dental Laboratory",
       "pr": 29,
       "ci": "success",
-      "note": "PR #29 merged"
+      "note": "PR #29 records the already-merged PR #11 Dental Laboratory case model, migration, forced RLS, append-only triggers and live acceptance coverage (PR CI 45271873096; post-merge main CI 45273679491; merge commit 5bf98c2ff87b832a62b5e3a0ef6562ca6d415e8d)."
     },
     {
       "id": "lab-submission",
@@ -428,7 +429,7 @@
       "group": "Dental Laboratory",
       "pr": 31,
       "ci": "success",
-      "note": "PR #31 merged"
+      "note": "PR #31 adds a branch-local dental laboratory web workflow linked from the patient record, a validated same-origin proxy, fictional draft creation and DRAFT to SUBMITTED submission, and fixture Playwright coverage (PR CI 45278584250; post-merge main CI 45279997678; merge commit 09b7b62b5c82672c5b4969da3be009849b6c56ec)."
     },
     {
       "id": "lab-status",
@@ -437,7 +438,7 @@
       "group": "Dental Laboratory",
       "pr": 32,
       "ci": "success",
-      "note": "PR #32 merged"
+      "note": "PR #32 adds live expected-delivery and ordered append-only status-history assertions plus fixture browser coverage for tracking display (PR CI 45350569286; post-merge main CI 45351807669; merge commit f16e8ef443e84d0e13cb0c8e48240c234d4375e8)."
     },
     {
       "id": "lab-expenses",
@@ -446,7 +447,7 @@
       "group": "Dental Laboratory",
       "pr": 33,
       "ci": "success",
-      "note": "PR #33 merged"
+      "note": "PR #33 adds a one-time laboratory expense form and validated proxy action, linked case display, live acceptance assertions and fixture browser coverage (PR CI 45363723030; post-merge main CI 45366073699; merge commit 497331c80de4bd76c361e816243a502e63f7dc2f)."
     },
     {
       "id": "lab-tests",
@@ -455,7 +456,7 @@
       "group": "Dental Laboratory",
       "pr": 34,
       "ci": "success",
-      "note": "PR #34 merged"
+      "note": "PR #34 records merged Dental Laboratory workflow evidence across API, browser and CI (PR CI 45415885660; post-merge main CI 45417172137; merge commit 574091c918904d355b7a4bcf64861b028f082e3f)."
     },
     {
       "id": "recall-rules",
@@ -464,7 +465,7 @@
       "group": "Recall & Follow-up",
       "pr": 35,
       "ci": "success",
-      "note": "PR #35 merged"
+      "note": "PR #35 adds fixed review/scaling/treatment follow-up rules, branch-scoped due evaluation, idempotent notification queueing, a same-origin proxy and recall workspace, plus live/browser acceptance (PR CI 45436011526; post-merge main CI 45438973015; merge commit bf8247c7546352d0013db42bafa6b49f68b6fff3)."
     },
     {
       "id": "recall-queue",
@@ -473,7 +474,7 @@
       "group": "Recall & Follow-up",
       "pr": 36,
       "ci": "success",
-      "note": "PR #36 merged"
+      "note": "PR #36 adds an all-rules recall due list, linked patient-record workflow, live acceptance and fixture browser coverage (PR CI 45447553269; post-merge main CI 45448474642; merge commit ae6839c701661688f9dec45c407b1a65d56a55f6)."
     },
     {
       "id": "recall-templates",
@@ -482,7 +483,7 @@
       "group": "Recall & Follow-up",
       "pr": 37,
       "ci": "success",
-      "note": "PR #37 merged"
+      "note": "PR #37 adds fixed recall message templates, queue-only delivery options, a template preview and delivery selector, payload metadata, and live/browser acceptance (PR CI 45452900382; post-merge main CI 45453995019; merge commit f158276b215421efb61a6c6c156a1ef67c80fa0b)."
     },
     {
       "id": "recall-automation",
@@ -491,7 +492,7 @@
       "group": "Recall & Follow-up",
       "pr": 38,
       "ci": "success",
-      "note": "PR #38 merged"
+      "note": "PR #38 merged on 24 Nov 2026. Verify workspace CI 45468296638 passed; post-merge main CI 45470198858 passed. Automated queue/retry/opt-out remains queue-only; no external provider dispatch or background scheduler."
     },
     {
       "id": "recall-tests",
@@ -500,7 +501,7 @@
       "group": "Recall & Follow-up",
       "pr": 39,
       "ci": "success",
-      "note": "PR #39 merged"
+      "note": "PR #39 adds deterministic scheduling fixtures for the 180-day boundary, too-recent/non-matching/superseded visits, exact 180/90-day due dates, descending overdue ordering, branch isolation and browser display of calculated due windows (draft PR CI 45589292148; post-merge main CI 45633000700; merge commit 509eed4c8e57fa9e53a09d9c56fc2147ec3a1fd2)."
     },
     {
       "id": "integration-patient",
@@ -509,7 +510,7 @@
       "group": "Integration & Testing",
       "pr": 40,
       "ci": "success",
-      "note": "PR #40 merged"
+      "note": "PR #40 adds a role-gated patient-card booking handoff, branch-scoped patient resolution, future-slot preselection, live HTTP registration-to-booking acceptance and fixture browser coverage with read-only denial (draft PR CI 45650514543; post-merge main CI 45651429692; merge commit 7e9fe32c9e6c1aefa2c6ea3f8ae566a5fccfb11f)."
     },
     {
       "id": "integration-roles",
@@ -518,56 +519,68 @@
       "group": "Integration & Testing",
       "pr": 42,
       "ci": "success",
-      "note": "PR #42 merged"
+      "note": "PR #42 adds live ADMIN and foreign-organization acceptance fixtures, patient role-matrix assertions, cross-organization and header/path denial, and fixture browser checks for STAFF and BILLING controls (PR CI 45661690949; post-merge main CI 45662918098; merge commit 7f8e56d695835406c447a8b928f1db7a873e520f; 21 Playwright tests)."
     },
     {
       "id": "integration-offline",
       "title": "Offline mode, sync and conflict scenarios",
       "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 31/39 remains pending/blocked: offline-first implementation is absent (PR #44/#45 recorded the verified gap). Do not mark complete until IndexedDB, sync queue, temporary-ID mapping, conflict UI, device lifecycle and cross-device tests are evidenced."
+      "note": "Checkpoint 31/39: runtime implemented and merged in PR #94 (commit ab8186b): IndexedDB cache/queue/conflict stores, stable device identity, branch-scoped sync API, replay dedupe, temporary-ID mapping, service-worker app-shell and 3 fictional Playwright scenarios. PR #95 records runtime verification; latest main CI run 46057111304 passed. Still blocked pending owner review of the schema, device lifecycle and scenarios plus independent sign-offs; BLK-031-001 remains open. Do not mark complete.",
+      "pr": 94,
+      "ci": "success"
     },
     {
       "id": "integration-backup",
       "title": "Backup, restore and security checks",
       "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 32/39 remains pending/blocked: backup/restore and continuous security verification are absent (PR #46/#47 recorded the verified gap)."
+      "note": "Checkpoint 32/39: backup/restore commands, nightly validation, blocking dependency/secret scans, Dependabot and RLS controls are implemented. Still blocked pending provider/key management and retention decisions, an isolated restore drill and PITR evidence, production configuration, independent security/privacy review and owner acceptance; BLK-032-001 and BLK-032-002 remain open."
     },
     {
       "id": "integration-regression",
       "title": "Cross-module end-to-end regression testing",
       "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 33/39 remains pending/blocked: consolidated cross-module regression coverage is absent (PR #48/#49 recorded the verified gap)."
+      "note": "Checkpoint 33/39: tagged cross-module Playwright regression suite and CI gate are implemented. PR #96 records 20 successful main-branch CI runs with the @cross-module gate active. Still blocked pending production-like data/concurrency and owner review of the ordered clinic journey; BLK-033-001 remains open.",
+      "pr": 76,
+      "ci": "success"
     },
     {
       "id": "integration-performance",
       "title": "Performance, accessibility and usability checks",
       "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 34/39 remains pending/blocked: formal performance, accessibility and usability checks are absent (PR #50/#51 recorded the verified gap)."
+      "note": "Checkpoint 34/39: automated quality gates are implemented, including performance budgets, axe/WCAG scans across seven workflows, keyboard/task tests, browser/preference coverage and two verified accessibility fixes. Still blocked pending manual screen-reader/assistive-technology review, participant usability study, production-like performance data and owner acceptance; BLK-034-001 remains open.",
+      "pr": 78,
+      "ci": "success"
     },
     {
       "id": "integration-bugs",
       "title": "Resolve blockers and verify fixes",
       "status": "blocked",
       "group": "Integration & Testing",
-      "note": "Checkpoint 35/39 remains pending/blocked: blocker resolution and fix verification are absent (PR #52/#53 recorded the verified gap)."
+      "note": "Checkpoint 35/39: blocker register, issue/fix templates, re-test matrix and blockers:check/no-go gates are implemented. The register has 9 open release blockers and 3 verified fixes. Still blocked pending owner acceptance of the process and a dated go/no-go decision; BLK-035-001 remains open.",
+      "pr": 80,
+      "ci": "success"
     },
     {
       "id": "release-config",
       "title": "Production configuration and deployment preparation",
       "status": "blocked",
       "group": "Release & Deployment",
-      "note": "Checkpoint 36/39 remains pending/blocked: production configuration and deployment preparation are absent (PR #54/#55 recorded the verified gap)."
+      "note": "Checkpoint 36/39: runtime-preparation contract, read-only preflight verifier, CI report and staged rollout/rollback design are implemented. No deployment, environment secrets, staging rehearsal, tested rollback, configured monitoring or owner acceptance is recorded; BLK-036-001 remains open.",
+      "pr": 82,
+      "ci": "success"
     },
     {
       "id": "release-acceptance",
       "title": "Final MVP acceptance against scope",
       "status": "blocked",
       "group": "Release & Deployment",
-      "note": "Checkpoint 37/39 remains pending/blocked: final MVP acceptance against scope is absent (PR #56/#57 recorded the verified gap)."
+      "note": "Checkpoint 37/39: the 39-step scope/evidence matrix and read-only verifier are implemented. No final owner testing, independent clinical/security/privacy/accounting/jurisdiction sign-offs, final acceptance or go/no-go decision is recorded; BLK-037-001 remains open.",
+      "pr": 84,
+      "ci": "success"
     },
     {
       "id": "release-docs",
@@ -576,14 +589,16 @@
       "group": "Release & Deployment",
       "pr": 93,
       "ci": "success",
-      "note": "PR #93 merged"
+      "note": "Checkpoint 38/39: owner-accepted v1.0 user/admin guides, operator runbook, support pack and release notes are published under docs/published/v1.0 for build a809743c. Acceptance covers the documentation handover only; it is not a software release, deployment or production-readiness approval."
     },
     {
       "id": "release-ready",
       "title": "Release readiness and launch checklist",
       "status": "pending",
       "group": "Release & Deployment",
-      "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
+      "note": "Checkpoint 39/39: PRs #88/#89 provide a draft launch checklist, 39-step matrix, readiness contract and verifier. Still pending owner acceptance: no published checklist, release tag, release approval, deployment, rollback rehearsal, support coverage or go/no-go decision exists. Nine open release blockers remain. Latest main is e6408fc; main CI run 46057111304 passed. Overall progress remains 73%.",
+      "pr": 88,
+      "ci": "success"
     }
   ],
   "task_steps_title": "Detailed implementation checkpoints",
@@ -601,7 +616,7 @@
       "name": "Release readiness and launch checklist",
       "percent": 0,
       "status": "Pending",
-      "note": "Checkpoint 39/39 remains pending owner acceptance. PR #60/#61 recorded the missing release-readiness evidence. PR #88 (merged 26 Nov) adds a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and explicit CI report step; publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records remain false. PR #89 (merged 26 Nov) records PR CI 45909334736, security scan 45909334732, post-merge CI 45909999606 and post-merge security scan 45909999797; readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main HEAD is 1d26fc3fd123837634ff930d416c3a48119b1d96; exact-HEAD CI run 46042774625 and security scan 46042774602 both passed. GitHub reports 0 releases. Checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, checkpoint 39 remains pending, and overall progress is 73%."
+      "note": "Checkpoint 39/39: PRs #88/#89 provide a draft launch checklist, 39-step matrix, readiness contract and verifier. Still pending owner acceptance: no published checklist, release tag, release approval, deployment, rollback rehearsal, support coverage or go/no-go decision exists. Nine open release blockers remain. Latest main is e6408fc; main CI run 46057111304 passed. Overall progress remains 73%."
     }
   ],
   "sync_generated_at": "2026-11-28T00:14:35Z",
