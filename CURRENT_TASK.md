@@ -22,8 +22,8 @@ Status: **Pending / blocked**. PRs #88/#89 added the draft launch checklist, 39-
 
 ## Verified repository state
 
-- Latest verified main HEAD is [1d26fc3](https://github.com/drpast/dantbook-master/commit/1d26fc3fd123837634ff930d416c3a48119b1d96); exact-HEAD CI and security scan both passed after the checkpoint 38 owner-evidence merge.
-- PRs #32–#61 remain merged; PRs #88 and #89 are also merged. Eight open Dependabot PRs #67–#74 remain: CI fails on #73, #72, #71 and #69; CI passes on #74, #70, #68 and #67.
+- Latest verified main HEAD is [e6408fc](https://github.com/drpast/dantbook-master/commit/e6408fc7b49d4254a3ff3c2ef9ba04caade8f9d1); main CI run [46057111304](https://github.com/drpast/dantbook-master/actions/runs/46057111304) passed on this HEAD.
+- PRs #90–#96 are merged since the previous checkpoint. Eight open Dependabot PRs #67–#74 remain: directly fetched workflow jobs confirm CI failure on #73, #72, #71 and #69, and CI success on #74, #70, #68 and #67.
 - Failure logs show PR #73's Prisma 7.10.1 upgrade is incompatible with the current schema's datasource `url`/`directUrl` fields (P1012). PRs #72/#71/#69 have npm ERESOLVE peer-dependency conflicts because NestJS 11 and 12 packages are being mixed; these are confined to the unmerged dependency branches.
 - PR #32 completed checkpoint 21/39: expected-delivery and ordered status-history tracking acceptance.
 - PR #33 completed checkpoint 22/39: one-time laboratory expense recording and case linkage.
