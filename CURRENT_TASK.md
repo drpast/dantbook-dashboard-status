@@ -3,13 +3,22 @@
 **Last checked:** 28 November 2026, 05:44 AM IST  
 **Baseline archive:** `v0.1.2 Medical History UI` (preserved in ChatGPT Library)  
 **Current source:** `drpast/dantbook-master`, branch `main`  
-**Latest main commit:** [1d26fc3](https://github.com/drpast/dantbook-master/commit/1d26fc3fd123837634ff930d416c3a48119b1d96) — docs: accept checkpoint 38 owner handover evidence (#93); exact-HEAD CI and security scan both passed
+**Latest main commit:** [e6408fc](https://github.com/drpast/dantbook-master/commit/e6408fc7b49d4254a3ff3c2ef9ba04caade8f9d1) — docs(regression): record checkpoint 33 CI repeat runs (#96); main CI [46057111304](https://github.com/drpast/dantbook-master/actions/runs/46057111304) passed
 **Current source activity:** Main CI success; Open PRs: #73 build(deps-dev): bump prisma from 6.19.3 to 7.10.1 (CI failure); #74 build(deps-dev): bump @nestjs/cli from 11.0.24 to 12.0.15 (CI success); #72 build(deps): bump @nestjs/platform-express from 11.2.11 to 12.6.0 (CI failure); #71 build(deps): bump @nestjs/core from 11.2.11 to 12.6.0 (CI failure); #70 build(deps): bump dotenv from 16.6.1 to 18.0.10 (CI success); #69 build(deps): bump @nestjs/common from 11.2.11 to 12.6.0 (CI failure); #68 build(deps): bump actions/checkout from 4 to 7 (CI success); #67 build(deps): bump actions/setup-node from 4 to 7 (CI success).
+
+
+## Latest verified GitHub reconciliation — 28 November 2026
+
+- Main HEAD: [e6408fc](https://github.com/drpast/dantbook-master/commit/e6408fc7b49d4254a3ff3c2ef9ba04caade8f9d1); main CI run [46057111304](https://github.com/drpast/dantbook-master/actions/runs/46057111304) passed.
+- PRs #90–#96 are merged. PR #94 delivered the checkpoint 31 offline runtime; PR #95 recorded verification; PR #96 recorded 20 successful main CI runs for the tagged cross-module regression gate.
+- Checkpoint 31 is implemented but remains blocked pending owner acceptance; checkpoints 32–37 have implementation/preparation evidence but remain blocked pending owner acceptance; checkpoint 38 is owner-accepted for the v1.0 documentation handover only; checkpoint 39 remains pending.
+- Nine release blockers remain. Eight open Dependabot PRs #67–#74 remain; CI is directly verified as failing on #69/#71/#72/#73 and passing on #67/#68/#70/#74.
+- Overall progress remains 73%. No percentage or completion state was inferred from commit counts. No DantBook source files were changed.
 
 ## Current task
 
 **Checkpoint 39/39 — Release readiness and launch checklist**  
-Status: **Pending / blocked**. PR #60/#61 audited the release-readiness gap. PR #88 merged a draft launch checklist, consolidated 39-step matrix, readiness contract, read-only verifier and CI report step; it explicitly keeps publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records false. PR #89 merged the evidence record: 18 foundation checks, 27 Playwright tests, readiness:verify covers 4 artifacts and 13 sections with 0 decisions, and the no-go gate correctly fails. Latest main CI run [46042774625](https://github.com/drpast/dantbook-master/actions/runs/46042774625) and security scan [46042774602](https://github.com/drpast/dantbook-master/actions/runs/46042774602) passed on exact HEAD 1d26fc3 after master PR #93 merged the checkpoint 38 owner-evidence handover. GitHub reports 0 releases. Checkpoint 39 remains pending owner acceptance; checkpoints 31-37 remain blocked, checkpoint 38 is owner-accepted for the v1.0 handover only, and overall progress is 73%.
+Status: **Pending / blocked**. PRs #88/#89 added the draft launch checklist, 39-step matrix, readiness contract and verifier; the no-go gate still fails. Since then, PR #93 owner-accepted the v1.0 documentation handover, PR #94 delivered the branch-scoped offline sync runtime with three fictional scenarios, PR #95 recorded its verification, and PR #96 recorded 20 successful main CI regression runs. Latest main is [e6408fc](https://github.com/drpast/dantbook-master/commit/e6408fc7b49d4254a3ff3c2ef9ba04caade8f9d1); main CI [46057111304](https://github.com/drpast/dantbook-master/actions/runs/46057111304) passed. Checkpoint 31 remains blocked pending owner review/sign-offs; checkpoints 32-37 remain blocked pending owner acceptance; checkpoint 38 is completed for documentation handover only; checkpoint 39 remains pending. Nine release blockers remain; no software release, tag, deployment or go/no-go approval is recorded. Overall progress remains 73%.
 
 ## Verified repository state
 
@@ -28,8 +37,8 @@ Status: **Pending / blocked**. PR #60/#61 audited the release-readiness gap. PR 
 - PR #41 refreshed checkpoint 29 evidence docs to the verified merged PR #40 state and post-merge CI run 45651429692.
 - PR #42 completed checkpoint 30/39: live ADMIN and foreign-organization acceptance fixtures, patient role-matrix assertions, cross-organization and header/path denial, and fixture browser checks for STAFF and BILLING controls.
 - PR #88 added draft release-readiness artifacts, a consolidated 39-step matrix, readiness contract and read-only verifier; it explicitly leaves release publication, rollback rehearsal, support coverage, sign-offs, go/no-go and release records false. PR #89 records the merged evidence and a correctly failing no-go gate. Checkpoint 39 remains pending owner acceptance.
-- PR #44 recorded checkpoint 31/39 as not implemented: no IndexedDB, PWA service worker, sync queue, temporary-ID mapping, field-level conflict UI, device lifecycle or cross-device/offline tests; it added a read-only readiness checker.
-- PR #45 refreshed checkpoint 31 merged evidence; checkpoint 31 remains pending/blocked.
+- PR #44/#45 recorded the checkpoint 31 gap at that time. This was superseded by merged PR #94, which implemented IndexedDB cache/queue/conflict stores, device identity, branch-scoped sync API, temporary-ID mapping, service-worker app shell and three fictional Playwright scenarios; owner review/sign-offs remain outstanding.
+- PR #45 refreshed the historical checkpoint 31 gap evidence; PR #94 later delivered the runtime. Checkpoint 31 remains blocked pending owner acceptance.
 - PR #46 recorded checkpoint 32/39 as not implemented: no backup/restore command, scheduler, PITR, retention/encryption, restore drill, deployment artifact, security policy, SAST/secret scanning, Dependabot or blocking dependency gate; it added a read-only readiness checker.
 - PR #47 refreshed checkpoint 32 merged evidence; checkpoint 32 remains pending/blocked.
 - PR #48 recorded checkpoint 33/39 as not implemented: the repository has 11 per-module Playwright specs with 21 tests and two narrow handoffs, but no dedicated cross-module regression suite, shared fixture layer, regression matrix/tags, full clinic-flow scenario or continuous regression gate; it added a read-only readiness checker.
@@ -102,13 +111,13 @@ The new automation remains **queue-only**. It does not dispatch real email, SMS 
 
 ## Completed checkpoints
 
-Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints **31/39 — Offline mode, sync and conflict scenarios**, **32/39 — Backup, restore and security checks**, **33/39 — Cross-module end-to-end regression testing**, **34/39 — Performance, accessibility and usability checks**, **35/39 — Resolve blockers and verify fixes**, **36/39 — Production configuration and deployment preparation**, **37/39 — Final MVP acceptance against scope**, **38/39 — User/admin documentation and handover** and **39/39 — Release readiness and launch checklist** remain pending/blocked. The active evidence checkpoint is **39/39**.
+Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints **31/39 — Offline mode, sync and conflict scenarios** through **37/39 — Final MVP acceptance against scope** remain blocked pending owner acceptance; **38/39 — User/admin documentation and handover** is owner-accepted/completed for the v1.0 documentation package only; **39/39 — Release readiness and launch checklist** remains pending. The active evidence checkpoint is **39/39**.
 
 ## Progress evidence
 
-- Overall progress is now **72%**; `Recall & Follow-up` remains **100%**, `Integration & testing` is now **20%**, and all other module percentages are unchanged.
+- Overall progress is now **73%**; `Recall & Follow-up` remains **100%**, `Integration & testing` is now **20%**, and all other module percentages are unchanged.
 - Percentages were not recalculated from commit counts, PR merges or CI runs. They remain evidence-reviewed manifest values.
-- The manifest review date is now **27 November 2026**; overall progress remains 72%.
+- The manifest review date is now **27 November 2026**; overall progress remains 73%.
 - The target MVP date remains **20 December 2026** (ambitious).
 
 ## Dashboard data-quality notes
@@ -116,7 +125,7 @@ Checkpoints **1–30/39** are recorded complete in the task tracker. Checkpoints
 - The milestone-level status/percentage entries still conflict with the module-level statuses (for example, completed modules alongside milestone entries marked not started). They were left unchanged pending a separate evidence review.
 - The sync script currently selects the newest workflow run on a branch without filtering for the CI workflow. This caused the earlier snapshot to attach notification run [45470784324](https://github.com/drpast/dantbook-master/actions/runs/45470784324) to the main-CI field. This monitor corrected status.json and the auto-sync block to the actual CI runs [45470198858](https://github.com/drpast/dantbook-master/actions/runs/45470198858), [45633000700](https://github.com/drpast/dantbook-master/actions/runs/45633000700), [45651429692](https://github.com/drpast/dantbook-master/actions/runs/45651429692), [45654373006](https://github.com/drpast/dantbook-master/actions/runs/45654373006), [45662918098](https://github.com/drpast/dantbook-master/actions/runs/45662918098) and [45667246148](https://github.com/drpast/dantbook-master/actions/runs/45667246148); notification runs [45654999024](https://github.com/drpast/dantbook-master/actions/runs/45654999024), [45667896133](https://github.com/drpast/dantbook-master/actions/runs/45667896133), [45687787085](https://github.com/drpast/dantbook-master/actions/runs/45687787085), [45689921001](https://github.com/drpast/dantbook-master/actions/runs/45689921001), [45696003925](https://github.com/drpast/dantbook-master/actions/runs/45696003925), [45696846391](https://github.com/drpast/dantbook-master/actions/runs/45696846391), [45702589714](https://github.com/drpast/dantbook-master/actions/runs/45702589714), [45703145657](https://github.com/drpast/dantbook-master/actions/runs/45703145657), [45707642392](https://github.com/drpast/dantbook-master/actions/runs/45707642392), [45708182171](https://github.com/drpast/dantbook-master/actions/runs/45708182171), [45712018094](https://github.com/drpast/dantbook-master/actions/runs/45712018094), [45712574458](https://github.com/drpast/dantbook-master/actions/runs/45712574458), [45814068900](https://github.com/drpast/dantbook-master/actions/runs/45814068900) and [45814602941](https://github.com/drpast/dantbook-master/actions/runs/45814602941) are not CI. The script defect remains and may recur until separately fixed. No code was changed in this monitoring run.
 - The Windows sidebar was verified locally after checkpoint 30: its cache and UI showed overall **72%**, the active **Step 31/39**, step 30 recorded as completed with PR #42/CI success, and step 31 pending.
-- Checkpoint 31/39 remains pending because offline-first implementation is absent; PR #44/#45 only record that verified gap.
+- Checkpoint 31/39 remains blocked pending owner acceptance: PR #94 now implements the offline runtime and three fictional scenarios, but owner design/scenario review and independent sign-offs remain outstanding; BLK-031-001 is open.
 - Checkpoint 32/39 remains pending because backup/restore and continuous security verification are absent; PR #46/#47 only record that verified gap.
 - Checkpoint 33/39 remains pending because consolidated cross-module regression coverage is absent; PR #48/#49 only record that verified gap.
 - Checkpoint 34/39 remains pending because formal performance, accessibility and usability checks are absent; PR #50/#51 only record that verified gap.
